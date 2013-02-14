@@ -18,6 +18,9 @@
 		BA36DEF116C4BF37007FFDD1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA36DEF016C4BF37007FFDD1 /* Default-568h@2x.png */; };
 		BA36DEF416C4BF37007FFDD1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA36DEF216C4BF37007FFDD1 /* MainStoryboard.storyboard */; };
 		BA36DEF716C4BF37007FFDD1 /* iBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA36DEF616C4BF37007FFDD1 /* iBViewController.m */; };
+		BA3A7C4016CD39EE00E84B58 /* hotzone.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3A7C3F16CD39EE00E84B58 /* hotzone.png */; };
+		BA3A7C4316CD474300E84B58 /* iBCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A7C4216CD474300E84B58 /* iBCountViewController.m */; };
+		BA3A7C4616CD477100E84B58 /* CountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A7C4516CD477100E84B58 /* CountModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,11 @@
 		BA36DEF316C4BF37007FFDD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BA36DEF516C4BF37007FFDD1 /* iBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iBViewController.h; sourceTree = "<group>"; };
 		BA36DEF616C4BF37007FFDD1 /* iBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBViewController.m; sourceTree = "<group>"; };
+		BA3A7C3F16CD39EE00E84B58 /* hotzone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotzone.png; sourceTree = "<group>"; };
+		BA3A7C4116CD474300E84B58 /* iBCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBCountViewController.h; sourceTree = "<group>"; };
+		BA3A7C4216CD474300E84B58 /* iBCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountViewController.m; sourceTree = "<group>"; };
+		BA3A7C4416CD477100E84B58 /* CountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountModel.h; sourceTree = "<group>"; };
+		BA3A7C4516CD477100E84B58 /* CountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
+				BA3A7C4116CD474300E84B58 /* iBCountViewController.h */,
+				BA3A7C4216CD474300E84B58 /* iBCountViewController.m */,
+				BA3A7C4416CD477100E84B58 /* CountModel.h */,
+				BA3A7C4516CD477100E84B58 /* CountModel.m */,
 				BA36DEE016C4BF37007FFDD1 /* iB-Ball */,
 				BA36DED916C4BF37007FFDD1 /* Frameworks */,
 				BA36DED716C4BF37007FFDD1 /* Products */,
@@ -96,6 +108,7 @@
 		BA36DEE116C4BF37007FFDD1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA3A7C3F16CD39EE00E84B58 /* hotzone.png */,
 				BA36DEE216C4BF37007FFDD1 /* iB-Ball-Info.plist */,
 				BA36DEE316C4BF37007FFDD1 /* InfoPlist.strings */,
 				BA36DEE616C4BF37007FFDD1 /* main.m */,
@@ -117,6 +130,7 @@
 				BA36DED216C4BF37007FFDD1 /* Sources */,
 				BA36DED316C4BF37007FFDD1 /* Frameworks */,
 				BA36DED416C4BF37007FFDD1 /* Resources */,
+				BA3A7C3D16CD33F200E84B58 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -164,10 +178,27 @@
 				BA36DEEF16C4BF37007FFDD1 /* Default@2x.png in Resources */,
 				BA36DEF116C4BF37007FFDD1 /* Default-568h@2x.png in Resources */,
 				BA36DEF416C4BF37007FFDD1 /* MainStoryboard.storyboard in Resources */,
+				BA3A7C4016CD39EE00E84B58 /* hotzone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA3A7C3D16CD33F200E84B58 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA36DED216C4BF37007FFDD1 /* Sources */ = {
@@ -177,6 +208,8 @@
 				BA36DEE716C4BF37007FFDD1 /* main.m in Sources */,
 				BA36DEEB16C4BF37007FFDD1 /* iBAppDelegate.m in Sources */,
 				BA36DEF716C4BF37007FFDD1 /* iBViewController.m in Sources */,
+				BA3A7C4316CD474300E84B58 /* iBCountViewController.m in Sources */,
+				BA3A7C4616CD477100E84B58 /* CountModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +244,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -224,7 +258,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -238,13 +272,14 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -292,6 +327,7 @@
 				BA36DEFC16C4BF37007FFDD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
