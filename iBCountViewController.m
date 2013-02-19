@@ -7,7 +7,7 @@
 //
 
 #import "iBCountViewController.h"
-#import "CountModel.h"
+#import "iBDataCenterForHotzone.h"
 
 @interface iBCountViewController ()
 
@@ -35,7 +35,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    _countModel = [[CountModel alloc] init];
+    _countModel = [[iBDataCenterForHotzone alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,18 +58,42 @@
 
 - (void)updateRatio:(UIView *)sender {
     if (sender.tag == 1) {
-        NSLog(@"before %d", [self countModel].shootingTimes);
-        [[self countModel] setShootingTimes:([self countModel].shootingTimes + 1)];
-        [[self countModel] setGoalTimes:([self countModel].goalTimes + 1)];
-        NSLog(@"after %d", [self countModel].shootingTimes);
+//        NSLog(@"before %d", [self countModel].shootingTimes);
+//        [[self countModel] setShootingTimes:([self countModel].shootingTimes + 1)];
+        [self countModel].shootingTimes++;
+        [self countModel].goalTimes++;
+//        [[self countModel] setGoalTimes:([self countModel].goalTimes + 1)];
+        [self countModel].totalShootingTimes++;
+        [self countModel].totalGoalTimes++;
+//        NSLog(@"after %d", [self countModel].shootingTimes);
     }
     
     else if (sender.tag == 0) {
         [self countModel].shootingTimes++;
+        [self countModel].totalShootingTimes++;
     }
     
-    NSString *ratio = [NSString stringWithFormat:@"%.1f", [[self countModel] getRatio]];
+    NSString *ratio = [NSString stringWithFormat:@"%.1f", [[self countModel] getRatioForThisTime]];
     [self.shootingRatio setText:ratio];
+    
+    // in the end, do the save stuff
+    
 }
 
+- (IBAction)showCarrerScore:(id)sender {
+    UIAlertView *av = [[UIAlertView alloc]initWithTitle:@"Carrer" message:[NSString stringWithFormat:@"Total goal: %d, total shoot: %d", self.countModel.totalGoalTimes, self.countModel.totalShootingTimes] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [av show];
+}
+
+- (IBAction)saveData:(id)sender {
+    [[self countModel] saveData];
+}
+
+- (IBAction)loadData:(id)sender {
+    [[self countModel] loadData];
+}
+
+- (IBAction)cancel:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
