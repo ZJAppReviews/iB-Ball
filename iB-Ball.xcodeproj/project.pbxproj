@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA01858716D6753F00B98B6A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */; };
 		BA36DEDB16C4BF37007FFDD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */; };
 		BA36DEDD16C4BF37007FFDD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDC16C4BF37007FFDD1 /* Foundation.framework */; };
 		BA36DEDF16C4BF37007FFDD1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDE16C4BF37007FFDD1 /* CoreGraphics.framework */; };
@@ -16,7 +17,6 @@
 		BA36DEED16C4BF37007FFDD1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BA36DEEC16C4BF37007FFDD1 /* Default.png */; };
 		BA36DEEF16C4BF37007FFDD1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA36DEEE16C4BF37007FFDD1 /* Default@2x.png */; };
 		BA36DEF116C4BF37007FFDD1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA36DEF016C4BF37007FFDD1 /* Default-568h@2x.png */; };
-		BA36DEF416C4BF37007FFDD1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA36DEF216C4BF37007FFDD1 /* MainStoryboard.storyboard */; };
 		BA36DEF716C4BF37007FFDD1 /* iBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA36DEF616C4BF37007FFDD1 /* iBViewController.m */; };
 		BA3A7C4016CD39EE00E84B58 /* hotzone.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3A7C3F16CD39EE00E84B58 /* hotzone.png */; };
 		BA3A7C4616CD477100E84B58 /* CountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A7C4516CD477100E84B58 /* CountModel.m */; };
@@ -28,9 +28,13 @@
 		BA9BF1CE16D5951100DFDD54 /* SinaWeiboAuthorizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9BF1C716D5951100DFDD54 /* SinaWeiboAuthorizeView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BA9BF1CF16D5951100DFDD54 /* SinaWeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9BF1CA16D5951100DFDD54 /* SinaWeiboRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BA9BF1D216D59BB300DFDD54 /* iBShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */; };
+		BAFA0EB316DFF424000CF109 /* iBObjectiveSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA0EB216DFF424000CF109 /* iBObjectiveSettingViewController.m */; };
+		BAFA0EC816E01F74000CF109 /* iBObjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA0EC716E01F73000CF109 /* iBObjViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F6447B90DEB4D149268ED25 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BA36DED616C4BF37007FFDD1 /* iB-Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iB-Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BA36DEDC16C4BF37007FFDD1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,7 +48,6 @@
 		BA36DEEC16C4BF37007FFDD1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		BA36DEEE16C4BF37007FFDD1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BA36DEF016C4BF37007FFDD1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		BA36DEF316C4BF37007FFDD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BA36DEF516C4BF37007FFDD1 /* iBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iBViewController.h; sourceTree = "<group>"; };
 		BA36DEF616C4BF37007FFDD1 /* iBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBViewController.m; sourceTree = "<group>"; };
 		BA3A7C3F16CD39EE00E84B58 /* hotzone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotzone.png; sourceTree = "<group>"; };
@@ -66,6 +69,11 @@
 		BA9BF1CA16D5951100DFDD54 /* SinaWeiboRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeiboRequest.m; sourceTree = "<group>"; };
 		BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBShareViewController.h; path = sinaweibo_ios_sdk/iBShareViewController.h; sourceTree = "<group>"; };
 		BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBShareViewController.m; path = sinaweibo_ios_sdk/iBShareViewController.m; sourceTree = "<group>"; };
+		BAFA0EB116DFF424000CF109 /* iBObjectiveSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBObjectiveSettingViewController.h; sourceTree = "<group>"; };
+		BAFA0EB216DFF424000CF109 /* iBObjectiveSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBObjectiveSettingViewController.m; sourceTree = "<group>"; };
+		BAFA0EC616E01F73000CF109 /* iBObjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBObjViewController.h; sourceTree = "<group>"; };
+		BAFA0EC716E01F73000CF109 /* iBObjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBObjViewController.m; sourceTree = "<group>"; };
+		FEA67B547CB742D0AFCF4D9C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,10 @@
 				BA9BF1BE16D5951100DFDD54 /* sinaweibo_ios_sdk */,
 				BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */,
 				BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */,
+				BAFA0EB116DFF424000CF109 /* iBObjectiveSettingViewController.h */,
+				BAFA0EB216DFF424000CF109 /* iBObjectiveSettingViewController.m */,
+				BAFA0EC616E01F73000CF109 /* iBObjViewController.h */,
+				BAFA0EC716E01F73000CF109 /* iBObjViewController.m */,
 				BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */,
 				BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */,
 				BA4AE59116D12BAB005456EF /* iBDataCenterForHotzone.h */,
@@ -97,6 +109,8 @@
 				BA36DEE016C4BF37007FFDD1 /* iB-Ball */,
 				BA36DED916C4BF37007FFDD1 /* Frameworks */,
 				BA36DED716C4BF37007FFDD1 /* Products */,
+				FEA67B547CB742D0AFCF4D9C /* Pods.xcconfig */,
+				1F6447B90DEB4D149268ED25 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,7 +137,6 @@
 			children = (
 				BA36DEE916C4BF37007FFDD1 /* iBAppDelegate.h */,
 				BA36DEEA16C4BF37007FFDD1 /* iBAppDelegate.m */,
-				BA36DEF216C4BF37007FFDD1 /* MainStoryboard.storyboard */,
 				BA36DEF516C4BF37007FFDD1 /* iBViewController.h */,
 				BA36DEF616C4BF37007FFDD1 /* iBViewController.m */,
 				BA36DEE116C4BF37007FFDD1 /* Supporting Files */,
@@ -134,6 +147,7 @@
 		BA36DEE116C4BF37007FFDD1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
 				BA3A7C3F16CD39EE00E84B58 /* hotzone.png */,
 				BA36DEE216C4BF37007FFDD1 /* iB-Ball-Info.plist */,
 				BA36DEE316C4BF37007FFDD1 /* InfoPlist.strings */,
@@ -190,6 +204,8 @@
 				BA36DED316C4BF37007FFDD1 /* Frameworks */,
 				BA36DED416C4BF37007FFDD1 /* Resources */,
 				BA3A7C3D16CD33F200E84B58 /* ShellScript */,
+				6E53E2DA871C489F8AF63186 /* Copy Pods Resources */,
+				68FD9D8CC8E443D380E1A374 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,15 +252,43 @@
 				BA36DEED16C4BF37007FFDD1 /* Default.png in Resources */,
 				BA36DEEF16C4BF37007FFDD1 /* Default@2x.png in Resources */,
 				BA36DEF116C4BF37007FFDD1 /* Default-568h@2x.png in Resources */,
-				BA36DEF416C4BF37007FFDD1 /* MainStoryboard.storyboard in Resources */,
 				BA3A7C4016CD39EE00E84B58 /* hotzone.png in Resources */,
 				BA9BF1CC16D5951100DFDD54 /* SinaWeibo.bundle in Resources */,
+				BA01858716D6753F00B98B6A /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		68FD9D8CC8E443D380E1A374 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		6E53E2DA871C489F8AF63186 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 		BA3A7C3D16CD33F200E84B58 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -276,6 +320,8 @@
 				BA9BF1CE16D5951100DFDD54 /* SinaWeiboAuthorizeView.m in Sources */,
 				BA9BF1CF16D5951100DFDD54 /* SinaWeiboRequest.m in Sources */,
 				BA9BF1D216D59BB300DFDD54 /* iBShareViewController.m in Sources */,
+				BAFA0EB316DFF424000CF109 /* iBObjectiveSettingViewController.m in Sources */,
+				BAFA0EC816E01F74000CF109 /* iBObjViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,14 +334,6 @@
 				BA36DEE416C4BF37007FFDD1 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		BA36DEF216C4BF37007FFDD1 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA36DEF316C4BF37007FFDD1 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -354,6 +392,7 @@
 		};
 		BA36DEFB16C4BF37007FFDD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6447B90DEB4D149268ED25 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iB-Ball/iB-Ball-Prefix.pch";
@@ -365,6 +404,7 @@
 		};
 		BA36DEFC16C4BF37007FFDD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6447B90DEB4D149268ED25 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iB-Ball/iB-Ball-Prefix.pch";

@@ -8,6 +8,7 @@
 
 #import "iBShareViewController.h"
 #import "SinaWeibo.h"
+#import "iBAppDelegate.h"
 
 @interface iBShareViewController ()
 
@@ -60,6 +61,15 @@
 }
 
 - (IBAction)shareButtonPressed:(id)sender {
+    postStatusText = [[NSString alloc] initWithFormat:@"今日三分球怒中%d, 怒打%d次铁, 命中率为%.2f. ---From iB-Ball develped Nango", self.goal, self.shoot - self.goal, ((double)(self.goal) / self.shoot)];
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert"
+                                                        message:[NSString stringWithFormat:@"Will post status with text \"%@\"", postStatusText]
+                                                       delegate:self cancelButtonTitle:@"Cancel"
+                                              otherButtonTitles:@"OK", nil];
+    alertView.tag = 0;
+    [alertView show];
+
 }
 
 - (void)storeAuthData
@@ -185,6 +195,11 @@
 //    [self resetButtons];
 }
 
+- (SinaWeibo *)sinaweibo
+{
+    iBAppDelegate *delegate = (iBAppDelegate *)[UIApplication sharedApplication].delegate;
+    return delegate.sinaweibo;
+}
 
 
 @end

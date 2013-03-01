@@ -8,6 +8,7 @@
 
 #import "iBCountViewController.h"
 #import "iBDataCenterForHotzone.h"
+#import "iBShareViewController.h"
 
 @interface iBCountViewController ()
 
@@ -98,7 +99,11 @@
 }
 
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    if (segue.)
-//}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"share"]) {
+        iBShareViewController *a = [segue destinationViewController];
+        [a setShoot:self.countModel.shootingTimes];
+        [a setGoal:self.countModel.goalTimes];
+    }
+}
 @end

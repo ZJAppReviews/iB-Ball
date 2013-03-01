@@ -10,10 +10,6 @@
 #import "SinaWeibo.h"
 #import "SinaWeiboRequest.h"
 
-#define kAppKey             @"1450468020"
-#define kAppSecret          @"3bc7e3fa0a27a560a8317d475bc13a40"
-#define kAppRedirectURI     @"http://www.sina.com"
-
 
 @class SinaWeibo;
 
@@ -27,6 +23,10 @@
     int ia;
 }
 
-@property (readonly, nonatomic) SinaWeibo *sinaweibo;
+//@property (strong, readonly, nonatomic) SinaWeibo *sinaweibo;
+@property (strong, nonatomic) SinaWeibo *sinaweibo;
+
+@property (nonatomic, assign) int shoot;
+@property (nonatomic, assign) int goal;
 
 @end
