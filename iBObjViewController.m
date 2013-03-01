@@ -59,19 +59,34 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)setPoint:(id)sender {
+int mark;
+- (IBAction)setPoint:(UIView *)sender {
+    mark = sender.tag;
     _myPicker.hidden = NO;
 //    UIBarButtonItem *a = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonItemStyleDone target:self action:@selector(doneButtonClicked)];
     UIBarButtonItem *a = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneButtonClicked)];
     self.navigationItem.rightBarButtonItem = a;
 }
 
+
 - (void)doneButtonClicked {
     self.navigationItem.rightBarButtonItem = nil;
     self.myPicker.hidden = YES;
+    NSLog(@"%d", mark);
+    switch (mark) {
+        case 1:
+            _l1.text = [NSString stringWithFormat:@"%d", self.myPicker];
+            break;
+            
+        default:
+            break;
+    }
 }
 - (void)viewDidUnload {
 //    [self setDoneButton:nil];
+    [self setL1:nil];
+    [self setL2:nil];
+    [self setL3:nil];
     [super viewDidUnload];
 }
 
@@ -88,5 +103,20 @@
         return [NSString stringWithFormat:@"Take care of yourself...%d", row];
     }
     return [NSString stringWithFormat:@"%d", row];
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    switch (mark) {
+        case 1:
+            _l1.text = [NSString stringWithFormat:@"%d", row];
+            break;
+        case 2:
+            _l2.text = [NSString stringWithFormat:@"%d", row];
+            break;
+        case 3:
+            _l3.text = [NSString stringWithFormat:@"%d", row];
+            break;
+
+    }
 }
 @end
