@@ -28,7 +28,7 @@
 		BA9BF1CE16D5951100DFDD54 /* SinaWeiboAuthorizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9BF1C716D5951100DFDD54 /* SinaWeiboAuthorizeView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BA9BF1CF16D5951100DFDD54 /* SinaWeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9BF1CA16D5951100DFDD54 /* SinaWeiboRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BA9BF1D216D59BB300DFDD54 /* iBShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */; };
-		BAFA0EB316DFF424000CF109 /* iBObjectiveSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA0EB216DFF424000CF109 /* iBObjectiveSettingViewController.m */; };
+		BACE1C5B16E117410032223B /* iBObjCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BACE1C5A16E117410032223B /* iBObjCountViewController.m */; };
 		BAFA0EC816E01F74000CF109 /* iBObjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA0EC716E01F73000CF109 /* iBObjViewController.m */; };
 		BAFA0ED216E04606000CF109 /* iBObj_DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */; };
 /* End PBXBuildFile section */
@@ -70,12 +70,12 @@
 		BA9BF1CA16D5951100DFDD54 /* SinaWeiboRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeiboRequest.m; sourceTree = "<group>"; };
 		BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBShareViewController.h; path = sinaweibo_ios_sdk/iBShareViewController.h; sourceTree = "<group>"; };
 		BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBShareViewController.m; path = sinaweibo_ios_sdk/iBShareViewController.m; sourceTree = "<group>"; };
-		BAFA0EB116DFF424000CF109 /* iBObjectiveSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBObjectiveSettingViewController.h; sourceTree = "<group>"; };
-		BAFA0EB216DFF424000CF109 /* iBObjectiveSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBObjectiveSettingViewController.m; sourceTree = "<group>"; };
-		BAFA0EC616E01F73000CF109 /* iBObjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBObjViewController.h; sourceTree = "<group>"; };
-		BAFA0EC716E01F73000CF109 /* iBObjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBObjViewController.m; sourceTree = "<group>"; };
-		BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBObj_DataModel.h; sourceTree = "<group>"; };
-		BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBObj_DataModel.m; sourceTree = "<group>"; };
+		BACE1C5916E117410032223B /* iBObjCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBObjCountViewController.h; sourceTree = "<group>"; };
+		BACE1C5A16E117410032223B /* iBObjCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBObjCountViewController.m; sourceTree = "<group>"; };
+		BAFA0EC616E01F73000CF109 /* iBObjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObjViewController.h; path = ../iBObjViewController.h; sourceTree = "<group>"; };
+		BAFA0EC716E01F73000CF109 /* iBObjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBObjViewController.m; path = ../iBObjViewController.m; sourceTree = "<group>"; };
+		BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObj_DataModel.h; path = ../iBObj_DataModel.h; sourceTree = "<group>"; };
+		BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBObj_DataModel.m; path = ../iBObj_DataModel.m; sourceTree = "<group>"; };
 		FEA67B547CB742D0AFCF4D9C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -96,19 +96,14 @@
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
+				BACE1C5716E113520032223B /* Obj */,
 				BA9BF1BE16D5951100DFDD54 /* sinaweibo_ios_sdk */,
 				BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */,
 				BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */,
-				BAFA0EB116DFF424000CF109 /* iBObjectiveSettingViewController.h */,
-				BAFA0EB216DFF424000CF109 /* iBObjectiveSettingViewController.m */,
-				BAFA0EC616E01F73000CF109 /* iBObjViewController.h */,
-				BAFA0EC716E01F73000CF109 /* iBObjViewController.m */,
 				BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */,
 				BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */,
 				BA4AE59116D12BAB005456EF /* iBDataCenterForHotzone.h */,
 				BA4AE59216D12BAB005456EF /* iBDataCenterForHotzone.m */,
-				BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */,
-				BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */,
 				BA3A7C4416CD477100E84B58 /* CountModel.h */,
 				BA3A7C4516CD477100E84B58 /* CountModel.m */,
 				BA36DEE016C4BF37007FFDD1 /* iB-Ball */,
@@ -196,6 +191,20 @@
 				BA9BF1CA16D5951100DFDD54 /* SinaWeiboRequest.m */,
 			);
 			path = SinaWeibo;
+			sourceTree = "<group>";
+		};
+		BACE1C5716E113520032223B /* Obj */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA0EC616E01F73000CF109 /* iBObjViewController.h */,
+				BAFA0EC716E01F73000CF109 /* iBObjViewController.m */,
+				BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */,
+				BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */,
+				BACE1C5916E117410032223B /* iBObjCountViewController.h */,
+				BACE1C5A16E117410032223B /* iBObjCountViewController.m */,
+			);
+			name = Obj;
+			path = sinaweibo_ios_sdk;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,9 +334,9 @@
 				BA9BF1CE16D5951100DFDD54 /* SinaWeiboAuthorizeView.m in Sources */,
 				BA9BF1CF16D5951100DFDD54 /* SinaWeiboRequest.m in Sources */,
 				BA9BF1D216D59BB300DFDD54 /* iBShareViewController.m in Sources */,
-				BAFA0EB316DFF424000CF109 /* iBObjectiveSettingViewController.m in Sources */,
 				BAFA0EC816E01F74000CF109 /* iBObjViewController.m in Sources */,
 				BAFA0ED216E04606000CF109 /* iBObj_DataModel.m in Sources */,
+				BACE1C5B16E117410032223B /* iBObjCountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

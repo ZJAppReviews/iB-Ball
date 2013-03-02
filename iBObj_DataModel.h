@@ -18,5 +18,8 @@
 @property (assign) int threePoint_real;
 @property (assign) int ftPoint_real;
 
+- (id)initWithObj:(int)two three:(int)three ft:(int)ft;
+
+- (void)areWeCoolAboutAllTheThing;
 
 @end

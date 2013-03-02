@@ -7,6 +7,8 @@
 //
 
 #import "iBObjViewController.h"
+#import "iBObj_DataModel.h"
+#import "iBObjCountViewController.h"
 
 @interface iBObjViewController ()
 
@@ -26,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _objModel = [[iBObj_DataModel alloc] init];
     _myPicker = [[UIPickerView alloc] initWithFrame:CGRectZero];
     _myPicker.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
     CGSize pickerSize = [_myPicker sizeThatFits:CGSizeZero];
@@ -72,15 +75,15 @@ int mark;
 - (void)doneButtonClicked {
     self.navigationItem.rightBarButtonItem = nil;
     self.myPicker.hidden = YES;
-    NSLog(@"%d", mark);
-    switch (mark) {
-        case 1:
-            _l1.text = [NSString stringWithFormat:@"%d", self.myPicker];
-            break;
-            
-        default:
-            break;
-    }
+//    NSLog(@"%d", mark);
+//    switch (mark) {
+//        case 1:
+//            _l1.text = [NSString stringWithFormat:@"%d", self.myPicker];
+//            break;
+//            
+//        default:
+//            break;
+//    }
 }
 - (void)viewDidUnload {
 //    [self setDoneButton:nil];
@@ -109,14 +112,34 @@ int mark;
     switch (mark) {
         case 1:
             _l1.text = [NSString stringWithFormat:@"%d", row];
+            [self.objModel setTwoPoint_Obj:row];
             break;
         case 2:
             _l2.text = [NSString stringWithFormat:@"%d", row];
+            [self.objModel setThreePoint_Obj:row];
             break;
         case 3:
             _l3.text = [NSString stringWithFormat:@"%d", row];
+            [self.objModel setFtPoint_Obj:row];
             break;
 
     }
+}
+//
+//- (iBObj_DataModel *)objModel {
+//    if (_objModel == nil) {
+//        return [[iBObj_DataModel alloc] init];
+//    } else {
+//        return _objModel;
+//    }
+//}
+
+
+- (IBAction)letsRock:(id)sender {
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    iBObjCountViewController *a = (iBObjCountViewController *)segue.destinationViewController;
+    [a setDataModel:self.objModel];
 }
 @end
