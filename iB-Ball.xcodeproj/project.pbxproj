@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183B836C16F4D42C0030BC70 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 183B836A16F4D42B0030BC70 /* 2.png */; };
+		183B836D16F4D42C0030BC70 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 183B836B16F4D42C0030BC70 /* 1.png */; };
 		BA01858716D6753F00B98B6A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */; };
 		BA36DEDB16C4BF37007FFDD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */; };
 		BA36DEDD16C4BF37007FFDD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDC16C4BF37007FFDD1 /* Foundation.framework */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		183B836A16F4D42B0030BC70 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		183B836B16F4D42C0030BC70 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BA36DED616C4BF37007FFDD1 /* iB-Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iB-Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -94,6 +98,8 @@
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
+				183B836A16F4D42B0030BC70 /* 2.png */,
+				183B836B16F4D42C0030BC70 /* 1.png */,
 				BACE1C5716E113520032223B /* Obj */,
 				BA9BF1BE16D5951100DFDD54 /* sinaweibo_ios_sdk */,
 				BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */,
@@ -262,6 +268,8 @@
 				BA3A7C4016CD39EE00E84B58 /* hotzone.png in Resources */,
 				BA9BF1CC16D5951100DFDD54 /* SinaWeibo.bundle in Resources */,
 				BA01858716D6753F00B98B6A /* MainStoryboard.storyboard in Resources */,
+				183B836C16F4D42C0030BC70 /* 2.png in Resources */,
+				183B836D16F4D42C0030BC70 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
