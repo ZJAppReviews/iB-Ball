@@ -34,7 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F6447B90DEB4D149268ED25 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BA36DED616C4BF37007FFDD1 /* iB-Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iB-Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -76,7 +75,6 @@
 		BAFA0EC716E01F73000CF109 /* iBObjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBObjViewController.m; path = ../iBObjViewController.m; sourceTree = "<group>"; };
 		BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObj_DataModel.h; path = ../iBObj_DataModel.h; sourceTree = "<group>"; };
 		BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBObj_DataModel.m; path = ../iBObj_DataModel.m; sourceTree = "<group>"; };
-		FEA67B547CB742D0AFCF4D9C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +107,6 @@
 				BA36DEE016C4BF37007FFDD1 /* iB-Ball */,
 				BA36DED916C4BF37007FFDD1 /* Frameworks */,
 				BA36DED716C4BF37007FFDD1 /* Products */,
-				FEA67B547CB742D0AFCF4D9C /* Pods.xcconfig */,
-				1F6447B90DEB4D149268ED25 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,9 +213,6 @@
 				BA36DED216C4BF37007FFDD1 /* Sources */,
 				BA36DED316C4BF37007FFDD1 /* Frameworks */,
 				BA36DED416C4BF37007FFDD1 /* Resources */,
-				BA3A7C3D16CD33F200E84B58 /* ShellScript */,
-				6E53E2DA871C489F8AF63186 /* Copy Pods Resources */,
-				68FD9D8CC8E443D380E1A374 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,50 +266,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		68FD9D8CC8E443D380E1A374 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-		};
-		6E53E2DA871C489F8AF63186 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-		};
-		BA3A7C3D16CD33F200E84B58 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA36DED216C4BF37007FFDD1 /* Sources */ = {
@@ -407,7 +356,6 @@
 		};
 		BA36DEFB16C4BF37007FFDD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F6447B90DEB4D149268ED25 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iB-Ball/iB-Ball-Prefix.pch";
@@ -419,7 +367,6 @@
 		};
 		BA36DEFC16C4BF37007FFDD1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F6447B90DEB4D149268ED25 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iB-Ball/iB-Ball-Prefix.pch";
