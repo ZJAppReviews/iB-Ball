@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		183B836C16F4D42C0030BC70 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 183B836A16F4D42B0030BC70 /* 2.png */; };
 		183B836D16F4D42C0030BC70 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 183B836B16F4D42C0030BC70 /* 1.png */; };
+		183B837116F5555D0030BC70 /* iBSkiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837016F5555D0030BC70 /* iBSkiTableViewController.m */; };
+		183B837416F556950030BC70 /* iBSkillDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837316F556950030BC70 /* iBSkillDataModel.m */; };
+		183B837716F557770030BC70 /* iBSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837616F557770030BC70 /* iBSkill.m */; };
 		BA01858716D6753F00B98B6A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */; };
 		BA36DEDB16C4BF37007FFDD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */; };
 		BA36DEDD16C4BF37007FFDD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDC16C4BF37007FFDD1 /* Foundation.framework */; };
@@ -38,6 +41,12 @@
 /* Begin PBXFileReference section */
 		183B836A16F4D42B0030BC70 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		183B836B16F4D42C0030BC70 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		183B836F16F5555D0030BC70 /* iBSkiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiTableViewController.h; sourceTree = "<group>"; };
+		183B837016F5555D0030BC70 /* iBSkiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiTableViewController.m; sourceTree = "<group>"; };
+		183B837216F556950030BC70 /* iBSkillDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkillDataModel.h; sourceTree = "<group>"; };
+		183B837316F556950030BC70 /* iBSkillDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkillDataModel.m; sourceTree = "<group>"; };
+		183B837516F557770030BC70 /* iBSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkill.h; sourceTree = "<group>"; };
+		183B837616F557770030BC70 /* iBSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkill.m; sourceTree = "<group>"; };
 		BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BA36DED616C4BF37007FFDD1 /* iB-Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iB-Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -95,11 +104,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183B836E16F5552E0030BC70 /* Ski */ = {
+			isa = PBXGroup;
+			children = (
+				183B836F16F5555D0030BC70 /* iBSkiTableViewController.h */,
+				183B837016F5555D0030BC70 /* iBSkiTableViewController.m */,
+				183B837216F556950030BC70 /* iBSkillDataModel.h */,
+				183B837316F556950030BC70 /* iBSkillDataModel.m */,
+				183B837516F557770030BC70 /* iBSkill.h */,
+				183B837616F557770030BC70 /* iBSkill.m */,
+			);
+			name = Ski;
+			path = sinaweibo_ios_sdk;
+			sourceTree = "<group>";
+		};
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
 				183B836A16F4D42B0030BC70 /* 2.png */,
 				183B836B16F4D42C0030BC70 /* 1.png */,
+				183B836E16F5552E0030BC70 /* Ski */,
 				BACE1C5716E113520032223B /* Obj */,
 				BA9BF1BE16D5951100DFDD54 /* sinaweibo_ios_sdk */,
 				BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */,
@@ -294,6 +318,9 @@
 				BAFA0EC816E01F74000CF109 /* iBObjViewController.m in Sources */,
 				BAFA0ED216E04606000CF109 /* iBObj_DataModel.m in Sources */,
 				BACE1C5B16E117410032223B /* iBObjCountViewController.m in Sources */,
+				183B837116F5555D0030BC70 /* iBSkiTableViewController.m in Sources */,
+				183B837416F556950030BC70 /* iBSkillDataModel.m in Sources */,
+				183B837716F557770030BC70 /* iBSkill.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
