@@ -15,6 +15,7 @@
 
 @property (nonatomic, assign) NSInteger useNumber;
 @property (nonatomic, assign) NSInteger successNumber;
+@property (nonatomic, strong) NSString *skillDescription;
 
 - (id)initWithName:(NSString *)name;
 

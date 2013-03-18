@@ -19,7 +19,7 @@
     if (self) {
         iBSkill *a1 = [[iBSkill alloc] initWithName:@"Fire Tornado"];
         iBSkill *a2 = [[iBSkill alloc] initWithName:@"Ice Ground"];
-        _skillArray = [NSArray arrayWithObjects:a1, a2, nil];
+        _skillArray = [NSMutableArray arrayWithObjects:a1, a2, nil];
     }
     return self;
 }

@@ -10,7 +10,7 @@
 
 @interface iBSkillDataModel : NSObject
 
-@property (nonatomic, strong) NSArray *skillArray;
+@property (nonatomic, strong) NSMutableArray *skillArray;
 
 - (int)getSkillCount;
 
