@@ -132,12 +132,13 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [self.tableView reloadData];
+    NSLog(@"%@", self.skillModel.skillArray);
 }
 
 - (void)skillInput:(id)sender withName:(NSString *)name {
     iBSkill *newSkill = [[iBSkill alloc] initWithName:name];
     [self.skillModel.skillArray addObject:newSkill];
-    [self.tableView reloadData];
+    
 }
 
 
