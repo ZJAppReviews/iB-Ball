@@ -18,7 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *skillText;
 
-@property (nonatomic, weak) id<SkillInputOK> delegate;
+@property (nonatomic, strong) id<SkillInputOK> delegate;
 
 @end
 

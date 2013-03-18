@@ -13,6 +13,7 @@
 		183B837416F556950030BC70 /* iBSkillDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837316F556950030BC70 /* iBSkillDataModel.m */; };
 		183B837716F557770030BC70 /* iBSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837616F557770030BC70 /* iBSkill.m */; };
 		187C1F6A16F701AB00263479 /* iBSkiInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6916F701AB00263479 /* iBSkiInputViewController.m */; };
+		187C1F6E16F7CDEC00263479 /* iBSkiCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */; };
 		BA01858716D6753F00B98B6A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */; };
 		BA36DEDB16C4BF37007FFDD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */; };
 		BA36DEDD16C4BF37007FFDD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDC16C4BF37007FFDD1 /* Foundation.framework */; };
@@ -50,6 +51,8 @@
 		183B837616F557770030BC70 /* iBSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkill.m; sourceTree = "<group>"; };
 		187C1F6816F701AB00263479 /* iBSkiInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiInputViewController.h; sourceTree = "<group>"; };
 		187C1F6916F701AB00263479 /* iBSkiInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiInputViewController.m; sourceTree = "<group>"; };
+		187C1F6C16F7CDEB00263479 /* iBSkiCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiCountViewController.h; sourceTree = "<group>"; };
+		187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiCountViewController.m; sourceTree = "<group>"; };
 		BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BA36DED616C4BF37007FFDD1 /* iB-Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iB-Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -118,9 +121,18 @@
 				183B837616F557770030BC70 /* iBSkill.m */,
 				187C1F6816F701AB00263479 /* iBSkiInputViewController.h */,
 				187C1F6916F701AB00263479 /* iBSkiInputViewController.m */,
+				187C1F6C16F7CDEB00263479 /* iBSkiCountViewController.h */,
+				187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */,
 			);
 			name = Ski;
 			path = sinaweibo_ios_sdk;
+			sourceTree = "<group>";
+		};
+		187C1F6B16F7C69E00263479 /* Accomplishment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Accomplishment;
 			sourceTree = "<group>";
 		};
 		BA36DECB16C4BF37007FFDD1 = {
@@ -128,6 +140,7 @@
 			children = (
 				183B836A16F4D42B0030BC70 /* 2.png */,
 				183B836B16F4D42C0030BC70 /* 1.png */,
+				187C1F6B16F7C69E00263479 /* Accomplishment */,
 				183B836E16F5552E0030BC70 /* Ski */,
 				BACE1C5716E113520032223B /* Obj */,
 				BA9BF1BE16D5951100DFDD54 /* sinaweibo_ios_sdk */,
@@ -327,6 +340,7 @@
 				183B837416F556950030BC70 /* iBSkillDataModel.m in Sources */,
 				183B837716F557770030BC70 /* iBSkill.m in Sources */,
 				187C1F6A16F701AB00263479 /* iBSkiInputViewController.m in Sources */,
+				187C1F6E16F7CDEC00263479 /* iBSkiCountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

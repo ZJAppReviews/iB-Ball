@@ -14,5 +14,6 @@
 @interface iBSkiTableViewController : UITableViewController <UITableViewDataSource, SkillInputOK>
 
 @property (nonatomic, strong) iBSkillDataModel *skillModel;
+@property (nonatomic, assign) NSInteger selected;
 
 @end

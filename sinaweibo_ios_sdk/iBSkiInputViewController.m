@@ -47,4 +47,5 @@
     [self setSkillText:nil];
     [super viewDidUnload];
 }
+
 @end

@@ -347,32 +347,32 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Field Goal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fln-Jd-5Ck">
-                                <rect key="frame" x="132" y="75" width="78" height="21"/>
+                                <rect key="frame" x="140" y="59" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ratio:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GIQ-rE-V40">
-                                <rect key="frame" x="69" y="425" width="45" height="21"/>
+                                <rect key="frame" x="77" y="409" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hcw-u7-HRW">
-                                <rect key="frame" x="223" y="425" width="16" height="21"/>
+                                <rect key="frame" x="231" y="409" width="16" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ri4-OM-3qo">
-                                <rect key="frame" x="142" y="426" width="55" height="21"/>
+                                <rect key="frame" x="150" y="410" width="55" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KPo-Xa-wU6">
-                                <rect key="frame" x="20" y="114" width="280" height="146"/>
+                                <rect key="frame" x="28" y="98" width="280" height="146"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Score">
@@ -387,7 +387,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qlo-gz-0c1">
-                                <rect key="frame" x="20" y="266" width="280" height="146"/>
+                                <rect key="frame" x="28" y="250" width="280" height="146"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Miss">
@@ -402,7 +402,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Cha-2e-kkp">
-                                <rect key="frame" x="234" y="63" width="70" height="44"/>
+                                <rect key="frame" x="242" y="47" width="70" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Carrer">
@@ -417,7 +417,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VXU-JC-Cav">
-                                <rect key="frame" x="0.0" y="64" width="60" height="44"/>
+                                <rect key="frame" x="8" y="48" width="60" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Save">
@@ -432,7 +432,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gvv-GK-hEP">
-                                <rect key="frame" x="69" y="64" width="60" height="44"/>
+                                <rect key="frame" x="77" y="48" width="60" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Load">
@@ -585,7 +585,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tdJ-9B-kXw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="-315"/>
+            <point key="canvasLocation" x="3115" y="-277"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JqB-6K-mcf">
@@ -635,6 +635,7 @@
             <objects>
                 <navigationController id="fk6-RW-mgP" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="rG0-Qb-0oM"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="Hq6-XY-9ld">
@@ -1177,14 +1178,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="DqR-As-IC0">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="DqR-As-IC0">
                                 <rect key="frame" x="0.0" y="46" width="320" height="46"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                    <rect key="frame" x="10" y="1" width="280" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="vAG-8F-AzE" kind="push" identifier="count" id="LMR-ov-RMI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1284,7 +1288,54 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3y-Mn-ejK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="801"/>
+            <point key="canvasLocation" x="1108" y="634"/>
+        </scene>
+        <!--IB Ski Count View Controller-->
+        <scene sceneID="5b2-NW-73S">
+            <objects>
+                <viewController id="vAG-8F-AzE" customClass="iBSkiCountViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Thr-gk-RBW">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="90I-DY-iw4">
+                                <rect key="frame" x="140" y="99" width="42" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="+1">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="plusOne:" destination="vAG-8F-AzE" eventType="touchUpInside" id="5c5-N4-kOl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dP5-aI-QGW">
+                                <rect key="frame" x="140" y="162" width="42" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="-1">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="minusOne:" destination="vAG-8F-AzE" eventType="touchUpInside" id="aBP-VT-lnf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sPI-i6-0hK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XC7-kJ-kLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1145" y="1165"/>
         </scene>
         <!--Navigation Controller - Share-->
         <scene sceneID="CHI-sR-jJ2">
@@ -1309,59 +1360,6 @@
     <resources>
         <image name="hotzone.png" width="476" height="389"/>
     </resources>
-    <classes>
-        <class className="iBCountViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBCountViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="loadData:"/>
-                <relationship kind="action" name="miss:"/>
-                <relationship kind="action" name="saveData:"/>
-                <relationship kind="action" name="score:"/>
-                <relationship kind="action" name="showCarrerScore:"/>
-                <relationship kind="outlet" name="shootingRatio" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="iBObjCountViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjCountViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="addPoint:" candidateClass="UIView"/>
-                <relationship kind="action" name="reduceFTPoint:"/>
-                <relationship kind="action" name="reduceThreePoint:"/>
-                <relationship kind="action" name="reduceTwoPoint:"/>
-                <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="iBObjViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="letsRock:"/>
-                <relationship kind="action" name="setPoint:"/>
-                <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="iBShareViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBShareViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="loginButtonPressed:"/>
-                <relationship kind="action" name="logoutButtonPressed:"/>
-                <relationship kind="action" name="shareButtonPressed:"/>
-            </relationships>
-        </class>
-        <class className="iBSkiInputViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBSkiInputViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="skillText" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="iBSkiTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBSkiTableViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
@@ -1369,6 +1367,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="hhW-MX-5mn"/>
-        <segue reference="a5U-cs-f2N"/>
+        <segue reference="aPg-Ba-8th"/>
     </inferredMetricsTieBreakers>
 </document>

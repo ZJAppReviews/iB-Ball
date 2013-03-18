@@ -9,6 +9,7 @@
 #import "iBSkiTableViewController.h"
 #import "iBSkillDataModel.h"
 #import "iBSkill.h"
+#import "iBSkiCountViewController.h"
 
 @interface iBSkiTableViewController ()
 
@@ -97,7 +98,10 @@
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
-    
+    iBSkill *temp = [self.skillModel.skillArray objectAtIndex:fromIndexPath.row];
+    [self.skillModel.skillArray removeObjectAtIndex:fromIndexPath.row];
+    [self.skillModel.skillArray insertObject:temp atIndex:toIndexPath.row];
+    [self.tableView reloadData];
 }
 
 
@@ -121,12 +125,18 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    self.selected = indexPath.row;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"input"]) {
         iBSkiInputViewController *a = (iBSkiInputViewController *)segue.destinationViewController;
         a.delegate = self;
+    }
+    if ([segue.identifier isEqualToString:@"count"]) {
+        iBSkiCountViewController *a = (iBSkiCountViewController *)segue.destinationViewController;
+        iBSkill *b = [self.skillModel.skillArray objectAtIndex:self.selected];
+        a.whichSkill = b;
     }
 }
 
