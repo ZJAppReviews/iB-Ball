@@ -37,8 +37,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addItem:)];
-    self.navigationItem.leftBarButtonItem = addButton;
+//    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addItem:)];
+//    self.navigationItem.leftBarButtonItem = addButton;
 
 }
 
@@ -122,5 +122,23 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"input"]) {
+        iBSkiInputViewController *a = (iBSkiInputViewController *)segue.destinationViewController;
+        a.delegate = self;
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
+}
+
+- (void)skillInput:(id)sender withName:(NSString *)name {
+    iBSkill *newSkill = [[iBSkill alloc] initWithName:name];
+    [self.skillModel.skillArray addObject:newSkill];
+    [self.tableView reloadData];
+}
+
 
 @end

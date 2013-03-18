@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iBSkiInputViewController.h"
+
 @class iBSkillDataModel;
 
-@interface iBSkiTableViewController : UITableViewController <UITableViewDataSource>
+@interface iBSkiTableViewController : UITableViewController <UITableViewDataSource, SkillInputOK>
 
 @property (nonatomic, strong) iBSkillDataModel *skillModel;
+
 @end

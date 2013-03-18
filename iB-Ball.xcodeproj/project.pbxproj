@@ -12,6 +12,7 @@
 		183B837116F5555D0030BC70 /* iBSkiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837016F5555D0030BC70 /* iBSkiTableViewController.m */; };
 		183B837416F556950030BC70 /* iBSkillDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837316F556950030BC70 /* iBSkillDataModel.m */; };
 		183B837716F557770030BC70 /* iBSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837616F557770030BC70 /* iBSkill.m */; };
+		187C1F6A16F701AB00263479 /* iBSkiInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6916F701AB00263479 /* iBSkiInputViewController.m */; };
 		BA01858716D6753F00B98B6A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */; };
 		BA36DEDB16C4BF37007FFDD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */; };
 		BA36DEDD16C4BF37007FFDD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDC16C4BF37007FFDD1 /* Foundation.framework */; };
@@ -47,6 +48,8 @@
 		183B837316F556950030BC70 /* iBSkillDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkillDataModel.m; sourceTree = "<group>"; };
 		183B837516F557770030BC70 /* iBSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkill.h; sourceTree = "<group>"; };
 		183B837616F557770030BC70 /* iBSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkill.m; sourceTree = "<group>"; };
+		187C1F6816F701AB00263479 /* iBSkiInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiInputViewController.h; sourceTree = "<group>"; };
+		187C1F6916F701AB00263479 /* iBSkiInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiInputViewController.m; sourceTree = "<group>"; };
 		BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BA36DED616C4BF37007FFDD1 /* iB-Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iB-Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -113,6 +116,8 @@
 				183B837316F556950030BC70 /* iBSkillDataModel.m */,
 				183B837516F557770030BC70 /* iBSkill.h */,
 				183B837616F557770030BC70 /* iBSkill.m */,
+				187C1F6816F701AB00263479 /* iBSkiInputViewController.h */,
+				187C1F6916F701AB00263479 /* iBSkiInputViewController.m */,
 			);
 			name = Ski;
 			path = sinaweibo_ios_sdk;
@@ -321,6 +326,7 @@
 				183B837116F5555D0030BC70 /* iBSkiTableViewController.m in Sources */,
 				183B837416F556950030BC70 /* iBSkillDataModel.m in Sources */,
 				183B837716F557770030BC70 /* iBSkill.m in Sources */,
+				187C1F6A16F701AB00263479 /* iBSkiInputViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
