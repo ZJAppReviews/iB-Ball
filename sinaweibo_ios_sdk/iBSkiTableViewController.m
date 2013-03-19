@@ -68,8 +68,19 @@
     
     // Configure the cell...
     cell.textLabel.text = [[self.skillModel.skillArray objectAtIndex:indexPath.row] skillName];
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress)];
+    [cell.contentView addGestureRecognizer:longPress];
     
     return cell;
+}
+
+- (void)longPress {
+//    NSLog(@"Bingo!");
+    iBSkill *skill = [self.skillModel.skillArray objectAtIndex:self.selected];
+    NSLog(skill.description);
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wow" message:[NSString stringWithFormat:@"This killer's score is %d/%d", skill.successNumber, skill.useNumber ] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 // Override to support conditional editing of the table view.
