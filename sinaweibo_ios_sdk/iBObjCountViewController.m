@@ -8,6 +8,8 @@
 
 #import "iBObjCountViewController.h"
 #import "iBObj_DataModel.h"
+#import "iBSharedAchievement.h"
+
 
 @interface iBObjCountViewController ()
 
@@ -42,6 +44,11 @@
     switch (sender.tag) {
         case 1:
             self.dataModel.twoPoint_real++;
+            [iBSharedAchievement sharedAchievement].twoPointCurrent++;
+            int i = [iBSharedAchievement sharedAchievement].twoPointCurrent;
+            int j = [iBSharedAchievement sharedAchievement].twoPointGoal;
+            NSLog(@"%d %d", i, j);
+            [self checkAchieve];
             break;
         case 2:
             self.dataModel.threePoint_real++;
@@ -58,7 +65,6 @@
     _l1.text = [NSString stringWithFormat:@"%d/%d", self.dataModel.twoPoint_real, self.dataModel.twoPoint_Obj];
     _l2.text = [NSString stringWithFormat:@"%d/%d", self.dataModel.threePoint_real, self.dataModel.threePoint_Obj];
     _l3.text = [NSString stringWithFormat:@"%d/%d", self.dataModel.ftPoint_real, self.dataModel.ftPoint_Obj];
-
 }
 
 
@@ -97,4 +103,9 @@
     [self setL3:nil];
     [super viewDidUnload];
 }
+
+- (void)checkAchieve {
+    [[iBSharedAchievement sharedAchievement] checkToSeeTHeAchievement];
+}
+
 @end
