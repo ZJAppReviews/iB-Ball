@@ -7,6 +7,7 @@
 //
 
 #import "iBSharedAchievement.h"
+#import "Toast+UIView.h"
 
 @implementation iBSharedAchievement
 
@@ -28,11 +29,13 @@ static iBSharedAchievement *sharedAchievement = nil;
     return self;
 }
 
-- (void)checkToSeeTHeAchievement {
+- (void)checkToSeeTHeAchievement:(UIView *)view {
     if (self.twoPointGoal <= self.twoPointCurrent) {
 //        NSLog(@"Achievement!");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"woqu" message:@"shit" delegate:nil cancelButtonTitle:@"so" otherButtonTitles:nil];
-        [alert show];
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"woqu" message:@"shit" delegate:nil cancelButtonTitle:@"so" otherButtonTitles:nil];
+//        [alert show];
+        [view makeToast:@"This is a piece of toast."];
+
     }
 }
 @end
