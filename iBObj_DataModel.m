@@ -24,8 +24,8 @@
         self.threePoint_Obj <= self.threePoint_real &&
         self.ftPoint_Obj <= self.ftPoint_real) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Well Done, you are fucking awesome" message:@"See title" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        alert.show;
-        NSLog([self description]);
+        [alert show];
+//        NSLog([self description]);
     }
 }
 

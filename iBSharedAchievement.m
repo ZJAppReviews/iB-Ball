@@ -29,12 +29,12 @@ static iBSharedAchievement *sharedAchievement = nil;
     return self;
 }
 
-- (void)checkToSeeTHeAchievement:(UIView *)view {
+- (void)checkToSeeTheAchievement:(UIView *)view {
     if (self.twoPointGoal <= self.twoPointCurrent) {
 //        NSLog(@"Achievement!");
 //        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"woqu" message:@"shit" delegate:nil cancelButtonTitle:@"so" otherButtonTitles:nil];
 //        [alert show];
-        [view makeToast:@"This is a piece of toast."];
+        [view makeToast:@"You got an achievement: middle distance shooter"];
 
     }
 }

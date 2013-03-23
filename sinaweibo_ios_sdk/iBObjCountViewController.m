@@ -48,6 +48,7 @@
             int i = [iBSharedAchievement sharedAchievement].twoPointCurrent;
             int j = [iBSharedAchievement sharedAchievement].twoPointGoal;
             NSLog(@"%d %d", i, j);
+            [[iBSharedAchievement sharedAchievement] checkToSeeTheAchievement:self.view];
             [self checkAchieve];
             break;
         case 2:
@@ -105,7 +106,7 @@
 }
 
 - (void)checkAchieve {
-    [[iBSharedAchievement sharedAchievement] checkToSeeTHeAchievement];
+    [[iBSharedAchievement sharedAchievement] checkToSeeTheAchievement:self.view];
 }
 
 @end

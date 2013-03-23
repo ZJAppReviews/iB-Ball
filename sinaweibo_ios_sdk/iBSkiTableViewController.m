@@ -77,7 +77,7 @@
 - (void)longPress {
 //    NSLog(@"Bingo!");
     iBSkill *skill = [self.skillModel.skillArray objectAtIndex:self.selected];
-    NSLog(skill.description);
+//    NSLog(skill.description);
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wow" message:[NSString stringWithFormat:@"This killer's score is %d/%d", skill.successNumber, skill.useNumber ] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];

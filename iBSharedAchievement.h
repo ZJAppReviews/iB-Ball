@@ -17,6 +17,6 @@
 @property (nonatomic, assign) NSInteger twoPointCurrent;
 
 
-- (void)checkToSeeTHeAchievement;
+- (void)checkToSeeTheAchievement:(UIView *)view;
 
 @end
