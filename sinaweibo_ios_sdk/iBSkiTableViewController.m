@@ -137,6 +137,8 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
     self.selected = indexPath.row;
+    UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Please choose" delegate:self cancelButtonTitle:@"OK" destructiveButtonTitle:nil otherButtonTitles:@"Statics", @"Description", @"Count", nil];
+    [as showFromTabBar:self.tabBarController.tabBar];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -162,5 +164,21 @@
     
 }
 
+#pragma mark Action sheet
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+        [self longPress];
+    }
+    if (buttonIndex == 2) {
+        // segue to count
+//        iBSkiCountViewController *a = [[iBSkiCountViewController alloc] init];
+//        UIStoryboardSegue *i = [[UIStoryboardSegue alloc] initWithIdentifier:@"skiCount" source:self destination:a];
+//        [i perform];
+        iBSkiCountViewController *a = [[iBSkiCountViewController alloc] initWithNibName:@"iBSkiCountViewController" bundle:nil];
+        a.whichSkill = [self.skillModel.skillArray objectAtIndex:self.selected];
+        [self.navigationController pushViewController:a animated:YES];
+    }
+}
 
 @end

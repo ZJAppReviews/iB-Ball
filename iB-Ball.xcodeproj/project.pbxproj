@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1824C26F16FEEC5000895222 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 1824C26E16FEEC5000895222 /* TODO */; };
+		1824C27316FF061100895222 /* iBSkiCountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1824C27216FF061100895222 /* iBSkiCountView.xib */; };
 		183B836C16F4D42C0030BC70 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 183B836A16F4D42B0030BC70 /* 2.png */; };
 		183B836D16F4D42C0030BC70 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 183B836B16F4D42C0030BC70 /* 1.png */; };
 		183B837116F5555D0030BC70 /* iBSkiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837016F5555D0030BC70 /* iBSkiTableViewController.m */; };
@@ -43,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1824C26E16FEEC5000895222 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		1824C27216FF061100895222 /* iBSkiCountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBSkiCountView.xib; sourceTree = SOURCE_ROOT; };
 		183B836A16F4D42B0030BC70 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		183B836B16F4D42C0030BC70 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		183B836F16F5555D0030BC70 /* iBSkiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiTableViewController.h; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 				187C1F6916F701AB00263479 /* iBSkiInputViewController.m */,
 				187C1F6C16F7CDEB00263479 /* iBSkiCountViewController.h */,
 				187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */,
+				1824C27216FF061100895222 /* iBSkiCountView.xib */,
 			);
 			name = Ski;
 			path = sinaweibo_ios_sdk;
@@ -155,6 +160,7 @@
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
+				1824C26E16FEEC5000895222 /* TODO */,
 				183B836A16F4D42B0030BC70 /* 2.png */,
 				183B836B16F4D42C0030BC70 /* 1.png */,
 				18F7272816F9333500237CC7 /* Toast */,
@@ -330,6 +336,8 @@
 				BA01858716D6753F00B98B6A /* MainStoryboard.storyboard in Resources */,
 				183B836C16F4D42C0030BC70 /* 2.png in Resources */,
 				183B836D16F4D42C0030BC70 /* 1.png in Resources */,
+				1824C26F16FEEC5000895222 /* TODO in Resources */,
+				1824C27316FF061100895222 /* iBSkiCountView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

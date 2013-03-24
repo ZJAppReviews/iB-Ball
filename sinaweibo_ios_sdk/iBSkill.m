@@ -25,8 +25,8 @@
 }
 
 - (NSString *)description {
-    NSString *prefix = @"Introducint Nango's description";
-    return  [prefix stringByAppendingString:[NSString stringWithFormat:@"%d, %d", self.useNumber, self.successNumber]];
+    NSString *prefix = @"Introducing Nango's description";
+    return  [[prefix stringByAppendingString:[NSString stringWithFormat:@"%d, %d", self.useNumber, self.successNumber]] stringByAppendingString:self.skillName];
     
 }
 
