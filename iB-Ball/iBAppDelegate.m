@@ -19,6 +19,7 @@
 
     // Override point for customization after application launch.
 //    sinaweibo = [[SinaWeibo alloc] initWithAppKey:kAppKey appSecret:kAppSecret appRedirectURI:kAppRedirectURI andDelegate:_viewController];
+    sinaweibo = [[SinaWeibo alloc] initWithAppKey:kAppKey appSecret:kAppSecret appRedirectURI:kAppRedirectURI andDelegate:nil];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSDictionary *sinaweiboInfo = [defaults objectForKey:@"SinaWeiboAuthData"];
     if ([sinaweiboInfo objectForKey:@"AccessTokenKey"] && [sinaweiboInfo objectForKey:@"ExpirationDateKey"] && [sinaweiboInfo objectForKey:@"UserIDKey"])
@@ -27,6 +28,7 @@
         sinaweibo.expirationDate = [sinaweiboInfo objectForKey:@"ExpirationDateKey"];
         sinaweibo.userID = [sinaweiboInfo objectForKey:@"UserIDKey"];
     }
+
 
     return YES;
 }
