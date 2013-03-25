@@ -179,6 +179,27 @@
         a.whichSkill = [self.skillModel.skillArray objectAtIndex:self.selected];
         [self.navigationController pushViewController:a animated:YES];
     }
+    if (buttonIndex == 1) {
+        iBSkill *currentSkill = [self.skillModel.skillArray objectAtIndex:self.selected];
+        NSLog(@"%@", currentSkill.skillName);
+        if (currentSkill.skillDescription == nil) {
+            // let the user say
+            UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Cool" message:@"please input your description" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+            av.alertViewStyle = UIAlertViewStylePlainTextInput;
+            [av show];
+            return;
+        }
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:currentSkill.skillName message:currentSkill.skillDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [av show];
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        // ok
+        iBSkill *currentSkill = [self.skillModel.skillArray objectAtIndex:self.selected];
+        currentSkill.skillDescription = [alertView textFieldAtIndex:0].text;
+    }
 }
 
 @end
