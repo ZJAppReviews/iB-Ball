@@ -122,7 +122,7 @@ NSString *postStatusText;
             NSLog(@"Are you crazy?");
             return;
         }
-        postStatusText = [[NSString alloc] initWithFormat:@"今日三分球怒中%d, 怒打%d次铁, 命中率为%2.1f '%' ---From iB-Ball develped by Nango", goal, shoot - goal, ((double)(goal) / shoot) * 100];
+        postStatusText = [[NSString alloc] initWithFormat:@"今日三分球命中%d球, 怒打%d次铁, 命中率为%2.1f %% ---From iB-Ball develped by Nango", goal, shoot - goal, ((double)(goal) / shoot) * 100];
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert"
                                                             message:[NSString stringWithFormat:@"Will post status with text \"%@\"", postStatusText]
                                                            delegate:self cancelButtonTitle:@"Cancel"

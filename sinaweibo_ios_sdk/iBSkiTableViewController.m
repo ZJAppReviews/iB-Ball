@@ -68,8 +68,8 @@
     
     // Configure the cell...
     cell.textLabel.text = [[self.skillModel.skillArray objectAtIndex:indexPath.row] skillName];
-    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress)];
-    [cell.contentView addGestureRecognizer:longPress];
+//    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress)];
+//    [cell.contentView addGestureRecognizer:longPress];
     
     return cell;
 }
