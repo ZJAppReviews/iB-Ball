@@ -9,6 +9,7 @@
 #import "iBCountViewController.h"
 #import "iBDataCenterForHotzone.h"
 #import "iBShareViewController.h"
+#import "iBAppDelegate.h"
 
 @interface iBCountViewController ()
 
@@ -98,6 +99,11 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)share:(id)sender {
+    UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Share" delegate:self cancelButtonTitle:@"OK" destructiveButtonTitle:nil otherButtonTitles:@"Sina Weibo", nil];
+    [as showFromBarButtonItem:sender animated:YES];
+}
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"share"]) {
@@ -106,4 +112,42 @@
         [a setGoal:self.countModel.goalTimes];
     }
 }
+NSString *postStatusText;
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+        int shoot = self.countModel.shootingTimes;
+        int goal = self.countModel.goalTimes;
+
+        if (shoot == 0) {
+            NSLog(@"Are you crazy?");
+            return;
+        }
+        postStatusText = [[NSString alloc] initWithFormat:@"今日三分球怒中%d, 怒打%d次铁, 命中率为%2.1f '%' ---From iB-Ball develped by Nango", goal, shoot - goal, ((double)(goal) / shoot) * 100];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert"
+                                                            message:[NSString stringWithFormat:@"Will post status with text \"%@\"", postStatusText]
+                                                           delegate:self cancelButtonTitle:@"Cancel"
+                                                  otherButtonTitles:@"OK", nil];
+        [alertView show];
+
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+        // post status
+        SinaWeibo *sinaweibo = [self sinaweibo];
+        [sinaweibo requestWithURL:@"statuses/update.json"
+                           params:[NSMutableDictionary dictionaryWithObjectsAndKeys:postStatusText, @"status", nil]
+                       httpMethod:@"POST"
+                         delegate:self];
+        //TODO roughly set a nil
+    }
+}
+
+- (SinaWeibo *)sinaweibo
+{
+    iBAppDelegate *delegate = (iBAppDelegate *)[UIApplication sharedApplication].delegate;
+    return delegate.sinaweibo;
+}
+
 @end

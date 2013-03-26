@@ -16,6 +16,16 @@
 		183B837716F557770030BC70 /* iBSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837616F557770030BC70 /* iBSkill.m */; };
 		187C1F6A16F701AB00263479 /* iBSkiInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6916F701AB00263479 /* iBSkiInputViewController.m */; };
 		187C1F6E16F7CDEC00263479 /* iBSkiCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */; };
+		18D40DBB170134DF004A22CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBA170134DF004A22CD /* Parse.framework */; };
+		18D40DBD17013513004A22CD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBC17013513004A22CD /* AudioToolbox.framework */; };
+		18D40DBF1701352A004A22CD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBE1701352A004A22CD /* CFNetwork.framework */; };
+		18D40DC117013599004A22CD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DC017013599004A22CD /* CoreLocation.framework */; };
+		18D40DC3170135A9004A22CD /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DC2170135A8004A22CD /* libz.1.1.3.dylib */; };
+		18D40DC5170135AF004A22CD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DC4170135AF004A22CD /* MobileCoreServices.framework */; };
+		18D40DC7170135B5004A22CD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DC6170135B5004A22CD /* QuartzCore.framework */; };
+		18D40DC9170135BC004A22CD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DC8170135BC004A22CD /* Security.framework */; };
+		18D40DCB170135C1004A22CD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DCA170135C1004A22CD /* StoreKit.framework */; };
+		18D40DCD170135C7004A22CD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DCC170135C7004A22CD /* SystemConfiguration.framework */; };
 		18E38CAD17008215003782F2 /* iBAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E38CAC17008215003782F2 /* iBAccountViewController.m */; };
 		18F7272416F91BC300237CC7 /* iBSharedAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272316F91BC300237CC7 /* iBSharedAchievement.m */; };
 		18F7272716F9332C00237CC7 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272616F9332C00237CC7 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -60,6 +70,16 @@
 		187C1F6916F701AB00263479 /* iBSkiInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiInputViewController.m; sourceTree = "<group>"; };
 		187C1F6C16F7CDEB00263479 /* iBSkiCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiCountViewController.h; sourceTree = "<group>"; };
 		187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiCountViewController.m; sourceTree = "<group>"; };
+		18D40DBA170134DF004A22CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		18D40DBC17013513004A22CD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		18D40DBE1701352A004A22CD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		18D40DC017013599004A22CD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		18D40DC2170135A8004A22CD /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		18D40DC4170135AF004A22CD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		18D40DC6170135B5004A22CD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		18D40DC8170135BC004A22CD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		18D40DCA170135C1004A22CD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		18D40DCC170135C7004A22CD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		18E38CAB17008215003782F2 /* iBAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBAccountViewController.h; sourceTree = "<group>"; };
 		18E38CAC17008215003782F2 /* iBAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBAccountViewController.m; sourceTree = "<group>"; };
 		18F7272216F91BC300237CC7 /* iBSharedAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSharedAchievement.h; sourceTree = "<group>"; };
@@ -114,9 +134,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D40DCD170135C7004A22CD /* SystemConfiguration.framework in Frameworks */,
+				18D40DCB170135C1004A22CD /* StoreKit.framework in Frameworks */,
+				18D40DC9170135BC004A22CD /* Security.framework in Frameworks */,
+				18D40DC7170135B5004A22CD /* QuartzCore.framework in Frameworks */,
+				18D40DC5170135AF004A22CD /* MobileCoreServices.framework in Frameworks */,
+				18D40DC3170135A9004A22CD /* libz.1.1.3.dylib in Frameworks */,
+				18D40DC117013599004A22CD /* CoreLocation.framework in Frameworks */,
+				BA36DEDF16C4BF37007FFDD1 /* CoreGraphics.framework in Frameworks */,
+				18D40DBF1701352A004A22CD /* CFNetwork.framework in Frameworks */,
+				18D40DBD17013513004A22CD /* AudioToolbox.framework in Frameworks */,
 				BA36DEDB16C4BF37007FFDD1 /* UIKit.framework in Frameworks */,
 				BA36DEDD16C4BF37007FFDD1 /* Foundation.framework in Frameworks */,
-				BA36DEDF16C4BF37007FFDD1 /* CoreGraphics.framework in Frameworks */,
+				18D40DBB170134DF004A22CD /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +236,16 @@
 		BA36DED916C4BF37007FFDD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18D40DCC170135C7004A22CD /* SystemConfiguration.framework */,
+				18D40DCA170135C1004A22CD /* StoreKit.framework */,
+				18D40DC8170135BC004A22CD /* Security.framework */,
+				18D40DC6170135B5004A22CD /* QuartzCore.framework */,
+				18D40DC4170135AF004A22CD /* MobileCoreServices.framework */,
+				18D40DC2170135A8004A22CD /* libz.1.1.3.dylib */,
+				18D40DC017013599004A22CD /* CoreLocation.framework */,
+				18D40DBE1701352A004A22CD /* CFNetwork.framework */,
+				18D40DBC17013513004A22CD /* AudioToolbox.framework */,
+				18D40DBA170134DF004A22CD /* Parse.framework */,
 				BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */,
 				BA36DEDC16C4BF37007FFDD1 /* Foundation.framework */,
 				BA36DEDE16C4BF37007FFDD1 /* CoreGraphics.framework */,
@@ -454,9 +494,14 @@
 		BA36DEFB16C4BF37007FFDD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iB-Ball/iB-Ball-Prefix.pch";
 				INFOPLIST_FILE = "iB-Ball/iB-Ball-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -465,9 +510,14 @@
 		BA36DEFC16C4BF37007FFDD1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iB-Ball/iB-Ball-Prefix.pch";
 				INFOPLIST_FILE = "iB-Ball/iB-Ball-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -8,11 +8,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SinaWeibo.h"
+
 //#import "CountModel.h"
 @class iBDataCenterForHotzone;
 @class iBDataCenterForHotzoneDoc;
 
-@interface iBCountViewController : UIViewController
+
+@interface iBCountViewController : UIViewController <UIActionSheetDelegate, UIAlertViewDelegate, SinaWeiboRequestDelegate>
 
 @property (nonatomic, strong) iBDataCenterForHotzone *countModel;
 - (IBAction)score:(id)sender;
@@ -28,4 +31,5 @@
 - (IBAction)loadData:(id)sender;
 
 - (IBAction)cancel:(id)sender;
+- (IBAction)share:(id)sender;
 @end

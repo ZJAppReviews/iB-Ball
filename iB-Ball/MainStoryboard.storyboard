@@ -457,7 +457,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="7N7-fh-YKh">
                             <connections>
-                                <segue destination="K9z-GD-mYr" kind="push" identifier="share" id="koq-5u-GFB"/>
+                                <action selector="share:" destination="dbr-p8-b86" id="eAs-yb-aSt"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
