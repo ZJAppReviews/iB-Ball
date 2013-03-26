@@ -10,6 +10,7 @@
 #import "iBDataCenterForHotzone.h"
 #import "iBShareViewController.h"
 #import "iBAppDelegate.h"
+#import <Parse/Parse.h>
 
 @interface iBCountViewController ()
 
@@ -38,6 +39,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     _countModel = [[iBDataCenterForHotzone alloc] init];
+    
+    
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    [testObject setObject:@"bar" forKey:@"foo"];
+    [testObject save];
 }
 
 - (void)didReceiveMemoryWarning

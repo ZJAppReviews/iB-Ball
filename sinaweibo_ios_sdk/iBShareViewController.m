@@ -10,6 +10,7 @@
 #import "SinaWeibo.h"
 #import "iBAppDelegate.h"
 
+
 @interface iBShareViewController ()
 
 @end
@@ -29,6 +30,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    
     _sinaweibo = [[SinaWeibo alloc] initWithAppKey:kAppKey appSecret:kAppSecret appRedirectURI:kAppRedirectURI andDelegate:self];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSDictionary *sinaweiboInfo = [defaults objectForKey:@"SinaWeiboAutoData"];

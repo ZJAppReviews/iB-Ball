@@ -18,7 +18,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="onG-YM-Stq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2168" y="199"/>
+            <point key="canvasLocation" x="2694" y="199"/>
         </scene>
         <!--Table View Controller - Counting-->
         <scene sceneID="jMa-8M-Hdf">
@@ -585,9 +585,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tdJ-9B-kXw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3115" y="-277"/>
+            <point key="canvasLocation" x="3641" y="-277"/>
         </scene>
-        <!--IB Account View Controller - Account-->
+        <!--IB Account View Controller-->
         <scene sceneID="Fz0-7g-x61">
             <objects>
                 <viewController id="Heu-5n-m5n" customClass="iBAccountViewController" sceneMemberID="viewController">
@@ -628,11 +628,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Account" id="SrW-09-gQ9"/>
+                    <navigationItem key="navigationItem" id="MDF-cx-7pH">
+                        <barButtonItem key="leftBarButtonItem" title="Log out" id="7DB-Ub-c9h">
+                            <connections>
+                                <action selector="logout:" destination="Heu-5n-m5n" id="ztf-9b-mb9"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Sign in" id="fIR-5K-c36">
+                            <connections>
+                                <action selector="signIn:" destination="Heu-5n-m5n" id="3VR-g0-EQZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDG-V1-2Ue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="209"/>
+            <point key="canvasLocation" x="538" y="209"/>
         </scene>
         <!--View Controller - Item-->
         <scene sceneID="Shi-Kf-dlN">
@@ -647,12 +658,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9c-R1-3Fj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="410" y="345"/>
+            <point key="canvasLocation" x="936" y="345"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JqB-6K-mcf">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="7aF-bd-VUw" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="fZS-aH-07w">
@@ -664,13 +676,13 @@
                         <segue destination="FB1-t1-v8Z" kind="relationship" relationship="viewControllers" id="Uaa-Y9-ARd"/>
                         <segue destination="TuF-eo-jVe" kind="relationship" relationship="viewControllers" id="fHE-oW-LCd"/>
                         <segue destination="fLQ-98-5X6" kind="relationship" relationship="viewControllers" id="xUX-8m-dtt"/>
-                        <segue destination="Heu-5n-m5n" kind="relationship" relationship="viewControllers" id="zDu-wB-pZA"/>
+                        <segue destination="tvb-nP-YWN" kind="relationship" relationship="viewControllers" id="zDu-wB-pZA"/>
                         <segue destination="yMf-Hg-6ah" kind="relationship" relationship="viewControllers" id="ozK-Hc-rIx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e3H-qS-kDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="354" y="-214"/>
+            <point key="canvasLocation" x="880" y="-214"/>
         </scene>
         <!--Navigation Controller - Counting-->
         <scene sceneID="Grb-Ni-K5r">
@@ -781,7 +793,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uRh-ek-eHP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1695" y="274"/>
+            <point key="canvasLocation" x="2221" y="274"/>
         </scene>
         <!--IB Obj View Controller - Objective-->
         <scene sceneID="Vda-Rm-Eej">
@@ -1023,7 +1035,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xam-gU-aHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2090" y="274"/>
+            <point key="canvasLocation" x="2616" y="274"/>
         </scene>
         <!--IB Obj Count View Controller-->
         <scene sceneID="DLi-di-VK5">
@@ -1210,7 +1222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9MG-Ma-t8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3011" y="274"/>
+            <point key="canvasLocation" x="3537" y="274"/>
         </scene>
         <!--Navigation Controller - Skill-->
         <scene sceneID="dly-Cz-UAP">
@@ -1348,12 +1360,90 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3y-Mn-ejK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1108" y="634"/>
+            <point key="canvasLocation" x="1634" y="634"/>
+        </scene>
+        <!--Navigation Controller - Account-->
+        <scene sceneID="pIb-vQ-2gT">
+            <objects>
+                <navigationController id="tvb-nP-YWN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Account" id="SrW-09-gQ9"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="Bql-HU-AYs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Heu-5n-m5n" kind="relationship" relationship="rootViewController" id="5Cj-oo-kto"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uBL-KN-Mo5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="209"/>
         </scene>
     </scenes>
     <resources>
         <image name="hotzone.png" width="476" height="389"/>
     </resources>
+    <classes>
+        <class className="iBAccountViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBAccountViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="getUserinfo:"/>
+                <relationship kind="action" name="logout:"/>
+                <relationship kind="action" name="signIn:"/>
+                <relationship kind="action" name="weiboLog:"/>
+            </relationships>
+        </class>
+        <class className="iBCountViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBCountViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="loadData:"/>
+                <relationship kind="action" name="miss:"/>
+                <relationship kind="action" name="saveData:"/>
+                <relationship kind="action" name="score:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="action" name="showCarrerScore:"/>
+                <relationship kind="outlet" name="shootingRatio" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="iBObjCountViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjCountViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="iBObjViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="setPoint:"/>
+                <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="iBShareViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBShareViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="loginButtonPressed:"/>
+                <relationship kind="action" name="logoutButtonPressed:"/>
+                <relationship kind="action" name="shareButtonPressed:"/>
+            </relationships>
+        </class>
+        <class className="iBSkiInputViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBSkiInputViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="skillText" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="iBSkiTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBSkiTableViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

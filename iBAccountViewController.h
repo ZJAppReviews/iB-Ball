@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "SinaWeibo.h"
+#import <Parse/Parse.h>
 
-@interface iBAccountViewController : UIViewController <SinaWeiboDelegate, SinaWeiboRequestDelegate>
+@interface iBAccountViewController : UIViewController <SinaWeiboDelegate, SinaWeiboRequestDelegate, PFSignUpViewControllerDelegate, PFLogInViewControllerDelegate>
 {
 NSDictionary *userInfo;
 NSArray *statuses;
