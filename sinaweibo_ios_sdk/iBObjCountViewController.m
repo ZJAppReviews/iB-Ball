@@ -9,6 +9,7 @@
 #import "iBObjCountViewController.h"
 #import "iBObj_DataModel.h"
 #import "iBSharedAchievement.h"
+#import "iBGestureRecognizeViewController.h"
 
 
 @interface iBObjCountViewController ()
@@ -108,5 +109,11 @@
 - (void)checkAchieve {
     [[iBSharedAchievement sharedAchievement] checkToSeeTheAchievement:self.view];
 }
+
+- (IBAction)startRecognize:(id)sender {
+    iBGestureRecognizeViewController *a = [[iBGestureRecognizeViewController alloc] initWithNibName:@"iBGestureRecognizeViewController" bundle:nil];
+    [self presentModalViewController:a animated:YES];
+}
+
 
 @end

@@ -14,6 +14,8 @@
 		183B837116F5555D0030BC70 /* iBSkiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837016F5555D0030BC70 /* iBSkiTableViewController.m */; };
 		183B837416F556950030BC70 /* iBSkillDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837316F556950030BC70 /* iBSkillDataModel.m */; };
 		183B837716F557770030BC70 /* iBSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837616F557770030BC70 /* iBSkill.m */; };
+		185F71AF1702D04600336ED3 /* iBGestureRecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */; };
+		185F71B11702D06300336ED3 /* iBGestureRecognizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */; };
 		187C1F6A16F701AB00263479 /* iBSkiInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6916F701AB00263479 /* iBSkiInputViewController.m */; };
 		187C1F6E16F7CDEC00263479 /* iBSkiCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */; };
 		18D40DBB170134DF004A22CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBA170134DF004A22CD /* Parse.framework */; };
@@ -66,6 +68,9 @@
 		183B837316F556950030BC70 /* iBSkillDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkillDataModel.m; sourceTree = "<group>"; };
 		183B837516F557770030BC70 /* iBSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkill.h; sourceTree = "<group>"; };
 		183B837616F557770030BC70 /* iBSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkill.m; sourceTree = "<group>"; };
+		185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBGestureRecognizeViewController.h; sourceTree = "<group>"; };
+		185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBGestureRecognizeViewController.m; sourceTree = "<group>"; };
+		185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBGestureRecognizeViewController.xib; sourceTree = "<group>"; };
 		187C1F6816F701AB00263479 /* iBSkiInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiInputViewController.h; sourceTree = "<group>"; };
 		187C1F6916F701AB00263479 /* iBSkiInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiInputViewController.m; sourceTree = "<group>"; };
 		187C1F6C16F7CDEB00263479 /* iBSkiCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiCountViewController.h; sourceTree = "<group>"; };
@@ -172,6 +177,16 @@
 			path = sinaweibo_ios_sdk;
 			sourceTree = "<group>";
 		};
+		185F71A91702CDA300336ED3 /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */,
+				185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */,
+				185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */,
+			);
+			name = Gesture;
+			sourceTree = "<group>";
+		};
 		187C1F6B16F7C69E00263479 /* Ach */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,8 +217,9 @@
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
-				18E38CAA170081DC003782F2 /* Account */,
 				1824C26E16FEEC5000895222 /* TODO */,
+				18E38CAA170081DC003782F2 /* Account */,
+				185F71A91702CDA300336ED3 /* Gesture */,
 				183B836A16F4D42B0030BC70 /* 2.png */,
 				183B836B16F4D42C0030BC70 /* 1.png */,
 				18F7272816F9333500237CC7 /* Toast */,
@@ -391,6 +407,7 @@
 				183B836D16F4D42C0030BC70 /* 1.png in Resources */,
 				1824C26F16FEEC5000895222 /* TODO in Resources */,
 				1824C27316FF061100895222 /* iBSkiCountView.xib in Resources */,
+				185F71B11702D06300336ED3 /* iBGestureRecognizeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +440,7 @@
 				18F7272416F91BC300237CC7 /* iBSharedAchievement.m in Sources */,
 				18F7272716F9332C00237CC7 /* Toast+UIView.m in Sources */,
 				18E38CAD17008215003782F2 /* iBAccountViewController.m in Sources */,
+				185F71AF1702D04600336ED3 /* iBGestureRecognizeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
