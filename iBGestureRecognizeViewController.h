@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "iBObj_DataModel.h"
+@class iBObj_DataModel;
 
-@interface iBGestureRecognizeViewController : UIViewController
+@interface iBGestureRecognizeViewController : UIViewController <UIGestureRecognizerDelegate>
+
+- (IBAction)swipeLeft:(id)sender;
+
+- (IBAction)swipeRight:(id)sender;
+
+- (IBAction)swipeDown:(id)sender;
+
+- (IBAction)swipeUp:(id)sender;
+
+@property (nonatomic, weak) iBObj_DataModel *dataModel;
 
 @end

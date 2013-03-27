@@ -60,8 +60,8 @@
 /* Begin PBXFileReference section */
 		1824C26E16FEEC5000895222 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		1824C27216FF061100895222 /* iBSkiCountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBSkiCountView.xib; sourceTree = SOURCE_ROOT; };
-		183B836A16F4D42B0030BC70 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
-		183B836B16F4D42C0030BC70 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		183B836A16F4D42B0030BC70 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = ../2.png; sourceTree = "<group>"; };
+		183B836B16F4D42C0030BC70 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../1.png; sourceTree = "<group>"; };
 		183B836F16F5555D0030BC70 /* iBSkiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiTableViewController.h; sourceTree = "<group>"; };
 		183B837016F5555D0030BC70 /* iBSkiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiTableViewController.m; sourceTree = "<group>"; };
 		183B837216F556950030BC70 /* iBSkillDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkillDataModel.h; sourceTree = "<group>"; };
@@ -220,8 +220,6 @@
 				1824C26E16FEEC5000895222 /* TODO */,
 				18E38CAA170081DC003782F2 /* Account */,
 				185F71A91702CDA300336ED3 /* Gesture */,
-				183B836A16F4D42B0030BC70 /* 2.png */,
-				183B836B16F4D42C0030BC70 /* 1.png */,
 				18F7272816F9333500237CC7 /* Toast */,
 				187C1F6B16F7C69E00263479 /* Ach */,
 				183B836E16F5552E0030BC70 /* Ski */,
@@ -272,6 +270,7 @@
 		BA36DEE016C4BF37007FFDD1 /* iB-Ball */ = {
 			isa = PBXGroup;
 			children = (
+				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
 				BA36DEE916C4BF37007FFDD1 /* iBAppDelegate.h */,
 				BA36DEEA16C4BF37007FFDD1 /* iBAppDelegate.m */,
 				BA36DEF516C4BF37007FFDD1 /* iBViewController.h */,
@@ -284,7 +283,8 @@
 		BA36DEE116C4BF37007FFDD1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
+				183B836A16F4D42B0030BC70 /* 2.png */,
+				183B836B16F4D42C0030BC70 /* 1.png */,
 				BA3A7C3F16CD39EE00E84B58 /* hotzone.png */,
 				BA36DEE216C4BF37007FFDD1 /* iB-Ball-Info.plist */,
 				BA36DEE316C4BF37007FFDD1 /* InfoPlist.strings */,
