@@ -8,6 +8,7 @@
 
 #import "iBAppDelegate.h"
 #import "SinaWeibo.h"
+#import "AFNetworkActivityIndicatorManager.h"
 #import <Parse/Parse.h>
 
 @implementation iBAppDelegate
@@ -35,6 +36,7 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
 
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     return YES;
 }
 							
