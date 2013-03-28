@@ -58,17 +58,22 @@
 
 }
 
+//- (IBAction)swipeDown:(id)sender {
+//    self.dataModel.threePoint_real++;
+//    NSString *toastMessage = [NSString stringWithFormat:@"threePoint: %d", self.dataModel.threePoint_real];
+//    NSLog(toastMessage);
+//    [self.view makeToast:toastMessage];
+//
+//}
 - (IBAction)swipeDown:(id)sender {
     self.dataModel.threePoint_real++;
     NSString *toastMessage = [NSString stringWithFormat:@"threePoint: %d", self.dataModel.threePoint_real];
+    NSLog(toastMessage);
     [self.view makeToast:toastMessage];
 
 }
 
 - (IBAction)swipeUp:(id)sender {
-    if (self.dataModel.threePoint_real <= 0) {
-        return;
-    }
     self.dataModel.threePoint_real--;
     NSString *toastMessage = [NSString stringWithFormat:@"threePoint: %d", self.dataModel.threePoint_real];
     [self.view makeToast:toastMessage];

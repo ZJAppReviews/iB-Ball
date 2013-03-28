@@ -30,7 +30,53 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional se   bh         
+	// Do any additional setup after loading the view.
+    NSLog(@"Now in countViewController");
+    NSLog(@"the three: %d", [[self dataModel] twoPoint_real]);
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)addPoint:(UIView *)sender {
+    switch (sender.tag) {
+        case 1:
+            self.dataModel.twoPoint_real++;
+            [iBSharedAchievement sharedAchievement].twoPointCurrent++;
+            int i = [iBSharedAchievement sharedAchievement].twoPointCurrent;
+            int j = [iBSharedAchievement sharedAchievement].twoPointGoal;
+            NSLog(@"%d %d", i, j);
+            [[iBSharedAchievement sharedAchievement] checkToSeeTheAchievement:self.view];
+            [self checkAchieve];
+            break;
+        case 2:
+            self.dataModel.threePoint_real++;
+            break;
+        case 3:
+            self.dataModel.ftPoint_real++;
+            break;
+    }
+    [self.dataModel areWeCoolAboutAllTheThing];
+    [self updateLabel];
+}
+
+- (void)updateLabel {
+    _l1.text = [NSString stringWithFormat:@"%d/%d", self.dataModel.twoPoint_real, self.dataModel.twoPoint_Obj];
+    _l2.text = [NSString stringWithFormat:@"%d/%d", self.dataModel.threePoint_real, self.dataModel.threePoint_Obj];
+    _l3.text = [NSString stringWithFormat:@"%d/%d", self.dataModel.ftPoint_real, self.dataModel.ftPoint_Obj];
+}
+
+
+- (IBAction)reduceThreePoint:(id)sender {
+    if (self.dataModel.threePoint_real <= 0) {
+        return;
+    }
+    self.dataModel.threePoint_real--;
+    [self updateLabel];
+    
 //    NSLog(@"reduce three");
 }
 
@@ -52,6 +98,7 @@
     [self updateLabel];
 
 }
+
 
 - (void)viewDidUnload {
     [self setL1:nil];
