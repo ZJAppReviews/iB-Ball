@@ -1555,6 +1555,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBAccountViewController.h"/>
             <relationships>
                 <relationship kind="action" name="getUserinfo:"/>
+                <relationship kind="action" name="logout:"/>
+                <relationship kind="action" name="signIn:"/>
                 <relationship kind="action" name="weiboLog:"/>
             </relationships>
         </class>
@@ -1582,6 +1584,7 @@
         <class className="iBObjViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjViewController.h"/>
             <relationships>
+                <relationship kind="action" name="letsRock:"/>
                 <relationship kind="action" name="setPoint:"/>
                 <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
@@ -1590,6 +1593,11 @@
         </class>
         <class className="iBShareViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBShareViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="loginButtonPressed:"/>
+                <relationship kind="action" name="logoutButtonPressed:"/>
+                <relationship kind="action" name="shareButtonPressed:"/>
+            </relationships>
         </class>
         <class className="iBSkiInputViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBSkiInputViewController.h"/>

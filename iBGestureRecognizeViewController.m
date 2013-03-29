@@ -67,6 +67,7 @@
 //
 //}
 - (IBAction)swipeDown:(id)sender {
+    
     self.dataModel.threePoint_real++;
     NSString *toastMessage = [NSString stringWithFormat:@"threePoint: %d", self.dataModel.threePoint_real];
 //    NSLog(toastMessage);
@@ -75,6 +76,9 @@
 }
 
 - (IBAction)swipeUp:(id)sender {
+    if (self.dataModel.threePoint_real <= 0) {
+        return;
+    }
     self.dataModel.threePoint_real--;
     NSString *toastMessage = [NSString stringWithFormat:@"threePoint: %d", self.dataModel.threePoint_real];
     [self.view makeToast:toastMessage];
@@ -88,6 +92,9 @@
 }
 
 - (IBAction)tripleTap:(id)sender {
+    if (self.dataModel.ftPoint_real <= 0) {
+        return;
+    }
     self.dataModel.ftPoint_real--;
     NSString *toastMesage = [NSString stringWithFormat:@"free throw: %d", self.dataModel.ftPoint_real];
     [self.view makeToast:toastMesage];
