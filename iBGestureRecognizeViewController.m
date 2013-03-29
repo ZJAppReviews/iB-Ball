@@ -68,7 +68,7 @@
 - (IBAction)swipeDown:(id)sender {
     self.dataModel.threePoint_real++;
     NSString *toastMessage = [NSString stringWithFormat:@"threePoint: %d", self.dataModel.threePoint_real];
-    NSLog(toastMessage);
+//    NSLog(toastMessage);
     [self.view makeToast:toastMessage];
 
 }

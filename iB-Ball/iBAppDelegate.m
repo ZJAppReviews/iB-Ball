@@ -33,7 +33,7 @@
     
     [Parse setApplicationId:@"FahVYM3v6LhX87eKNvz3Sed7nTiWrfVmOSNtKcX2"
                   clientKey:@"qmKyKDkcGVttjLdapr0m0AWk4iHJ7XnxwfdequyO"];
-    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+//    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
 
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;

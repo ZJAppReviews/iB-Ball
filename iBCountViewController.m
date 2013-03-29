@@ -41,9 +41,9 @@
     _countModel = [[iBDataCenterForHotzone alloc] init];
     
     
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    [testObject setObject:@"bar" forKey:@"foo"];
-    [testObject save];
+//    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+//    [testObject setObject:@"bar" forKey:@"foo"];
+//    [testObject save];
 }
 
 - (void)didReceiveMemoryWarning
