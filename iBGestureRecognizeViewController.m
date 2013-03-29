@@ -25,6 +25,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.doubleGesture requireGestureRecognizerToFail:self.thribleGesture];
 }
 
 - (void)didReceiveMemoryWarning
@@ -78,5 +79,24 @@
     NSString *toastMessage = [NSString stringWithFormat:@"threePoint: %d", self.dataModel.threePoint_real];
     [self.view makeToast:toastMessage];
 
+}
+
+- (IBAction)doubleTap:(id)sender {
+    self.dataModel.ftPoint_real++;
+    NSString *toastMessage = [NSString stringWithFormat:@"free throw: %d", self.dataModel.ftPoint_real];
+    [self.view makeToast:toastMessage];
+}
+
+- (IBAction)tripleTap:(id)sender {
+    self.dataModel.ftPoint_real--;
+    NSString *toastMesage = [NSString stringWithFormat:@"free throw: %d", self.dataModel.ftPoint_real];
+    [self.view makeToast:toastMesage];
+
+}
+
+- (void)viewDidUnload {
+    [self setDoubleGesture:nil];
+    [self setThribleGesture:nil];
+    [super viewDidUnload];
 }
 @end

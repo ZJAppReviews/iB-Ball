@@ -12,6 +12,10 @@
 
 @interface iBGestureRecognizeViewController : UIViewController <UIGestureRecognizerDelegate>
 
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *doubleGesture;
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *thribleGesture;
+
+
 - (IBAction)swipeLeft:(id)sender;
 
 - (IBAction)swipeRight:(id)sender;
