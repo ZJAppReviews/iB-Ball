@@ -119,6 +119,8 @@
         [a setGoal:self.countModel.goalTimes];
     }
 }
+
+
 NSString *postStatusText;
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 0) {

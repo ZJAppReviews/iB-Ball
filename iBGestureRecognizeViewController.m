@@ -43,18 +43,42 @@
     
     
     //    NSLog(@"yeah left");
-    if (self.whatKindOfGestureReconizingAreWeIn == GestureForObjective) {
-        
-        if (self.dataModelForObj.twoPoint_real <= 0) {
-            return;
+//    if (self.whatKindOfGestureReconizingAreWeIn == GestureForObjective) {
+//        
+//        if (self.dataModelForObj.twoPoint_real <= 0) {
+//            return;
+//        }
+//        self.dataModelForObj.twoPoint_real--;
+//        NSString *toastMessage = [NSString stringWithFormat:@"twoPoint: %d", self.dataModelForObj.twoPoint_real];
+//        [self.view makeToast:toastMessage];
+//    }
+//    if (self.whatKindOfGestureReconizingAreWeIn == GestureForTwoCount) {
+//        self.dataModelForTwo.shootingTimes++;
+//        self.dataModelForTwo.goalTimes++;
+//    }
+    switch (self.whatKindOfGestureReconizingAreWeIn) {
+        case GestureForObjective:
+            
+        {
+            if (self.dataModelForObj.twoPoint_real <= 0) {
+                return;
+            }
+            self.dataModelForObj.twoPoint_real--;
+            NSString *toastMessage = [NSString stringWithFormat:@"twoPoint: %d", self.dataModelForObj.twoPoint_real];
+            [self.view makeToast:toastMessage];
         }
-        self.dataModelForObj.twoPoint_real--;
-        NSString *toastMessage = [NSString stringWithFormat:@"twoPoint: %d", self.dataModelForObj.twoPoint_real];
-        [self.view makeToast:toastMessage];
-    }
-    if (self.whatKindOfGestureReconizingAreWeIn == GestureForTwoCount) {
-        self.dataModelForTwo.shootingTimes++;
-        self.dataModelForTwo.goalTimes++;
+            break;
+            
+        case GestureForTwoCount:
+        {
+            self.dataModelForTwo.totalGoalTimes++;
+            self.dataModelForTwo.totalShootingTimes++;
+            self.dataModelForTwo.shootingTimes++;
+            self.dataModelForTwo.goalTimes++;
+            NSString *toastMessage = [NSString stringWithFormat:@"twoPoint: %d", self.dataModelForTwo.goalTimes];
+            [self.view makeToast:toastMessage];
+
+        }
     }
 }
 
@@ -71,8 +95,11 @@
     }
     
     if (self.whatKindOfGestureReconizingAreWeIn == GestureForTwoCount) {
+        self.dataModelForTwo.totalShootingTimes++;
         self.dataModelForTwo.shootingTimes++;
-        
+        NSString *toastMessage = [NSString stringWithFormat:@"twoPoint: %d", self.dataModelForTwo.goalTimes];
+        [self.view makeToast:toastMessage];
+
     }
     
 }

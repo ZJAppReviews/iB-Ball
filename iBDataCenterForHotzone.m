@@ -12,10 +12,10 @@
 
 @implementation iBDataCenterForHotzone
 
-- (void)encodeWithCoder:(NSCoder *)aCoder {
-    [aCoder encodeInt:self.totalShootingTimes forKey:kTST];
-    [aCoder encodeInt:self.totalGoalTimes forKey:kTGT];
-}
+//- (void)encodeWithCoder:(NSCoder *)aCoder {
+//    [aCoder encodeInt:self.totalShootingTimes forKey:kTST];
+//    [aCoder encodeInt:self.totalGoalTimes forKey:kTGT];
+//}
 
 - (id)initWithShooting:(int)shoot goal:(int)goal {
     self = [super init];
@@ -70,4 +70,5 @@
     self.totalShootingTimes = n1.intValue;
     self.totalGoalTimes = n2.intValue;
 }
+
 @end
