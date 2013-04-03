@@ -10,6 +10,7 @@
 #import "iBDataCenterForHotzone.h"
 #import "iBShareViewController.h"
 #import "iBAppDelegate.h"
+#import "iBGestureRecognizeViewController.h"
 #import <Parse/Parse.h>
 
 @interface iBCountViewController ()
@@ -155,5 +156,14 @@ NSString *postStatusText;
     iBAppDelegate *delegate = (iBAppDelegate *)[UIApplication sharedApplication].delegate;
     return delegate.sinaweibo;
 }
+
+- (IBAction)startGesture:(id)sender {
+    iBGestureRecognizeViewController *a = [[iBGestureRecognizeViewController alloc] initWithNibName:@"iBGestureRecognizeViewController" bundle:nil];
+    a.whatKindOfGestureReconizingAreWeIn = GestureForTwoCount;
+    a.dataModelForTwo = self.countModel;
+    [self presentModalViewController:a animated:YES];
+    
+}
+
 
 @end

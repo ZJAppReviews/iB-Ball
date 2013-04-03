@@ -113,7 +113,7 @@
 
 - (IBAction)startRecognize:(id)sender {
     iBGestureRecognizeViewController *a = [[iBGestureRecognizeViewController alloc] initWithNibName:@"iBGestureRecognizeViewController" bundle:nil];
-    a.dataModel = self.dataModel;
+    a.dataModelForObj = self.dataModel;
     [self presentModalViewController:a animated:YES];
 }
 

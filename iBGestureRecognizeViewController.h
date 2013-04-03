@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 //#import "iBObj_DataModel.h"
+@class iBDataCenterForHotzone;
+
+enum GestureType {
+    GestureForObjective = 1,
+    GestureForTwoCount
+};
+
 @class iBObj_DataModel;
 
 @interface iBGestureRecognizeViewController : UIViewController <UIGestureRecognizerDelegate>
@@ -24,6 +31,9 @@
 
 - (IBAction)swipeUp:(id)sender;
 
-@property (nonatomic, weak) iBObj_DataModel *dataModel;
+@property (nonatomic, weak) iBObj_DataModel *dataModelForObj;
+@property (nonatomic, weak) iBDataCenterForHotzone *dataModelForTwo;
+
+@property (nonatomic, assign) enum GestureType whatKindOfGestureReconizingAreWeIn;
 
 @end

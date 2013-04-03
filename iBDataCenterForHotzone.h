@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface iBDataCenterForHotzone : NSObject <NSCoding> {
+
+
+// notice: even i gave it a name of "forHotZone", it's totally shit... still don't work
+@interface iBDataCenterForHotzone : NSObject {
     NSString *_dataPath;
 }
 
