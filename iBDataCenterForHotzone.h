@@ -24,6 +24,7 @@
 
 
 - (float)getRatioForThisTime;
+- (float)getRatioForOverall;
 
 // do the data persistense stuff
 - (void)saveData;

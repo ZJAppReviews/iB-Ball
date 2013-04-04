@@ -90,7 +90,7 @@
 }
 
 - (IBAction)showCarrerScore:(id)sender {
-    UIAlertView *av = [[UIAlertView alloc]initWithTitle:@"Carrer" message:[NSString stringWithFormat:@"Total goal: %d, total shoot: %d", self.countModel.totalGoalTimes, self.countModel.totalShootingTimes] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    UIAlertView *av = [[UIAlertView alloc]initWithTitle:@"Carrer" message:[NSString stringWithFormat:@"Total goal: %d, total shoot: %d, your current ratio is : %.2f%% your overall ratio is : %.2f%%", self.countModel.totalGoalTimes, self.countModel.totalShootingTimes, self.countModel.getRatioForThisTime, self.countModel.getRatioForOverall] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [av show];
 }
 

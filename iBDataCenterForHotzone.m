@@ -37,6 +37,10 @@
     return (float)_goalTimes / (float)_shootingTimes * 100;
 }
 
+- (float)getRatioForOverall {
+    return (float)self.totalGoalTimes / (float)self.shootingTimes * 100;
+}
+
 - (NSString *)currentContentFilePath {
     NSArray *documentDirectories =
     NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
