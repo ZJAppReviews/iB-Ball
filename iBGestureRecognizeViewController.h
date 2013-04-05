@@ -12,7 +12,8 @@
 
 enum GestureType {
     GestureForObjective = 1,
-    GestureForTwoCount
+    GestureForTwoCount,
+    GestureForMatchCount
 };
 
 @class iBObj_DataModel;
