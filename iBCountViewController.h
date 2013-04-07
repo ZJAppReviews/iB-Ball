@@ -33,5 +33,6 @@
 - (IBAction)cancel:(id)sender;
 - (IBAction)share:(id)sender;
 
+@property (strong, nonatomic) NSDictionary *summaryToBePost;
 
 @end

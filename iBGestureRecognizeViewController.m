@@ -79,6 +79,10 @@
             [self.view makeToast:toastMessage];
 
         }
+        case GestureForThreeCount:
+        {
+            
+        }
     }
 }
 

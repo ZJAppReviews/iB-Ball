@@ -40,6 +40,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     _countModel = [[iBDataCenterForHotzone alloc] init];
+    NSString *today_22 = [[[NSDate date] description] substringToIndex:10];
+    NSLog(@"oop");
+    NSLog([[NSUserDefaults standardUserDefaults] stringForKey:today_22]);
+    
+
     
     
 //    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
@@ -132,6 +137,18 @@ NSString *postStatusText;
             return;
         }
         postStatusText = [[NSString alloc] initWithFormat:@"今日三分球命中%d球, 怒打%d次铁, 命中率为%2.1f %% ---From iB-Ball develped by Nango", goal, shoot - goal, ((double)(goal) / shoot) * 100];
+        NSString *today_1 = [NSString stringWithString:postStatusText];
+        NSString *today_2 = [[[NSDate date] description] substringToIndex:10];
+        NSLog(today_2);
+        NSDictionary *dictForToday = [NSDictionary dictionaryWithObjectsAndKeys:today_1, today_2, nil];
+        NSLog(today_1);
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults registerDefaults:dictForToday];
+        NSLog([[NSUserDefaults standardUserDefaults] stringForKey:today_2]);
+        if ([userDefaults synchronize]) {
+            NSLog(@"save succeed");
+        }
+        
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert"
                                                             message:[NSString stringWithFormat:@"Will post status with text \"%@\"", postStatusText]
                                                            delegate:self cancelButtonTitle:@"Cancel"
@@ -142,13 +159,16 @@ NSString *postStatusText;
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (buttonIndex == 0) {
+    if (buttonIndex == 1) {
+        
         // post status
         SinaWeibo *sinaweibo = [self sinaweibo];
         [sinaweibo requestWithURL:@"statuses/update.json"
                            params:[NSMutableDictionary dictionaryWithObjectsAndKeys:postStatusText, @"status", nil]
                        httpMethod:@"POST"
                          delegate:self];
+        NSLog(@"s");
+
         //TODO roughly set a nil
     }
 }
@@ -164,7 +184,6 @@ NSString *postStatusText;
     a.whatKindOfGestureReconizingAreWeIn = GestureForTwoCount;
     a.dataModelForTwo = self.countModel;
     [self presentModalViewController:a animated:YES];
-    
 }
 
 

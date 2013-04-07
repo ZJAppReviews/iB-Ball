@@ -13,6 +13,7 @@
 enum GestureType {
     GestureForObjective = 1,
     GestureForTwoCount,
+    GestureForThreeCount,
     GestureForMatchCount
 };
 
