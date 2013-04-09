@@ -38,7 +38,7 @@
 }
 
 - (float)getRatioForOverall {
-    return (float)self.totalGoalTimes / (float)self.shootingTimes * 100;
+    return (float)self.totalGoalTimes / (float)self.totalShootingTimes * 100;
 }
 
 - (NSString *)currentContentFilePath {
@@ -71,8 +71,15 @@
     NSArray *data = [NSArray arrayWithContentsOfFile:filePath];
     NSNumber *n1 = [data objectAtIndex:0];
     NSNumber *n2 = [data objectAtIndex:1];
-    self.totalShootingTimes = n1.intValue;
-    self.totalGoalTimes = n2.intValue;
+    self.totalShootingTimes = n2.intValue;
+    self.shootingTimes = n2.intValue;
+    self.totalGoalTimes = n1.intValue;
+    self.goalTimes = n1.intValue;
+    NSLog(@"%@", self);
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"%d %d  --- %d %d", self.shootingTimes, self.totalShootingTimes, self.goalTimes, self.totalGoalTimes];
 }
 
 @end

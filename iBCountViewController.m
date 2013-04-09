@@ -42,9 +42,8 @@
     _countModel = [[iBDataCenterForHotzone alloc] init];
     NSString *today_22 = [[[NSDate date] description] substringToIndex:10];
     NSLog(@"oop");
-    NSLog([[NSUserDefaults standardUserDefaults] stringForKey:today_22]);
+    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] stringForKey:today_22]);
     
-
     
     
 //    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
