@@ -40,10 +40,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     _countModel = [[iBDataCenterForHotzone alloc] init];
+    // 10 for that date, maybe not properlly
     NSString *today_22 = [[[NSDate date] description] substringToIndex:10];
     NSLog(@"oop");
     NSLog(@"%@", [[NSUserDefaults standardUserDefaults] stringForKey:today_22]);
-    
+    NSLog(@"s");
+
     
     
 //    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
@@ -135,6 +137,7 @@ NSString *postStatusText;
             NSLog(@"Are you crazy?");
             return;
         }
+        
         postStatusText = [[NSString alloc] initWithFormat:@"今日三分球命中%d球, 怒打%d次铁, 命中率为%2.1f %% ---From iB-Ball develped by Nango", goal, shoot - goal, ((double)(goal) / shoot) * 100];
         NSString *today_1 = [NSString stringWithString:postStatusText];
         NSString *today_2 = [[[NSDate date] description] substringToIndex:10];

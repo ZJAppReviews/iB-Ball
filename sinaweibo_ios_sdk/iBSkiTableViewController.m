@@ -155,7 +155,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [self.tableView reloadData];
-    NSLog(@"%@", self.skillModel.skillArray);
+//    NSLog(@"%@", self.skillModel.skillArray);
 }
 
 - (void)skillInput:(id)sender withName:(NSString *)name {
