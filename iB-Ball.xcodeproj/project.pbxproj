@@ -65,6 +65,7 @@
 		18D40DC9170135BC004A22CD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DC8170135BC004A22CD /* Security.framework */; };
 		18D40DCB170135C1004A22CD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DCA170135C1004A22CD /* StoreKit.framework */; };
 		18D40DCD170135C7004A22CD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DCC170135C7004A22CD /* SystemConfiguration.framework */; };
+		18E1C335171A4CB300F5DC5D /* iBGlobalRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1C334171A4CB300F5DC5D /* iBGlobalRecorder.m */; };
 		18E38CAD17008215003782F2 /* iBAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E38CAC17008215003782F2 /* iBAccountViewController.m */; };
 		18F7272416F91BC300237CC7 /* iBSharedAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272316F91BC300237CC7 /* iBSharedAchievement.m */; };
 		18F7272716F9332C00237CC7 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272616F9332C00237CC7 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -175,6 +176,8 @@
 		18D40DC8170135BC004A22CD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		18D40DCA170135C1004A22CD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		18D40DCC170135C7004A22CD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		18E1C333171A4CB300F5DC5D /* iBGlobalRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBGlobalRecorder.h; sourceTree = "<group>"; };
+		18E1C334171A4CB300F5DC5D /* iBGlobalRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBGlobalRecorder.m; sourceTree = "<group>"; };
 		18E38CAB17008215003782F2 /* iBAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBAccountViewController.h; sourceTree = "<group>"; };
 		18E38CAC17008215003782F2 /* iBAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBAccountViewController.m; sourceTree = "<group>"; };
 		18F7272216F91BC300237CC7 /* iBSharedAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSharedAchievement.h; sourceTree = "<group>"; };
@@ -450,6 +453,8 @@
 				BA36DEEA16C4BF37007FFDD1 /* iBAppDelegate.m */,
 				BA36DEF516C4BF37007FFDD1 /* iBViewController.h */,
 				BA36DEF616C4BF37007FFDD1 /* iBViewController.m */,
+				18E1C333171A4CB300F5DC5D /* iBGlobalRecorder.h */,
+				18E1C334171A4CB300F5DC5D /* iBGlobalRecorder.m */,
 				BA36DEE116C4BF37007FFDD1 /* Supporting Files */,
 			);
 			path = "iB-Ball";
@@ -670,6 +675,7 @@
 				1878A00C1703CB150065D21F /* WTTableViewController.m in Sources */,
 				1878A00D1703CB150065D21F /* WeatherAnimationViewController.m in Sources */,
 				189E4F71170E6B530046DE61 /* iBCountingSelectViewController.m in Sources */,
+				18E1C335171A4CB300F5DC5D /* iBGlobalRecorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

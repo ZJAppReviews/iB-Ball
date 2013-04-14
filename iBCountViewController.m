@@ -106,6 +106,7 @@
 
 - (IBAction)loadData:(id)sender {
     [[self countModel] loadData];
+    [self updateRatio:nil];
 }
 
 - (IBAction)cancel:(id)sender {
