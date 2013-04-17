@@ -362,13 +362,13 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		187C1F6B16F7C69E00263479 /* Ach */ = {
+		187C1F6B16F7C69E00263479 /* Achieve */ = {
 			isa = PBXGroup;
 			children = (
 				18F7272216F91BC300237CC7 /* iBSharedAchievement.h */,
 				18F7272316F91BC300237CC7 /* iBSharedAchievement.m */,
 			);
-			name = Ach;
+			name = Achieve;
 			sourceTree = "<group>";
 		};
 		18E38CAA170081DC003782F2 /* Account */ = {
@@ -397,7 +397,7 @@
 				18789FA61703C4FC0065D21F /* open_source */,
 				18E38CAA170081DC003782F2 /* Account */,
 				185F71A91702CDA300336ED3 /* Gesture */,
-				187C1F6B16F7C69E00263479 /* Ach */,
+				187C1F6B16F7C69E00263479 /* Achieve */,
 				183B836E16F5552E0030BC70 /* Ski */,
 				BACE1C5716E113520032223B /* Obj */,
 				BA9BF1BE16D5951100DFDD54 /* sinaweibo_ios_sdk */,
