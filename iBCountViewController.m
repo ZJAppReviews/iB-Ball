@@ -45,12 +45,12 @@
     NSLog(@"oop");
     NSLog(@"%@", [[NSUserDefaults standardUserDefaults] stringForKey:today_22]);
     NSLog(@"s");
-
     
     
-//    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-//    [testObject setObject:@"bar" forKey:@"foo"];
-//    [testObject save];
+    
+    //    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    //    [testObject setObject:@"bar" forKey:@"foo"];
+    //    [testObject save];
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,14 +73,14 @@
 
 - (void)updateRatio:(UIView *)sender {
     if (sender.tag == 1) {
-//        NSLog(@"before %d", [self countModel].shootingTimes);
-//        [[self countModel] setShootingTimes:([self countModel].shootingTimes + 1)];
+        //        NSLog(@"before %d", [self countModel].shootingTimes);
+        //        [[self countModel] setShootingTimes:([self countModel].shootingTimes + 1)];
         [self countModel].shootingTimes++;
         [self countModel].goalTimes++;
-//        [[self countModel] setGoalTimes:([self countModel].goalTimes + 1)];
+        //        [[self countModel] setGoalTimes:([self countModel].goalTimes + 1)];
         [self countModel].totalShootingTimes++;
         [self countModel].totalGoalTimes++;
-//        NSLog(@"after %d", [self countModel].shootingTimes);
+        //        NSLog(@"after %d", [self countModel].shootingTimes);
     }
     
     else if (sender.tag == 0) {
@@ -133,45 +133,63 @@ NSString *postStatusText;
     if (buttonIndex == 0) {
         int shoot = self.countModel.shootingTimes;
         int goal = self.countModel.goalTimes;
-
+        
         if (shoot == 0) {
             NSLog(@"Are you crazy?");
             return;
         }
         
-        postStatusText = [[NSString alloc] initWithFormat:@"今日三分球命中%d球, 怒打%d次铁, 命中率为%2.1f %% ---From iB-Ball develped by Nango", goal, shoot - goal, ((double)(goal) / shoot) * 100];
+        postStatusText = [[NSString alloc] initWithFormat:@"今日三分球命中%d球, 怒打%d次铁, 命中率为%2.1f %%", goal, shoot - goal, ((double)(goal) / shoot) * 100];
         NSString *today_1 = [NSString stringWithString:postStatusText];
         NSString *today_2 = [[[NSDate date] description] substringToIndex:10];
-        NSLog(today_2);
+        
         NSDictionary *dictForToday = [NSDictionary dictionaryWithObjectsAndKeys:today_1, today_2, nil];
-        NSLog(today_1);
+        
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         [userDefaults registerDefaults:dictForToday];
-        NSLog([[NSUserDefaults standardUserDefaults] stringForKey:today_2]);
-        if ([userDefaults synchronize]) {
-            NSLog(@"save succeed");
-        }
+        
+        
+        [self makeSomeCoolThingsOnPostStatusText];
+        
+        
         
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert"
                                                             message:[NSString stringWithFormat:@"Will post status with text \"%@\"", postStatusText]
                                                            delegate:self cancelButtonTitle:@"Cancel"
                                                   otherButtonTitles:@"OK", nil];
         [alertView show];
-
+        
     }
+}
+
+- (void)makeSomeCoolThingsOnPostStatusText {
+    if (self.countModel.getRatioForThisTime < 50) {
+        // just test first
+        
+        NSString *stringForAll = @"      科比紧握您的双手，流下了温热的眼泪";
+        postStatusText = [postStatusText stringByAppendingString:stringForAll];
+    }
+    if (self.countModel.getRatioForThisTime >= 50) {
+        NSString *stringForGoodRatio = @"       T-Mac对你微微一笑，表示你将会是下一个他";
+        postStatusText = [postStatusText stringByAppendingString:stringForGoodRatio];
+        
+    }
+    
+    NSString *appName = @" ---From iB-Ball";
+    postStatusText = [postStatusText stringByAppendingString:appName];
+
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 1) {
         
         // post status
+        NSLog(@"%@", postStatusText);
         SinaWeibo *sinaweibo = [self sinaweibo];
         [sinaweibo requestWithURL:@"statuses/update.json"
                            params:[NSMutableDictionary dictionaryWithObjectsAndKeys:postStatusText, @"status", nil]
                        httpMethod:@"POST"
                          delegate:self];
-        NSLog(@"s");
-
         //TODO roughly set a nil
     }
 }
