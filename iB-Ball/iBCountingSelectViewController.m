@@ -8,6 +8,7 @@
 
 #import "iBCountingSelectViewController.h"
 #import "iBGestureRecognizeViewController.h"
+#import "iBCountViewController.h"
 
 @interface iBCountingSelectViewController ()
 
@@ -38,11 +39,28 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 4) {
-        NSLog(@"s");
         iBGestureRecognizeViewController *a = [[iBGestureRecognizeViewController alloc] initWithNibName:@"iBGestureRecognizeViewController" bundle:nil];
         a.whatKindOfGestureReconizingAreWeIn = GestureForMatchCount;
         [self presentViewController:a animated:YES completion:nil];
         
+    }
+    if (indexPath.row == 2) {
+        self.rowIndexThatWeSelect = 2;
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    iBCountViewController *a = (iBCountViewController *)[(UINavigationController *)segue.destinationViewController topViewController];
+
+    if ([segue.identifier isEqualToString:@"2ptCounting"]) {
+        a.whatTypeOfCountingAreWeIn = CountForTwo;
+    }
+    if ([segue.identifier isEqualToString:@"3ptCounting"]) {
+
+        a.whatTypeOfCountingAreWeIn = CountForThree;
+    }
+    if ([segue.identifier isEqualToString:@"NormalCounting"]) {
+        a.whatTypeOfCountingAreWeIn = CountForNormal;
     }
 }
 

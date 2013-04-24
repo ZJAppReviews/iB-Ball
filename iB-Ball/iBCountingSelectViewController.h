@@ -10,4 +10,6 @@
 
 @interface iBCountingSelectViewController : UITableViewController
 
+@property (assign, nonatomic) int rowIndexThatWeSelect;
+
 @end

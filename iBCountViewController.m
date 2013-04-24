@@ -18,7 +18,6 @@
 @end
 
 @implementation iBCountViewController
-
 //- (CountModel *)countModel {
 //    if (_countModel == nil) {
 //        return [[CountModel alloc] init];
@@ -39,6 +38,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    NSLog(@"the type is %d", self.whatTypeOfCountingAreWeIn);
     _countModel = [[iBDataCenterForHotzone alloc] init];
     // 10 for that date, maybe not properlly
     NSString *today_22 = [[[NSDate date] description] substringToIndex:10];
@@ -139,7 +139,22 @@ NSString *postStatusText;
             return;
         }
         
-        postStatusText = [[NSString alloc] initWithFormat:@"今日三分球命中%d球, 怒打%d次铁, 命中率为%2.1f %%", goal, shoot - goal, ((double)(goal) / shoot) * 100];
+        NSString *typeOfString = nil;
+        switch (self.whatTypeOfCountingAreWeIn) {
+            case CountForTwo:
+                typeOfString = @"两分球";
+                break;
+            case CountForThree:
+                typeOfString = @"三分球";
+                break;
+            case CountForNormal:
+                typeOfString = @"投篮";
+                break;
+            default:
+                break;
+        }
+        
+        postStatusText = [[NSString alloc] initWithFormat:@"今日%@命中%d球, 怒打%d次铁, 命中率为%2.1f %%", typeOfString, goal, shoot - goal, ((double)(goal) / shoot) * 100];
         NSString *today_1 = [NSString stringWithString:postStatusText];
         NSString *today_2 = [[[NSDate date] description] substringToIndex:10];
         

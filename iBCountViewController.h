@@ -15,6 +15,12 @@
 @class iBDataCenterForHotzoneDoc;
 
 
+typedef enum CountType {
+    CountForNormal = 1,
+    CountForTwo,
+    CountForThree,
+} CountType;
+
 @interface iBCountViewController : UIViewController <UIActionSheetDelegate, UIAlertViewDelegate, SinaWeiboRequestDelegate>
 
 @property (nonatomic, strong) iBDataCenterForHotzone *countModel;
@@ -34,5 +40,7 @@
 - (IBAction)share:(id)sender;
 
 @property (strong, nonatomic) NSDictionary *summaryToBePost;
+
+@property (assign, nonatomic) CountType whatTypeOfCountingAreWeIn;
 
 @end
