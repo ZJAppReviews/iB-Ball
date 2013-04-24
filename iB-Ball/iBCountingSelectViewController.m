@@ -44,9 +44,6 @@
         [self presentViewController:a animated:YES completion:nil];
         
     }
-    if (indexPath.row == 2) {
-        self.rowIndexThatWeSelect = 2;
-    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
