@@ -10,12 +10,12 @@
 //#import "iBObj_DataModel.h"
 @class iBDataCenterForHotzone;
 
-enum GestureType {
+typedef enum {
     GestureForObjective = 1,
     GestureForTwoCount,
     GestureForThreeCount,
     GestureForMatchCount
-};
+} GestureType;
 
 @class iBObj_DataModel;
 
@@ -35,7 +35,9 @@ enum GestureType {
 
 @property (nonatomic, weak) iBObj_DataModel *dataModelForObj;
 @property (nonatomic, weak) iBDataCenterForHotzone *dataModelForTwo;
+// i dont know weather it's good to separate, whatever
+@property (nonatomic, weak) iBDataCenterForHotzone *dataModelForThree;
 
-@property (nonatomic, assign) enum GestureType whatKindOfGestureReconizingAreWeIn;
+@property (nonatomic, assign) GestureType whatKindOfGestureReconizingAreWeIn;
 
 @end

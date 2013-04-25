@@ -216,9 +216,40 @@ NSString *postStatusText;
 }
 
 - (IBAction)startGesture:(id)sender {
+    // judge the type of counting and pass it to the gesture
+    GestureType gg = nil;
+    switch (self.whatTypeOfCountingAreWeIn) {
+        case CountForTwo:
+            gg = GestureForTwoCount;
+            break;
+        case CountForThree:
+            gg = GestureForThreeCount;
+            break;
+        case CountForNormal:
+            //TODO
+            break;
+        default:
+            break;
+    }
+    
+    
     iBGestureRecognizeViewController *a = [[iBGestureRecognizeViewController alloc] initWithNibName:@"iBGestureRecognizeViewController" bundle:nil];
-    a.whatKindOfGestureReconizingAreWeIn = GestureForTwoCount;
-    a.dataModelForTwo = self.countModel;
+    a.whatKindOfGestureReconizingAreWeIn = gg;
+//    a.whatKindOfGestureReconizingAreWeIn = GestureForTwoCount;
+    // get the rightmodel, maybe it's not best to separate this
+    switch (gg) {
+        case GestureForTwoCount:
+            a.dataModelForTwo = self.countModel;
+            break;
+            
+        case GestureForThreeCount:
+            a.dataModelForThree = self.countModel;
+            break;
+            // TODO
+        default:
+            break;
+    }
+
     [self presentModalViewController:a animated:YES];
 }
 

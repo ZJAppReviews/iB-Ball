@@ -66,8 +66,9 @@
             self.dataModelForObj.twoPoint_real--;
             NSString *toastMessage = [NSString stringWithFormat:@"twoPoint: %d", self.dataModelForObj.twoPoint_real];
             [self.view makeToast:toastMessage];
-        }
             break;
+
+        }
             
         case GestureForTwoCount:
         {
@@ -77,11 +78,21 @@
             self.dataModelForTwo.goalTimes++;
             NSString *toastMessage = [NSString stringWithFormat:@"twoPoint: %d", self.dataModelForTwo.goalTimes];
             [self.view makeToast:toastMessage];
-
+            break;
         }
         case GestureForThreeCount:
         {
-            
+            self.dataModelForThree.totalGoalTimes++;
+            self.dataModelForThree.totalShootingTimes++;
+            self.dataModelForThree.shootingTimes++;
+            self.dataModelForThree.goalTimes++;
+            NSString *toastMessage = [NSString stringWithFormat:@"threePoint: %d", self.dataModelForThree.goalTimes];
+            [self.view makeToast:toastMessage];
+            break;
+        }
+        case GestureForMatchCount: {
+            //TODO
+            break;
         }
     }
 }
