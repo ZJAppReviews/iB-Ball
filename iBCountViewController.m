@@ -18,12 +18,15 @@
 @end
 
 @implementation iBCountViewController
-//- (CountModel *)countModel {
-//    if (_countModel == nil) {
-//        return [[CountModel alloc] init];
-//    }
-//    return nil;
-//}
+
+- (iBDataCenterForHotzone *)countModel {
+    if (_countModel == nil) {
+        _countModel = [[iBDataCenterForHotzone alloc] init];
+    }
+    return _countModel;
+}
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,13 +41,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    NSLog(@"the type is %d", self.whatTypeOfCountingAreWeIn);
-    _countModel = [[iBDataCenterForHotzone alloc] init];
+    
+
+//    _countModel = [[iBDataCenterForHotzone alloc] init];
     // 10 for that date, maybe not properlly
-    NSString *today_22 = [[[NSDate date] description] substringToIndex:10];
-    NSLog(@"oop");
-    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] stringForKey:today_22]);
-    NSLog(@"s");
+//    NSString *today_22 = [[[NSDate date] description] substringToIndex:10];
+//    NSLog(@"oop");
+//    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] stringForKey:today_22]);
+
     
     
     
@@ -65,10 +69,14 @@
 
 - (IBAction)score:(id)sender {
     [self updateRatio:sender];
+    NSLog(@"%d", self.countModel.shootingTimes);
+
 }
 
 - (IBAction)miss:(id)sender {
     [self updateRatio:sender];
+    NSLog(@"%d", self.countModel.shootingTimes);
+
 }
 
 - (void)updateRatio:(UIView *)sender {
@@ -77,6 +85,8 @@
         //        [[self countModel] setShootingTimes:([self countModel].shootingTimes + 1)];
         [self countModel].shootingTimes++;
         [self countModel].goalTimes++;
+        NSLog(@"%d", self.countModel.shootingTimes);
+
         //        [[self countModel] setGoalTimes:([self countModel].goalTimes + 1)];
         [self countModel].totalShootingTimes++;
         [self countModel].totalGoalTimes++;
@@ -87,6 +97,13 @@
         [self countModel].shootingTimes++;
         [self countModel].totalShootingTimes++;
     }
+    
+    // go fuck your self, i'm gonna use some fancy way to do this...
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self countModel].shootingTimes--;
+        [self countModel].totalShootingTimes--;
+    });
     
     NSString *ratio = [NSString stringWithFormat:@"%.1f", [[self countModel] getRatioForThisTime]];
     [self.shootingRatio setText:ratio];
@@ -253,5 +270,8 @@ NSString *postStatusText;
     [self presentModalViewController:a animated:YES];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self updateRatio:nil];
+}
 
 @end

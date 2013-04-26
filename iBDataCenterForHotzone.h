@@ -18,8 +18,8 @@
 @property (nonatomic, assign) NSInteger shootingTimes;
 @property (nonatomic, assign) NSInteger goalTimes;
 
-@property (nonatomic, assign) int totalShootingTimes;
-@property (nonatomic, assign) int totalGoalTimes;
+@property (nonatomic, assign) NSInteger totalShootingTimes;
+@property (nonatomic, assign) NSInteger totalGoalTimes;
 @property (copy) NSString *docPath;
 
 

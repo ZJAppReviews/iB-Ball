@@ -117,6 +117,15 @@
 
     }
     
+    if (self.whatKindOfGestureReconizingAreWeIn == GestureForThreeCount) {
+
+        self.dataModelForThree.totalShootingTimes++;
+        self.dataModelForThree.shootingTimes++;
+
+        NSString *toastMessage = [NSString stringWithFormat:@"threePoint: %d", self.dataModelForThree.goalTimes];
+        [self.view makeToast:toastMessage];
+    }
+    
 }
 
 //- (IBAction)swipeDown:(id)sender {

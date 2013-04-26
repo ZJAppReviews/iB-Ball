@@ -27,6 +27,15 @@
     return self;
 }
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self = [self initWithShooting:0 goal:0];
+    }
+    return self;
+}
+
 - (id)initWithCoder:(NSCoder *)aDecoder {
     int totalShootingTimes = [aDecoder decodeIntegerForKey:kTST];
     int totalGoalTimes = [aDecoder decodeIntegerForKey:kTGT];
