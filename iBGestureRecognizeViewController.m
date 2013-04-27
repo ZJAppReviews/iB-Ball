@@ -24,6 +24,12 @@
 
 - (void)viewDidLoad
 {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self dataModelForThree].shootingTimes--;
+        [self dataModelForThree].totalShootingTimes--;
+    });
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.doubleGesture requireGestureRecognizerToFail:self.thribleGesture];
@@ -82,6 +88,9 @@
         }
         case GestureForThreeCount:
         {
+            // go fuck your self, i'm gonna use some fancy way to do this...
+            
+
             self.dataModelForThree.totalGoalTimes++;
             self.dataModelForThree.totalShootingTimes++;
             self.dataModelForThree.shootingTimes++;
