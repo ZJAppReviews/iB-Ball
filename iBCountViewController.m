@@ -40,6 +40,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self updateRatio:nil];
+
 	// Do any additional setup after loading the view.
     
 
