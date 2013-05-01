@@ -21,7 +21,7 @@ typedef enum CountType {
     CountForThree,
 } CountType;
 
-@interface iBCountViewController : UIViewController <UIActionSheetDelegate, UIAlertViewDelegate, SinaWeiboRequestDelegate>
+@interface iBCountViewController : UIViewController <UIActionSheetDelegate, UIAlertViewDelegate, SinaWeiboRequestDelegate, RenrenDelegate>
 
 @property (nonatomic, strong) iBDataCenterForHotzone *countModel;
 - (IBAction)score:(id)sender;

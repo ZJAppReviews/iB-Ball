@@ -19,6 +19,9 @@
 
 @implementation iBCountViewController
 
+#define RENREN_TAG 1
+#define WEIBO_TAG 2
+
 - (iBDataCenterForHotzone *)countModel {
     if (_countModel == nil) {
         _countModel = [[iBDataCenterForHotzone alloc] init];
@@ -133,7 +136,7 @@
 }
 
 - (IBAction)share:(id)sender {
-    UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Share" delegate:self cancelButtonTitle:@"OK" destructiveButtonTitle:nil otherButtonTitles:@"Sina Weibo", nil];
+    UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Share" delegate:self cancelButtonTitle:@"OK" destructiveButtonTitle:nil otherButtonTitles:@"Sina Weibo", @"Renren", nil];
     [as showFromBarButtonItem:sender animated:YES];
 }
 
@@ -191,6 +194,53 @@ NSString *postStatusText;
                                                             message:[NSString stringWithFormat:@"Will post status with text \"%@\"", postStatusText]
                                                            delegate:self cancelButtonTitle:@"Cancel"
                                                   otherButtonTitles:@"OK", nil];
+        alertView.tag = WEIBO_TAG;
+        [alertView show];
+        
+    }
+    if (buttonIndex == 1) {
+        int shoot = self.countModel.shootingTimes;
+        int goal = self.countModel.goalTimes;
+        
+        if (shoot == 0) {
+            NSLog(@"Are you crazy?");
+            return;
+        }
+        
+        NSString *typeOfString = nil;
+        switch (self.whatTypeOfCountingAreWeIn) {
+            case CountForTwo:
+                typeOfString = @"两分球";
+                break;
+            case CountForThree:
+                typeOfString = @"三分球";
+                break;
+            case CountForNormal:
+                typeOfString = @"投篮";
+                break;
+            default:
+                break;
+        }
+        
+        postStatusText = [[NSString alloc] initWithFormat:@"今日%@命中%d球, 怒打%d次铁, 命中率为%2.1f %%", typeOfString, goal, shoot - goal, ((double)(goal) / shoot) * 100];
+        NSString *today_1 = [NSString stringWithString:postStatusText];
+        NSString *today_2 = [[[NSDate date] description] substringToIndex:10];
+        
+        NSDictionary *dictForToday = [NSDictionary dictionaryWithObjectsAndKeys:today_1, today_2, nil];
+        
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults registerDefaults:dictForToday];
+        
+        
+        [self makeSomeCoolThingsOnPostStatusText];
+        
+        
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert"
+                                                            message:[NSString stringWithFormat:@"Will post status with text \"%@\"", postStatusText]
+                                                           delegate:self cancelButtonTitle:@"Cancel"
+                                                  otherButtonTitles:@"OK", nil];
+        alertView.tag = RENREN_TAG;
         [alertView show];
         
     }
@@ -204,7 +254,7 @@ NSString *postStatusText;
         postStatusText = [postStatusText stringByAppendingString:stringForAll];
     }
     if (self.countModel.getRatioForThisTime >= 50) {
-        NSString *stringForGoodRatio = @"       T-Mac对你微微一笑，表示你将会是下一个他";
+        NSString *stringForGoodRatio = @"       T-Mac对你嫣然一笑，表示你将会是下一个他";
         postStatusText = [postStatusText stringByAppendingString:stringForGoodRatio];
         
     }
@@ -215,7 +265,7 @@ NSString *postStatusText;
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (buttonIndex == 1) {
+    if (buttonIndex == WEIBO_TAG) {
         
         // post status
         NSLog(@"%@", postStatusText);
@@ -226,7 +276,32 @@ NSString *postStatusText;
                          delegate:self];
         //TODO roughly set a nil
     }
+    if (buttonIndex == RENREN_TAG) {
+        Renren *renren = [Renren sharedRenren];
+        NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:10];
+        [params setObject:@"status.set" forKey:@"method"];
+        [params setObject:postStatusText forKey:@"status"];
+        [renren requestWithParams:params andDelegate:self];
+        
+
+    }
 }
+#pragma mark - RenrenDelegate -
+
+/**
+ * 接口请求成功，第三方开发者实现这个方法
+ */
+- (void)renren:(Renren *)renren requestDidReturnResponse:(ROResponse*)response {
+    //TODO
+}
+
+/**
+ * 接口请求失败，第三方开发者实现这个方法
+ */
+- (void)renren:(Renren *)renren requestFailWithError:(ROError*)error {
+    //TODO
+}
+
 
 - (SinaWeibo *)sinaweibo
 {

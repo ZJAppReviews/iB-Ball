@@ -14,7 +14,7 @@
 #define kAppRedirectURI     @"http://www.sina.com"
 
 
-@interface iBAppDelegate : UIResponder <UIApplicationDelegate>
+@interface iBAppDelegate : UIResponder <UIApplicationDelegate, RenrenDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, readonly, nonatomic) SinaWeibo *sinaweibo;

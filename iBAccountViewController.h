@@ -10,7 +10,7 @@
 #import "SinaWeibo.h"
 #import <Parse/Parse.h>
 
-@interface iBAccountViewController : UIViewController <SinaWeiboDelegate, SinaWeiboRequestDelegate, PFSignUpViewControllerDelegate, PFLogInViewControllerDelegate>
+@interface iBAccountViewController : UIViewController <SinaWeiboDelegate, RenrenDelegate, SinaWeiboRequestDelegate, PFSignUpViewControllerDelegate, PFLogInViewControllerDelegate>
 {
 NSDictionary *userInfo;
 NSArray *statuses;
@@ -18,6 +18,7 @@ NSArray *statuses;
 }
 
 - (IBAction)weiboLog:(id)sender;
+- (IBAction)renrenLog:(id)sender;
 
 - (IBAction)getUserinfo:(id)sender;
 

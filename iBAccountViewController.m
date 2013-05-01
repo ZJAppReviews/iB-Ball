@@ -21,6 +21,15 @@
     [sinaweibo logIn];
 }
 
+- (IBAction)renrenLog:(id)sender {
+    // deal with renren
+    Renren *renren = [Renren sharedRenren];
+    [renren authorizationWithPermisson:nil andDelegate:self];
+//    NSArray *permissions = [NSArray arrayWithObjects:@"read_user_album",@"status_update",@"photo_upload",@"publish_feed",@"create_album",@"operate_like",nil];
+    [renren authorizationWithPermisson:nil andDelegate:self];
+
+}
+
 - (IBAction)getUserinfo:(id)sender {
     SinaWeibo *sinaweibo = [self sinaweibo];
     [sinaweibo requestWithURL:@"users/show.json" params:[NSMutableDictionary dictionaryWithObject:sinaweibo.userID forKey:@"uid"] httpMethod:@"GET" delegate:self];
@@ -230,5 +239,8 @@
 - (IBAction)logout:(id)sender {
     [PFUser logOut];
 }
+
+
+#pragma mark - RenrenDelegate methods
 
 @end
