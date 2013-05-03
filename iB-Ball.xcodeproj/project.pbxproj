@@ -125,6 +125,8 @@
 		1878A00D1703CB150065D21F /* WeatherAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878A00B1703CB150065D21F /* WeatherAnimationViewController.m */; };
 		187C1F6A16F701AB00263479 /* iBSkiInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6916F701AB00263479 /* iBSkiInputViewController.m */; };
 		187C1F6E16F7CDEC00263479 /* iBSkiCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */; };
+		1880DF1C17335866004E7DA0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1880DF1A17335866004E7DA0 /* Model.xcdatamodeld */; };
+		1880DF2817335FF4004E7DA0 /* TwoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880DF2717335FF4004E7DA0 /* TwoPoint.m */; };
 		189E4F71170E6B530046DE61 /* iBCountingSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */; };
 		18D40DBB170134DF004A22CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBA170134DF004A22CD /* Parse.framework */; };
 		18D40DBD17013513004A22CD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBC17013513004A22CD /* AudioToolbox.framework */; };
@@ -358,6 +360,9 @@
 		187C1F6916F701AB00263479 /* iBSkiInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiInputViewController.m; sourceTree = "<group>"; };
 		187C1F6C16F7CDEB00263479 /* iBSkiCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiCountViewController.h; sourceTree = "<group>"; };
 		187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiCountViewController.m; sourceTree = "<group>"; };
+		1880DF1B17335866004E7DA0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		1880DF2617335FF4004E7DA0 /* TwoPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoPoint.h; sourceTree = "<group>"; };
+		1880DF2717335FF4004E7DA0 /* TwoPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoPoint.m; sourceTree = "<group>"; };
 		189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBCountingSelectViewController.h; sourceTree = "<group>"; };
 		189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountingSelectViewController.m; sourceTree = "<group>"; };
 		18D40DBA170134DF004A22CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -864,6 +869,9 @@
 				BA4AE59216D12BAB005456EF /* iBDataCenterForHotzone.m */,
 				BA3A7C4416CD477100E84B58 /* CountModel.h */,
 				BA3A7C4516CD477100E84B58 /* CountModel.m */,
+				1880DF1A17335866004E7DA0 /* Model.xcdatamodeld */,
+				1880DF2617335FF4004E7DA0 /* TwoPoint.h */,
+				1880DF2717335FF4004E7DA0 /* TwoPoint.m */,
 				BA36DEE016C4BF37007FFDD1 /* iB-Ball */,
 				BA36DED916C4BF37007FFDD1 /* Frameworks */,
 				BA36DED716C4BF37007FFDD1 /* Products */,
@@ -1201,6 +1209,8 @@
 				1838CECC172E19B00078B3AD /* ROImageView.m in Sources */,
 				1838CECD172E19B00078B3AD /* ROPublishPhotoDialogModel.m in Sources */,
 				1838CECE172E19B00078B3AD /* ROPublishPhotoInternal.m in Sources */,
+				1880DF1C17335866004E7DA0 /* Model.xcdatamodeld in Sources */,
+				1880DF2817335FF4004E7DA0 /* TwoPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1323,6 +1333,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1880DF1A17335866004E7DA0 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1880DF1B17335866004E7DA0 /* Model.xcdatamodel */,
+			);
+			currentVersion = 1880DF1B17335866004E7DA0 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BA36DECD16C4BF37007FFDD1 /* Project object */;
 }
