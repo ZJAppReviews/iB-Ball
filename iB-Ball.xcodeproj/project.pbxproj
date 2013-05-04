@@ -127,6 +127,7 @@
 		187C1F6E16F7CDEC00263479 /* iBSkiCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */; };
 		1880DF1C17335866004E7DA0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1880DF1A17335866004E7DA0 /* Model.xcdatamodeld */; };
 		1880DF2817335FF4004E7DA0 /* TwoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880DF2717335FF4004E7DA0 /* TwoPoint.m */; };
+		1880DF2A1733B885004E7DA0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880DF291733B885004E7DA0 /* CoreData.framework */; };
 		189E4F71170E6B530046DE61 /* iBCountingSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */; };
 		18D40DBB170134DF004A22CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBA170134DF004A22CD /* Parse.framework */; };
 		18D40DBD17013513004A22CD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBC17013513004A22CD /* AudioToolbox.framework */; };
@@ -363,6 +364,7 @@
 		1880DF1B17335866004E7DA0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1880DF2617335FF4004E7DA0 /* TwoPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoPoint.h; sourceTree = "<group>"; };
 		1880DF2717335FF4004E7DA0 /* TwoPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoPoint.m; sourceTree = "<group>"; };
+		1880DF291733B885004E7DA0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBCountingSelectViewController.h; sourceTree = "<group>"; };
 		189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountingSelectViewController.m; sourceTree = "<group>"; };
 		18D40DBA170134DF004A22CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -431,6 +433,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1880DF2A1733B885004E7DA0 /* CoreData.framework in Frameworks */,
 				1838CED0172E1A4F0078B3AD /* libsqlite3.0.dylib in Frameworks */,
 				18D40DC117013599004A22CD /* CoreLocation.framework in Frameworks */,
 				18D40DCD170135C7004A22CD /* SystemConfiguration.framework in Frameworks */,
@@ -850,6 +853,7 @@
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
+				1880DF291733B885004E7DA0 /* CoreData.framework */,
 				1838CECF172E1A4F0078B3AD /* libsqlite3.0.dylib */,
 				1824C26E16FEEC5000895222 /* TODO */,
 				18789FA41703C4E60065D21F /* Licence */,

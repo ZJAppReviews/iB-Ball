@@ -9,6 +9,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SinaWeibo.h"
+#import <CoreData/CoreData.h>
 
 //#import "CountModel.h"
 @class iBDataCenterForHotzone;
@@ -42,5 +43,11 @@ typedef enum CountType {
 @property (strong, nonatomic) NSDictionary *summaryToBePost;
 
 @property (assign, nonatomic) CountType whatTypeOfCountingAreWeIn;
+
+
+@property (nonatomic,strong) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+
+
 
 @end

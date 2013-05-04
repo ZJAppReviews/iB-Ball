@@ -12,6 +12,8 @@
 #import "iBAppDelegate.h"
 #import "iBGestureRecognizeViewController.h"
 #import <Parse/Parse.h>
+#import "TwoPoint.h"
+
 
 @interface iBCountViewController ()
 
@@ -60,6 +62,11 @@
     //    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
     //    [testObject setObject:@"bar" forKey:@"foo"];
     //    [testObject save];
+    
+    
+    // manage the core data
+    iBAppDelegate *delegate = (iBAppDelegate *)[UIApplication sharedApplication].delegate;
+    self.managedObjectContext = delegate.managedObjectContext;
 }
 
 - (void)didReceiveMemoryWarning
@@ -96,6 +103,8 @@
         [self countModel].totalShootingTimes++;
         [self countModel].totalGoalTimes++;
         //        NSLog(@"after %d", [self countModel].shootingTimes);
+        
+        [self coreDataAddOne];
     }
     
     else if (sender.tag == 0) {
@@ -103,7 +112,7 @@
         [self countModel].totalShootingTimes++;
     }
     
-    // go fuck your self, i'm gonna use some fancy way to do this...
+    // go fuck yourself, i'm gonna use some fancy way to do this...
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [self countModel].shootingTimes--;
@@ -114,6 +123,11 @@
     [self.shootingRatio setText:ratio];
     
     // in the end, do the save stuff
+    
+}
+
+- (void)coreDataAddOne {
+//    TwoPoint *a = (TwoPoint *)[NSEntityDescription ];
     
 }
 
