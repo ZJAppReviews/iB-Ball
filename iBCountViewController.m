@@ -128,7 +128,32 @@
 
 - (void)coreDataAddOne {
 //    TwoPoint *a = (TwoPoint *)[NSEntityDescription ];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+    [dateFormatter setLocale:usLocale];
+
+    NSDate *today = [NSDate date];
+    NSLog(@"Date for locale %@: %@",
+          [[dateFormatter locale] localeIdentifier], [dateFormatter stringFromDate:today]);
+    TwoPoint *a = (TwoPoint *)[NSEntityDescription insertNewObjectForEntityForName:@"TwoPoint" inManagedObjectContext:_managedObjectContext];
+
+    a.twoPointDay = [dateFormatter stringFromDate:today];
+    int theOriginal = [a.twoPointGoal intValue];
+    int theOriginal2 = [a.twoPointTotal intValue];
+    NSNumber *a1 = [NSNumber numberWithInt:++theOriginal];
+    NSNumber *a2 = [NSNumber numberWithInt:++theOriginal2];
     
+    a.twoPointGoal = a1;
+    a.twoPointTotal = a2;
+    
+    NSError *err;
+    [self.managedObjectContext save:&err];
+}
+
+- (void)coreDataMissOne {
+    //TODO
 }
 
 - (IBAction)showCarrerScore:(id)sender {
