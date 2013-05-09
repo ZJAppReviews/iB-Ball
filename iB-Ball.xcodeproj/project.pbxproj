@@ -87,6 +87,8 @@
 		183B837716F557770030BC70 /* iBSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837616F557770030BC70 /* iBSkill.m */; };
 		185F71AF1702D04600336ED3 /* iBGestureRecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */; };
 		185F71B11702D06300336ED3 /* iBGestureRecognizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */; };
+		18712487173B3B6800815D6D /* iBPlayCourtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18712486173B3B6800815D6D /* iBPlayCourtViewController.m */; };
+		18712489173B3C8E00815D6D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18712488173B3C8E00815D6D /* MapKit.framework */; };
 		18789FA51703C4E60065D21F /* Licence in Resources */ = {isa = PBXBuildFile; fileRef = 18789FA41703C4E60065D21F /* Licence */; };
 		18789FBB1703C53E0065D21F /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 18789FA91703C53E0065D21F /* AFHTTPClient.m */; };
 		18789FBC1703C53E0065D21F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18789FAB1703C53E0065D21F /* AFHTTPRequestOperation.m */; };
@@ -306,6 +308,9 @@
 		185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBGestureRecognizeViewController.h; sourceTree = "<group>"; };
 		185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBGestureRecognizeViewController.m; sourceTree = "<group>"; };
 		185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBGestureRecognizeViewController.xib; sourceTree = "<group>"; };
+		18712485173B3B6800815D6D /* iBPlayCourtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBPlayCourtViewController.h; sourceTree = "<group>"; };
+		18712486173B3B6800815D6D /* iBPlayCourtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBPlayCourtViewController.m; sourceTree = "<group>"; };
+		18712488173B3C8E00815D6D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		18789FA41703C4E60065D21F /* Licence */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Licence; sourceTree = "<group>"; };
 		18789FA81703C53E0065D21F /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		18789FA91703C53E0065D21F /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
@@ -433,6 +438,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18712489173B3C8E00815D6D /* MapKit.framework in Frameworks */,
 				1880DF2A1733B885004E7DA0 /* CoreData.framework in Frameworks */,
 				1838CED0172E1A4F0078B3AD /* libsqlite3.0.dylib in Frameworks */,
 				18D40DC117013599004A22CD /* CoreLocation.framework in Frameworks */,
@@ -741,6 +747,15 @@
 			name = Gesture;
 			sourceTree = "<group>";
 		};
+		18712484173B3B4600815D6D /* Playcourt */ = {
+			isa = PBXGroup;
+			children = (
+				18712485173B3B6800815D6D /* iBPlayCourtViewController.h */,
+				18712486173B3B6800815D6D /* iBPlayCourtViewController.m */,
+			);
+			name = Playcourt;
+			sourceTree = "<group>";
+		};
 		18789FA61703C4FC0065D21F /* open_source */ = {
 			isa = PBXGroup;
 			children = (
@@ -853,13 +868,12 @@
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
-				1880DF291733B885004E7DA0 /* CoreData.framework */,
-				1838CECF172E1A4F0078B3AD /* libsqlite3.0.dylib */,
 				1824C26E16FEEC5000895222 /* TODO */,
 				18789FA41703C4E60065D21F /* Licence */,
 				18789FA61703C4FC0065D21F /* open_source */,
 				18E38CAA170081DC003782F2 /* Account */,
 				185F71A91702CDA300336ED3 /* Gesture */,
+				18712484173B3B4600815D6D /* Playcourt */,
 				187C1F6B16F7C69E00263479 /* Achieve */,
 				183B836E16F5552E0030BC70 /* Ski */,
 				BACE1C5716E113520032223B /* Obj */,
@@ -893,6 +907,9 @@
 		BA36DED916C4BF37007FFDD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18712488173B3C8E00815D6D /* MapKit.framework */,
+				1880DF291733B885004E7DA0 /* CoreData.framework */,
+				1838CECF172E1A4F0078B3AD /* libsqlite3.0.dylib */,
 				18D40DCC170135C7004A22CD /* SystemConfiguration.framework */,
 				18D40DCA170135C1004A22CD /* StoreKit.framework */,
 				18D40DC8170135BC004A22CD /* Security.framework */,
@@ -1215,6 +1232,7 @@
 				1838CECE172E19B00078B3AD /* ROPublishPhotoInternal.m in Sources */,
 				1880DF1C17335866004E7DA0 /* Model.xcdatamodeld in Sources */,
 				18AFFD271735EDAB00FFE514 /* TwoPoint.m in Sources */,
+				18712487173B3B6800815D6D /* iBPlayCourtViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
