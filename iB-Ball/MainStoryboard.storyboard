@@ -859,7 +859,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="fZS-aH-07w">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="fZS-aH-07w" customClass="CustomTabBar">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1725,6 +1725,9 @@
         <image name="hotzone.png" width="476" height="389"/>
     </resources>
     <classes>
+        <class className="CustomTabBar" superclassName="UITabBar">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomTabBar.h"/>
+        </class>
         <class className="WTTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WTTableViewController.h"/>
             <relationships>
@@ -1772,6 +1775,8 @@
         <class className="iBObjCountViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjCountViewController.h"/>
             <relationships>
+                <relationship kind="action" name="reduceFTPoint:"/>
+                <relationship kind="action" name="reduceThreePoint:"/>
                 <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
@@ -1780,6 +1785,7 @@
         <class className="iBObjViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjViewController.h"/>
             <relationships>
+                <relationship kind="action" name="letsRock:"/>
                 <relationship kind="action" name="setPoint:"/>
                 <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="l2" candidateClass="UILabel"/>

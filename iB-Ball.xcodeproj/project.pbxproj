@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180475A917408973001DA45A /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 180475A817408973001DA45A /* CustomTabBar.m */; };
+		180475AB174089E7001DA45A /* tabbar-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 180475AA174089E7001DA45A /* tabbar-background.png */; };
+		180475AD17408A00001DA45A /* tabbar-background-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 180475AC17408A00001DA45A /* tabbar-background-pressed.png */; };
 		1824C26F16FEEC5000895222 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 1824C26E16FEEC5000895222 /* TODO */; };
 		1824C27316FF061100895222 /* iBSkiCountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1824C27216FF061100895222 /* iBSkiCountView.xib */; };
 		1838CE89172E19B00078B3AD /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1838CE01172E19B00078B3AD /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -172,6 +175,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		180475A717408973001DA45A /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
+		180475A817408973001DA45A /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
+		180475AA174089E7001DA45A /* tabbar-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-background.png"; sourceTree = "<group>"; };
+		180475AC17408A00001DA45A /* tabbar-background-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-background-pressed.png"; sourceTree = "<group>"; };
 		1824C26E16FEEC5000895222 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		1824C27216FF061100895222 /* iBSkiCountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBSkiCountView.xib; sourceTree = SOURCE_ROOT; };
 		1838CE00172E19B00078B3AD /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -460,6 +467,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180475A517408901001DA45A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				180475A61740890B001DA45A /* TabBar */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		180475A61740890B001DA45A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				180475A717408973001DA45A /* CustomTabBar.h */,
+				180475A817408973001DA45A /* CustomTabBar.m */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
 		1838CDFE172E19960078B3AD /* renren_ios_sdk */ = {
 			isa = PBXGroup;
 			children = (
@@ -870,6 +894,7 @@
 			children = (
 				1824C26E16FEEC5000895222 /* TODO */,
 				18789FA41703C4E60065D21F /* Licence */,
+				180475A517408901001DA45A /* UI */,
 				18789FA61703C4FC0065D21F /* open_source */,
 				18E38CAA170081DC003782F2 /* Account */,
 				185F71A91702CDA300336ED3 /* Gesture */,
@@ -949,6 +974,8 @@
 			children = (
 				183B836A16F4D42B0030BC70 /* 2.png */,
 				183B836B16F4D42C0030BC70 /* 1.png */,
+				180475AA174089E7001DA45A /* tabbar-background.png */,
+				180475AC17408A00001DA45A /* tabbar-background-pressed.png */,
 				BA3A7C3F16CD39EE00E84B58 /* hotzone.png */,
 				BA36DEE216C4BF37007FFDD1 /* iB-Ball-Info.plist */,
 				BA36DEE316C4BF37007FFDD1 /* InfoPlist.strings */,
@@ -1116,6 +1143,8 @@
 				1838CEAC172E19B00078B3AD /* small-button-normal.png in Resources */,
 				1838CEAD172E19B00078B3AD /* small-button-normal@2x.png in Resources */,
 				1838CEC7172E19B00078B3AD /* ROCheckOrderCell.xib in Resources */,
+				180475AB174089E7001DA45A /* tabbar-background.png in Resources */,
+				180475AD17408A00001DA45A /* tabbar-background-pressed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1233,6 +1262,7 @@
 				1880DF1C17335866004E7DA0 /* Model.xcdatamodeld in Sources */,
 				18AFFD271735EDAB00FFE514 /* TwoPoint.m in Sources */,
 				18712487173B3B6800815D6D /* iBPlayCourtViewController.m in Sources */,
+				180475A917408973001DA45A /* CustomTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
