@@ -28,9 +28,9 @@
 
 - (void)customize {
     UIImage *tabbarBg = [UIImage imageNamed:@"tabbar-background.png"];
-    UIImage *tabBarSelected = [UIImage imageNamed:@"tabbar-background-pressed.png"];
+//    UIImage *tabBarSelected = [UIImage imageNamed:@"tabbar-background-pressed.png"];
     [self setBackgroundImage:tabbarBg];
-    [self setSelectionIndicatorImage:tabBarSelected];
+    [self setTintColor:[UIColor orangeColor]];
 }
 /*
 // Only override drawRect: if you perform custom drawing.
