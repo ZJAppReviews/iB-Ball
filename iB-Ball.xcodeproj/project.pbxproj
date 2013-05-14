@@ -144,6 +144,7 @@
 		18D40DC9170135BC004A22CD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DC8170135BC004A22CD /* Security.framework */; };
 		18D40DCB170135C1004A22CD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DCA170135C1004A22CD /* StoreKit.framework */; };
 		18D40DCD170135C7004A22CD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DCC170135C7004A22CD /* SystemConfiguration.framework */; };
+		18DDAF5D1741D768000AB3EF /* PRPShadowedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DDAF5C1741D768000AB3EF /* PRPShadowedTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18E1C335171A4CB300F5DC5D /* iBGlobalRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1C334171A4CB300F5DC5D /* iBGlobalRecorder.m */; };
 		18E38CAD17008215003782F2 /* iBAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E38CAC17008215003782F2 /* iBAccountViewController.m */; };
 		18F7272416F91BC300237CC7 /* iBSharedAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272316F91BC300237CC7 /* iBSharedAchievement.m */; };
@@ -389,6 +390,8 @@
 		18D40DC8170135BC004A22CD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		18D40DCA170135C1004A22CD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		18D40DCC170135C7004A22CD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		18DDAF5B1741D768000AB3EF /* PRPShadowedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPShadowedTableView.h; sourceTree = "<group>"; };
+		18DDAF5C1741D768000AB3EF /* PRPShadowedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPShadowedTableView.m; sourceTree = "<group>"; };
 		18E1C333171A4CB300F5DC5D /* iBGlobalRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBGlobalRecorder.h; sourceTree = "<group>"; };
 		18E1C334171A4CB300F5DC5D /* iBGlobalRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBGlobalRecorder.m; sourceTree = "<group>"; };
 		18E38CAB17008215003782F2 /* iBAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBAccountViewController.h; sourceTree = "<group>"; };
@@ -480,6 +483,8 @@
 			children = (
 				180475A717408973001DA45A /* CustomTabBar.h */,
 				180475A817408973001DA45A /* CustomTabBar.m */,
+				18DDAF5B1741D768000AB3EF /* PRPShadowedTableView.h */,
+				18DDAF5C1741D768000AB3EF /* PRPShadowedTableView.m */,
 			);
 			name = TabBar;
 			sourceTree = "<group>";
@@ -1263,6 +1268,7 @@
 				18AFFD271735EDAB00FFE514 /* TwoPoint.m in Sources */,
 				18712487173B3B6800815D6D /* iBPlayCourtViewController.m in Sources */,
 				180475A917408973001DA45A /* CustomTabBar.m in Sources */,
+				18DDAF5D1741D768000AB3EF /* PRPShadowedTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
