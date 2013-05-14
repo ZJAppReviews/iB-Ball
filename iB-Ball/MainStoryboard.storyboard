@@ -215,10 +215,10 @@
             </objects>
             <point key="canvasLocation" x="1713" y="-277"/>
         </scene>
-        <!--View Controller - Select the zone you want to shoot-->
+        <!--IB Hotzone Select View Controller - Select the zone you want to shoot-->
         <scene sceneID="X8A-qe-EpN">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" title="Select the zone you want to shoot" wantsFullScreenLayout="YES" id="fhQ-j8-qvX" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" title="Select the zone you want to shoot" wantsFullScreenLayout="YES" id="fhQ-j8-qvX" customClass="iBHotzoneSelectViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HiQ-fR-M8K">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -246,6 +246,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="Zyy-LR-9ST"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bNg-50-DMk">
                                 <rect key="frame" x="247" y="141" width="53" height="44"/>
@@ -258,6 +261,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="NrZ-Sw-nV6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d1Z-Pj-DD5">
                                 <rect key="frame" x="130" y="290" width="62" height="44"/>
@@ -270,6 +276,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="k6a-iA-AX3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tZs-uC-k9q">
                                 <rect key="frame" x="249" y="290" width="62" height="44"/>
@@ -282,6 +291,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="69d-Ha-wji"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gRY-lS-OdW">
                                 <rect key="frame" x="18" y="290" width="62" height="44"/>
@@ -294,6 +306,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="0a9-Tq-WU4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dXf-6U-2KG">
                                 <rect key="frame" x="60" y="192" width="62" height="44"/>
@@ -306,6 +321,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="s5x-X1-rFe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TQs-kD-ya6">
                                 <rect key="frame" x="200" y="192" width="62" height="44"/>
@@ -318,6 +336,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="XdW-ay-hQy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7ql-Cl-msX">
                                 <rect key="frame" x="130" y="222" width="62" height="44"/>
@@ -345,6 +366,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="VZC-iw-5aX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Pr-uc-vhN">
                                 <rect key="frame" x="189" y="108" width="54" height="44"/>
@@ -357,6 +381,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="t10-is-2ZE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RoB-kZ-8bu">
                                 <rect key="frame" x="83" y="108" width="50" height="44"/>
@@ -369,6 +396,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="wx8-dg-g2z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ev0-Si-rWj">
                                 <rect key="frame" x="301" y="108" width="47" height="123"/>
@@ -381,6 +411,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="CKT-IM-1Hz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C0h-r7-pPA">
                                 <rect key="frame" x="-32" y="108" width="47" height="123"/>
@@ -393,6 +426,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="ifZ-4z-BIh"/>
+                                </connections>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="DRP-xI-lAk">
                                 <rect key="frame" x="1" y="416" width="320" height="44"/>
@@ -403,7 +439,7 @@
                                 <rect key="frame" x="1" y="416" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Go Back" id="XkI-Mk-yhO">
+                                    <barButtonItem tag="99" title="Go Back" id="XkI-Mk-yhO">
                                         <connections>
                                             <segue destination="7aF-bd-VUw" kind="modal" modalTransitionStyle="flipHorizontal" id="2Iy-CX-crU"/>
                                         </connections>
@@ -965,7 +1001,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7MV-6z-hN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2855" y="-766"/>
+            <point key="canvasLocation" x="2848" y="-691"/>
         </scene>
         <!--Navigation Controller - Objective-->
         <scene sceneID="BQX-NG-F5u">
@@ -1755,6 +1791,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBAccountViewController.h"/>
             <relationships>
                 <relationship kind="action" name="getUserinfo:"/>
+                <relationship kind="action" name="logout:"/>
                 <relationship kind="action" name="renrenLog:"/>
                 <relationship kind="action" name="signIn:"/>
                 <relationship kind="action" name="weiboLog:"/>
@@ -1770,20 +1807,19 @@
                 <relationship kind="action" name="score:"/>
                 <relationship kind="action" name="share:"/>
                 <relationship kind="action" name="showCarrerScore:"/>
+                <relationship kind="action" name="startGesture:"/>
                 <relationship kind="outlet" name="shootingRatio" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="iBCountingSelectViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBCountingSelectViewController.h"/>
         </class>
+        <class className="iBHotzoneSelectViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBHotzoneSelectViewController.h"/>
+        </class>
         <class className="iBObjCountViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjCountViewController.h"/>
             <relationships>
-                <relationship kind="action" name="addPoint:" candidateClass="UIView"/>
-                <relationship kind="action" name="reduceFTPoint:"/>
-                <relationship kind="action" name="reduceThreePoint:"/>
-                <relationship kind="action" name="reduceTwoPoint:"/>
-                <relationship kind="action" name="startRecognize:"/>
                 <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
@@ -1792,6 +1828,7 @@
         <class className="iBObjViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjViewController.h"/>
             <relationships>
+                <relationship kind="action" name="letsRock:"/>
                 <relationship kind="action" name="setPoint:"/>
                 <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
@@ -1825,7 +1862,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="WgJ-AL-Xv1"/>
         <segue reference="a5U-cs-f2N"/>
+        <segue reference="hhW-MX-5mn"/>
     </inferredMetricsTieBreakers>
 </document>
