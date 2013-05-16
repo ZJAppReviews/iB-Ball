@@ -20,14 +20,17 @@
 
 @property (nonatomic, assign) NSInteger totalShootingTimes;
 @property (nonatomic, assign) NSInteger totalGoalTimes;
+
+@property (nonatomic, strong) NSMutableDictionary *hotzoneDict;
+
 @property (copy) NSString *docPath;
 
 
 - (float)getRatioForThisTime;
 - (float)getRatioForOverall;
-
 // do the data persistense stuff
 - (void)saveData;
 - (void)loadData;
 
 @end
+
