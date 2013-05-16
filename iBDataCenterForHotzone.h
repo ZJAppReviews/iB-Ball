@@ -21,7 +21,8 @@
 @property (nonatomic, assign) NSInteger totalShootingTimes;
 @property (nonatomic, assign) NSInteger totalGoalTimes;
 
-@property (nonatomic, strong) NSMutableDictionary *hotzoneDict;
+//@property (nonatomic, strong) NSMutableDictionary *hotzoneDict;
++ (NSMutableDictionary *)hotzoneDict;
 
 @property (copy) NSString *docPath;
 

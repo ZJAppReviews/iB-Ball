@@ -92,9 +92,9 @@
 }
 
 
-static NSMutableDictionary *hotzoneDict;
 // lazy init
 + (NSMutableDictionary *)hotzoneDict {
+    static NSMutableDictionary *hotzoneDict;
     if (hotzoneDict == nil) {
         hotzoneDict = [NSMutableDictionary dictionary];
     }
