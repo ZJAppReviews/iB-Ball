@@ -8,9 +8,11 @@
 
 #import "iBHotzoneSelectViewController.h"
 #import "iBCountViewController.h"
+#import "iBHotzoneShowStaticsViewController.h"
 
-@interface iBHotzoneSelectViewController ()
-
+@interface iBHotzoneSelectViewController () {
+    BOOL showStatics;
+}
 @end
 
 @implementation iBHotzoneSelectViewController
@@ -28,6 +30,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+//    NSLog(@"initial %d", showStatics);
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,6 +40,16 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showHotzoneStatics"]) {
+        iBHotzoneShowStaticsViewController *a = (iBHotzoneShowStaticsViewController *)[segue destinationViewController];
+        a.dataCenter = [iBDataCenterForHotzone hotzoneDict];
+        return;
+    }
+    if (showStatics) {
+        // show the statics
+        [self showStaticsView];
+        return;
+    }
     if ([(UIView *)sender tag] == 99) {
         return;
     }
@@ -46,4 +59,13 @@
     NSLog(@"%d", dest.hotzoneTag);
 }
 
+- (void)showStaticsView {
+    
+}
+
+- (IBAction)showStatics:(id)sender {
+    UINavigationBar *thisBar = self.navigationController.navigationBar;
+    [thisBar setTintColor:[UIColor redColor]];
+    showStatics = 1;
+}
 @end

@@ -10,4 +10,6 @@
 
 @interface iBHotzoneSelectViewController : UIViewController
 
+- (IBAction)showStatics:(id)sender;
+
 @end
