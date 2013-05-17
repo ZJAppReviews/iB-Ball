@@ -29,3 +29,7 @@ game center
 成就系统 没有获得后的纪录。反复出现
 achievement should be checked in model
 match count is still under construction...
+
+
+BUG:
+ice ground ->select count  -> 卡

@@ -67,6 +67,7 @@
     // manage the core data
     iBAppDelegate *delegate = (iBAppDelegate *)[UIApplication sharedApplication].delegate;
     self.managedObjectContext = delegate.managedObjectContext;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -93,11 +94,43 @@
 
 - (void)updateRatio:(UIView *)sender {
     if (sender.tag == 1) {
+        if (self.whatTypeOfCountingAreWeIn == CountForHotZone) {
+            // so we are count for hot zone
+            // 1. get the hotzone as a integer
+            NSInteger key = self.hotzoneTag;
+            NSString *keyString = [NSString stringWithFormat:@"%d", key];
+            // 2. get the array of the integer of the dict
+//            id hotzoneDictId = [self.countModel.hotzoneDict objectForKey:keyString];
+//            id hotzoneDictId = [self.countModel.hotzoneDict objectForKey:keyString];
+            NSMutableDictionary *hotzoneDict = [iBDataCenterForHotzone hotzoneDict];
+            NSArray *hotzoneArray = (NSArray *)[hotzoneDict objectForKey:keyString];
+            if (hotzoneArray == nil) {
+                NSNumber *n1 = [NSNumber numberWithInt:0];
+                NSNumber *n2 = [NSNumber numberWithInt:0];
+                NSArray *a = [NSArray arrayWithObjects:n1, n2, nil];
+                hotzoneArray = a;
+            }
+            // 3. manage the data
+            NSNumber *n1 = [hotzoneArray objectAtIndex:0];
+            NSNumber *n2 = [hotzoneArray objectAtIndex:1];
+            
+            int newN1 = n1.integerValue + 1;
+            int newN2 = n2.integerValue + 1;
+            
+            NSNumber *nN1 = [NSNumber numberWithInt:newN1];
+            NSNumber *nN2 = [NSNumber numberWithInt:newN2];
+            
+            NSArray *b = [NSArray arrayWithObjects:nN1, nN2, nil];
+            [[iBDataCenterForHotzone hotzoneDict] setValue:b forKey:keyString];
+            NSLog([iBDataCenterForHotzone hotzoneDict].description);
+            return;
+        }
         //        NSLog(@"before %d", [self countModel].shootingTimes);
         //        [[self countModel] setShootingTimes:([self countModel].shootingTimes + 1)];
+        NSLog(@"nange%d %d", self.countModel.goalTimes, self.countModel.shootingTimes);
+
         [self countModel].shootingTimes++;
         [self countModel].goalTimes++;
-        NSLog(@"%d", self.countModel.shootingTimes);
 
         //        [[self countModel] setGoalTimes:([self countModel].goalTimes + 1)];
         [self countModel].totalShootingTimes++;
@@ -105,9 +138,58 @@
         //        NSLog(@"after %d", [self countModel].shootingTimes);
         
         [self coreDataAddOne];
+
     }
     
     else if (sender.tag == 0) {
+        if (self.whatTypeOfCountingAreWeIn == CountForHotZone) {
+            if (self.whatTypeOfCountingAreWeIn == CountForHotZone) {
+                // so we are count for hot zone
+                // 1. get the hotzone as a integer
+                NSInteger key = self.hotzoneTag;
+                NSString *keyString = [NSString stringWithFormat:@"%d", key];
+                // 2. get the array of the integer of the dict
+                //            id hotzoneDictId = [self.countModel.hotzoneDict objectForKey:keyString];
+                //            id hotzoneDictId = [self.countModel.hotzoneDict objectForKey:keyString];
+                NSMutableDictionary *hotzoneDict = [iBDataCenterForHotzone hotzoneDict];
+                NSArray *hotzoneArray = (NSArray *)[hotzoneDict objectForKey:keyString];
+                if (hotzoneArray == nil) {
+                    NSNumber *n1 = [NSNumber numberWithInt:0];
+                    NSNumber *n2 = [NSNumber numberWithInt:0];
+                    NSArray *a = [NSArray arrayWithObjects:n1, n2, nil];
+                    hotzoneArray = a;
+                }
+                // 3. manage the data
+                NSNumber *n1 = [hotzoneArray objectAtIndex:0];
+                NSNumber *n2 = [hotzoneArray objectAtIndex:1];
+                
+                int newN1 = n1.integerValue;
+                int newN2 = n2.integerValue + 1;
+                
+                NSNumber *nN1 = [NSNumber numberWithInt:newN1];
+                NSNumber *nN2 = [NSNumber numberWithInt:newN2];
+                
+                NSArray *b = [NSArray arrayWithObjects:nN1, nN2, nil];
+                [[iBDataCenterForHotzone hotzoneDict] setValue:b forKey:keyString];
+                return;
+                //            NSLog(self.countModel.hotzoneDict.description);
+            }
+            //        NSLog(@"before %d", [self countModel].shootingTimes);
+            //        [[self countModel] setShootingTimes:([self countModel].shootingTimes + 1)];
+            NSLog(@"nange%d %d", self.countModel.goalTimes, self.countModel.shootingTimes);
+            
+            [self countModel].shootingTimes++;
+            [self countModel].goalTimes++;
+            
+            //        [[self countModel] setGoalTimes:([self countModel].goalTimes + 1)];
+            [self countModel].totalShootingTimes++;
+            [self countModel].totalGoalTimes++;
+            //        NSLog(@"after %d", [self countModel].shootingTimes);
+            
+            [self coreDataAddOne];
+            
+
+        }
         [self countModel].shootingTimes++;
         [self countModel].totalShootingTimes++;
     }
@@ -135,8 +217,8 @@
     [dateFormatter setLocale:usLocale];
 
     NSDate *today = [NSDate date];
-    NSLog(@"Date for locale %@: %@",
-          [[dateFormatter locale] localeIdentifier], [dateFormatter stringFromDate:today]);
+//    NSLog(@"Date for locale %@: %@",
+//          [[dateFormatter locale] localeIdentifier], [dateFormatter stringFromDate:today]);
     TwoPoint *a = (TwoPoint *)[NSEntityDescription insertNewObjectForEntityForName:@"TwoPoint" inManagedObjectContext:_managedObjectContext];
 
     a.twoPointDay = [dateFormatter stringFromDate:today];

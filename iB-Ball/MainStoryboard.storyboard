@@ -215,16 +215,16 @@
             </objects>
             <point key="canvasLocation" x="1713" y="-277"/>
         </scene>
-        <!--View Controller - Select the zone you want to shoot-->
+        <!--IB Hotzone Select View Controller - Select the zone you want to shoot-->
         <scene sceneID="X8A-qe-EpN">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" title="Select the zone you want to shoot" wantsFullScreenLayout="YES" id="fhQ-j8-qvX" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" title="Select the zone you want to shoot" wantsFullScreenLayout="YES" id="fhQ-j8-qvX" customClass="iBHotzoneSelectViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HiQ-fR-M8K">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="redraw" image="hotzone.png" id="4RJ-Cp-PaK">
-                                <rect key="frame" x="-1" y="108" width="321" height="261"/>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="hotzone.png" id="4RJ-Cp-PaK">
+                                <rect key="frame" x="0.0" y="103" width="321" height="313"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nWl-YC-sAa">
@@ -246,6 +246,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="Zyy-LR-9ST"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bNg-50-DMk">
                                 <rect key="frame" x="247" y="141" width="53" height="44"/>
@@ -258,6 +261,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="NrZ-Sw-nV6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d1Z-Pj-DD5">
                                 <rect key="frame" x="130" y="290" width="62" height="44"/>
@@ -270,6 +276,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="k6a-iA-AX3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tZs-uC-k9q">
                                 <rect key="frame" x="249" y="290" width="62" height="44"/>
@@ -282,6 +291,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="69d-Ha-wji"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gRY-lS-OdW">
                                 <rect key="frame" x="18" y="290" width="62" height="44"/>
@@ -294,6 +306,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="0a9-Tq-WU4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dXf-6U-2KG">
                                 <rect key="frame" x="60" y="192" width="62" height="44"/>
@@ -306,6 +321,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="s5x-X1-rFe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TQs-kD-ya6">
                                 <rect key="frame" x="200" y="192" width="62" height="44"/>
@@ -318,6 +336,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="XdW-ay-hQy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7ql-Cl-msX">
                                 <rect key="frame" x="130" y="222" width="62" height="44"/>
@@ -345,6 +366,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="VZC-iw-5aX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Pr-uc-vhN">
                                 <rect key="frame" x="189" y="108" width="54" height="44"/>
@@ -357,6 +381,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="t10-is-2ZE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RoB-kZ-8bu">
                                 <rect key="frame" x="83" y="108" width="50" height="44"/>
@@ -369,6 +396,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="wx8-dg-g2z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ev0-Si-rWj">
                                 <rect key="frame" x="301" y="108" width="47" height="123"/>
@@ -381,6 +411,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="CKT-IM-1Hz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C0h-r7-pPA">
                                 <rect key="frame" x="-32" y="108" width="47" height="123"/>
@@ -393,6 +426,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dbr-p8-b86" kind="push" id="ifZ-4z-BIh"/>
+                                </connections>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="DRP-xI-lAk">
                                 <rect key="frame" x="1" y="416" width="320" height="44"/>
@@ -403,9 +439,16 @@
                                 <rect key="frame" x="1" y="416" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Go Back" id="XkI-Mk-yhO">
+                                    <barButtonItem tag="99" title="Go Back" id="XkI-Mk-yhO">
                                         <connections>
                                             <segue destination="7aF-bd-VUw" kind="modal" modalTransitionStyle="flipHorizontal" id="2Iy-CX-crU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xNA-oq-QDK"/>
+                                    <barButtonItem title="Statics" id="kjk-7l-2Yh">
+                                        <connections>
+                                            <action selector="showStatics:" destination="fhQ-j8-qvX" id="SiK-eR-zl7"/>
+                                            <segue destination="hSd-fZ-8er" kind="push" identifier="showHotzoneStatics" id="6OB-Vk-fyu"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -423,7 +466,246 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8U-JU-Xws" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2207" y="-987"/>
+            <point key="canvasLocation" x="1911" y="-63"/>
+        </scene>
+        <!--IB Hotzone Show Statics View Controller-->
+        <scene sceneID="mbA-Gt-rq1">
+            <objects>
+                <viewController id="hSd-fZ-8er" customClass="iBHotzoneShowStaticsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UwV-vG-z3u">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="4xU-dn-qgG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="hotzone.png" id="WrF-pP-Shv">
+                                        <rect key="frame" x="0.0" y="103" width="321" height="313"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZQR-2D-C1t">
+                                        <rect key="frame" x="32" y="50" width="0.0" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wmg-dR-1ZA">
+                                        <rect key="frame" x="23" y="141" width="57" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" hint="sas"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showStatics:" destination="hSd-fZ-8er" eventType="touchUpInside" id="nOy-ok-GeV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="knN-wD-ewA">
+                                        <rect key="frame" x="247" y="141" width="53" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showStatics:" destination="hSd-fZ-8er" eventType="touchUpInside" id="Xw7-RD-4eS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TCG-Vo-aYs">
+                                        <rect key="frame" x="130" y="290" width="62" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showStatics:" destination="hSd-fZ-8er" eventType="touchUpInside" id="AmA-m7-TIE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="K9L-DN-AZg">
+                                        <rect key="frame" x="249" y="290" width="62" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showStatics:" destination="hSd-fZ-8er" eventType="touchUpInside" id="7JW-fQ-31u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iDT-7t-qUX">
+                                        <rect key="frame" x="18" y="290" width="62" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showStatics:" destination="hSd-fZ-8er" eventType="touchUpInside" id="Wvd-ZX-myq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CIv-F1-M6M">
+                                        <rect key="frame" x="60" y="192" width="62" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showStatics:" destination="hSd-fZ-8er" eventType="touchUpInside" id="RMz-XG-zMw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9c6-MW-4Ld">
+                                        <rect key="frame" x="200" y="192" width="62" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showStatics:" destination="hSd-fZ-8er" eventType="touchUpInside" id="X1t-Nt-qmt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xWn-us-aHr">
+                                        <rect key="frame" x="130" y="222" width="62" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showStatics:" destination="hSd-fZ-8er" eventType="touchUpInside" id="Wzs-Q6-0BC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VgY-4a-Ebq">
+                                        <rect key="frame" x="130" y="171" width="62" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showStatics:" destination="hSd-fZ-8er" eventType="touchUpInside" id="FXX-ni-gvV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="er4-od-qwT">
+                                        <rect key="frame" x="189" y="108" width="54" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showStatics:" destination="hSd-fZ-8er" eventType="touchUpInside" id="28M-jO-wmb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j1t-1I-87V">
+                                        <rect key="frame" x="83" y="108" width="50" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showStatics:" destination="hSd-fZ-8er" eventType="touchUpInside" id="iQ3-PA-tbI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XXh-9K-ODR">
+                                        <rect key="frame" x="301" y="108" width="47" height="123"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showStatics:" destination="hSd-fZ-8er" eventType="touchUpInside" id="EVE-nk-AFm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="noe-92-MBl">
+                                        <rect key="frame" x="-32" y="108" width="47" height="123"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showStatics:" destination="hSd-fZ-8er" eventType="touchUpInside" id="3vZ-q5-wiY"/>
+                                        </connections>
+                                    </button>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="6Js-Oc-iEl">
+                                        <rect key="frame" x="1" y="416" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <items/>
+                                    </toolbar>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" hint="Select the zone you want to shoot">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dph-ZL-RhY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Utr-Tr-NLD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2263" y="-79"/>
         </scene>
         <!--IB Count View Controller-->
         <scene sceneID="7Oq-JP-2GV">
@@ -884,7 +1166,7 @@
         <scene sceneID="Grb-Ni-K5r">
             <objects>
                 <navigationController id="FB1-t1-v8Z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Counting" id="6qI-sZ-7LO"/>
+                    <tabBarItem key="tabBarItem" title="Counting" image="ic_calc.png" id="6qI-sZ-7LO"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -965,13 +1247,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7MV-6z-hN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2855" y="-766"/>
+            <point key="canvasLocation" x="2848" y="-691"/>
         </scene>
         <!--Navigation Controller - Objective-->
         <scene sceneID="BQX-NG-F5u">
             <objects>
                 <navigationController id="TuF-eo-jVe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Objective" id="SMM-Mi-3QB"/>
+                    <tabBarItem key="tabBarItem" title="Objective" image="ic_ok.png" id="SMM-Mi-3QB"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="hda-ms-HZn">
@@ -1367,7 +1649,7 @@
         <scene sceneID="dly-Cz-UAP">
             <objects>
                 <navigationController id="fLQ-98-5X6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Skill" id="L36-Vn-a7K"/>
+                    <tabBarItem key="tabBarItem" title="Skill" image="ic_bookmark.png" id="L36-Vn-a7K"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="A1Y-hH-P9t">
@@ -1520,7 +1802,7 @@
         <scene sceneID="pIb-vQ-2gT">
             <objects>
                 <navigationController id="tvb-nP-YWN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Account" id="SrW-09-gQ9"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="ic_users.png" id="SrW-09-gQ9"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="Bql-HU-AYs">
@@ -1723,6 +2005,10 @@
     </scenes>
     <resources>
         <image name="hotzone.png" width="476" height="389"/>
+        <image name="ic_bookmark.png" width="32" height="32"/>
+        <image name="ic_calc.png" width="32" height="32"/>
+        <image name="ic_ok.png" width="32" height="32"/>
+        <image name="ic_users.png" width="32" height="32"/>
     </resources>
     <classes>
         <class className="CustomTabBar" superclassName="UITabBar">
@@ -1755,6 +2041,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBAccountViewController.h"/>
             <relationships>
                 <relationship kind="action" name="getUserinfo:"/>
+                <relationship kind="action" name="logout:"/>
                 <relationship kind="action" name="renrenLog:"/>
                 <relationship kind="action" name="weiboLog:"/>
             </relationships>
@@ -1769,11 +2056,24 @@
                 <relationship kind="action" name="score:"/>
                 <relationship kind="action" name="share:"/>
                 <relationship kind="action" name="showCarrerScore:"/>
+                <relationship kind="action" name="startGesture:"/>
                 <relationship kind="outlet" name="shootingRatio" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="iBCountingSelectViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBCountingSelectViewController.h"/>
+        </class>
+        <class className="iBHotzoneSelectViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBHotzoneSelectViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showStatics:"/>
+            </relationships>
+        </class>
+        <class className="iBHotzoneShowStaticsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBHotzoneShowStaticsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showStatics:"/>
+            </relationships>
         </class>
         <class className="iBObjCountViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjCountViewController.h"/>
@@ -1786,6 +2086,7 @@
         <class className="iBObjViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjViewController.h"/>
             <relationships>
+                <relationship kind="action" name="letsRock:"/>
                 <relationship kind="action" name="setPoint:"/>
                 <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
@@ -1819,7 +2120,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="WgJ-AL-Xv1"/>
-        <segue reference="a5U-cs-f2N"/>
+        <segue reference="ifZ-4z-BIh"/>
+        <segue reference="hhW-MX-5mn"/>
     </inferredMetricsTieBreakers>
 </document>

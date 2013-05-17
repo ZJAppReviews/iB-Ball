@@ -7,11 +7,11 @@
 //
 
 #import "iBDataCenterForHotzone.h"
+#import <Foundation/Foundation.h>
 #define kTST @"TST"
 #define kTGT @"TGT"
 
 @implementation iBDataCenterForHotzone
-
 //- (void)encodeWithCoder:(NSCoder *)aCoder {
 //    [aCoder encodeInt:self.totalShootingTimes forKey:kTST];
 //    [aCoder encodeInt:self.totalGoalTimes forKey:kTGT];
@@ -89,6 +89,16 @@
 
 - (NSString *)description {
     return [NSString stringWithFormat:@"%d %d  --- %d %d", self.shootingTimes, self.totalShootingTimes, self.goalTimes, self.totalGoalTimes];
+}
+
+
+// lazy init
++ (NSMutableDictionary *)hotzoneDict {
+    static NSMutableDictionary *hotzoneDict;
+    if (hotzoneDict == nil) {
+        hotzoneDict = [NSMutableDictionary dictionary];
+    }
+    return hotzoneDict;
 }
 
 @end
