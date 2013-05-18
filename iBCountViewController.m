@@ -122,7 +122,6 @@
             
             NSArray *b = [NSArray arrayWithObjects:nN1, nN2, nil];
             [[iBDataCenterForHotzone hotzoneDict] setValue:b forKey:keyString];
-            NSLog([iBDataCenterForHotzone hotzoneDict].description);
             return;
         }
         //        NSLog(@"before %d", [self countModel].shootingTimes);
@@ -209,14 +208,37 @@
 }
 
 - (void)coreDataAddOne {
-//    TwoPoint *a = (TwoPoint *)[NSEntityDescription ];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
     NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
     [dateFormatter setLocale:usLocale];
-
+    
     NSDate *today = [NSDate date];
+
+    
+    // deal the situation where the TwoPoint Already Exitst
+    NSManagedObjectContext *context = self.managedObjectContext;
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"TwoPoint"
+                                              inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    
+    NSError *error;
+    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    if (fetchedObjects == nil) {
+        // Handle the error.
+        NSLog(@"wori");
+    }
+    
+    // get the day
+    NSString *dayWeAreIn = [dateFormatter stringFromDate:today];
+    // fileter the day & crap***
+    TwoPoint *tp = [fetchedObjects objectAtIndex:0];
+    NSLog(tp.description);
+    // we got the fetched objec
+//    TwoPoint *a = (TwoPoint *)[NSEntityDescription ];
 //    NSLog(@"Date for locale %@: %@",
 //          [[dateFormatter locale] localeIdentifier], [dateFormatter stringFromDate:today]);
     TwoPoint *a = (TwoPoint *)[NSEntityDescription insertNewObjectForEntityForName:@"TwoPoint" inManagedObjectContext:_managedObjectContext];

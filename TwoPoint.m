@@ -15,4 +15,8 @@
 @dynamic twoPointGoal;
 @dynamic twoPointTotal;
 
+- (NSString *)description {
+    return [[super description] stringByAppendingString:[@"twoPointDay" stringByAppendingString:self.twoPointDay]];
+}
+
 @end
