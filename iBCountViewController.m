@@ -42,10 +42,14 @@
     return self;
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [self updateRatio:nil];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self updateRatio:nil];
+//    [self updateRatio:nil];
 
 	// Do any additional setup after loading the view.
     
@@ -93,6 +97,9 @@
 }
 
 - (void)updateRatio:(UIView *)sender {
+    if (sender == nil) {
+        return;
+    }
     if (sender.tag == 1) {
         if (self.whatTypeOfCountingAreWeIn == CountForHotZone) {
             // so we are count for hot zone
@@ -185,12 +192,14 @@
             [self countModel].totalGoalTimes++;
             //        NSLog(@"after %d", [self countModel].shootingTimes);
             
+            //TODO why add this crap??
             [self coreDataAddOne];
             
 
         }
         [self countModel].shootingTimes++;
         [self countModel].totalShootingTimes++;
+        [self coreDataMissOne];
     }
     
     // go fuck yourself, i'm gonna use some fancy way to do this...
@@ -202,8 +211,6 @@
     
     NSString *ratio = [NSString stringWithFormat:@"%.1f", [[self countModel] getRatioForThisTime]];
     [self.shootingRatio setText:ratio];
-    
-    // in the end, do the save stuff
     
 }
 
@@ -235,8 +242,24 @@
     // get the day
     NSString *dayWeAreIn = [dateFormatter stringFromDate:today];
     // fileter the day & crap***
-    TwoPoint *tp = [fetchedObjects objectAtIndex:0];
-    NSLog(tp.description);
+    for (TwoPoint *tp in fetchedObjects) {
+        if ([tp.twoPointDay isEqualToString:dayWeAreIn]) {
+            int theOriginal = [tp.twoPointGoal intValue];
+            int theOriginal2 = [tp.twoPointTotal intValue];
+            NSNumber *a1 = [NSNumber numberWithInt:++theOriginal];
+            NSNumber *a2 = [NSNumber numberWithInt:++theOriginal2];
+            
+            tp.twoPointGoal = a1;
+            tp.twoPointTotal = a2;
+            
+            NSError *err;
+            [self.managedObjectContext save:&err];
+            NSLog(tp.description);
+            return;
+        }
+    }
+//    TwoPoint *tp = [fetchedObjects objectAtIndex:0];
+//    NSLog(tp.description);
     // we got the fetched objec
 //    TwoPoint *a = (TwoPoint *)[NSEntityDescription ];
 //    NSLog(@"Date for locale %@: %@",
@@ -257,8 +280,69 @@
 }
 
 - (void)coreDataMissOne {
-    //TODO
-}
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+    [dateFormatter setLocale:usLocale];
+    
+    NSDate *today = [NSDate date];
+    
+    
+    // deal the situation where the TwoPoint Already Exitst
+    NSManagedObjectContext *context = self.managedObjectContext;
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"TwoPoint"
+                                              inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    
+    NSError *error;
+    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    if (fetchedObjects == nil) {
+        // Handle the error.
+        NSLog(@"wori");
+    }
+    
+    // get the day
+    NSString *dayWeAreIn = [dateFormatter stringFromDate:today];
+    // fileter the day & crap***
+    for (TwoPoint *tp in fetchedObjects) {
+        if ([tp.twoPointDay isEqualToString:dayWeAreIn]) {
+            int theOriginal = [tp.twoPointGoal intValue];
+            int theOriginal2 = [tp.twoPointTotal intValue];
+            NSNumber *a1 = [NSNumber numberWithInt:theOriginal];
+            NSNumber *a2 = [NSNumber numberWithInt:++theOriginal2];
+            
+            tp.twoPointGoal = a1;
+            tp.twoPointTotal = a2;
+            
+            NSError *err;
+            [self.managedObjectContext save:&err];
+            NSLog(tp.description);
+            return;
+        }
+    }
+    //    TwoPoint *tp = [fetchedObjects objectAtIndex:0];
+    //    NSLog(tp.description);
+    // we got the fetched objec
+    //    TwoPoint *a = (TwoPoint *)[NSEntityDescription ];
+    //    NSLog(@"Date for locale %@: %@",
+    //          [[dateFormatter locale] localeIdentifier], [dateFormatter stringFromDate:today]);
+    TwoPoint *a = (TwoPoint *)[NSEntityDescription insertNewObjectForEntityForName:@"TwoPoint" inManagedObjectContext:_managedObjectContext];
+    
+    a.twoPointDay = [dateFormatter stringFromDate:today];
+    int theOriginal = [a.twoPointGoal intValue];
+    int theOriginal2 = [a.twoPointTotal intValue];
+    NSNumber *a1 = [NSNumber numberWithInt:theOriginal];
+    NSNumber *a2 = [NSNumber numberWithInt:++theOriginal2];
+    
+    a.twoPointGoal = a1;
+    a.twoPointTotal = a2;
+    
+    NSError *err;
+    [self.managedObjectContext save:&err];}
 
 - (IBAction)showCarrerScore:(id)sender {
     UIAlertView *av = [[UIAlertView alloc]initWithTitle:@"Carrer" message:[NSString stringWithFormat:@"Total goal: %d, total shoot: %d, your current ratio is : %.2f%% your overall ratio is : %.2f%%", self.countModel.totalGoalTimes, self.countModel.totalShootingTimes, self.countModel.getRatioForThisTime, self.countModel.getRatioForOverall] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
