@@ -320,7 +320,6 @@
             
             NSError *err;
             [self.managedObjectContext save:&err];
-            NSLog(tp.description);
             return;
         }
     }
@@ -349,14 +348,21 @@
     [av show];
 }
 
+#pragma mark - file save -
 - (IBAction)saveData:(id)sender {
     [[self countModel] saveData];
 }
 
+int choice = 0;
 - (IBAction)loadData:(id)sender {
-    [[self countModel] loadData];
-    [self updateRatio:nil];
+    UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Do you really wanna the data?" delegate:self cancelButtonTitle:@"No" destructiveButtonTitle:@"Yes" otherButtonTitles:nil];
+    as.tag = 10;
+    [as showInView:self.view];
 }
+
+
+
+#pragma mark
 
 - (IBAction)cancel:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -379,6 +385,23 @@
 
 NSString *postStatusText;
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (actionSheet.tag == 10) {
+        if (buttonIndex == 0) {
+            choice = 1;
+            
+            if (choice) {
+                [[self countModel] loadData];
+                [self updateRatio:nil];
+                choice = 0;
+            }
+            return;
+        }
+        if ( buttonIndex == 1) {
+            NSLog(@"safw");
+            return;
+        }
+    }
+    
     if (buttonIndex == 0) {
         int shoot = self.countModel.shootingTimes;
         int goal = self.countModel.goalTimes;
@@ -577,5 +600,6 @@ NSString *postStatusText;
 - (void)viewWillAppear:(BOOL)animated {
     [self updateRatio:nil];
 }
+
 
 @end
