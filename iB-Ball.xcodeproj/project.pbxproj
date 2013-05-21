@@ -88,6 +88,9 @@
 		183B837116F5555D0030BC70 /* iBSkiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837016F5555D0030BC70 /* iBSkiTableViewController.m */; };
 		183B837416F556950030BC70 /* iBSkillDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837316F556950030BC70 /* iBSkillDataModel.m */; };
 		183B837716F557770030BC70 /* iBSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837616F557770030BC70 /* iBSkill.m */; };
+		183C7941174B0A5600992262 /* TaggedLocations.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 183C7940174B0A5600992262 /* TaggedLocations.xcdatamodel */; };
+		183C7944174B0A7000992262 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C7943174B0A7000992262 /* Event.m */; };
+		183C794A174B0B0100992262 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C7949174B0B0100992262 /* Tag.m */; };
 		185F71AF1702D04600336ED3 /* iBGestureRecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */; };
 		185F71B11702D06300336ED3 /* iBGestureRecognizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */; };
 		18640E4917445073006B541A /* README in Resources */ = {isa = PBXBuildFile; fileRef = 18640E4817445073006B541A /* README */; };
@@ -320,6 +323,11 @@
 		183B837316F556950030BC70 /* iBSkillDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkillDataModel.m; sourceTree = "<group>"; };
 		183B837516F557770030BC70 /* iBSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkill.h; sourceTree = "<group>"; };
 		183B837616F557770030BC70 /* iBSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkill.m; sourceTree = "<group>"; };
+		183C7940174B0A5600992262 /* TaggedLocations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaggedLocations.xcdatamodel; sourceTree = "<group>"; };
+		183C7942174B0A7000992262 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		183C7943174B0A7000992262 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		183C7948174B0B0100992262 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		183C7949174B0B0100992262 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBGestureRecognizeViewController.h; sourceTree = "<group>"; };
 		185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBGestureRecognizeViewController.m; sourceTree = "<group>"; };
 		185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBGestureRecognizeViewController.xib; sourceTree = "<group>"; };
@@ -782,6 +790,21 @@
 			path = sinaweibo_ios_sdk;
 			sourceTree = "<group>";
 		};
+		183C793F174B0A2900992262 /* CDModel */ = {
+			isa = PBXGroup;
+			children = (
+				18AFFD251735EDAB00FFE514 /* TwoPoint.h */,
+				18AFFD261735EDAB00FFE514 /* TwoPoint.m */,
+				1880DF1A17335866004E7DA0 /* Model.xcdatamodeld */,
+				183C7948174B0B0100992262 /* Tag.h */,
+				183C7949174B0B0100992262 /* Tag.m */,
+				183C7940174B0A5600992262 /* TaggedLocations.xcdatamodel */,
+				183C7942174B0A7000992262 /* Event.h */,
+				183C7943174B0A7000992262 /* Event.m */,
+			);
+			name = CDModel;
+			sourceTree = "<group>";
+		};
 		185F71A91702CDA300336ED3 /* Gesture */ = {
 			isa = PBXGroup;
 			children = (
@@ -923,6 +946,7 @@
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
+				183C793F174B0A2900992262 /* CDModel */,
 				18AE0C15174725AE00AE766B /* Crappy */,
 				180475A517408901001DA45A /* UI */,
 				18789FA61703C4FC0065D21F /* open_source */,
@@ -946,9 +970,6 @@
 				BA4AE59216D12BAB005456EF /* iBDataCenterForHotzone.m */,
 				BA3A7C4416CD477100E84B58 /* CountModel.h */,
 				BA3A7C4516CD477100E84B58 /* CountModel.m */,
-				18AFFD251735EDAB00FFE514 /* TwoPoint.h */,
-				18AFFD261735EDAB00FFE514 /* TwoPoint.m */,
-				1880DF1A17335866004E7DA0 /* Model.xcdatamodeld */,
 				BA36DEE016C4BF37007FFDD1 /* iB-Ball */,
 				BA36DED916C4BF37007FFDD1 /* Frameworks */,
 				BA36DED716C4BF37007FFDD1 /* Products */,
@@ -1309,6 +1330,9 @@
 				18DDAF5D1741D768000AB3EF /* PRPShadowedTableView.m in Sources */,
 				18DDAF9917422CCC000AB3EF /* iBHotzoneSelectViewController.m in Sources */,
 				18EBC3141745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m in Sources */,
+				183C7941174B0A5600992262 /* TaggedLocations.xcdatamodel in Sources */,
+				183C7944174B0A7000992262 /* Event.m in Sources */,
+				183C794A174B0B0100992262 /* Tag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
