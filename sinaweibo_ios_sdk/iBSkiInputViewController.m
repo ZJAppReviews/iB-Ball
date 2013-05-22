@@ -40,7 +40,6 @@
 
 - (void)skillInputOK {
     [self.delegate skillInput:self withName:self.skillText.text];
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewDidUnload {

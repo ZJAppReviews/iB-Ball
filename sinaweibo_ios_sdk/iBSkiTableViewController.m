@@ -161,7 +161,7 @@
 - (void)skillInput:(id)sender withName:(NSString *)name {
     iBSkill *newSkill = [[iBSkill alloc] initWithName:name];
     [self.skillModel.skillArray addObject:newSkill];
-    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark Action sheet

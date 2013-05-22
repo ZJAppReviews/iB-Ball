@@ -10,8 +10,8 @@
 		180475A917408973001DA45A /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 180475A817408973001DA45A /* CustomTabBar.m */; };
 		180475AB174089E7001DA45A /* tabbar-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 180475AA174089E7001DA45A /* tabbar-background.png */; };
 		180475AD17408A00001DA45A /* tabbar-background-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 180475AC17408A00001DA45A /* tabbar-background-pressed.png */; };
-		181393CB174C69EE0041F384 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181393C8174C69EE0041F384 /* EventTableViewCell.m */; };
-		181393CC174C69EE0041F384 /* EditableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181393CA174C69EE0041F384 /* EditableTableViewCell.m */; };
+		181393CB174C69EE0041F384 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181393C8174C69EE0041F384 /* EventTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		181393CC174C69EE0041F384 /* EditableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181393CA174C69EE0041F384 /* EditableTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		181393CE174C6A080041F384 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181393CD174C6A080041F384 /* EventTableViewCell.xib */; };
 		181393D0174C6A130041F384 /* EditableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181393CF174C6A130041F384 /* EditableTableViewCell.xib */; };
 		1824C26F16FEEC5000895222 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 1824C26E16FEEC5000895222 /* TODO */; };
