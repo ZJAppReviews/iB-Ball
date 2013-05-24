@@ -29,7 +29,6 @@ game center
 待解决:
 成就系统 没有获得后的纪录。反复出现
 achievement should be checked in model
-
-
+	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
 BUG:
 ice ground ->select count  -> 卡match count is still under construction...
