@@ -53,6 +53,7 @@
 #import "iBFootPrintViewController.h"
 #import "Event.h"
 #import "Tag.h"
+#import "iBAppDelegate.h"
 
 #import "EventTableViewCell.h"
 #import "iBFootPrintTagSelectionController.h"
@@ -70,6 +71,10 @@
 - (void)viewDidLoad {
 	
     [super viewDidLoad];
+    
+    // Set the object context
+    iBAppDelegate *ibad = (iBAppDelegate *)[[UIApplication sharedApplication] delegate];
+    self.managedObjectContext = ibad.managedObjectContext;
 	
 	// Set the title.
     self.title = @"Locations";
@@ -95,7 +100,8 @@
 	 Create a fetch request; find the Event entity and assign it to the request; add a sort descriptor; then execute the fetch.
 	 */
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
-	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:managedObjectContext];
+	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+    NSLog(@"%@", entity);
 	[request setEntity:entity];
 	
 	// Order the events by creation date, most recent first.
