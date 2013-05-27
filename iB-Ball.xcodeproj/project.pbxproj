@@ -166,6 +166,7 @@
 		18EBC3141745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */; };
 		18F7272416F91BC300237CC7 /* iBSharedAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272316F91BC300237CC7 /* iBSharedAchievement.m */; };
 		18F7272716F9332C00237CC7 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272616F9332C00237CC7 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18F927DF175369D000804EED /* iBChanllengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F927DE175369D000804EED /* iBChanllengeViewController.m */; };
 		BA01858716D6753F00B98B6A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */; };
 		BA36DEDB16C4BF37007FFDD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */; };
 		BA36DEDD16C4BF37007FFDD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDC16C4BF37007FFDD1 /* Foundation.framework */; };
@@ -442,6 +443,8 @@
 		18F7272316F91BC300237CC7 /* iBSharedAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSharedAchievement.m; sourceTree = "<group>"; };
 		18F7272516F9332C00237CC7 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
 		18F7272616F9332C00237CC7 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
+		18F927DD175369D000804EED /* iBChanllengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBChanllengeViewController.h; sourceTree = "<group>"; };
+		18F927DE175369D000804EED /* iBChanllengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBChanllengeViewController.m; sourceTree = "<group>"; };
 		BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = "iB-Ball/MainStoryboard.storyboard"; sourceTree = "<group>"; };
 		BA36DED616C4BF37007FFDD1 /* iB-Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iB-Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -988,6 +991,16 @@
 			name = Toast;
 			sourceTree = "<group>";
 		};
+		18F927DC1753698E00804EED /* Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				18F927DD175369D000804EED /* iBChanllengeViewController.h */,
+				18F927DE175369D000804EED /* iBChanllengeViewController.m */,
+			);
+			name = Challenge;
+			path = sinaweibo_ios_sdk;
+			sourceTree = "<group>";
+		};
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
@@ -999,6 +1012,7 @@
 				185F71A91702CDA300336ED3 /* Gesture */,
 				18712484173B3B4600815D6D /* Playcourt */,
 				187C1F6B16F7C69E00263479 /* Achieve */,
+				18F927DC1753698E00804EED /* Challenge */,
 				183B836E16F5552E0030BC70 /* Ski */,
 				181393C5174C69AF0041F384 /* My Footprint */,
 				BACE1C5716E113520032223B /* Obj */,
@@ -1386,6 +1400,7 @@
 				181393CC174C69EE0041F384 /* EditableTableViewCell.m in Sources */,
 				184A9001174DAE3D007D28F0 /* iBFootPrintViewController.m in Sources */,
 				184A9004174DAE45007D28F0 /* iBFootPrintTagSelectionController.m in Sources */,
+				18F927DF175369D000804EED /* iBChanllengeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
