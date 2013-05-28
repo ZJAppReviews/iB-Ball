@@ -7,6 +7,7 @@
 //
 
 #import "iBChanllengeViewController.h"
+#import <EventKit/EventKit.h>
 
 @interface iBChanllengeViewController ()
 
@@ -29,11 +30,13 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    _timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(timeUp) userInfo:nil repeats:NO];
 }
 
 - (void)timeUp {
     NSLog(@"shit");
+    EKCalendarItem *ekc = [[EKCalendarItem alloc] init];
+    [ekc addAlarm:[EKAlarm alarmWithRelativeOffset:35]];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,6 +46,8 @@
 }
 
 - (IBAction)startTiming:(id)sender {
-    NSLog(self.timer.description);
+//    NSLog(self.timer.description);
+    _timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(timeUp) userInfo:nil repeats:NO];
+
 }
 @end

@@ -101,7 +101,7 @@
 	 */
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
 	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
-    NSLog(@"%@", entity);
+//    NSLog(@"%@", entity);
 	[request setEntity:entity];
 	
 	// Order the events by creation date, most recent first.

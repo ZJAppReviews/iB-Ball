@@ -163,6 +163,7 @@
 		18DDAF9917422CCC000AB3EF /* iBHotzoneSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DDAF9817422CCC000AB3EF /* iBHotzoneSelectViewController.m */; };
 		18E1C335171A4CB300F5DC5D /* iBGlobalRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1C334171A4CB300F5DC5D /* iBGlobalRecorder.m */; };
 		18E38CAD17008215003782F2 /* iBAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E38CAC17008215003782F2 /* iBAccountViewController.m */; };
+		18E4C0F11754B96C00F4A199 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4C0F01754B96C00F4A199 /* EventKit.framework */; };
 		18EBC3141745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */; };
 		18F7272416F91BC300237CC7 /* iBSharedAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272316F91BC300237CC7 /* iBSharedAchievement.m */; };
 		18F7272716F9332C00237CC7 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272616F9332C00237CC7 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -437,6 +438,7 @@
 		18E1C334171A4CB300F5DC5D /* iBGlobalRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBGlobalRecorder.m; sourceTree = "<group>"; };
 		18E38CAB17008215003782F2 /* iBAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBAccountViewController.h; sourceTree = "<group>"; };
 		18E38CAC17008215003782F2 /* iBAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBAccountViewController.m; sourceTree = "<group>"; };
+		18E4C0F01754B96C00F4A199 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		18EBC3121745CDE600DA2495 /* iBHotzoneShowStaticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBHotzoneShowStaticsViewController.h; sourceTree = "<group>"; };
 		18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBHotzoneShowStaticsViewController.m; sourceTree = "<group>"; };
 		18F7272216F91BC300237CC7 /* iBSharedAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSharedAchievement.h; sourceTree = "<group>"; };
@@ -493,6 +495,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E4C0F11754B96C00F4A199 /* EventKit.framework in Frameworks */,
 				18712489173B3C8E00815D6D /* MapKit.framework in Frameworks */,
 				1880DF2A1733B885004E7DA0 /* CoreData.framework in Frameworks */,
 				1838CED0172E1A4F0078B3AD /* libsqlite3.0.dylib in Frameworks */,
@@ -982,6 +985,15 @@
 			name = Account;
 			sourceTree = "<group>";
 		};
+		18E4C0EF1754B34700F4A199 /* SNS */ = {
+			isa = PBXGroup;
+			children = (
+				BA9BF1BE16D5951100DFDD54 /* sinaweibo_ios_sdk */,
+				1838CDFE172E19960078B3AD /* renren_ios_sdk */,
+			);
+			name = SNS;
+			sourceTree = "<group>";
+		};
 		18F7272816F9333500237CC7 /* Toast */ = {
 			isa = PBXGroup;
 			children = (
@@ -1004,7 +1016,9 @@
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
+				18E4C0F01754B96C00F4A199 /* EventKit.framework */,
 				183C793F174B0A2900992262 /* CDModel */,
+				18E4C0EF1754B34700F4A199 /* SNS */,
 				18AE0C15174725AE00AE766B /* Crappy */,
 				180475A517408901001DA45A /* UI */,
 				18789FA61703C4FC0065D21F /* open_source */,
@@ -1016,8 +1030,6 @@
 				183B836E16F5552E0030BC70 /* Ski */,
 				181393C5174C69AF0041F384 /* My Footprint */,
 				BACE1C5716E113520032223B /* Obj */,
-				1838CDFE172E19960078B3AD /* renren_ios_sdk */,
-				BA9BF1BE16D5951100DFDD54 /* sinaweibo_ios_sdk */,
 				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
 				BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */,
 				BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */,
@@ -1164,7 +1176,7 @@
 				BA36DED216C4BF37007FFDD1 /* Sources */,
 				BA36DED316C4BF37007FFDD1 /* Frameworks */,
 				BA36DED416C4BF37007FFDD1 /* Resources */,
-				18C4EDA217046E9E0005654C /* ShellScript */,
+				18C4EDA217046E9E0005654C /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -1278,13 +1290,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18C4EDA217046E9E0005654C /* ShellScript */ = {
+		18C4EDA217046E9E0005654C /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
