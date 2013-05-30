@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface iBChanllengeViewController : UIViewController
 
 @property (nonatomic, strong) NSTimer *timer;
+
+@property (nonatomic, strong) AVAudioPlayer *player;
 
 - (IBAction)startTiming:(id)sender;
 

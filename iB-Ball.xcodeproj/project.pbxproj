@@ -149,6 +149,8 @@
 		1880DF2A1733B885004E7DA0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880DF291733B885004E7DA0 /* CoreData.framework */; };
 		189E4F71170E6B530046DE61 /* iBCountingSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */; };
 		18AFFD271735EDAB00FFE514 /* TwoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFFD261735EDAB00FFE514 /* TwoPoint.m */; };
+		18BE11971755ECA900C8ABB4 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18BE11961755ECA900C8ABB4 /* alarm.mp3 */; };
+		18BE11991755F33100C8ABB4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BE11981755F33100C8ABB4 /* AVFoundation.framework */; };
 		18D40DBB170134DF004A22CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBA170134DF004A22CD /* Parse.framework */; };
 		18D40DBD17013513004A22CD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBC17013513004A22CD /* AudioToolbox.framework */; };
 		18D40DBF1701352A004A22CD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBE1701352A004A22CD /* CFNetwork.framework */; };
@@ -420,6 +422,8 @@
 		189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountingSelectViewController.m; sourceTree = "<group>"; };
 		18AFFD251735EDAB00FFE514 /* TwoPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoPoint.h; sourceTree = "<group>"; };
 		18AFFD261735EDAB00FFE514 /* TwoPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoPoint.m; sourceTree = "<group>"; };
+		18BE11961755ECA900C8ABB4 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		18BE11981755F33100C8ABB4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		18D40DBA170134DF004A22CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		18D40DBC17013513004A22CD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		18D40DBE1701352A004A22CD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -495,6 +499,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BE11991755F33100C8ABB4 /* AVFoundation.framework in Frameworks */,
 				18E4C0F11754B96C00F4A199 /* EventKit.framework in Frameworks */,
 				18712489173B3C8E00815D6D /* MapKit.framework in Frameworks */,
 				1880DF2A1733B885004E7DA0 /* CoreData.framework in Frameworks */,
@@ -1016,6 +1021,7 @@
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
+				18BE11981755F33100C8ABB4 /* AVFoundation.framework */,
 				18E4C0F01754B96C00F4A199 /* EventKit.framework */,
 				183C793F174B0A2900992262 /* CDModel */,
 				18E4C0EF1754B34700F4A199 /* SNS */,
@@ -1043,6 +1049,7 @@
 				BA4AE59216D12BAB005456EF /* iBDataCenterForHotzone.m */,
 				BA3A7C4416CD477100E84B58 /* CountModel.h */,
 				BA3A7C4516CD477100E84B58 /* CountModel.m */,
+				BA36DEE116C4BF37007FFDD1 /* Supporting Files */,
 				BA36DEE016C4BF37007FFDD1 /* iB-Ball */,
 				BA36DED916C4BF37007FFDD1 /* Frameworks */,
 				BA36DED716C4BF37007FFDD1 /* Products */,
@@ -1091,7 +1098,6 @@
 				BA36DEF616C4BF37007FFDD1 /* iBViewController.m */,
 				18E1C333171A4CB300F5DC5D /* iBGlobalRecorder.h */,
 				18E1C334171A4CB300F5DC5D /* iBGlobalRecorder.m */,
-				BA36DEE116C4BF37007FFDD1 /* Supporting Files */,
 			);
 			path = "iB-Ball";
 			sourceTree = "<group>";
@@ -1099,6 +1105,7 @@
 		BA36DEE116C4BF37007FFDD1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18BE11961755ECA900C8ABB4 /* alarm.mp3 */,
 				18640E4E1744C572006B541A /* ic_calc.png */,
 				18640E501744C5D2006B541A /* ic_ok.png */,
 				18640E521744C658006B541A /* ic_users.png */,
@@ -1117,6 +1124,7 @@
 				BA36DEF016C4BF37007FFDD1 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = "iB-Ball";
 			sourceTree = "<group>";
 		};
 		BA9BF1BE16D5951100DFDD54 /* sinaweibo_ios_sdk */ = {
@@ -1284,6 +1292,7 @@
 				181393CE174C6A080041F384 /* EventTableViewCell.xib in Resources */,
 				181393D0174C6A130041F384 /* EditableTableViewCell.xib in Resources */,
 				184A9006174DAEE0007D28F0 /* TagsHeaderView.xib in Resources */,
+				18BE11971755ECA900C8ABB4 /* alarm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

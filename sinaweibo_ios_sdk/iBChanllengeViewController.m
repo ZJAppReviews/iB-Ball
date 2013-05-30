@@ -31,11 +31,19 @@
 	// Do any additional setup after loading the view.
 }
 
+
 - (void)timeUp {
     NSLog(@"shit");
     EKCalendarItem *ekc = [[EKCalendarItem alloc] init];
     [ekc addAlarm:[EKAlarm alarmWithRelativeOffset:35]];
-
+    NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"alarm" ofType:@"mp3"];
+    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:soundFilePath];
+    AVAudioPlayer *ap = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    self.player = ap;
+    
+////    [ap setDelegate:self];
+//    [self.player prepareToPlay];
+    [self.player play];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,7 +54,7 @@
 
 - (IBAction)startTiming:(id)sender {
 //    NSLog(self.timer.description);
-    _timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(timeUp) userInfo:nil repeats:NO];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeUp) userInfo:nil repeats:NO];
 
 }
 @end
