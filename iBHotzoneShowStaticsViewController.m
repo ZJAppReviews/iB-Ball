@@ -56,4 +56,5 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ratio" message:desc delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
 }
+
 @end

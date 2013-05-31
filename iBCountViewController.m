@@ -601,5 +601,22 @@ NSString *postStatusText;
     [self updateRatio:nil];
 }
 
-
+- (void)viewWillDisappear:(BOOL)animated {
+    if (self.whatTypeOfCountingAreWeIn != CountForHotZone) {
+       
+    }
+    NSLog(@"Wow");
+    
+	NSString *path;
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	path = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"zzzhotzone/"];
+    // save the hotzone data
+    if ([[iBDataCenterForHotzone hotzoneDict] writeToFile:path atomically:NO]) {
+        NSLog(@"success");
+    }
+    else {
+        NSLog(@"fail");
+    }
+    return;
+}
 @end

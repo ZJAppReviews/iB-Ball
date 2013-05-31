@@ -974,7 +974,6 @@
 		18AE0C15174725AE00AE766B /* Crappy */ = {
 			isa = PBXGroup;
 			children = (
-				1824C26E16FEEC5000895222 /* TODO */,
 				18640E4817445073006B541A /* README */,
 				18789FA41703C4E60065D21F /* Licence */,
 			);
@@ -1021,8 +1020,7 @@
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
-				18BE11981755F33100C8ABB4 /* AVFoundation.framework */,
-				18E4C0F01754B96C00F4A199 /* EventKit.framework */,
+				1824C26E16FEEC5000895222 /* TODO */,
 				183C793F174B0A2900992262 /* CDModel */,
 				18E4C0EF1754B34700F4A199 /* SNS */,
 				18AE0C15174725AE00AE766B /* Crappy */,
@@ -1067,6 +1065,8 @@
 		BA36DED916C4BF37007FFDD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18BE11981755F33100C8ABB4 /* AVFoundation.framework */,
+				18E4C0F01754B96C00F4A199 /* EventKit.framework */,
 				18712488173B3C8E00815D6D /* MapKit.framework */,
 				1880DF291733B885004E7DA0 /* CoreData.framework */,
 				1838CECF172E1A4F0078B3AD /* libsqlite3.0.dylib */,
