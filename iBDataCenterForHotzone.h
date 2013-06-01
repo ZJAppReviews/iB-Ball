@@ -33,5 +33,6 @@
 - (void)saveData;
 - (void)loadData;
 
++ (void)setHotzoneDict:(NSDictionary *)a;
 @end
 

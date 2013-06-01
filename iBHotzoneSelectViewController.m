@@ -29,8 +29,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view.
 //    NSLog(@"initial %d", showStatics);
+    
+	NSString *path;
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	path = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"zzzhotzone/"];
+    
+    NSDictionary *hotzoneDict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+    if (hotzoneDict != nil) {
+        [iBDataCenterForHotzone setHotzoneDict:hotzoneDict];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,4 +78,5 @@
     [thisBar setTintColor:[UIColor redColor]];
     showStatics = 1;
 }
+
 @end

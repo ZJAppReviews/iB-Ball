@@ -91,14 +91,19 @@
     return [NSString stringWithFormat:@"%d %d  --- %d %d", self.shootingTimes, self.totalShootingTimes, self.goalTimes, self.totalGoalTimes];
 }
 
+static NSMutableDictionary *hotzoneDict;
 
 // lazy init
 + (NSMutableDictionary *)hotzoneDict {
-    static NSMutableDictionary *hotzoneDict;
     if (hotzoneDict == nil) {
         hotzoneDict = [NSMutableDictionary dictionary];
     }
     return hotzoneDict;
+}
+
++ (void)setHotzoneDict:(NSDictionary *)a {
+    
+    hotzoneDict = [a mutableCopy];
 }
 
 @end
