@@ -40,10 +40,14 @@
     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:soundFilePath];
     AVAudioPlayer *ap = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
     self.player = ap;
-    
-////    [ap setDelegate:self];
-//    [self.player prepareToPlay];
+    [ap setDelegate:self];
+    [self.player prepareToPlay];
     [self.player play];
+    [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(musicStop) userInfo:nil repeats:NO];
+}
+
+- (void)musicStop {
+    [self.player stop];
 }
 
 - (void)didReceiveMemoryWarning
