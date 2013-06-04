@@ -90,6 +90,7 @@ int mark;
     [self setL1:nil];
     [self setL2:nil];
     [self setL3:nil];
+    [self setBackgroundTapButton:nil];
     [super viewDidUnload];
 }
 
@@ -142,4 +143,67 @@ int mark;
     iBObjCountViewController *a = (iBObjCountViewController *)segue.destinationViewController;
     [a setDataModel:self.objModel];
 }
+
+- (IBAction)showPickerView:(id)sender {
+    
+    // Uses the default UIPickerView frame.
+    self.myPicker = [[UIPickerView alloc] initWithFrame:CGRectZero];
+    
+    // Place the Pickerview off the bottom of the screen, in the middle.
+    _myPicker.center = CGPointMake([[UIScreen mainScreen] bounds].size.width / 2.0, [[UIScreen mainScreen] bounds].size.height + _myPicker.frame.size.height);
+    _myPicker.dataSource = self;
+    _myPicker.delegate = self;
+    _myPicker.showsSelectionIndicator = YES;
+    
+    // Create the toolbar and place it at -44, so it rests "above" the pickerview.
+    // Borrowed from @Spark, thanks!
+    UIToolbar *pickerDateToolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, -44, 320, 44)];
+    pickerDateToolbar.barStyle = UIBarStyleBlackTranslucent;
+    [pickerDateToolbar sizeToFit];
+    
+    NSMutableArray *barItems = [[NSMutableArray alloc] init];
+    
+    UIBarButtonItem *flexSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    [barItems addObject:flexSpace];
+    
+    // The action can whatever you want, but it should dimiss the picker.
+    UIBarButtonItem *doneBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(backgroundTapped:)];
+    [barItems addObject:doneBtn];
+    
+    [pickerDateToolbar setItems:barItems animated:YES];
+    [_myPicker addSubview:pickerDateToolbar];
+    
+    // If you have a UITabBarController, you should add the picker as a subview of it
+    // so it appears to go over the tabbar, not under it. Otherwise you can add it to
+    // self.view
+    [self.tabBarController.view addSubview:_myPicker];
+    
+    // Animate it moving up
+    [UIView animateWithDuration:.3 animations:^{
+        [_myPicker setCenter:CGPointMake(160, [[UIScreen mainScreen] bounds].size.height - 148)]; //148 seems to put it in place just right.
+    } completion:^(BOOL finished) {
+        // When done, place an invisible button on the view behind the picker, so if the
+        // user "taps to dismiss" the picker, it will go away. Good user experience!
+        self.backgroundTapButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _backgroundTapButton.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        [_backgroundTapButton addTarget:self action:@selector(backgroundTapped:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:_backgroundTapButton];
+    }];
+    
+}
+
+// And lastly, the method to hide the picker.  You should handle the picker changing
+// in a method with UIControlEventValueChanged on the pickerview.
+- (void)backgroundTapped:(id)sender {
+    
+    [UIView animateWithDuration:.3 animations:^{
+        _myPicker.center = CGPointMake(160, [[UIScreen mainScreen] bounds].size.height + _myPicker.frame.size.height);
+    } completion:^(BOOL finished) {
+        [_myPicker removeFromSuperview];
+        self.myPicker = nil;
+        [self.backgroundTapButton removeFromSuperview];
+        self.backgroundTapButton = nil;
+    }];
+}
+
 @end

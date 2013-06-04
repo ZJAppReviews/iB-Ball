@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface iBChanllengeViewController : UIViewController
+@interface iBChanllengeViewController : UIViewController <AVAudioPlayerDelegate>
 
 @property (nonatomic, strong) NSTimer *timer;
 
