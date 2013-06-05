@@ -23,6 +23,7 @@
 
 //@property (strong, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *backgroundTapButton;
+@property (weak, nonatomic) IBOutlet UIButton *backgroundTapButton;
+
 @end
 

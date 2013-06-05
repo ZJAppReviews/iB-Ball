@@ -91,6 +91,7 @@ int mark;
     [self setL2:nil];
     [self setL3:nil];
     [self setBackgroundTapButton:nil];
+    [self setBackgroundTapButton:nil];
     [super viewDidUnload];
 }
 
@@ -145,6 +146,7 @@ int mark;
 }
 
 - (IBAction)showPickerView:(id)sender {
+    mark = [sender tag];
     
     // Uses the default UIPickerView frame.
     self.myPicker = [[UIPickerView alloc] initWithFrame:CGRectZero];
@@ -180,7 +182,7 @@ int mark;
     
     // Animate it moving up
     [UIView animateWithDuration:.3 animations:^{
-        [_myPicker setCenter:CGPointMake(160, [[UIScreen mainScreen] bounds].size.height - 148)]; //148 seems to put it in place just right.
+        [_myPicker setCenter:CGPointMake(160, [[UIScreen mainScreen] bounds].size.height - 110)]; //148 seems to put it in place just right.
     } completion:^(BOOL finished) {
         // When done, place an invisible button on the view behind the picker, so if the
         // user "taps to dismiss" the picker, it will go away. Good user experience!
