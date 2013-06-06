@@ -98,6 +98,8 @@
 		184A9001174DAE3D007D28F0 /* iBFootPrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A9000174DAE3D007D28F0 /* iBFootPrintViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		184A9004174DAE45007D28F0 /* iBFootPrintTagSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A9003174DAE45007D28F0 /* iBFootPrintTagSelectionController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		184A9006174DAEE0007D28F0 /* TagsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184A9005174DAEE0007D28F0 /* TagsHeaderView.xib */; };
+		185001971760397A000711ED /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1850019517603979000711ED /* whiteButton.png */; };
+		185001981760397A000711ED /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 185001961760397A000711ED /* blueButton.png */; };
 		185F71AF1702D04600336ED3 /* iBGestureRecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */; };
 		185F71B11702D06300336ED3 /* iBGestureRecognizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */; };
 		18640E4917445073006B541A /* README in Resources */ = {isa = PBXBuildFile; fileRef = 18640E4817445073006B541A /* README */; };
@@ -350,6 +352,8 @@
 		184A9002174DAE45007D28F0 /* iBFootPrintTagSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBFootPrintTagSelectionController.h; sourceTree = "<group>"; };
 		184A9003174DAE45007D28F0 /* iBFootPrintTagSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBFootPrintTagSelectionController.m; sourceTree = "<group>"; };
 		184A9005174DAEE0007D28F0 /* TagsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagsHeaderView.xib; sourceTree = "<group>"; };
+		1850019517603979000711ED /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
+		185001961760397A000711ED /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
 		185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBGestureRecognizeViewController.h; sourceTree = "<group>"; };
 		185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBGestureRecognizeViewController.m; sourceTree = "<group>"; };
 		185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBGestureRecognizeViewController.xib; sourceTree = "<group>"; };
@@ -1047,6 +1051,8 @@
 				BA4AE59216D12BAB005456EF /* iBDataCenterForHotzone.m */,
 				BA3A7C4416CD477100E84B58 /* CountModel.h */,
 				BA3A7C4516CD477100E84B58 /* CountModel.m */,
+				1850019517603979000711ED /* whiteButton.png */,
+				185001961760397A000711ED /* blueButton.png */,
 				BA36DEE116C4BF37007FFDD1 /* Supporting Files */,
 				BA36DEE016C4BF37007FFDD1 /* iB-Ball */,
 				BA36DED916C4BF37007FFDD1 /* Frameworks */,
@@ -1293,6 +1299,8 @@
 				181393D0174C6A130041F384 /* EditableTableViewCell.xib in Resources */,
 				184A9006174DAEE0007D28F0 /* TagsHeaderView.xib in Resources */,
 				18BE11971755ECA900C8ABB4 /* alarm.mp3 in Resources */,
+				185001971760397A000711ED /* whiteButton.png in Resources */,
+				185001981760397A000711ED /* blueButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

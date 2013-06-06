@@ -1236,6 +1236,7 @@
                     <tabBarItem key="tabBarItem" title="Objective" image="ic_ok.png" id="SMM-Mi-3QB"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="hda-ms-HZn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1413,6 +1414,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="backgroundTapButton" destination="BwZ-4o-Ja5" id="GQf-nJ-p0g"/>
                         <outlet property="l1" destination="RNb-D0-t7f" id="U6a-AI-V7i"/>
@@ -2055,9 +2057,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBAccountViewController.h"/>
             <relationships>
                 <relationship kind="action" name="getUserinfo:"/>
-                <relationship kind="action" name="logout:"/>
                 <relationship kind="action" name="renrenLog:"/>
-                <relationship kind="action" name="signIn:"/>
                 <relationship kind="action" name="weiboLog:"/>
             </relationships>
         </class>
@@ -2106,11 +2106,6 @@
         <class className="iBObjCountViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjCountViewController.h"/>
             <relationships>
-                <relationship kind="action" name="addPoint:" candidateClass="UIView"/>
-                <relationship kind="action" name="reduceFTPoint:"/>
-                <relationship kind="action" name="reduceThreePoint:"/>
-                <relationship kind="action" name="reduceTwoPoint:"/>
-                <relationship kind="action" name="startRecognize:"/>
                 <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
@@ -2119,9 +2114,7 @@
         <class className="iBObjViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjViewController.h"/>
             <relationships>
-                <relationship kind="action" name="letsRock:"/>
                 <relationship kind="action" name="setPoint:"/>
-                <relationship kind="action" name="showPickerView:"/>
                 <relationship kind="outlet" name="backgroundTapButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
