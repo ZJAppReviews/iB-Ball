@@ -25,5 +25,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *backgroundTapButton;
 
+@property (weak, nonatomic) IBOutlet UIButton *rockButton;
+
 @end
 

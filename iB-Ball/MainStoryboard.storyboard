@@ -1420,6 +1420,7 @@
                         <outlet property="l1" destination="RNb-D0-t7f" id="U6a-AI-V7i"/>
                         <outlet property="l2" destination="wJQ-5z-vIG" id="pOA-Sj-f5f"/>
                         <outlet property="l3" destination="GHs-di-LL3" id="Fi9-TZ-cvp"/>
+                        <outlet property="rockButton" destination="GT3-UP-mMd" id="wNa-cp-YzQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xam-gU-aHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2057,7 +2058,9 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBAccountViewController.h"/>
             <relationships>
                 <relationship kind="action" name="getUserinfo:"/>
+                <relationship kind="action" name="logout:"/>
                 <relationship kind="action" name="renrenLog:"/>
+                <relationship kind="action" name="signIn:"/>
                 <relationship kind="action" name="weiboLog:"/>
             </relationships>
         </class>
@@ -2077,7 +2080,6 @@
                 <relationship kind="action" name="score:"/>
                 <relationship kind="action" name="share:"/>
                 <relationship kind="action" name="showCarrerScore:"/>
-                <relationship kind="action" name="startGesture:"/>
                 <relationship kind="outlet" name="shootingRatio" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -2114,11 +2116,14 @@
         <class className="iBObjViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjViewController.h"/>
             <relationships>
+                <relationship kind="action" name="letsRock:"/>
                 <relationship kind="action" name="setPoint:"/>
+                <relationship kind="action" name="showPickerView:"/>
                 <relationship kind="outlet" name="backgroundTapButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rockButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="iBPlayCourtViewController" superclassName="UIViewController">
