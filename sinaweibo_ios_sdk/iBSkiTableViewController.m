@@ -175,7 +175,7 @@
 //        iBSkiCountViewController *a = [[iBSkiCountViewController alloc] init];
 //        UIStoryboardSegue *i = [[UIStoryboardSegue alloc] initWithIdentifier:@"skiCount" source:self destination:a];
 //        [i perform];
-        iBSkiCountViewController *a = [[iBSkiCountViewController alloc] initWithNibName:@"iBSkiCountViewController" bundle:nil];
+        iBSkiCountViewController *a = [[iBSkiCountViewController alloc] initWithNibName:@"iBSkiCountView" bundle:nil];
         a.whichSkill = [self.skillModel.skillArray objectAtIndex:self.selected];
         [self.navigationController pushViewController:a animated:YES];
     }
