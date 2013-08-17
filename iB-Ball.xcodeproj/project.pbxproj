@@ -95,6 +95,9 @@
 		183C7941174B0A5600992262 /* TaggedLocations.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 183C7940174B0A5600992262 /* TaggedLocations.xcdatamodel */; };
 		183C7944174B0A7000992262 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C7943174B0A7000992262 /* Event.m */; };
 		183C794A174B0B0100992262 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C7949174B0B0100992262 /* Tag.m */; };
+		18442A9217BF6A0600368EF5 /* iBCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18442A9117BF6A0600368EF5 /* iBCountViewController.xib */; };
+		18442A9617BF6BC800368EF5 /* iBCountViewControllerForHotZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */; };
+		18442A9717BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */; };
 		184A9001174DAE3D007D28F0 /* iBFootPrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A9000174DAE3D007D28F0 /* iBFootPrintViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		184A9004174DAE45007D28F0 /* iBFootPrintTagSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A9003174DAE45007D28F0 /* iBFootPrintTagSelectionController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		184A9006174DAEE0007D28F0 /* TagsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184A9005174DAEE0007D28F0 /* TagsHeaderView.xib */; };
@@ -347,6 +350,10 @@
 		183C7943174B0A7000992262 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		183C7948174B0B0100992262 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
 		183C7949174B0B0100992262 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		18442A9117BF6A0600368EF5 /* iBCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBCountViewController.xib; sourceTree = "<group>"; };
+		18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountViewControllerForHotZone.h; path = "iB-Ball/iBCountViewControllerForHotZone.h"; sourceTree = "<group>"; };
+		18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountViewControllerForHotZone.m; path = "iB-Ball/iBCountViewControllerForHotZone.m"; sourceTree = "<group>"; };
+		18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBCountViewControllerForHotZone.xib; path = "iB-Ball/iBCountViewControllerForHotZone.xib"; sourceTree = "<group>"; };
 		184A8FFF174DAE3D007D28F0 /* iBFootPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBFootPrintViewController.h; sourceTree = "<group>"; };
 		184A9000174DAE3D007D28F0 /* iBFootPrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBFootPrintViewController.m; sourceTree = "<group>"; };
 		184A9002174DAE45007D28F0 /* iBFootPrintTagSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBFootPrintTagSelectionController.h; sourceTree = "<group>"; };
@@ -865,6 +872,14 @@
 			name = CDModel;
 			sourceTree = "<group>";
 		};
+		185CC92717BF625300061270 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				18E4C0EF1754B34700F4A199 /* SNS */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
 		185F71A91702CDA300336ED3 /* Gesture */ = {
 			isa = PBXGroup;
 			children = (
@@ -887,6 +902,7 @@
 		18789FA61703C4FC0065D21F /* open_source */ = {
 			isa = PBXGroup;
 			children = (
+				185CC92717BF625300061270 /* Vendor */,
 				18789FC41703C7960065D21F /* 1 */,
 				18789FA71703C52F0065D21F /* AFNetworking */,
 				18F7272816F9333500237CC7 /* Toast */,
@@ -1026,7 +1042,6 @@
 			children = (
 				1824C26E16FEEC5000895222 /* TODO */,
 				183C793F174B0A2900992262 /* CDModel */,
-				18E4C0EF1754B34700F4A199 /* SNS */,
 				18AE0C15174725AE00AE766B /* Crappy */,
 				180475A517408901001DA45A /* UI */,
 				18789FA61703C4FC0065D21F /* open_source */,
@@ -1047,6 +1062,10 @@
 				18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */,
 				BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */,
 				BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */,
+				18442A9117BF6A0600368EF5 /* iBCountViewController.xib */,
+				18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */,
+				18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */,
+				18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */,
 				BA4AE59116D12BAB005456EF /* iBDataCenterForHotzone.h */,
 				BA4AE59216D12BAB005456EF /* iBDataCenterForHotzone.m */,
 				BA3A7C4416CD477100E84B58 /* CountModel.h */,
@@ -1301,6 +1320,8 @@
 				18BE11971755ECA900C8ABB4 /* alarm.mp3 in Resources */,
 				185001971760397A000711ED /* whiteButton.png in Resources */,
 				185001981760397A000711ED /* blueButton.png in Resources */,
+				18442A9217BF6A0600368EF5 /* iBCountViewController.xib in Resources */,
+				18442A9717BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1431,6 +1452,7 @@
 				184A9001174DAE3D007D28F0 /* iBFootPrintViewController.m in Sources */,
 				184A9004174DAE45007D28F0 /* iBFootPrintTagSelectionController.m in Sources */,
 				18F927DF175369D000804EED /* iBChanllengeViewController.m in Sources */,
+				18442A9617BF6BC800368EF5 /* iBCountViewControllerForHotZone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

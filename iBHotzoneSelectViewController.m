@@ -9,6 +9,7 @@
 #import "iBHotzoneSelectViewController.h"
 #import "iBCountViewController.h"
 #import "iBHotzoneShowStaticsViewController.h"
+#import "iBCountViewControllerForHotZone.h"
 
 @interface iBHotzoneSelectViewController () {
     BOOL showStatics;
@@ -30,17 +31,19 @@
 {
     [super viewDidLoad];
     
-	// Do any additional setup after loading the view.
-//    NSLog(@"initial %d", showStatics);
-    
-	NSString *path;
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-	path = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"zzzhotzone/"];
-    
-    NSDictionary *hotzoneDict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
-    if (hotzoneDict != nil) {
-        [iBDataCenterForHotzone setHotzoneDict:hotzoneDict];
-    }
+    for (UIView *uiv in self.view.subviews) {
+        if ([uiv isKindOfClass:[UIButton class]]) {
+            [(UIButton *)uiv addTarget:self action:@selector(showHotzoneVC:) forControlEvents:UIControlEventTouchUpInside];
+        }
+    }    
+//	NSString *path;
+//	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//	path = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"zzzhotzone/"];
+//
+//    NSDictionary *hotzoneDict = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+//    if (hotzoneDict != nil) {
+//        [iBDataCenterForHotzone setHotzoneDict:hotzoneDict];
+//    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,14 +66,19 @@
     if ([(UIView *)sender tag] == 99) {
         return;
     }
-    iBCountViewController *dest = (iBCountViewController *)segue.destinationViewController;
-    dest.whatTypeOfCountingAreWeIn = CountForHotZone;
-    dest.hotzoneTag = [(UIView *)sender tag];
-    NSLog(@"%d", dest.hotzoneTag);
+//    iBCountViewController *dest = (iBCountViewController *)segue.destinationViewController;
+//    dest.whatTypeOfCountingAreWeIn = CountForHotZone;
+//    dest.hotzoneTag = [(UIView *)sender tag];
+//    NSLog(@"%d", dest.hotzoneTag);
+}
+
+- (void)showHotzoneVC:(id)sender {
+    iBCountViewControllerForHotZone *ibCountViewController = [[iBCountViewControllerForHotZone alloc] initWithNibName:@"iBCountViewControllerForHotZone" bundle:nil];
+    ibCountViewController.hotzoneTag = ((UIView *)sender).tag;
+    [self.navigationController pushViewController:ibCountViewController animated:YES];
 }
 
 - (void)showStaticsView {
-    
 }
 
 - (IBAction)showStatics:(id)sender {
