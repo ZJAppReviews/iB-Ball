@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="7aF-bd-VUw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="7aF-bd-VUw">
     <dependencies>
         <deployment version="1296" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
@@ -130,75 +130,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAa-iA-aVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1762" y="-790"/>
-        </scene>
-        <!--View Controller - Achievement-->
-        <scene sceneID="ciu-TC-5Zv">
-            <objects>
-                <viewController id="MTr-vC-puW" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eyE-Qa-T5W">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Achievement" id="lJt-ZE-Nfq"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7RT-o6-z2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1874" y="-214"/>
-        </scene>
-        <!--IB Play Court View Controller - Playcourt-->
-        <scene sceneID="561-SL-6ck">
-            <objects>
-                <viewController id="N4Y-08-NiZ" customClass="iBPlayCourtViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RK5-kv-ntp">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="Sh7-CP-dbE">
-                                <rect key="frame" x="0.0" y="67" width="320" height="344"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qao-At-7Lr">
-                                <rect key="frame" x="0.0" y="0.0" width="158" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Here it is!">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="hereItIsButtonClicked:" destination="N4Y-08-NiZ" eventType="touchUpInside" id="lDE-ED-x6U"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2MX-zz-rq1">
-                                <rect key="frame" x="158" y="0.0" width="162" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Help me find!">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="helpMeFindOneButtonClicked:" destination="N4Y-08-NiZ" eventType="touchUpInside" id="YNu-Vu-Hs4"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Playcourt" id="3rv-qz-95g"/>
-                    <connections>
-                        <outlet property="mapView" destination="Sh7-CP-dbE" id="B2J-2s-eYM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RZz-mU-1te" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2239" y="-277"/>
         </scene>
         <!--IB Hotzone Select View Controller - Select the zone you want to shoot-->
         <scene sceneID="X8A-qe-EpN">
@@ -451,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8U-JU-Xws" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1911" y="-63"/>
+            <point key="canvasLocation" x="1911" y="-159"/>
         </scene>
         <!--IB Hotzone Show Statics View Controller-->
         <scene sceneID="mbA-Gt-rq1">
@@ -1081,7 +1012,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynh-tD-f9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-96" y="-189"/>
+            <point key="canvasLocation" x="90" y="-203"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JqB-6K-mcf">
@@ -1100,11 +1031,7 @@
                         <segue destination="TuF-eo-jVe" kind="relationship" relationship="viewControllers" id="fHE-oW-LCd"/>
                         <segue destination="fLQ-98-5X6" kind="relationship" relationship="viewControllers" id="xUX-8m-dtt"/>
                         <segue destination="tvb-nP-YWN" kind="relationship" relationship="viewControllers" id="zDu-wB-pZA"/>
-                        <segue destination="YNn-6X-kmm" kind="relationship" relationship="viewControllers" id="AnE-sL-oqS"/>
-                        <segue destination="MTr-vC-puW" kind="relationship" relationship="viewControllers" id="zdd-9N-vMA"/>
-                        <segue destination="PNq-nc-8C4" kind="relationship" relationship="viewControllers" id="o1w-Uh-TFA"/>
                         <segue destination="qfg-Pk-dEd" kind="relationship" relationship="viewControllers" id="3OR-F8-hYw"/>
-                        <segue destination="N4Y-08-NiZ" kind="relationship" relationship="viewControllers" id="Ibn-2p-cWC"/>
                         <segue destination="7W4-eK-hxw" kind="relationship" relationship="viewControllers" id="oWG-Nc-Re6"/>
                     </connections>
                 </tabBarController>
@@ -1153,30 +1080,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lap-FW-LPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2244" y="-987"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ufS-Hb-MfC">
-            <objects>
-                <viewController id="KmM-Ge-Xae" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sa9-6S-HFc">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="2AX-1m-Ipv">
-                                <rect key="frame" x="55" y="20" width="211" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="标准球"/>
-                                    <segment title="垃圾龌龊球"/>
-                                </segments>
-                            </segmentedControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Luj-RC-Foz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1975" y="-1644"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="orA-fj-0Ox">
@@ -1686,21 +1589,6 @@
             </objects>
             <point key="canvasLocation" x="714" y="801"/>
         </scene>
-        <!--View Controller - Nearby-->
-        <scene sceneID="yKr-fO-8Hx">
-            <objects>
-                <viewController id="PNq-nc-8C4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mV4-3a-gap">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Nearby" id="Gvy-XZ-AEa"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h8O-wo-lTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1228" y="795"/>
-        </scene>
         <!--IB Ski Input View Controller - Skill-->
         <scene sceneID="vXr-ai-FEG">
             <objects>
@@ -1850,141 +1738,7 @@
                     <barButtonItem key="rightBarButtonItem" title="API" id="Ewz-vr-9Xd"/>
                 </navigationItem>
             </objects>
-            <point key="canvasLocation" x="12" y="209"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="5qZ-6J-rrn">
-            <objects>
-                <tableViewController id="848-yx-AWz" customClass="WTTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rVB-IB-GrI">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WeatherCell" id="bmr-nU-1Yh">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <connections>
-                                    <segue destination="fog-Hf-61V" kind="push" identifier="WeatherDetailSegue" id="XiQ-e4-7vz"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="848-yx-AWz" id="HH5-sk-PxU"/>
-                            <outlet property="delegate" destination="848-yx-AWz" id="Idn-9u-KS6"/>
-                        </connections>
-                    </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="JSON" id="uaj-jJ-bN1">
-                            <connections>
-                                <action selector="jsonTapped:" destination="848-yx-AWz" id="9Zw-1J-KNw"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem title="PLIST" id="SdE-XB-28t">
-                            <connections>
-                                <action selector="plistTapped:" destination="848-yx-AWz" id="OVd-Pw-U3E"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem title="XML" id="imx-Hb-KbZ">
-                            <connections>
-                                <action selector="xmlTapped:" destination="848-yx-AWz" id="huj-yN-mPe"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="0Gq-sI-VWP"/>
-                        <barButtonItem title="HTTP" id="R99-Aw-jMu">
-                            <connections>
-                                <action selector="httpClientTapped:" destination="848-yx-AWz" id="pOz-Kd-aTB"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" id="5da-8D-Jz4">
-                        <barButtonItem key="leftBarButtonItem" title="Clear" id="RiS-ZR-Khy">
-                            <connections>
-                                <action selector="clear:" destination="848-yx-AWz" id="E8Q-df-iIb"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="API" id="nUO-ky-mNF">
-                            <connections>
-                                <action selector="apiTapped:" destination="848-yx-AWz" id="eoa-3H-e3W"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Od9-Ai-B0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1277" y="274"/>
-        </scene>
-        <!--Navigation Controller - Weather-->
-        <scene sceneID="luG-AK-hJA">
-            <objects>
-                <navigationController id="YNn-6X-kmm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Weather" id="nIB-HE-AlW"/>
-                    <toolbarItems/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="spR-AI-ooU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="848-yx-AWz" kind="relationship" relationship="rootViewController" id="Jr7-ok-016"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gKq-ga-wfj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="905" y="274"/>
-        </scene>
-        <!--Weather Animation View Controller-->
-        <scene sceneID="U6A-BK-hlC">
-            <objects>
-                <viewController id="fog-Hf-61V" customClass="WeatherAnimationViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sQe-7I-eHB">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="ouy-5e-ere">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g3c-4n-YL6">
-                                <rect key="frame" x="183" y="15" width="117" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="3kX-eP-D0k"/>
-                        <barButtonItem systemItem="trash" id="Ilt-Ba-XdE">
-                            <connections>
-                                <action selector="deleteBackgroundImage:" destination="fog-Hf-61V" id="x7j-E2-Xyv"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" id="FHT-38-6eY">
-                        <barButtonItem key="rightBarButtonItem" title="Update Background" id="jz9-wD-B7s">
-                            <connections>
-                                <action selector="updateBackgroundImage:" destination="fog-Hf-61V" id="hMw-ob-rxC"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="backgroundImageView" destination="ouy-5e-ere" id="TfL-6b-1DR"/>
-                        <outlet property="temperatureLabel" destination="g3c-4n-YL6" id="G5y-TF-uCf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pI9-Rb-K01" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1645" y="274"/>
+            <point key="canvasLocation" x="96" y="209"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xaa-BV-igR">
@@ -2017,136 +1771,13 @@
         <image name="ic_ok.png" width="32" height="32"/>
         <image name="ic_users.png" width="32" height="32"/>
     </resources>
-    <classes>
-        <class className="CustomTabBar" superclassName="UITabBar">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomTabBar.h"/>
-        </class>
-        <class className="EventTableViewCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EventTableViewCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="creationDateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nameField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="tagsButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="tagsField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="PRPShadowedTableView" superclassName="UITableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PRPShadowedTableView.h"/>
-        </class>
-        <class className="WTTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WTTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="apiTapped:"/>
-                <relationship kind="action" name="clear:"/>
-                <relationship kind="action" name="httpClientTapped:"/>
-                <relationship kind="action" name="jsonTapped:"/>
-                <relationship kind="action" name="plistTapped:"/>
-                <relationship kind="action" name="xmlTapped:"/>
-            </relationships>
-        </class>
-        <class className="WeatherAnimationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WeatherAnimationViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="deleteBackgroundImage:"/>
-                <relationship kind="action" name="updateBackgroundImage:"/>
-                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="temperatureLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="iBAccountViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBAccountViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="getUserinfo:"/>
-                <relationship kind="action" name="renrenLog:"/>
-                <relationship kind="action" name="weiboLog:"/>
-            </relationships>
-        </class>
-        <class className="iBChanllengeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBChanllengeViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="startTiming:"/>
-            </relationships>
-        </class>
-        <class className="iBCountViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBCountViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="loadData:"/>
-                <relationship kind="action" name="miss:"/>
-                <relationship kind="action" name="saveData:"/>
-                <relationship kind="action" name="score:"/>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="action" name="showCarrerScore:"/>
-                <relationship kind="outlet" name="shootingRatio" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="iBCountingSelectViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBCountingSelectViewController.h"/>
-        </class>
-        <class className="iBFootPrintViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBFootPrintViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="editTags:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="eventTableViewCell" candidateClass="EventTableViewCell"/>
-            </relationships>
-        </class>
-        <class className="iBHotzoneSelectViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBHotzoneSelectViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showStatics:"/>
-            </relationships>
-        </class>
-        <class className="iBHotzoneShowStaticsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBHotzoneShowStaticsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showStatics:"/>
-            </relationships>
-        </class>
-        <class className="iBObjCountViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjCountViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="iBObjViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="setPoint:"/>
-                <relationship kind="outlet" name="backgroundTapButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="rockButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="iBPlayCourtViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBPlayCourtViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="helpMeFindOneButtonClicked:"/>
-                <relationship kind="action" name="hereItIsButtonClicked:"/>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="iBSkiInputViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBSkiInputViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="skillText" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="iBSkiTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBSkiTableViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ifZ-4z-BIh"/>
         <segue reference="hhW-MX-5mn"/>
+        <segue reference="CKT-IM-1Hz"/>
     </inferredMetricsTieBreakers>
 </document>
