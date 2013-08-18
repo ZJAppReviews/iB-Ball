@@ -171,6 +171,7 @@
 		18E1C335171A4CB300F5DC5D /* iBGlobalRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1C334171A4CB300F5DC5D /* iBGlobalRecorder.m */; };
 		18E38CAD17008215003782F2 /* iBAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E38CAC17008215003782F2 /* iBAccountViewController.m */; };
 		18E4C0F11754B96C00F4A199 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4C0F01754B96C00F4A199 /* EventKit.framework */; };
+		18EAC82917C077830040CA2D /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC82817C077830040CA2D /* Player.m */; };
 		18EBC3141745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */; };
 		18F7272416F91BC300237CC7 /* iBSharedAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272316F91BC300237CC7 /* iBSharedAchievement.m */; };
 		18F7272716F9332C00237CC7 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272616F9332C00237CC7 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -454,6 +455,8 @@
 		18E38CAB17008215003782F2 /* iBAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBAccountViewController.h; sourceTree = "<group>"; };
 		18E38CAC17008215003782F2 /* iBAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBAccountViewController.m; sourceTree = "<group>"; };
 		18E4C0F01754B96C00F4A199 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		18EAC82717C077830040CA2D /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		18EAC82817C077830040CA2D /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		18EBC3121745CDE600DA2495 /* iBHotzoneShowStaticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBHotzoneShowStaticsViewController.h; sourceTree = "<group>"; };
 		18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBHotzoneShowStaticsViewController.m; sourceTree = "<group>"; };
 		18F7272216F91BC300237CC7 /* iBSharedAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSharedAchievement.h; sourceTree = "<group>"; };
@@ -863,6 +866,8 @@
 				18AFFD251735EDAB00FFE514 /* TwoPoint.h */,
 				18AFFD261735EDAB00FFE514 /* TwoPoint.m */,
 				1880DF1A17335866004E7DA0 /* Model.xcdatamodeld */,
+				18EAC82717C077830040CA2D /* Player.h */,
+				18EAC82817C077830040CA2D /* Player.m */,
 				183C7948174B0B0100992262 /* Tag.h */,
 				183C7949174B0B0100992262 /* Tag.m */,
 				183C7940174B0A5600992262 /* TaggedLocations.xcdatamodel */,
@@ -1453,6 +1458,7 @@
 				184A9004174DAE45007D28F0 /* iBFootPrintTagSelectionController.m in Sources */,
 				18F927DF175369D000804EED /* iBChanllengeViewController.m in Sources */,
 				18442A9617BF6BC800368EF5 /* iBCountViewControllerForHotZone.m in Sources */,
+				18EAC82917C077830040CA2D /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
