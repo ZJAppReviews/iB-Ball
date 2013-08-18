@@ -9,6 +9,7 @@
 #import "iBCountViewControllerForHotZone.h"
 #import "iBAppDelegate.h"
 #import "Player.h"
+#import "iBCountViewControllerForHotZoneGestureMode.h"
 
 @interface iBCountViewControllerForHotZone ()
 
@@ -42,9 +43,8 @@
 }
 
 - (void)viewDidUnload {
-    
-
-    
+    [self setTrainingResult:nil];
+    [self setTrainingResultHistory:nil];
     [super viewDidUnload];
 }
 
@@ -104,11 +104,28 @@
     NSArray *a = [self.managedObjectContext executeFetchRequest:request2 error:nil];
     NSLog(@"%d", [((Player *)a[0]).twoPointTry integerValue]);
 }
+- (IBAction)miss:(id)sender {
+    self.numberWeTry++;
+}
 
 
 - (BOOL)isTwoPoint {
     //TODO
     return YES;
+}
+
+- (IBAction)gotoGestureMode:(id)sender {
+    iBCountViewControllerForHotZoneGestureMode *ibcc = [[iBCountViewControllerForHotZoneGestureMode alloc] initWithNibName:@"iBCountViewControllerForHotZoneGestureMode" bundle:nil];
+    [self.navigationController pushViewController:ibcc animated:YES];
+    ibcc.delegate = self;
+}
+
+- (void)gestureInfoChange:(NSInteger)number1 and:(NSInteger)number2 {
+    self.numberWeScore = number1;
+    self.numberWeTry = number2;
+}
+
+- (void)saveStaticsToCoreData {
 }
 
 @end

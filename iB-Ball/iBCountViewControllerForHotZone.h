@@ -7,13 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iBCountViewControllerForHotZoneGestureMode.h"
 
-@interface iBCountViewControllerForHotZone : UIViewController
+@interface iBCountViewControllerForHotZone : UIViewController <iBCountViewControllerForHotZoneGestureMode>
 
 @property (nonatomic) NSInteger hotzoneTag;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
+@property (nonatomic) NSInteger numberWeTry;
+@property (nonatomic) NSInteger numberWeScore;
+
+@property (nonatomic) NSInteger numberWeTryHistory;
+@property (nonatomic) NSInteger numberWeScoreHistory;
+
 - (IBAction)score:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *trainingResult;
+@property (strong, nonatomic) IBOutlet UIView *trainingResultHistory;
+
 
 
 @end

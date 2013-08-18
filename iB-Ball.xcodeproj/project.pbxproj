@@ -172,6 +172,8 @@
 		18E38CAD17008215003782F2 /* iBAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E38CAC17008215003782F2 /* iBAccountViewController.m */; };
 		18E4C0F11754B96C00F4A199 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4C0F01754B96C00F4A199 /* EventKit.framework */; };
 		18EAC82917C077830040CA2D /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC82817C077830040CA2D /* Player.m */; };
+		18EAC82E17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC82C17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m */; };
+		18EAC82F17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EAC82D17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib */; };
 		18EBC3141745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */; };
 		18F7272416F91BC300237CC7 /* iBSharedAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272316F91BC300237CC7 /* iBSharedAchievement.m */; };
 		18F7272716F9332C00237CC7 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272616F9332C00237CC7 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -360,8 +362,8 @@
 		184A9002174DAE45007D28F0 /* iBFootPrintTagSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBFootPrintTagSelectionController.h; sourceTree = "<group>"; };
 		184A9003174DAE45007D28F0 /* iBFootPrintTagSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBFootPrintTagSelectionController.m; sourceTree = "<group>"; };
 		184A9005174DAEE0007D28F0 /* TagsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagsHeaderView.xib; sourceTree = "<group>"; };
-		1850019517603979000711ED /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
-		185001961760397A000711ED /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
+		1850019517603979000711ED /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteButton.png; path = ../whiteButton.png; sourceTree = "<group>"; };
+		185001961760397A000711ED /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueButton.png; path = ../blueButton.png; sourceTree = "<group>"; };
 		185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBGestureRecognizeViewController.h; sourceTree = "<group>"; };
 		185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBGestureRecognizeViewController.m; sourceTree = "<group>"; };
 		185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBGestureRecognizeViewController.xib; sourceTree = "<group>"; };
@@ -457,6 +459,9 @@
 		18E4C0F01754B96C00F4A199 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		18EAC82717C077830040CA2D /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		18EAC82817C077830040CA2D /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		18EAC82B17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountViewControllerForHotZoneGestureMode.h; path = "iB-Ball/iBCountViewControllerForHotZoneGestureMode.h"; sourceTree = SOURCE_ROOT; };
+		18EAC82C17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountViewControllerForHotZoneGestureMode.m; path = "iB-Ball/iBCountViewControllerForHotZoneGestureMode.m"; sourceTree = SOURCE_ROOT; };
+		18EAC82D17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBCountViewControllerForHotZoneGestureMode.xib; path = "iB-Ball/iBCountViewControllerForHotZoneGestureMode.xib"; sourceTree = SOURCE_ROOT; };
 		18EBC3121745CDE600DA2495 /* iBHotzoneShowStaticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBHotzoneShowStaticsViewController.h; path = ../iBHotzoneShowStaticsViewController.h; sourceTree = "<group>"; };
 		18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBHotzoneShowStaticsViewController.m; path = ../iBHotzoneShowStaticsViewController.m; sourceTree = "<group>"; };
 		18F7272216F91BC300237CC7 /* iBSharedAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSharedAchievement.h; sourceTree = "<group>"; };
@@ -1037,6 +1042,9 @@
 				18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */,
 				18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */,
 				18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */,
+				18EAC82B17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.h */,
+				18EAC82C17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m */,
+				18EAC82D17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib */,
 			);
 			name = HotzoneCount;
 			path = sinaweibo_ios_sdk;
@@ -1084,8 +1092,6 @@
 				BA4AE59216D12BAB005456EF /* iBDataCenterForHotzone.m */,
 				BA3A7C4416CD477100E84B58 /* CountModel.h */,
 				BA3A7C4516CD477100E84B58 /* CountModel.m */,
-				1850019517603979000711ED /* whiteButton.png */,
-				185001961760397A000711ED /* blueButton.png */,
 				BA36DEE116C4BF37007FFDD1 /* Supporting Files */,
 				BA36DEE016C4BF37007FFDD1 /* iB-Ball */,
 				BA36DED916C4BF37007FFDD1 /* Frameworks */,
@@ -1149,6 +1155,8 @@
 				180475A517408901001DA45A /* UI */,
 				18789FA61703C4FC0065D21F /* open_source */,
 				18BE11961755ECA900C8ABB4 /* alarm.mp3 */,
+				1850019517603979000711ED /* whiteButton.png */,
+				185001961760397A000711ED /* blueButton.png */,
 				18640E4E1744C572006B541A /* ic_calc.png */,
 				18640E501744C5D2006B541A /* ic_ok.png */,
 				18640E521744C658006B541A /* ic_users.png */,
@@ -1340,6 +1348,7 @@
 				185001981760397A000711ED /* blueButton.png in Resources */,
 				18442A9217BF6A0600368EF5 /* iBCountViewController.xib in Resources */,
 				18442A9717BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib in Resources */,
+				18EAC82F17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1472,6 +1481,7 @@
 				18F927DF175369D000804EED /* iBChanllengeViewController.m in Sources */,
 				18442A9617BF6BC800368EF5 /* iBCountViewControllerForHotZone.m in Sources */,
 				18EAC82917C077830040CA2D /* Player.m in Sources */,
+				18EAC82E17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
