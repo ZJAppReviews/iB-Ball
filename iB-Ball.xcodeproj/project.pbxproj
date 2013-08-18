@@ -352,9 +352,9 @@
 		183C7948174B0B0100992262 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
 		183C7949174B0B0100992262 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		18442A9117BF6A0600368EF5 /* iBCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBCountViewController.xib; sourceTree = "<group>"; };
-		18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountViewControllerForHotZone.h; path = "iB-Ball/iBCountViewControllerForHotZone.h"; sourceTree = "<group>"; };
-		18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountViewControllerForHotZone.m; path = "iB-Ball/iBCountViewControllerForHotZone.m"; sourceTree = "<group>"; };
-		18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBCountViewControllerForHotZone.xib; path = "iB-Ball/iBCountViewControllerForHotZone.xib"; sourceTree = "<group>"; };
+		18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountViewControllerForHotZone.h; path = "../iB-Ball/iBCountViewControllerForHotZone.h"; sourceTree = "<group>"; };
+		18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountViewControllerForHotZone.m; path = "../iB-Ball/iBCountViewControllerForHotZone.m"; sourceTree = "<group>"; };
+		18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBCountViewControllerForHotZone.xib; path = "../iB-Ball/iBCountViewControllerForHotZone.xib"; sourceTree = "<group>"; };
 		184A8FFF174DAE3D007D28F0 /* iBFootPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBFootPrintViewController.h; sourceTree = "<group>"; };
 		184A9000174DAE3D007D28F0 /* iBFootPrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBFootPrintViewController.m; sourceTree = "<group>"; };
 		184A9002174DAE45007D28F0 /* iBFootPrintTagSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBFootPrintTagSelectionController.h; sourceTree = "<group>"; };
@@ -448,8 +448,8 @@
 		18D40DCC170135C7004A22CD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		18DDAF5B1741D768000AB3EF /* PRPShadowedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPShadowedTableView.h; sourceTree = "<group>"; };
 		18DDAF5C1741D768000AB3EF /* PRPShadowedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPShadowedTableView.m; sourceTree = "<group>"; };
-		18DDAF9717422CCC000AB3EF /* iBHotzoneSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBHotzoneSelectViewController.h; sourceTree = "<group>"; };
-		18DDAF9817422CCC000AB3EF /* iBHotzoneSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBHotzoneSelectViewController.m; sourceTree = "<group>"; };
+		18DDAF9717422CCC000AB3EF /* iBHotzoneSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBHotzoneSelectViewController.h; path = ../iBHotzoneSelectViewController.h; sourceTree = "<group>"; };
+		18DDAF9817422CCC000AB3EF /* iBHotzoneSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBHotzoneSelectViewController.m; path = ../iBHotzoneSelectViewController.m; sourceTree = "<group>"; };
 		18E1C333171A4CB300F5DC5D /* iBGlobalRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBGlobalRecorder.h; sourceTree = "<group>"; };
 		18E1C334171A4CB300F5DC5D /* iBGlobalRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBGlobalRecorder.m; sourceTree = "<group>"; };
 		18E38CAB17008215003782F2 /* iBAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBAccountViewController.h; sourceTree = "<group>"; };
@@ -457,8 +457,8 @@
 		18E4C0F01754B96C00F4A199 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		18EAC82717C077830040CA2D /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		18EAC82817C077830040CA2D /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		18EBC3121745CDE600DA2495 /* iBHotzoneShowStaticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBHotzoneShowStaticsViewController.h; sourceTree = "<group>"; };
-		18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBHotzoneShowStaticsViewController.m; sourceTree = "<group>"; };
+		18EBC3121745CDE600DA2495 /* iBHotzoneShowStaticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBHotzoneShowStaticsViewController.h; path = ../iBHotzoneShowStaticsViewController.h; sourceTree = "<group>"; };
+		18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBHotzoneShowStaticsViewController.m; path = ../iBHotzoneShowStaticsViewController.m; sourceTree = "<group>"; };
 		18F7272216F91BC300237CC7 /* iBSharedAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSharedAchievement.h; sourceTree = "<group>"; };
 		18F7272316F91BC300237CC7 /* iBSharedAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSharedAchievement.m; sourceTree = "<group>"; };
 		18F7272516F9332C00237CC7 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
@@ -543,6 +543,7 @@
 				180475A61740890B001DA45A /* TabBar */,
 			);
 			name = UI;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		180475A61740890B001DA45A /* TabBar */ = {
@@ -875,6 +876,7 @@
 				183C7943174B0A7000992262 /* Event.m */,
 			);
 			name = CDModel;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		185CC92717BF625300061270 /* Vendor */ = {
@@ -913,6 +915,7 @@
 				18F7272816F9333500237CC7 /* Toast */,
 			);
 			name = open_source;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		18789FA71703C52F0065D21F /* AFNetworking */ = {
@@ -1003,6 +1006,7 @@
 				18789FA41703C4E60065D21F /* Licence */,
 			);
 			name = Crappy;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		18E38CAA170081DC003782F2 /* Account */ = {
@@ -1021,6 +1025,21 @@
 				1838CDFE172E19960078B3AD /* renren_ios_sdk */,
 			);
 			name = SNS;
+			sourceTree = "<group>";
+		};
+		18EAC82A17C077C00040CA2D /* HotzoneCount */ = {
+			isa = PBXGroup;
+			children = (
+				18DDAF9717422CCC000AB3EF /* iBHotzoneSelectViewController.h */,
+				18DDAF9817422CCC000AB3EF /* iBHotzoneSelectViewController.m */,
+				18EBC3121745CDE600DA2495 /* iBHotzoneShowStaticsViewController.h */,
+				18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */,
+				18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */,
+				18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */,
+				18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */,
+			);
+			name = HotzoneCount;
+			path = sinaweibo_ios_sdk;
 			sourceTree = "<group>";
 		};
 		18F7272816F9333500237CC7 /* Toast */ = {
@@ -1046,10 +1065,6 @@
 			isa = PBXGroup;
 			children = (
 				1824C26E16FEEC5000895222 /* TODO */,
-				183C793F174B0A2900992262 /* CDModel */,
-				18AE0C15174725AE00AE766B /* Crappy */,
-				180475A517408901001DA45A /* UI */,
-				18789FA61703C4FC0065D21F /* open_source */,
 				18E38CAA170081DC003782F2 /* Account */,
 				185F71A91702CDA300336ED3 /* Gesture */,
 				18712484173B3B4600815D6D /* Playcourt */,
@@ -1057,20 +1072,14 @@
 				18F927DC1753698E00804EED /* Challenge */,
 				183B836E16F5552E0030BC70 /* Ski */,
 				181393C5174C69AF0041F384 /* My Footprint */,
+				18EAC82A17C077C00040CA2D /* HotzoneCount */,
 				BACE1C5716E113520032223B /* Obj */,
 				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
 				BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */,
 				BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */,
-				18DDAF9717422CCC000AB3EF /* iBHotzoneSelectViewController.h */,
-				18DDAF9817422CCC000AB3EF /* iBHotzoneSelectViewController.m */,
-				18EBC3121745CDE600DA2495 /* iBHotzoneShowStaticsViewController.h */,
-				18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */,
 				BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */,
 				BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */,
 				18442A9117BF6A0600368EF5 /* iBCountViewController.xib */,
-				18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */,
-				18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */,
-				18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */,
 				BA4AE59116D12BAB005456EF /* iBDataCenterForHotzone.h */,
 				BA4AE59216D12BAB005456EF /* iBDataCenterForHotzone.m */,
 				BA3A7C4416CD477100E84B58 /* CountModel.h */,
@@ -1135,6 +1144,10 @@
 		BA36DEE116C4BF37007FFDD1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				183C793F174B0A2900992262 /* CDModel */,
+				18AE0C15174725AE00AE766B /* Crappy */,
+				180475A517408901001DA45A /* UI */,
+				18789FA61703C4FC0065D21F /* open_source */,
 				18BE11961755ECA900C8ABB4 /* alarm.mp3 */,
 				18640E4E1744C572006B541A /* ic_calc.png */,
 				18640E501744C5D2006B541A /* ic_ok.png */,

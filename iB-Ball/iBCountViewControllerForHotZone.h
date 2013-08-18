@@ -11,5 +11,9 @@
 @interface iBCountViewControllerForHotZone : UIViewController
 
 @property (nonatomic) NSInteger hotzoneTag;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+
+- (IBAction)score:(id)sender;
+
 
 @end
