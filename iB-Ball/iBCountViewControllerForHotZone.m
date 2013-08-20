@@ -33,6 +33,12 @@
     // Set the object context
     iBAppDelegate *ibad = (iBAppDelegate *)[[UIApplication sharedApplication] delegate];
     self.managedObjectContext = ibad.managedObjectContext;
+    
+    NSArray *a = [self.hotzoneDict objectForKey:[NSString stringWithFormat:@"%d", self.hotzoneTag]];
+    NSInteger n1 = [a[0] integerValue];
+    NSInteger n2 = [a[1] integerValue];
+((UILabel *)    self.trainingResultHistory).text =
+    [NSString stringWithFormat:@"%d/ %d %f%%", n1, n2, (CGFloat)n1 / n2];
 
 }
 
@@ -49,7 +55,28 @@
 }
 
 - (IBAction)score:(id)sender {
-//    Player *player = (Player *)[NSEntityDescription insertNewObjectForEntityForName:@"Player" inManagedObjectContext:_managedObjectContext];
+    self.numberWeTry++;
+    self.numberWeScore++;
+    [self updateResult];
+}
+
+- (IBAction)miss:(id)sender {
+    self.numberWeTry++;
+    [self updateResult];
+
+}
+
+- (void)updateResult {
+    float i = (float)self.numberWeScore / self.numberWeTry;
+    NSString *str = [NSString stringWithFormat:@"ratio:%.2f%%", i * 100];
+    self.trainingResult.text = str;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self updateResult];
+}
+- (void)coreDataScoreOne {
+    //    Player *player = (Player *)[NSEntityDescription insertNewObjectForEntityForName:@"Player" inManagedObjectContext:_managedObjectContext];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Player" inManagedObjectContext:self.managedObjectContext];
     [request setEntity:entity];
@@ -88,7 +115,7 @@
             player.threePointScore = [NSNumber numberWithInt:(i + 1)];
             int j = player.threePointTry;
             player.threePointTry = [NSNumber numberWithInt:(j + 1)];
-
+            
         }
     }
     // Commit the change.
@@ -103,12 +130,8 @@
     [request2 setEntity:entity2];
     NSArray *a = [self.managedObjectContext executeFetchRequest:request2 error:nil];
     NSLog(@"%d", [((Player *)a[0]).twoPointTry integerValue]);
-}
-- (IBAction)miss:(id)sender {
-    self.numberWeTry++;
-}
 
-
+}
 - (BOOL)isTwoPoint {
     //TODO
     return YES;

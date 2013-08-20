@@ -25,6 +25,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *trainingResult;
 @property (strong, nonatomic) IBOutlet UIView *trainingResultHistory;
 
+@property (strong, nonatomic) NSDictionary *hotzoneDict;
+
 
 
 @end

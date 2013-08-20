@@ -28,14 +28,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // customize the rock button
-    UIImage *buttonBackground = [UIImage imageNamed:@"whiteButton.png"];
-    UIImage *buttonBackgroundPressed = [UIImage imageNamed:@"blueButton.png"];
-
-    UIImage *newImage = [buttonBackground stretchableImageWithLeftCapWidth:10.0 topCapHeight:10];
-    [self.rockButton setBackgroundImage:newImage forState:UIControlStateNormal];
-    UIImage *newnewImage = [buttonBackgroundPressed stretchableImageWithLeftCapWidth:10.0 topCapHeight:10];
-    [self.rockButton setBackgroundImage:newnewImage forState:UIControlStateHighlighted];
     
     _objModel = [[iBObj_DataModel alloc] init];
     _myPicker = [[UIPickerView alloc] initWithFrame:CGRectZero];
