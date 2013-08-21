@@ -139,6 +139,8 @@
 
 - (IBAction)gotoGestureMode:(id)sender {
     iBCountViewControllerForHotZoneGestureMode *ibcc = [[iBCountViewControllerForHotZoneGestureMode alloc] initWithNibName:@"iBCountViewControllerForHotZoneGestureMode" bundle:nil];
+    ibcc.numberWeScore = self.numberWeScore;
+    ibcc.numberWeTry = self.numberWeTry;
     [self.navigationController pushViewController:ibcc animated:YES];
     ibcc.delegate = self;
 }
@@ -150,5 +152,11 @@
 
 - (void)saveStaticsToCoreData {
 }
+
+- (IBAction)toolBarSave:(id)sender {
+    NSNumber *position = [NSNumber numberWithInt:self.hotzoneTag];
+    NSNumber *
+}
+
 
 @end
