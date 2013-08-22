@@ -34,7 +34,13 @@
     iBAppDelegate *ibad = (iBAppDelegate *)[[UIApplication sharedApplication] delegate];
     self.managedObjectContext = ibad.managedObjectContext;
     
+    NSUserDefaults *nud = [NSUserDefaults standardUserDefaults];
+    NSString *tagString = [NSString stringWithFormat:@"%d", self.hotzoneTag];
+    NSArray *hostory = [nud objectForKey:tagString];
     NSArray *a = [self.hotzoneDict objectForKey:[NSString stringWithFormat:@"%d", self.hotzoneTag]];
+    self.numberWeScoreHistory = [a[0] integerValue];
+    self.numberWeTryHistory = [a[1] integerValue];
+
     NSInteger n1 = [a[0] integerValue];
     NSInteger n2 = [a[1] integerValue];
 ((UILabel *)    self.trainingResultHistory).text =
@@ -185,7 +191,19 @@
     
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     NSString *tagString = [NSString stringWithFormat:@"%d", self.hotzoneTag];
+    int i = self.numberWeScore;
+    int j = self.numberWeTry;
+    if ([ud objectForKey:tagString]) {
+        NSArray *array = [ud objectForKey:tagString];
+        i += [array[0] integerValue];
+        j += [array[1] integerValue];
+    }
 
+    NSNumber *ii = [NSNumber numberWithInt:i];
+    NSNumber *jj = [NSNumber numberWithInt:j];
+    NSArray *ppp = [NSArray arrayWithObjects:ii, jj, nil];
+    [ud setObject:ppp forKey:tagString];
+    [ud synchronize];
 }
 
 
