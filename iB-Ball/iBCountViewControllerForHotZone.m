@@ -154,8 +154,38 @@
 }
 
 - (IBAction)toolBarSave:(id)sender {
-    NSNumber *position = [NSNumber numberWithInt:self.hotzoneTag];
-    NSNumber *
+    
+//    // get the original value
+//    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+//    NSDictionary *hotzoneDict = [ud objectForKey:@"hotzone"];
+//    NSMutableArray *arrayInHotzoneTag = [hotzoneDict valueForKey:[NSString stringWithFormat:@"%d", self.hotzoneTag]];
+//    if (arrayInHotzoneTag) {
+//        NSNumber *oldValue1 = arrayInHotzoneTag[0];
+//        NSNumber *oldValue2 = arrayInHotzoneTag[1];
+//        NSNumber *value1 = [NSNumber numberWithInt:self.numberWeScore];
+//        NSNumber *value2 = [NSNumber numberWithInt:self.numberWeTry];
+//        int a = [oldValue1 integerValue] + [value1 integerValue];
+//        int b = [oldValue2 integerValue] + [value2 integerValue];
+//        NSNumber *aa = [NSNumber numberWithInt:a];
+//        NSNumber *bb = [NSNumber numberWithInt:b];
+//        NSArray *aabb = [NSArray arrayWithObjects:aa, bb, nil];
+//        NSDictionary *dictHotZone = @{[NSString stringWithFormat:@"%d", self.hotzoneTag] : aabb};
+//        hotzoneDict ad
+//        [ud setObject:dictHotZone forKey:[NSString stringWithFormat:@"%d", self.hotzoneTag]];
+//        return;
+//    }
+//    
+//    // get the new value
+//    NSNumber *position = [hotzoneDict valueForKey:[NSString stringWithFormat:@"%d", self.hotzoneTag]];
+//    NSNumber *value1 = [NSNumber numberWithInt:self.numberWeScore];
+//    NSNumber *value2 = [NSNumber numberWithInt:self.numberWeTry];
+//    NSArray *valueArr = [NSArray arrayWithObjects:value1, value2, nil];
+//    NSDictionary *dict = @{position : valueArr};
+//    [ud setObject:dict forKey:@""]
+    
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSString *tagString = [NSString stringWithFormat:@"%d", self.hotzoneTag];
+
 }
 
 
