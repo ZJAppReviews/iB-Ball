@@ -49,7 +49,6 @@
 
     return YES;
 }
-
 - (void)renrenDidLogin:(Renren *)renren {
     
 }

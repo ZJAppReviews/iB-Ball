@@ -16,6 +16,9 @@
 		181393D0174C6A130041F384 /* EditableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181393CF174C6A130041F384 /* EditableTableViewCell.xib */; };
 		1824C26F16FEEC5000895222 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 1824C26E16FEEC5000895222 /* TODO */; };
 		1824C27316FF061100895222 /* iBSkiCountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1824C27216FF061100895222 /* iBSkiCountView.xib */; };
+		1831D25117C85D0E0044EC08 /* iBTabMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1831D25017C85D0E0044EC08 /* iBTabMainViewController.m */; };
+		1831D25417C869110044EC08 /* TabBarNipple.png in Resources */ = {isa = PBXBuildFile; fileRef = 1831D25217C869110044EC08 /* TabBarNipple.png */; };
+		1831D25517C869110044EC08 /* TabBarNipple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1831D25317C869110044EC08 /* TabBarNipple@2x.png */; };
 		1838CE89172E19B00078B3AD /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1838CE01172E19B00078B3AD /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1838CE8A172E19B00078B3AD /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1838CE03172E19B00078B3AD /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1838CE8B172E19B00078B3AD /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1838CE05172E19B00078B3AD /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -217,6 +220,10 @@
 		181393CF174C6A130041F384 /* EditableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditableTableViewCell.xib; sourceTree = "<group>"; };
 		1824C26E16FEEC5000895222 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		1824C27216FF061100895222 /* iBSkiCountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBSkiCountView.xib; sourceTree = SOURCE_ROOT; };
+		1831D24F17C85D0E0044EC08 /* iBTabMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBTabMainViewController.h; sourceTree = "<group>"; };
+		1831D25017C85D0E0044EC08 /* iBTabMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBTabMainViewController.m; sourceTree = "<group>"; };
+		1831D25217C869110044EC08 /* TabBarNipple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBarNipple.png; sourceTree = "<group>"; };
+		1831D25317C869110044EC08 /* TabBarNipple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBarNipple@2x.png"; sourceTree = "<group>"; };
 		1838CE00172E19B00078B3AD /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		1838CE01172E19B00078B3AD /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		1838CE02172E19B00078B3AD /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -1083,6 +1090,8 @@
 				18EAC82A17C077C00040CA2D /* HotzoneCount */,
 				BACE1C5716E113520032223B /* Obj */,
 				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
+				1831D24F17C85D0E0044EC08 /* iBTabMainViewController.h */,
+				1831D25017C85D0E0044EC08 /* iBTabMainViewController.m */,
 				BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */,
 				BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */,
 				BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */,
@@ -1154,6 +1163,8 @@
 				18AE0C15174725AE00AE766B /* Crappy */,
 				180475A517408901001DA45A /* UI */,
 				18789FA61703C4FC0065D21F /* open_source */,
+				1831D25217C869110044EC08 /* TabBarNipple.png */,
+				1831D25317C869110044EC08 /* TabBarNipple@2x.png */,
 				18BE11961755ECA900C8ABB4 /* alarm.mp3 */,
 				1850019517603979000711ED /* whiteButton.png */,
 				185001961760397A000711ED /* blueButton.png */,
@@ -1349,6 +1360,8 @@
 				18442A9217BF6A0600368EF5 /* iBCountViewController.xib in Resources */,
 				18442A9717BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib in Resources */,
 				18EAC82F17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib in Resources */,
+				1831D25417C869110044EC08 /* TabBarNipple.png in Resources */,
+				1831D25517C869110044EC08 /* TabBarNipple@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1482,6 +1495,7 @@
 				18442A9617BF6BC800368EF5 /* iBCountViewControllerForHotZone.m in Sources */,
 				18EAC82917C077830040CA2D /* Player.m in Sources */,
 				18EAC82E17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m in Sources */,
+				1831D25117C85D0E0044EC08 /* iBTabMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
