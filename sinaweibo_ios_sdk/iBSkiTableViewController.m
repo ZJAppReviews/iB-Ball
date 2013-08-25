@@ -129,15 +129,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    if ([self isEditing]) {
+        NSLog(@"ss");
+    }
     self.selected = indexPath.row;
-    UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Please choose" delegate:self cancelButtonTitle:@"OK" destructiveButtonTitle:nil otherButtonTitles:@"Statics", @"Description", @"Count", nil];
+    UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Please choose" delegate:self cancelButtonTitle:@"OK" destructiveButtonTitle:nil otherButtonTitles:@"Statics", @"Description", @"Count", @"Edit", nil];
     [as showFromTabBar:self.tabBarController.tabBar];
 }
 
@@ -200,6 +196,16 @@
         iBSkill *currentSkill = [self.skillModel.skillArray objectAtIndex:self.selected];
         currentSkill.skillDescription = [alertView textFieldAtIndex:0].text;
     }
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
+        return @"进攻技";
+    }
+    else if (section == 1) {
+        return @"防守技";
+    }
+    return nil;
 }
 
 @end
