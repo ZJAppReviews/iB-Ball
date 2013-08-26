@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="7aF-bd-VUw">
     <dependencies>
-        <deployment version="1296" identifier="iOS"/>
+        <deployment version="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
@@ -1518,14 +1518,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="DqR-As-IC0">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="DqR-As-IC0">
                                 <rect key="frame" x="0.0" y="46" width="320" height="46"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                    <rect key="frame" x="10" y="1" width="267" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="OkA-9H-QMj" kind="push" trigger="accessoryAction" id="fqv-5D-mBL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1536,7 +1539,7 @@
                     <navigationItem key="navigationItem" title="Skill" id="a1j-bT-n8x">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="cAu-Ev-STb">
                             <connections>
-                                <segue destination="B5Z-1l-2Qi" kind="push" identifier="input" id="eg2-yf-lZi"/>
+                                <segue destination="OkA-9H-QMj" kind="push" id="t3h-OK-D4c"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1547,85 +1550,37 @@
             <point key="canvasLocation" x="714" y="801"/>
         </scene>
         <!--IB Ski Input View Controller - Skill-->
-        <scene sceneID="vXr-ai-FEG">
+        <scene sceneID="ZuM-Lq-TDf">
             <objects>
-                <tableViewController id="B5Z-1l-2Qi" customClass="iBSkiInputViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="9s4-lq-hNo">
+                <viewController id="OkA-9H-QMj" customClass="iBSkiInputViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="opA-fx-9rP">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <sections>
-                            <tableViewSection headerTitle="" footerTitle="Skill Generating..." id="Gyr-Wk-tY3">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="u7s-B3-ZQB">
-                                        <rect key="frame" x="0.0" y="10" width="320" height="45"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please input the skill name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RIB-fU-d9m">
-                                                    <rect key="frame" x="53" y="11" width="267" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="2Vc-CC-foX">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="YgH-9u-nh7">
-                                                    <rect key="frame" x="112" y="7" width="97" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="lBC-G9-MZw">
-                                        <rect key="frame" x="0.0" y="99" width="320" height="45"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="I think you got a nice name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rwl-8z-AI6">
-                                                    <rect key="frame" x="63" y="11" width="278" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="B5Z-1l-2Qi" id="hrw-tU-jO7"/>
-                            <outlet property="delegate" destination="B5Z-1l-2Qi" id="Bxe-eM-fJU"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Skill" id="gm5-E9-lhH"/>
-                    <connections>
-                        <outlet property="skillText" destination="YgH-9u-nh7" id="K5a-YS-tTv"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B3y-Mn-ejK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" id="wDr-5l-CPN">
+                                <rect key="frame" x="0.0" y="151" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="OkA-9H-QMj" id="rp6-md-ir3"/>
+                                </connections>
+                            </pickerView>
+                            <containerView contentMode="scaleToFill" id="8Hl-3b-L19">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="Yco-Ew-Sr4" kind="embed" id="MH9-ee-t0o"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Skill" id="K7f-g9-Wpe"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOb-J7-aWC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1632" y="801"/>
+            <point key="canvasLocation" x="1090" y="796"/>
         </scene>
         <!--Navigation Controller - Account-->
         <scene sceneID="pIb-vQ-2gT">
@@ -1695,7 +1650,7 @@
                     <barButtonItem key="rightBarButtonItem" title="API" id="Ewz-vr-9Xd"/>
                 </navigationItem>
             </objects>
-            <point key="canvasLocation" x="96" y="209"/>
+            <point key="canvasLocation" x="90" y="221"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xaa-BV-igR">
@@ -1720,6 +1675,20 @@
             </objects>
             <point key="canvasLocation" x="323" y="-819"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="9FU-sL-dCR">
+            <objects>
+                <viewController id="Yco-Ew-Sr4" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Pa-dB-npZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7k-6c-1lY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="hotzone.png" width="476" height="389"/>
@@ -1728,6 +1697,107 @@
         <image name="ic_ok.png" width="32" height="32"/>
         <image name="ic_users.png" width="32" height="32"/>
     </resources>
+    <classes>
+        <class className="CustomTabBar" superclassName="UITabBar">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomTabBar.h"/>
+        </class>
+        <class className="EventTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EventTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="creationDateLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="locationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nameField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="tagsButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="tagsField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="PRPShadowedTableView" superclassName="UITableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PRPShadowedTableView.h"/>
+        </class>
+        <class className="iBAccountViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBAccountViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="getUserinfo:"/>
+                <relationship kind="action" name="renrenLog:"/>
+                <relationship kind="action" name="weiboLog:"/>
+            </relationships>
+        </class>
+        <class className="iBChanllengeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBChanllengeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="startTiming:"/>
+            </relationships>
+        </class>
+        <class className="iBCountViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBCountViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="loadData:"/>
+                <relationship kind="action" name="miss:"/>
+                <relationship kind="action" name="saveData:"/>
+                <relationship kind="action" name="score:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="action" name="showCarrerScore:"/>
+                <relationship kind="outlet" name="shootingRatio" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="iBCountingSelectViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBCountingSelectViewController.h"/>
+        </class>
+        <class className="iBFootPrintViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBFootPrintViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="editTags:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="eventTableViewCell" candidateClass="EventTableViewCell"/>
+            </relationships>
+        </class>
+        <class className="iBHotzoneSelectViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBHotzoneSelectViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showStatics:"/>
+            </relationships>
+        </class>
+        <class className="iBHotzoneShowStaticsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBHotzoneShowStaticsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showStatics:"/>
+            </relationships>
+        </class>
+        <class className="iBObjCountViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjCountViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="iBObjViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="setPoint:"/>
+                <relationship kind="outlet" name="backgroundTapButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rockButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="iBSkiInputViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBSkiInputViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="skillText" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="iBSkiTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBSkiTableViewController.h"/>
+        </class>
+        <class className="iBTabMainViewController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBTabMainViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tabBarBar" candidateClass="CustomTabBar"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
@@ -1735,5 +1805,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="hhW-MX-5mn"/>
+        <segue reference="t3h-OK-D4c"/>
     </inferredMetricsTieBreakers>
 </document>

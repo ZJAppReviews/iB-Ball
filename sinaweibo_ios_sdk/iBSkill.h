@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    iBSkillDefend = 1,
+    iBSkillAttack = 2,
+    iBSkillOthers = 0,
+} iBSkillCategory;
+
 @interface iBSkill : NSObject
 
 @property (nonatomic, strong) NSString *skillName;
@@ -16,8 +22,9 @@
 @property (nonatomic, assign) NSInteger useNumber;
 @property (nonatomic, assign) NSInteger successNumber;
 @property (nonatomic, strong) NSString *skillDescription;
+@property (nonatomic) NSInteger tag;
 
-- (id)initWithName:(NSString *)name;
+- (id)initWithName:(NSString *)name andTag:(iBSkillCategory)tag;
 
 - (float)getRatio;
 

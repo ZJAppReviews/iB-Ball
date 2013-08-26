@@ -11,11 +11,12 @@
 @implementation iBSkill
 
 
-- (id)initWithName:(NSString *)name
+- (id)initWithName:(NSString *)name andTag:(iBSkillCategory)tag
 {
     self = [super init];
     if (self) {
         _skillName = name;
+        _tag = tag;
     }
     return self;
 }

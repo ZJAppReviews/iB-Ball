@@ -17,8 +17,8 @@
 {
     self = [super init];
     if (self) {
-        iBSkill *a1 = [[iBSkill alloc] initWithName:@"Fire Tornado"];
-        iBSkill *a2 = [[iBSkill alloc] initWithName:@"Ice Ground"];
+        iBSkill *a1 = [[iBSkill alloc] initWithName:@"Fire Tornado" andTag:iBSkillAttack];
+        iBSkill *a2 = [[iBSkill alloc] initWithName:@"Ice Ground" andTag:iBSkillDefend];
         _skillArray = [NSMutableArray arrayWithObjects:a1, a2, nil];
     }
     return self;

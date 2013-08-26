@@ -53,7 +53,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -70,6 +70,12 @@
     cell.textLabel.text = [[self.skillModel.skillArray objectAtIndex:indexPath.row] skillName];
 //    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress)];
 //    [cell.contentView addGestureRecognizer:longPress];
+//    if (indexPath.section == 1) {
+//        UITableViewCell *cell2 = [UITableViewCell new];
+//        UIPickerView *upv = [UIPickerView new];
+//        [cell2 addSubview:upv];
+//        return cell2;
+//    }
     
     return cell;
 }
@@ -155,10 +161,11 @@
 }
 
 - (void)skillInput:(id)sender withName:(NSString *)name {
-    iBSkill *newSkill = [[iBSkill alloc] initWithName:name];
+    iBSkill *newSkill = [[iBSkill alloc] initWithName:name andTag:iBSkillOthers];
     [self.skillModel.skillArray addObject:newSkill];
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 
 #pragma mark Action sheet
 

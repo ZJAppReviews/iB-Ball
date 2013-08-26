@@ -14,7 +14,7 @@
 
 @end
 
-@interface iBSkiInputViewController : UITableViewController
+@interface iBSkiInputViewController : UIViewController <UIPickerViewDataSource, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITextField *skillText;
 
