@@ -10,13 +10,15 @@
 
 @protocol SkillInputOK <NSObject>
 
-- (void)skillInput:(id)sender withName:(NSString *)name;
+- (void)skillInput:(id)sender withName:(NSString *)name withDesctiption:(NSString *)description andTag:(NSInteger)skillCategory;
 
 @end
 
-@interface iBSkiInputViewController : UITableViewController <UIPickerViewDataSource, UITableViewDataSource>
+@interface iBSkiInputViewController : UITableViewController <UIPickerViewDataSource, UIPickerViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITextField *skillText;
+@property (weak, nonatomic) IBOutlet UITextField *skillDescription;
+
 
 @property (nonatomic, strong) id<SkillInputOK> delegate;
 

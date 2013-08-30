@@ -30,6 +30,8 @@
     UIBarButtonItem *done = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(skillInputOK)];
     self.navigationItem.rightBarButtonItem = done;
     UIPickerView *upv = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 300, 320, 300)];
+    upv.showsSelectionIndicator = YES;
+    upv.delegate = self;
     [self.view addSubview:upv];
 }
 
@@ -40,8 +42,10 @@
 }
 
 - (void)skillInputOK {
-    [self.delegate skillInput:self withName:self.skillText.text];
+    [self.delegate skillInput:self withName:<#(NSString *)#> withDesctiption:<#(NSString *)#>
 }
+
+
 
 - (void)viewDidUnload {
     [self setSkillText:nil];
@@ -52,20 +56,32 @@
     return 1;
 }
 
+
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return 2;
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 3;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [UITableViewCell new];
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    switch (row) {
+        case 0:
+            return @"进攻技";
+            break;
+        case 1:
+            return @"防守技";
+            break;
+        default:
+            return @"其他";
+            break;
+    }
 }
+//
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//    return 1;
+//}
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    return 3;
+//}
+
 
 @end
