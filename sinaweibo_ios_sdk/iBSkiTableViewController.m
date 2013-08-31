@@ -58,7 +58,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -185,7 +185,7 @@
 
 - (void)skillInput:(id)sender withName:(NSString *)name withDesctiption:(NSString *)description andTag:(iBSkillCategory)skillCategory {
     iBSkill *newSkill = [[iBSkill alloc] initWithName:name andDescrip:description andTag:skillCategory];
-    [self.skillModel.skillArray addObject:newSkill];
+    [self.skillModel addSkill:newSkill];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

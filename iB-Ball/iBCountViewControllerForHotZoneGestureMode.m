@@ -38,12 +38,18 @@
 - (IBAction)swipeLeft:(id)sender {
     self.numberWeScore++;
     self.numberWeTry++;
+    NSLog(@"%@", self);
     [self.delegate gestureInfoChange:self.numberWeScore and:self.numberWeTry];
 }
 
 - (IBAction)swipeRight:(id)sender {
     self.numberWeTry++;
+    NSLog(@"%@", self);
     [self.delegate gestureInfoChange:self.numberWeScore and:self.numberWeTry];
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@" self.numberWeScore, self.numberWeTry: %d/%d", self.numberWeScore, self.numberWeTry];
 }
 
 @end

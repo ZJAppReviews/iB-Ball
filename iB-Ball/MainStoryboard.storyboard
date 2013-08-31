@@ -140,18 +140,18 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="hotzone.png" id="4RJ-Cp-PaK">
-                                <rect key="frame" x="0.0" y="103" width="321" height="313"/>
+                                <rect key="frame" x="-1" y="60" width="321" height="313"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nWl-YC-sAa">
-                                <rect key="frame" x="32" y="50" width="0.0" height="0.0"/>
+                                <rect key="frame" x="31" y="20" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="J3i-Yk-Wj3">
-                                <rect key="frame" x="23" y="141" width="57" height="44"/>
+                                <rect key="frame" x="22" y="111" width="57" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" hint="sas"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -164,7 +164,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bNg-50-DMk">
-                                <rect key="frame" x="247" y="141" width="53" height="44"/>
+                                <rect key="frame" x="246" y="111" width="53" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -176,7 +176,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d1Z-Pj-DD5">
-                                <rect key="frame" x="130" y="290" width="62" height="44"/>
+                                <rect key="frame" x="129" y="260" width="62" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -188,7 +188,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tZs-uC-k9q">
-                                <rect key="frame" x="249" y="290" width="62" height="44"/>
+                                <rect key="frame" x="248" y="260" width="62" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -200,7 +200,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gRY-lS-OdW">
-                                <rect key="frame" x="18" y="290" width="62" height="44"/>
+                                <rect key="frame" x="17" y="260" width="62" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -212,7 +212,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dXf-6U-2KG">
-                                <rect key="frame" x="60" y="192" width="62" height="44"/>
+                                <rect key="frame" x="59" y="162" width="62" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -224,7 +224,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TQs-kD-ya6">
-                                <rect key="frame" x="200" y="192" width="62" height="44"/>
+                                <rect key="frame" x="199" y="162" width="62" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -236,7 +236,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7ql-Cl-msX">
-                                <rect key="frame" x="130" y="222" width="62" height="44"/>
+                                <rect key="frame" x="129" y="192" width="62" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -248,7 +248,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nqb-Zb-Eru">
-                                <rect key="frame" x="130" y="171" width="62" height="44"/>
+                                <rect key="frame" x="129" y="141" width="62" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -260,7 +260,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Pr-uc-vhN">
-                                <rect key="frame" x="189" y="108" width="54" height="44"/>
+                                <rect key="frame" x="188" y="78" width="54" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -272,7 +272,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RoB-kZ-8bu">
-                                <rect key="frame" x="83" y="108" width="50" height="44"/>
+                                <rect key="frame" x="82" y="78" width="50" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -284,7 +284,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ev0-Si-rWj">
-                                <rect key="frame" x="301" y="108" width="47" height="123"/>
+                                <rect key="frame" x="300" y="78" width="47" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -296,7 +296,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C0h-r7-pPA">
-                                <rect key="frame" x="-32" y="108" width="47" height="123"/>
+                                <rect key="frame" x="-33" y="78" width="47" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -1041,7 +1041,6 @@
         <!--Navigation Controller-->
         <scene sceneID="orA-fj-0Ox">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7MV-6z-hN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="DGY-F4-yCA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="9UO-nD-fVn"/>
@@ -1056,6 +1055,7 @@
                         <segue destination="dbr-p8-b86" kind="relationship" relationship="rootViewController" id="aPg-Ba-8th"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7MV-6z-hN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2848" y="-795"/>
         </scene>

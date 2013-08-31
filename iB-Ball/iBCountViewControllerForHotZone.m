@@ -76,6 +76,14 @@
     float i = (float)self.numberWeScore / self.numberWeTry;
     NSString *str = [NSString stringWithFormat:@"ratio:%.2f%%", i * 100];
     self.trainingResult.text = str;
+    
+    NSString *tagString = [NSString stringWithFormat:@"%d", self.hotzoneTag];
+    // get hozone static
+    NSArray *a = [[NSUserDefaults standardUserDefaults] objectForKey:tagString];
+    CGFloat ratio = (CGFloat)[a[0] integerValue] / [a[1] integerValue];
+    self.trainingResultHistory.text = [NSString stringWithFormat:@"%d %d ratioi:%.2f%%", [a[0] integerValue], [a[1] integerValue], ratio];
+    NSLog(@"%d, %d", [a[0] integerValue], [a[1] integerValue]);
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {

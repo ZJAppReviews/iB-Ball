@@ -88,6 +88,13 @@
 //}
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-    self.category = row;
+    if (row == 0) {
+        self.category = 1;
+    }
+    if (row == 1)
+        self.category = 2;
+    if (row == 2) {
+        self.category = 0;
+    }
 }
 @end
