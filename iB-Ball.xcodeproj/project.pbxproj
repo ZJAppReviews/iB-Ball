@@ -176,6 +176,13 @@
 		18E1C335171A4CB300F5DC5D /* iBGlobalRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1C334171A4CB300F5DC5D /* iBGlobalRecorder.m */; };
 		18E38CAD17008215003782F2 /* iBAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E38CAC17008215003782F2 /* iBAccountViewController.m */; };
 		18E4C0F11754B96C00F4A199 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E4C0F01754B96C00F4A199 /* EventKit.framework */; };
+		18E9EEBE17D2A88800C7F8EB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E9EEBD17D2A88800C7F8EB /* SenTestingKit.framework */; };
+		18E9EEBF17D2A88800C7F8EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */; };
+		18E9EEC017D2A88800C7F8EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDC16C4BF37007FFDD1 /* Foundation.framework */; };
+		18E9EEC617D2A88800C7F8EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18E9EEC417D2A88800C7F8EB /* InfoPlist.strings */; };
+		18E9F04117D2AC9200C7F8EB /* iBBallTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9EEC817D2A88800C7F8EB /* iBBallTest.m */; };
+		18E9F04217D2ACA400C7F8EB /* iBSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837616F557770030BC70 /* iBSkill.m */; };
+		18E9F04317D2ACC000C7F8EB /* iBSkillDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B837316F556950030BC70 /* iBSkillDataModel.m */; };
 		18EAC82917C077830040CA2D /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC82817C077830040CA2D /* Player.m */; };
 		18EAC82E17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC82C17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m */; };
 		18EAC82F17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EAC82D17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib */; };
@@ -469,6 +476,13 @@
 		18E38CAB17008215003782F2 /* iBAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBAccountViewController.h; sourceTree = "<group>"; };
 		18E38CAC17008215003782F2 /* iBAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBAccountViewController.m; sourceTree = "<group>"; };
 		18E4C0F01754B96C00F4A199 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		18E9EEBC17D2A88800C7F8EB /* iBBallTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBBallTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E9EEBD17D2A88800C7F8EB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		18E9EEC317D2A88800C7F8EB /* iBBallTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBBallTest-Info.plist"; sourceTree = "<group>"; };
+		18E9EEC517D2A88800C7F8EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18E9EEC717D2A88800C7F8EB /* iBBallTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iBBallTest.h; sourceTree = "<group>"; };
+		18E9EEC817D2A88800C7F8EB /* iBBallTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBBallTest.m; sourceTree = "<group>"; };
+		18E9EECA17D2A88800C7F8EB /* iBBallTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBBallTest-Prefix.pch"; sourceTree = "<group>"; };
 		18EAC82717C077830040CA2D /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		18EAC82817C077830040CA2D /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		18EAC82B17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountViewControllerForHotZoneGestureMode.h; path = "iB-Ball/iBCountViewControllerForHotZoneGestureMode.h"; sourceTree = SOURCE_ROOT; };
@@ -526,6 +540,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18E9EEB817D2A88800C7F8EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E9EEBE17D2A88800C7F8EB /* SenTestingKit.framework in Frameworks */,
+				18E9EEBF17D2A88800C7F8EB /* UIKit.framework in Frameworks */,
+				18E9EEC017D2A88800C7F8EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA36DED316C4BF37007FFDD1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1044,6 +1068,26 @@
 			name = SNS;
 			sourceTree = "<group>";
 		};
+		18E9EEC117D2A88800C7F8EB /* iBBallTest */ = {
+			isa = PBXGroup;
+			children = (
+				18E9EEC717D2A88800C7F8EB /* iBBallTest.h */,
+				18E9EEC817D2A88800C7F8EB /* iBBallTest.m */,
+				18E9EEC217D2A88800C7F8EB /* Supporting Files */,
+			);
+			path = iBBallTest;
+			sourceTree = "<group>";
+		};
+		18E9EEC217D2A88800C7F8EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18E9EEC317D2A88800C7F8EB /* iBBallTest-Info.plist */,
+				18E9EEC417D2A88800C7F8EB /* InfoPlist.strings */,
+				18E9EECA17D2A88800C7F8EB /* iBBallTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		18EAC82A17C077C00040CA2D /* HotzoneCount */ = {
 			isa = PBXGroup;
 			children = (
@@ -1113,6 +1157,7 @@
 				BA3A7C4516CD477100E84B58 /* CountModel.m */,
 				BA36DEE016C4BF37007FFDD1 /* iB-Ball */,
 				BA36DEE116C4BF37007FFDD1 /* Supporting Files */,
+				18E9EEC117D2A88800C7F8EB /* iBBallTest */,
 				BA36DED916C4BF37007FFDD1 /* Frameworks */,
 				BA36DED716C4BF37007FFDD1 /* Products */,
 			);
@@ -1122,6 +1167,7 @@
 			isa = PBXGroup;
 			children = (
 				BA36DED616C4BF37007FFDD1 /* iB-Ball.app */,
+				18E9EEBC17D2A88800C7F8EB /* iBBallTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1147,6 +1193,7 @@
 				BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */,
 				BA36DEDC16C4BF37007FFDD1 /* Foundation.framework */,
 				BA36DEDE16C4BF37007FFDD1 /* CoreGraphics.framework */,
+				18E9EEBD17D2A88800C7F8EB /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1247,6 +1294,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		18E9EEBB17D2A88800C7F8EB /* iBBallTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E9EECD17D2A88800C7F8EB /* Build configuration list for PBXNativeTarget "iBBallTest" */;
+			buildPhases = (
+				18E9EEB717D2A88800C7F8EB /* Sources */,
+				18E9EEB817D2A88800C7F8EB /* Frameworks */,
+				18E9EEB917D2A88800C7F8EB /* Resources */,
+				18E9EEBA17D2A88800C7F8EB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iBBallTest;
+			productName = iBBallTest;
+			productReference = 18E9EEBC17D2A88800C7F8EB /* iBBallTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		BA36DED516C4BF37007FFDD1 /* iB-Ball */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA36DEFA16C4BF37007FFDD1 /* Build configuration list for PBXNativeTarget "iB-Ball" */;
@@ -1288,11 +1353,20 @@
 			projectRoot = "";
 			targets = (
 				BA36DED516C4BF37007FFDD1 /* iB-Ball */,
+				18E9EEBB17D2A88800C7F8EB /* iBBallTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		18E9EEB917D2A88800C7F8EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E9EEC617D2A88800C7F8EB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA36DED416C4BF37007FFDD1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1391,9 +1465,32 @@
 			shellPath = /bin/sh;
 			shellScript = "export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then\n/Applications/Xcode.app/Contents/Developer/iphoneentitlements/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
 		};
+		18E9EEBA17D2A88800C7F8EB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		18E9EEB717D2A88800C7F8EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E9F04317D2ACC000C7F8EB /* iBSkillDataModel.m in Sources */,
+				18E9F04217D2ACA400C7F8EB /* iBSkill.m in Sources */,
+				18E9F04117D2AC9200C7F8EB /* iBBallTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA36DED216C4BF37007FFDD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1512,6 +1609,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		18E9EEC417D2A88800C7F8EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E9EEC517D2A88800C7F8EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		BA36DEE316C4BF37007FFDD1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1523,6 +1628,45 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		18E9EECB17D2A88800C7F8EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBBallTest/iBBallTest-Prefix.pch";
+				INFOPLIST_FILE = "iBBallTest/iBBallTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		18E9EECC17D2A88800C7F8EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBBallTest/iBBallTest-Prefix.pch";
+				INFOPLIST_FILE = "iBBallTest/iBBallTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		BA36DEF816C4BF37007FFDD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1609,6 +1753,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18E9EECD17D2A88800C7F8EB /* Build configuration list for PBXNativeTarget "iBBallTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E9EECB17D2A88800C7F8EB /* Debug */,
+				18E9EECC17D2A88800C7F8EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BA36DED016C4BF37007FFDD1 /* Build configuration list for PBXProject "iB-Ball" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

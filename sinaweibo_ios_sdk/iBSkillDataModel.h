@@ -9,7 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "iBSkill.h"
 
-@interface iBSkillDataModel : NSObject
+#define KEY_0 @"skillArray"
+#define KEY_1 @"attackSkills"
+#define KEY_2 @"defendingSkills"
+#define KEY_3 @"otherSkills"
+
+@interface iBSkillDataModel : NSObject <NSCoding>
 
 
 - (id)init;

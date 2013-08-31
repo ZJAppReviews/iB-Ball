@@ -24,7 +24,6 @@
         _defendingSkills = [@[] mutableCopy];
         _otherSkills = [@[] mutableCopy];
 
-//        _skillArray = [NSMutableArray arrayWithObjects:a1, a2, nil];
         [self addSkill:a1];
         [self addSkill:a2];
     }
@@ -52,6 +51,21 @@
             NSLog(@"unrecognized skill category");
     }
     
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self.skillArray = [aDecoder decodeObjectForKey:KEY_0];
+    self.attackSkills = [aDecoder decodeObjectForKey:KEY_1];
+    self.defendingSkills = [aDecoder decodeObjectForKey:KEY_2];
+    self.otherSkills = [aDecoder decodeObjectForKey:KEY_3];
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.skillArray forKey:KEY_0];
+    [aCoder encodeObject:self.attackSkills forKey:KEY_1];
+    [aCoder encodeObject:self.defendingSkills forKey:KEY_2];
+    [aCoder encodeObject:self.otherSkills forKey:KEY_3];
 }
 
 @end
