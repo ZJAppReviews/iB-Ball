@@ -63,7 +63,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.skillModel getSkillCount];
+    if (section == 0) {
+        return [self.skillModel.attackSkills count];
+    }
+    if (section == 1) {
+        return [self.skillModel.defendingSkills count];
+    }
+    if (section == 2) {
+        return [self.skillModel.otherSkills count];
+    }
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -71,8 +80,10 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
+    
+    if (indexPath.section == 0) {
     // Configure the cell...
-    cell.textLabel.text = [[self.skillModel.skillArray objectAtIndex:indexPath.row] skillName];
+        cell.textLabel.text = ((iBSkill *)self.skillModel.attackSkills[indexPath.row]).skillName;
 //    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress)];
 //    [cell.contentView addGestureRecognizer:longPress];
 //    if (indexPath.section == 1) {
@@ -81,6 +92,13 @@
 //        [cell2 addSubview:upv];
 //        return cell2;
 //    }
+    }
+    else if (indexPath.section == 1) {
+        cell.textLabel.text = ((iBSkill *)self.skillModel.defendingSkills[indexPath.row]).skillName;
+    }
+    else if (indexPath.section == 2) {
+        cell.textLabel.text = ((iBSkill *)self.skillModel.otherSkills[indexPath.row]).skillName;
+    }
     
     return cell;
 }
@@ -217,7 +235,9 @@
     else if (section == 1) {
         return @"防守技";
     }
-    return nil;
+    else if (section == 2) {
+        return @"其他";
+    }
 }
 
 @end

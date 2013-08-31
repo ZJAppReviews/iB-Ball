@@ -22,7 +22,7 @@ typedef enum {
 @property (nonatomic, assign) NSInteger useNumber;
 @property (nonatomic, assign) NSInteger successNumber;
 @property (nonatomic, strong) NSString *skillDescription;
-@property (nonatomic) NSInteger tag;
+@property (nonatomic) iBSkillCategory skillCategory;
 
 - (id)initWithName:(NSString *)name andTag:(iBSkillCategory)tag;
 - (id)initWithName:(NSString *)name andDescrip:(NSString *)descrip andTag:(iBSkillCategory)tag;

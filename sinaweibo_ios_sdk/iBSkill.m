@@ -15,7 +15,7 @@
     self = [super init];
     if (self) {
         _skillName = name;
-        _tag = tag;
+        _skillCategory = tag;
     }
     return self;
 
@@ -27,7 +27,7 @@
     if (self) {
         _skillName = name;
         _skillDescription = descrip;
-        _tag = tag;
+        _skillCategory = tag;
     }
     return self;
 }

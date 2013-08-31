@@ -9,6 +9,7 @@
 #import "iBCountingSelectViewController.h"
 #import "iBGestureRecognizeViewController.h"
 #import "iBCountViewController.h"
+#import "iBBCountViewController.h"
 
 @interface iBCountingSelectViewController ()
 
@@ -46,19 +47,31 @@
         [self presentViewController:a animated:YES completion:nil];
         
     }
+    if (indexPath.row == 0) {
+        iBBCountViewController *b = [[iBBCountViewController alloc] initWithNibName:@"iBBCountViewController" bundle:nil];
+        [self.navigationController pushViewController:b animated:YES];
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    iBCountViewController *a = (iBCountViewController *)[(UINavigationController *)segue.destinationViewController topViewController];
+    self.hidesBottomBarWhenPushed = YES;
 
     if ([segue.identifier isEqualToString:@"2ptCounting"]) {
+        iBCountViewController *a = (iBCountViewController *)[(UINavigationController *)segue.destinationViewController topViewController];
+
         a.whatTypeOfCountingAreWeIn = CountForTwo;
     }
     if ([segue.identifier isEqualToString:@"3ptCounting"]) {
+        iBCountViewController *a = (iBCountViewController *)[(UINavigationController *)segue.destinationViewController topViewController];
 
         a.whatTypeOfCountingAreWeIn = CountForThree;
     }
     if ([segue.identifier isEqualToString:@"NormalCounting"]) {
+        iBCountViewController *a = (iBCountViewController *)[(UINavigationController *)segue.destinationViewController topViewController];
+
         a.whatTypeOfCountingAreWeIn = CountForNormal;
     }
 }

@@ -7,11 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "iBSkill.h"
 
 @interface iBSkillDataModel : NSObject
 
-@property (nonatomic, strong) NSMutableArray *skillArray;
+
+- (id)init;
 
 - (int)getSkillCount;
+
+- (void)addSkill:(iBSkill *)skill;
+
+@property (nonatomic, strong) NSMutableArray *skillArray;
+
+@property (nonatomic, strong) NSMutableArray *attackSkills;
+@property (nonatomic, strong) NSMutableArray *defendingSkills;
+@property (nonatomic, strong) NSMutableArray *otherSkills;
 
 @end

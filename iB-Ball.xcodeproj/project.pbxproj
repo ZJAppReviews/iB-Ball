@@ -157,6 +157,8 @@
 		1880DF2A1733B885004E7DA0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880DF291733B885004E7DA0 /* CoreData.framework */; };
 		189E4F71170E6B530046DE61 /* iBCountingSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */; };
 		18AFFD271735EDAB00FFE514 /* TwoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFFD261735EDAB00FFE514 /* TwoPoint.m */; };
+		18B2708717D1C4A000B4A052 /* iBBCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2708517D1C4A000B4A052 /* iBBCountViewController.m */; };
+		18B2708817D1C4A000B4A052 /* iBBCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B2708617D1C4A000B4A052 /* iBBCountViewController.xib */; };
 		18BE11971755ECA900C8ABB4 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18BE11961755ECA900C8ABB4 /* alarm.mp3 */; };
 		18BE11991755F33100C8ABB4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BE11981755F33100C8ABB4 /* AVFoundation.framework */; };
 		18D40DBB170134DF004A22CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBA170134DF004A22CD /* Parse.framework */; };
@@ -439,10 +441,13 @@
 		187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiCountViewController.m; sourceTree = "<group>"; };
 		1880DF1B17335866004E7DA0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1880DF291733B885004E7DA0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBCountingSelectViewController.h; sourceTree = "<group>"; };
-		189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountingSelectViewController.m; sourceTree = "<group>"; };
+		189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountingSelectViewController.h; path = "iB-Ball/iBCountingSelectViewController.h"; sourceTree = "<group>"; };
+		189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountingSelectViewController.m; path = "iB-Ball/iBCountingSelectViewController.m"; sourceTree = "<group>"; };
 		18AFFD251735EDAB00FFE514 /* TwoPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoPoint.h; sourceTree = "<group>"; };
 		18AFFD261735EDAB00FFE514 /* TwoPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoPoint.m; sourceTree = "<group>"; };
+		18B2708417D1C4A000B4A052 /* iBBCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBBCountViewController.h; path = "iB-Ball/iBBCountViewController.h"; sourceTree = "<group>"; };
+		18B2708517D1C4A000B4A052 /* iBBCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBBCountViewController.m; path = "iB-Ball/iBBCountViewController.m"; sourceTree = "<group>"; };
+		18B2708617D1C4A000B4A052 /* iBBCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBBCountViewController.xib; path = "iB-Ball/iBBCountViewController.xib"; sourceTree = "<group>"; };
 		18BE11961755ECA900C8ABB4 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 		18BE11981755F33100C8ABB4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		18D40DBA170134DF004A22CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -1090,6 +1095,11 @@
 				18EAC82A17C077C00040CA2D /* HotzoneCount */,
 				BACE1C5716E113520032223B /* Obj */,
 				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
+				189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */,
+				189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */,
+				18B2708417D1C4A000B4A052 /* iBBCountViewController.h */,
+				18B2708517D1C4A000B4A052 /* iBBCountViewController.m */,
+				18B2708617D1C4A000B4A052 /* iBBCountViewController.xib */,
 				1831D24F17C85D0E0044EC08 /* iBTabMainViewController.h */,
 				1831D25017C85D0E0044EC08 /* iBTabMainViewController.m */,
 				BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */,
@@ -1144,8 +1154,6 @@
 		BA36DEE016C4BF37007FFDD1 /* iB-Ball */ = {
 			isa = PBXGroup;
 			children = (
-				189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */,
-				189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */,
 				BA36DEE916C4BF37007FFDD1 /* iBAppDelegate.h */,
 				BA36DEEA16C4BF37007FFDD1 /* iBAppDelegate.m */,
 				BA36DEF516C4BF37007FFDD1 /* iBViewController.h */,
@@ -1362,6 +1370,7 @@
 				18EAC82F17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib in Resources */,
 				1831D25417C869110044EC08 /* TabBarNipple.png in Resources */,
 				1831D25517C869110044EC08 /* TabBarNipple@2x.png in Resources */,
+				18B2708817D1C4A000B4A052 /* iBBCountViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1496,6 +1505,7 @@
 				18EAC82917C077830040CA2D /* Player.m in Sources */,
 				18EAC82E17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m in Sources */,
 				1831D25117C85D0E0044EC08 /* iBTabMainViewController.m in Sources */,
+				18B2708717D1C4A000B4A052 /* iBBCountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,7 +39,7 @@
     [super viewDidUnload];
 }
 - (IBAction)showStatics:(id)sender {
-    int tagValue = [sender tag];
+    int tagValue = ((UIView *)sender).tag;
     NSString *tagKey = [NSString stringWithFormat:@"%d", tagValue];
     NSArray *a = [self.dataCenter valueForKey:tagKey];
     if (a == nil) {

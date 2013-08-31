@@ -588,19 +588,19 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Field Goal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fln-Jd-5Ck">
-                                <rect key="frame" x="140" y="32" width="78" height="21"/>
+                                <rect key="frame" x="140" y="31" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ratio:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GIQ-rE-V40">
-                                <rect key="frame" x="8" y="428" width="45" height="21"/>
+                                <rect key="frame" x="8" y="427" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hcw-u7-HRW">
-                                <rect key="frame" x="136" y="428" width="16" height="21"/>
+                                <rect key="frame" x="136" y="427" width="16" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -1041,6 +1041,7 @@
         <!--Navigation Controller-->
         <scene sceneID="orA-fj-0Ox">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7MV-6z-hN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="DGY-F4-yCA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="9UO-nD-fVn"/>
@@ -1055,7 +1056,6 @@
                         <segue destination="dbr-p8-b86" kind="relationship" relationship="rootViewController" id="aPg-Ba-8th"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7MV-6z-hN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2848" y="-795"/>
         </scene>
@@ -1155,15 +1155,15 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="unspecifield" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="RNb-D0-t7f">
-                                                    <rect key="frame" x="126" y="33" width="90" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="RNb-D0-t7f">
+                                                    <rect key="frame" x="126" y="33" width="10" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" id="BwZ-4o-Ja5">
-                                                    <rect key="frame" x="281" y="23" width="30" height="32"/>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="BwZ-4o-Ja5">
+                                                    <rect key="frame" x="282" y="24" width="29" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <state key="normal">
@@ -1195,15 +1195,15 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="unspecifield" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="wJQ-5z-vIG">
-                                                    <rect key="frame" x="126" y="25" width="90" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="wJQ-5z-vIG">
+                                                    <rect key="frame" x="126" y="25" width="10" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" id="KlI-fS-ePo">
-                                                    <rect key="frame" x="282" y="24" width="29" height="31"/>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="KlI-fS-ePo">
+                                                    <rect key="frame" x="282" y="25" width="29" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <state key="normal">
@@ -1235,19 +1235,19 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="unspecifield" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="GHs-di-LL3">
-                                                    <rect key="frame" x="126" y="28" width="90" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="GHs-di-LL3">
+                                                    <rect key="frame" x="126" y="28" width="10" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" id="lrx-Nh-JLn">
-                                                    <rect key="frame" x="283" y="24" width="29" height="31"/>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="lrx-Nh-JLn">
+                                                    <rect key="frame" x="284" y="25" width="29" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                                     <state key="normal">
-                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <state key="highlighted">
@@ -1290,7 +1290,7 @@
         <!--IB Obj Count View Controller-->
         <scene sceneID="DLi-di-VK5">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" wantsFullScreenLayout="YES" hidesBottomBarWhenPushed="YES" id="Kg7-9W-1Cv" customClass="iBObjCountViewController" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" wantsFullScreenLayout="YES" id="Kg7-9W-1Cv" customClass="iBObjCountViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="koG-OK-yCB">
                         <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1742,115 +1742,12 @@
         <image name="ic_ok.png" width="32" height="32"/>
         <image name="ic_users.png" width="32" height="32"/>
     </resources>
-    <classes>
-        <class className="CustomTabBar" superclassName="UITabBar">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomTabBar.h"/>
-        </class>
-        <class className="EventTableViewCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EventTableViewCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="creationDateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nameField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="tagsButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="tagsField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="PRPShadowedTableView" superclassName="UITableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PRPShadowedTableView.h"/>
-        </class>
-        <class className="iBAccountViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBAccountViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="getUserinfo:"/>
-                <relationship kind="action" name="renrenLog:"/>
-                <relationship kind="action" name="weiboLog:"/>
-            </relationships>
-        </class>
-        <class className="iBChanllengeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBChanllengeViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="startTiming:"/>
-            </relationships>
-        </class>
-        <class className="iBCountViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBCountViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="loadData:"/>
-                <relationship kind="action" name="miss:"/>
-                <relationship kind="action" name="saveData:"/>
-                <relationship kind="action" name="score:"/>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="action" name="showCarrerScore:"/>
-                <relationship kind="outlet" name="shootingRatio" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="iBCountingSelectViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBCountingSelectViewController.h"/>
-        </class>
-        <class className="iBFootPrintViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBFootPrintViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="editTags:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="eventTableViewCell" candidateClass="EventTableViewCell"/>
-            </relationships>
-        </class>
-        <class className="iBHotzoneSelectViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBHotzoneSelectViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showStatics:"/>
-            </relationships>
-        </class>
-        <class className="iBHotzoneShowStaticsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBHotzoneShowStaticsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showStatics:"/>
-            </relationships>
-        </class>
-        <class className="iBObjCountViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjCountViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="iBObjViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="setPoint:"/>
-                <relationship kind="outlet" name="backgroundTapButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="rockButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="iBSkiInputViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBSkiInputViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="skillCategoryInput" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="skillDescription" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="skillText" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="iBSkiTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBSkiTableViewController.h"/>
-        </class>
-        <class className="iBTabMainViewController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBTabMainViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tabBarBar" candidateClass="CustomTabBar"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hhW-MX-5mn"/>
+        <segue reference="WgJ-AL-Xv1"/>
     </inferredMetricsTieBreakers>
 </document>
