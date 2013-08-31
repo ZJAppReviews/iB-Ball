@@ -1536,7 +1536,7 @@
                     <navigationItem key="navigationItem" title="Skill" id="a1j-bT-n8x">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="cAu-Ev-STb">
                             <connections>
-                                <segue destination="pEu-LJ-78e" kind="push" id="BVj-2W-ylZ"/>
+                                <segue destination="pEu-LJ-78e" kind="push" identifier="addSkill" id="BVj-2W-ylZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1554,6 +1554,14 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <pickerView key="tableFooterView" contentMode="scaleToFill" id="CTZ-xl-iDf">
+                            <rect key="frame" x="0.0" y="132" width="320" height="216"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <outlet property="dataSource" destination="pEu-LJ-78e" id="aub-0c-MmV"/>
+                                <outlet property="delegate" destination="pEu-LJ-78e" id="d9A-1Y-aHK"/>
+                            </connections>
+                        </pickerView>
                         <sections>
                             <tableViewSection id="cyU-vM-dLW">
                                 <cells>
@@ -1605,6 +1613,15 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="oAo-US-ybq">
+                                        <rect key="frame" x="0.0" y="88" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1615,6 +1632,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="yq1-Wm-Rcs"/>
                     <connections>
+                        <outlet property="skillCategoryInput" destination="CTZ-xl-iDf" id="T4m-8a-syE"/>
                         <outlet property="skillDescription" destination="Wq7-Qs-pwx" id="RNe-Em-LAn"/>
                         <outlet property="skillText" destination="Hih-3e-9Fa" id="5By-Lc-cOI"/>
                     </connections>
@@ -1765,7 +1783,6 @@
                 <relationship kind="action" name="score:"/>
                 <relationship kind="action" name="share:"/>
                 <relationship kind="action" name="showCarrerScore:"/>
-                <relationship kind="action" name="startGesture:"/>
                 <relationship kind="outlet" name="shootingRatio" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -1813,6 +1830,7 @@
         <class className="iBSkiInputViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/iBSkiInputViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="skillCategoryInput" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="skillDescription" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="skillText" candidateClass="UITextField"/>
             </relationships>

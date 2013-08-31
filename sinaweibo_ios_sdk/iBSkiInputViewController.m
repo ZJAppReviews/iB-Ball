@@ -32,7 +32,8 @@
     UIPickerView *upv = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 300, 320, 300)];
     upv.showsSelectionIndicator = YES;
     upv.delegate = self;
-    [self.view addSubview:upv];
+    upv.dataSource = self;
+//    [self.view addSubview:upv];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,8 +43,8 @@
 }
 
 - (void)skillInputOK {
-    [self.delegate skillInput:self withName:<#(NSString *)#> withDesctiption:<#(NSString *)#>
-}
+    [self.delegate skillInput:self withName:self.skillText.text withDesctiption:self.skillDescription.text andTag:self.category];
+}   
 
 
 
@@ -74,6 +75,9 @@
             break;
     }
 }
+     
+     
+
 //
 //- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //    return 1;
@@ -83,5 +87,7 @@
 //    return 3;
 //}
 
-
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    self.category = row;
+}
 @end

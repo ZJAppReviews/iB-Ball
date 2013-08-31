@@ -149,7 +149,7 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"input"]) {
+    if ([segue.identifier isEqualToString:@"addSkill"]) {
         iBSkiInputViewController *a = (iBSkiInputViewController *)segue.destinationViewController;
         a.delegate = self;
     }
@@ -165,8 +165,8 @@
 //    NSLog(@"%@", self.skillModel.skillArray);
 }
 
-- (void)skillInput:(id)sender withName:(NSString *)name {
-    iBSkill *newSkill = [[iBSkill alloc] initWithName:name andTag:iBSkillOthers];
+- (void)skillInput:(id)sender withName:(NSString *)name withDesctiption:(NSString *)description andTag:(iBSkillCategory)skillCategory {
+    iBSkill *newSkill = [[iBSkill alloc] initWithName:name andDescrip:description andTag:skillCategory];
     [self.skillModel.skillArray addObject:newSkill];
     [self.navigationController popViewControllerAnimated:YES];
 }

@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iBSkill.h"
 
 @protocol SkillInputOK <NSObject>
 
-- (void)skillInput:(id)sender withName:(NSString *)name withDesctiption:(NSString *)description andTag:(NSInteger)skillCategory;
+- (void)skillInput:(id)sender withName:(NSString *)name withDesctiption:(NSString *)description andTag:(iBSkillCategory)skillCategory;
 
 @end
 
@@ -21,6 +22,9 @@
 
 
 @property (nonatomic, strong) id<SkillInputOK> delegate;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *skillCategoryInput;
+@property (nonatomic) NSInteger category;
 
 @end
 

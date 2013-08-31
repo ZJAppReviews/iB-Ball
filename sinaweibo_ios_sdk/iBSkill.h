@@ -25,6 +25,7 @@ typedef enum {
 @property (nonatomic) NSInteger tag;
 
 - (id)initWithName:(NSString *)name andTag:(iBSkillCategory)tag;
+- (id)initWithName:(NSString *)name andDescrip:(NSString *)descrip andTag:(iBSkillCategory)tag;
 
 - (float)getRatio;
 
