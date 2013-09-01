@@ -22,6 +22,7 @@
 - (int)getSkillCount;
 
 - (void)addSkill:(iBSkill *)skill;
+- (void)removeSkill:(iBSkill *)skill;
 
 @property (nonatomic, strong) NSMutableArray *skillArray;
 

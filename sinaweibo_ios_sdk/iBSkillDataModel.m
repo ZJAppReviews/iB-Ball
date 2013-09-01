@@ -53,6 +53,29 @@
     
 }
 
+- (void)removeSkill:(iBSkill *)skill {
+    switch (skill.skillCategory) {
+        case iBSkillAttack:
+            [self.skillArray removeObject:skill];
+            [self.attackSkills removeObject:skill];
+            break;
+            
+        case iBSkillDefend:
+            [self.skillArray removeObject:skill];
+            [self.defendingSkills removeObject:skill];
+            break;
+            
+        case iBSkillOthers:
+            [self.skillArray removeObject:skill];
+            [self.otherSkills removeObject:skill];
+            break;
+            
+        default:
+            NSLog(@"unrecknized skill");
+            break;
+    }
+}
+
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self.skillArray = [aDecoder decodeObjectForKey:KEY_0];
     self.attackSkills = [aDecoder decodeObjectForKey:KEY_1];

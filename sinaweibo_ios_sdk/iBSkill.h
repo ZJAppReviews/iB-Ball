@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-    iBSkillDefend = 1,
-    iBSkillAttack = 2,
+    iBSkillDefend = 2,
+    iBSkillAttack = 1,
     iBSkillOthers = 0,
 } iBSkillCategory;
 

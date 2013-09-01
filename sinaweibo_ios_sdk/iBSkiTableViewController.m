@@ -107,7 +107,6 @@
 }
 
 - (void)longPress {
-//    NSLog(@"Bingo!");
     iBSkill *skill = [self.skillModel.skillArray objectAtIndex:self.selected];
 //    NSLog(skill.description);
     
@@ -128,12 +127,31 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        [self.skillModel.skillArray removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        iBSkill *skill;
+        int section = indexPath.section;
+        
+        switch (section) {
+            case 0:
+                skill = self.skillModel.attackSkills[indexPath.row];
+                break;
+            case 1:
+                skill = self.skillModel.defendingSkills[indexPath.row];
+                break;
+            case 2:
+                skill = self.skillModel.otherSkills[indexPath.row];
+                break;
+                
+        }
+        [self.skillModel removeSkill:skill];
+//        [self.skillModel.skillArray removeObjectAtIndex:indexPath.row];
+        
+//        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }
+    [self.tableView reloadData];
+    [self saveSkillData];
 }
 
 
@@ -190,13 +208,15 @@
     iBSkill *newSkill = [[iBSkill alloc] initWithName:name andDescrip:description andTag:skillCategory];
     [self.skillModel addSkill:newSkill];
 
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.skillModel];
-    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"skillModel"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-
+    [self saveSkillData];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)saveSkillData {
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.skillModel];
+    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"skillModel"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
 
 #pragma mark Action sheet
 
