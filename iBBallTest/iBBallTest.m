@@ -33,10 +33,12 @@
     iBSkillDataModel *test = [[iBSkillDataModel alloc] init];
     iBSkill *testSkill = [[iBSkill alloc] init];
     [test addSkill:testSkill];
+
     
     
-    STAssertNotNil(test, nil);
+    STAssertTrue(test.otherSkills.count == 1, nil);
 }
+
 - (void)test2 {
 }
 

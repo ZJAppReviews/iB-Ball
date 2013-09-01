@@ -30,8 +30,11 @@
 {
     [super viewDidLoad];
 
-    
-    self.skillModel = [[iBSkillDataModel alloc] init];
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"skillModel"]) {
+        self.skillModel = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"skillModel"]];
+    } else {
+        self.skillModel = [[iBSkillDataModel alloc] init];
+    }
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -186,6 +189,11 @@
 - (void)skillInput:(id)sender withName:(NSString *)name withDesctiption:(NSString *)description andTag:(iBSkillCategory)skillCategory {
     iBSkill *newSkill = [[iBSkill alloc] initWithName:name andDescrip:description andTag:skillCategory];
     [self.skillModel addSkill:newSkill];
+
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.skillModel];
+    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"skillModel"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+
     [self.navigationController popViewControllerAnimated:YES];
 }
 

@@ -42,5 +42,24 @@
     
 }
 
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.skillName forKey:P_1];
+    [aCoder encodeInteger:self.useNumber forKey:P_2];
+    [aCoder encodeInteger:self.successNumber forKey:P_3];
+    [aCoder encodeInteger:self.skillCategory forKey:P_4];
+    [aCoder encodeObject:self.skillDescription forKey:P_5];
+
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self.skillName = [aDecoder decodeObjectForKey:P_1];
+    self.useNumber = [aDecoder decodeIntegerForKey:P_2];
+    self.successNumber = [aDecoder decodeIntegerForKey:P_3];
+    self.skillCategory = [aDecoder decodeIntegerForKey:P_4];
+    self.skillDescription = [aDecoder decodeObjectForKey:P_5];
+    
+    return self;
+}
+
 @end
 
