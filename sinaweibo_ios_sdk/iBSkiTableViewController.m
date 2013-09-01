@@ -29,6 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.clearsSelectionOnViewWillAppear = YES;
 
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"skillModel"]) {
         self.skillModel = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"skillModel"]];
@@ -107,8 +109,7 @@
 }
 
 - (void)longPress {
-    iBSkill *skill = [self.skillModel.skillArray objectAtIndex:self.selected];
-//    NSLog(skill.description);
+    iBSkill *skill = [self getSelectedSkill];
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wow" message:[NSString stringWithFormat:@"This killer's score is %d/%d", skill.successNumber, skill.useNumber ] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
@@ -178,10 +179,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+
     if ([self isEditing]) {
         NSLog(@"ss");
     }
-    self.selected = indexPath.row;
+    self.selected = indexPath;
     UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Please choose" delegate:self cancelButtonTitle:@"OK" destructiveButtonTitle:nil otherButtonTitles:@"Statics", @"Description", @"Count", @"Edit", nil];
     [as showFromTabBar:self.tabBarController.tabBar];
 }
@@ -233,7 +237,7 @@
         [self.navigationController pushViewController:a animated:YES];
     }
     if (buttonIndex == 1) {
-        iBSkill *currentSkill = [self.skillModel.skillArray objectAtIndex:self.selected];
+        iBSkill *currentSkill = [self getSelectedSkill];
         NSLog(@"%@", currentSkill.skillName);
         if (currentSkill.skillDescription == nil) {
             // let the user say
@@ -247,10 +251,27 @@
     }
 }
 
+- (iBSkill *)getSelectedSkill {
+    iBSkill *skill;
+
+    switch (self.selected.section) {
+        case 0:
+            skill = [self.skillModel.attackSkills objectAtIndex:self.selected.row];
+            break;
+        case 1:
+            skill = [self.skillModel.defendingSkills objectAtIndex:self.selected.row];
+            break;
+        case 2:
+            skill = [self.skillModel.otherSkills objectAtIndex:self.selected.row];
+            break;
+    }
+    return skill;
+}
+
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 1) {
         // ok
-        iBSkill *currentSkill = [self.skillModel.skillArray objectAtIndex:self.selected];
+        iBSkill *currentSkill = [self getSelectedSkill];
         currentSkill.skillDescription = [alertView textFieldAtIndex:0].text;
     }
 }
@@ -265,6 +286,7 @@
     else if (section == 2) {
         return @"其他";
     }
+    return nil;
 }
 
 @end

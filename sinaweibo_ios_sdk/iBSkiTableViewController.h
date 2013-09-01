@@ -15,6 +15,6 @@
 
 @property (nonatomic, strong) iBSkillDataModel *skillModel;
 
-@property (nonatomic, assign) NSInteger selected;
+@property (nonatomic, strong) NSIndexPath *selected;
 
 @end
