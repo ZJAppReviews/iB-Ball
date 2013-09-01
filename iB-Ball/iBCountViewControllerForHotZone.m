@@ -102,7 +102,7 @@
     if (mutableFetchResults.count == 0) {
         NSLog(@"create one");
         Player *newPlayer = [NSEntityDescription insertNewObjectForEntityForName:@"Player" inManagedObjectContext:_managedObjectContext];
-        if ([self isTwoPoint]) {
+        if ([self isTwoPointOrThree]) {
             newPlayer.twoPointTry = [NSNumber numberWithInt:1];
             newPlayer.twoPointScore = [NSNumber numberWithInt:1];
         }
@@ -116,7 +116,7 @@
         NSLog(@"ss player more than one");
     }
     else if (mutableFetchResults.count == 1) {
-        if ([self isTwoPoint]) {
+        if ([self isTwoPointOrThree]) {
             Player *player = ((Player *)mutableFetchResults[0]);
             int i = [player.twoPointScore integerValue];
             int j = [player.twoPointTry integerValue];
@@ -146,9 +146,12 @@
     NSLog(@"%d", [((Player *)a[0]).twoPointTry integerValue]);
 
 }
-- (BOOL)isTwoPoint {
-    //TODO
+- (BOOL)isTwoPointOrThree {
+    if (self.hotzoneTag == 1 || self.hotzoneTag == 11 || self.hotzoneTag == 12 || self.hotzoneTag == 6) {
+        return NO;
+    }
     return YES;
+
 }
 
 - (IBAction)gotoGestureMode:(id)sender {

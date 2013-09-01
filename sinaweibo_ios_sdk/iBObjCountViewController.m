@@ -90,7 +90,6 @@
 }
 
 - (IBAction)reduceFTPoint:(id)sender {
-//    NSLog(@"reduce ft");
     if (self.dataModel.ftPoint_real <= 0) {
         return;
     }
