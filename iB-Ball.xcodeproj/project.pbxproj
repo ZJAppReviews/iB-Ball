@@ -155,6 +155,8 @@
 		187C1F6E16F7CDEC00263479 /* iBSkiCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */; };
 		1880DF1C17335866004E7DA0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1880DF1A17335866004E7DA0 /* Model.xcdatamodeld */; };
 		1880DF2A1733B885004E7DA0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880DF291733B885004E7DA0 /* CoreData.framework */; };
+		1892F50B17D405CA00C3902F /* iBStaticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1892F50917D405CA00C3902F /* iBStaticsViewController.m */; };
+		1892F50C17D405CA00C3902F /* iBStaticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */; };
 		189E4F71170E6B530046DE61 /* iBCountingSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */; };
 		18AFFD271735EDAB00FFE514 /* TwoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFFD261735EDAB00FFE514 /* TwoPoint.m */; };
 		18B2708717D1C4A000B4A052 /* iBBCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B2708517D1C4A000B4A052 /* iBBCountViewController.m */; };
@@ -448,6 +450,9 @@
 		187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiCountViewController.m; sourceTree = "<group>"; };
 		1880DF1B17335866004E7DA0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1880DF291733B885004E7DA0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1892F50817D405CA00C3902F /* iBStaticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBStaticsViewController.h; path = "iB-Ball/iBStaticsViewController.h"; sourceTree = "<group>"; };
+		1892F50917D405CA00C3902F /* iBStaticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBStaticsViewController.m; path = "iB-Ball/iBStaticsViewController.m"; sourceTree = "<group>"; };
+		1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBStaticsViewController.xib; path = "iB-Ball/iBStaticsViewController.xib"; sourceTree = "<group>"; };
 		189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountingSelectViewController.h; path = "iB-Ball/iBCountingSelectViewController.h"; sourceTree = "<group>"; };
 		189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountingSelectViewController.m; path = "iB-Ball/iBCountingSelectViewController.m"; sourceTree = "<group>"; };
 		18AFFD251735EDAB00FFE514 /* TwoPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoPoint.h; sourceTree = "<group>"; };
@@ -1139,6 +1144,9 @@
 				18EAC82A17C077C00040CA2D /* HotzoneCount */,
 				BACE1C5716E113520032223B /* Obj */,
 				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
+				1892F50817D405CA00C3902F /* iBStaticsViewController.h */,
+				1892F50917D405CA00C3902F /* iBStaticsViewController.m */,
+				1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */,
 				189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */,
 				189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */,
 				18B2708417D1C4A000B4A052 /* iBBCountViewController.h */,
@@ -1445,6 +1453,7 @@
 				1831D25417C869110044EC08 /* TabBarNipple.png in Resources */,
 				1831D25517C869110044EC08 /* TabBarNipple@2x.png in Resources */,
 				18B2708817D1C4A000B4A052 /* iBBCountViewController.xib in Resources */,
+				1892F50C17D405CA00C3902F /* iBStaticsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1603,6 +1612,7 @@
 				18EAC82E17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m in Sources */,
 				1831D25117C85D0E0044EC08 /* iBTabMainViewController.m in Sources */,
 				18B2708717D1C4A000B4A052 /* iBBCountViewController.m in Sources */,
+				1892F50B17D405CA00C3902F /* iBStaticsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1760,6 +1770,7 @@
 				18E9EECC17D2A88800C7F8EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA36DED016C4BF37007FFDD1 /* Build configuration list for PBXProject "iB-Ball" */ = {
 			isa = XCConfigurationList;

@@ -29,6 +29,7 @@
 
 - (void)viewDidLoad {
     self.delegate = self;
+    
     [self addTabBarArrow];
 }
 
