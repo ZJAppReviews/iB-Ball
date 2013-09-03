@@ -9,7 +9,6 @@
 #import "iBCountingSelectViewController.h"
 #import "iBGestureRecognizeViewController.h"
 #import "iBCountViewController.h"
-#import "iBBCountViewController.h"
 
 @interface iBCountingSelectViewController ()
 
@@ -48,8 +47,6 @@
         
     }
     if (indexPath.row == 0) {
-        iBBCountViewController *b = [[iBBCountViewController alloc] initWithNibName:@"iBBCountViewController" bundle:nil];
-        [self.navigationController pushViewController:b animated:YES];
     }
 }
 

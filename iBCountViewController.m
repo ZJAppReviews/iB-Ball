@@ -13,6 +13,7 @@
 #import "iBGestureRecognizeViewController.h"
 #import <Parse/Parse.h>
 #import "TwoPoint.h"
+#import "Player.h"
 
 
 @interface iBCountViewController ()
@@ -101,97 +102,11 @@
         return;
     }
     if (sender.tag == 1) {
-        if (self.whatTypeOfCountingAreWeIn == CountForHotZone) {
-            // so we are count for hot zone
-            // 1. get the hotzone as a integer
-            NSInteger key = self.hotzoneTag;
-            NSString *keyString = [NSString stringWithFormat:@"%d", key];
-            // 2. get the array of the integer of the dict
-//            id hotzoneDictId = [self.countModel.hotzoneDict objectForKey:keyString];
-//            id hotzoneDictId = [self.countModel.hotzoneDict objectForKey:keyString];
-            NSMutableDictionary *hotzoneDict = [iBDataCenterForHotzone hotzoneDict];
-            NSArray *hotzoneArray = (NSArray *)[hotzoneDict objectForKey:keyString];
-            if (hotzoneArray == nil) {
-                NSNumber *n1 = [NSNumber numberWithInt:0];
-                NSNumber *n2 = [NSNumber numberWithInt:0];
-                NSArray *a = [NSArray arrayWithObjects:n1, n2, nil];
-                hotzoneArray = a;
-            }
-            // 3. manage the data
-            NSNumber *n1 = [hotzoneArray objectAtIndex:0];
-            NSNumber *n2 = [hotzoneArray objectAtIndex:1];
-            
-            int newN1 = n1.integerValue + 1;
-            int newN2 = n2.integerValue + 1;
-            
-            NSNumber *nN1 = [NSNumber numberWithInt:newN1];
-            NSNumber *nN2 = [NSNumber numberWithInt:newN2];
-            
-            NSArray *b = [NSArray arrayWithObjects:nN1, nN2, nil];
-            [[iBDataCenterForHotzone hotzoneDict] setValue:b forKey:keyString];
-            return;
-        }
-        //        NSLog(@"before %d", [self countModel].shootingTimes);
-        //        [[self countModel] setShootingTimes:([self countModel].shootingTimes + 1)];
-        NSLog(@"nange%d %d", self.countModel.goalTimes, self.countModel.shootingTimes);
-
-        [self countModel].shootingTimes++;
-        [self countModel].goalTimes++;
-
-        //        [[self countModel] setGoalTimes:([self countModel].goalTimes + 1)];
-        [self countModel].totalShootingTimes++;
-        [self countModel].totalGoalTimes++;
-        //        NSLog(@"after %d", [self countModel].shootingTimes);
-        
         [self coreDataAddOne];
-
     }
     
     else if (sender.tag == 0) {
         if (self.whatTypeOfCountingAreWeIn == CountForHotZone) {
-            if (self.whatTypeOfCountingAreWeIn == CountForHotZone) {
-                // so we are count for hot zone
-                // 1. get the hotzone as a integer
-                NSInteger key = self.hotzoneTag;
-                NSString *keyString = [NSString stringWithFormat:@"%d", key];
-                // 2. get the array of the integer of the dict
-                //            id hotzoneDictId = [self.countModel.hotzoneDict objectForKey:keyString];
-                //            id hotzoneDictId = [self.countModel.hotzoneDict objectForKey:keyString];
-                NSMutableDictionary *hotzoneDict = [iBDataCenterForHotzone hotzoneDict];
-                NSArray *hotzoneArray = (NSArray *)[hotzoneDict objectForKey:keyString];
-                if (hotzoneArray == nil) {
-                    NSNumber *n1 = [NSNumber numberWithInt:0];
-                    NSNumber *n2 = [NSNumber numberWithInt:0];
-                    NSArray *a = [NSArray arrayWithObjects:n1, n2, nil];
-                    hotzoneArray = a;
-                }
-                // 3. manage the data
-                NSNumber *n1 = [hotzoneArray objectAtIndex:0];
-                NSNumber *n2 = [hotzoneArray objectAtIndex:1];
-                
-                int newN1 = n1.integerValue;
-                int newN2 = n2.integerValue + 1;
-                
-                NSNumber *nN1 = [NSNumber numberWithInt:newN1];
-                NSNumber *nN2 = [NSNumber numberWithInt:newN2];
-                
-                NSArray *b = [NSArray arrayWithObjects:nN1, nN2, nil];
-                [[iBDataCenterForHotzone hotzoneDict] setValue:b forKey:keyString];
-                return;
-                //            NSLog(self.countModel.hotzoneDict.description);
-            }
-            //        NSLog(@"before %d", [self countModel].shootingTimes);
-            //        [[self countModel] setShootingTimes:([self countModel].shootingTimes + 1)];
-            NSLog(@"nange%d %d", self.countModel.goalTimes, self.countModel.shootingTimes);
-            
-            [self countModel].shootingTimes++;
-            [self countModel].goalTimes++;
-            
-            //        [[self countModel] setGoalTimes:([self countModel].goalTimes + 1)];
-            [self countModel].totalShootingTimes++;
-            [self countModel].totalGoalTimes++;
-            //        NSLog(@"after %d", [self countModel].shootingTimes);
-            
             //TODO why add this crap??
             [self coreDataAddOne];
             
@@ -224,7 +139,7 @@
     NSDate *today = [NSDate date];
 
     
-    // deal the situation where the TwoPoint Already Exitst
+    // deal the situation where the TwoPoint Already Exist
     NSManagedObjectContext *context = self.managedObjectContext;
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
@@ -239,44 +154,81 @@
         NSLog(@"wori");
     }
     
-    // get the day
-    NSString *dayWeAreIn = [dateFormatter stringFromDate:today];
-    // fileter the day & crap***
-    for (TwoPoint *tp in fetchedObjects) {
-        if ([tp.twoPointDay isEqualToString:dayWeAreIn]) {
-            int theOriginal = [tp.twoPointGoal intValue];
-            int theOriginal2 = [tp.twoPointTotal intValue];
-            NSNumber *a1 = [NSNumber numberWithInt:++theOriginal];
-            NSNumber *a2 = [NSNumber numberWithInt:++theOriginal2];
-            
-            tp.twoPointGoal = a1;
-            tp.twoPointTotal = a2;
-            
-            NSError *err;
-            [self.managedObjectContext save:&err];
-            NSLog(tp.description);
-            return;
+    if (fetchedObjects.count > 0) {
+    
+        // get the day
+        NSString *dayWeAreIn = [dateFormatter stringFromDate:today];
+        // fileter the day & crap***
+        for (TwoPoint *tp in fetchedObjects) {
+            if ([tp.twoPointDay isEqualToString:dayWeAreIn]) {
+                int theOriginal = [tp.twoPointGoal intValue];
+                int theOriginal2 = [tp.twoPointTotal intValue];
+                NSNumber *a1 = [NSNumber numberWithInt:++theOriginal];
+                NSNumber *a2 = [NSNumber numberWithInt:++theOriginal2];
+                
+                tp.twoPointGoal = a1;
+                tp.twoPointTotal = a2;
+                
+                NSError *err;
+                [self.managedObjectContext save:&err];
+            }
         }
+    } else {
+        TwoPoint *a = (TwoPoint *)[NSEntityDescription insertNewObjectForEntityForName:@"TwoPoint" inManagedObjectContext:_managedObjectContext];
+        
+        a.twoPointDay = [dateFormatter stringFromDate:today];
+        int theOriginal = [a.twoPointGoal intValue];
+        int theOriginal2 = [a.twoPointTotal intValue];
+        NSNumber *a1 = [NSNumber numberWithInt:++theOriginal];
+        NSNumber *a2 = [NSNumber numberWithInt:++theOriginal2];
+        
+        a.twoPointGoal = a1;
+        a.twoPointTotal = a2;
+        
+        NSError *err;
+        [self.managedObjectContext save:&err];
     }
-//    TwoPoint *tp = [fetchedObjects objectAtIndex:0];
-//    NSLog(tp.description);
-    // we got the fetched objec
-//    TwoPoint *a = (TwoPoint *)[NSEntityDescription ];
-//    NSLog(@"Date for locale %@: %@",
-//          [[dateFormatter locale] localeIdentifier], [dateFormatter stringFromDate:today]);
-    TwoPoint *a = (TwoPoint *)[NSEntityDescription insertNewObjectForEntityForName:@"TwoPoint" inManagedObjectContext:_managedObjectContext];
+    
+    
+    // 2.get the People model right, add stuff to it
+    NSEntityDescription *entity2 = [NSEntityDescription entityForName:@"Player"
+                                              inManagedObjectContext:context];
+    NSFetchRequest *fetchRequest2 = [[NSFetchRequest alloc] init];
 
-    a.twoPointDay = [dateFormatter stringFromDate:today];
-    int theOriginal = [a.twoPointGoal intValue];
-    int theOriginal2 = [a.twoPointTotal intValue];
-    NSNumber *a1 = [NSNumber numberWithInt:++theOriginal];
-    NSNumber *a2 = [NSNumber numberWithInt:++theOriginal2];
+    [fetchRequest2 setEntity:entity2];
     
-    a.twoPointGoal = a1;
-    a.twoPointTotal = a2;
+    NSError *error2;
+    NSArray *fetchedObjects2 = [context executeFetchRequest:fetchRequest2 error:&error2];
+    if (fetchedObjects2 == nil) {
+        // Handle the error.
+        NSLog(@"wori");
+    }
+    Player *player;
+    NSLog(@"%d", fetchedObjects2.count);
+
+    if (fetchedObjects2.count == 0) {
+        player = (Player *)[NSEntityDescription insertNewObjectForEntityForName:@"Player" inManagedObjectContext:_managedObjectContext];
+                
+        NSError *err;
+        [self.managedObjectContext save:&err];
+
+    } else if (fetchedObjects2.count > 1) {
+        NSLog(@"fetched player more than 1");
+    } else {
+        player = fetchedObjects2[0];
+    }
+
     
-    NSError *err;
-    [self.managedObjectContext save:&err];
+    
+    if (self.whatTypeOfCountingAreWeIn == CountForTwo) {
+        int i = [player.twoPointScore integerValue];
+        i++;
+        int j = [player.twoPointTry integerValue];
+        j++;
+        player.twoPointScore = [NSNumber numberWithInt:i];
+        player.twoPointTry = [NSNumber numberWithInt:j];
+        [self.managedObjectContext save:&error2];
+    }
 }
 
 - (void)coreDataMissOne {
@@ -536,28 +488,7 @@ NSString *postStatusText;
 
     }
 }
-#pragma mark - RenrenDelegate -
 
-/**
- * 接口请求成功，第三方开发者实现这个方法
- */
-- (void)renren:(Renren *)renren requestDidReturnResponse:(ROResponse*)response {
-    //TODO
-}
-
-/**
- * 接口请求失败，第三方开发者实现这个方法
- */
-- (void)renren:(Renren *)renren requestFailWithError:(ROError*)error {
-    //TODO
-}
-
-
-- (SinaWeibo *)sinaweibo
-{
-    iBAppDelegate *delegate = (iBAppDelegate *)[UIApplication sharedApplication].delegate;
-    return delegate.sinaweibo;
-}
 
 - (IBAction)startGesture:(id)sender {
     // judge the type of counting and pass it to the gesture
@@ -618,5 +549,28 @@ NSString *postStatusText;
         NSLog(@"fail");
     }
     return;
+}
+
+#pragma mark - RenrenDelegate -
+
+/**
+ * 接口请求成功，第三方开发者实现这个方法
+ */
+- (void)renren:(Renren *)renren requestDidReturnResponse:(ROResponse*)response {
+    //TODO
+}
+
+/**
+ * 接口请求失败，第三方开发者实现这个方法
+ */
+- (void)renren:(Renren *)renren requestFailWithError:(ROError*)error {
+    //TODO
+}
+
+
+- (SinaWeibo *)sinaweibo
+{
+    iBAppDelegate *delegate = (iBAppDelegate *)[UIApplication sharedApplication].delegate;
+    return delegate.sinaweibo;
 }
 @end
