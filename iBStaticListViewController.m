@@ -48,7 +48,10 @@
         // Handle the error.
     }
     Player *player = fetchedObjects[0];
-    self.twoPointCellView.textLabel.text = [NSString stringWithFormat:@"%@", player.twoPointScore];
+    float ratio = [player.twoPointScore integerValue] / (CGFloat)[player.twoPointTry integerValue];
+    float ratio2 = [player.threePointScore integerValue] / (CGFloat)[player.threePointTry integerValue];
+    self.twoPointCellView.detailTextLabel.text = [NSString stringWithFormat:@"%@/%@ %.2f%%", player.twoPointScore, player.twoPointTry, ratio];
+    self.threePointCellView.detailTextLabel.text = [NSString stringWithFormat:@"%@/%@ %.2f%%", player.threePointScore, player.threePointTry, ratio2];
 
 }
 
