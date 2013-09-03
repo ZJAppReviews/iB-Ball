@@ -13,7 +13,7 @@
     </entity>
     <fetchRequest name="zzzFetchRequest" entity="TwoPoint" predicateString="twoPointDay == CAST(389242365.626516, &quot;NSDate&quot;)"/>
     <elements>
+        <element name="Player" positionX="-308" positionY="5" width="128" height="103"/>
         <element name="TwoPoint" positionX="-128" positionY="-9" width="128" height="88"/>
-        <element name="Player" positionX="-288" positionY="-9" width="128" height="103"/>
     </elements>
 </model>

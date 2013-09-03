@@ -106,6 +106,10 @@
 		184A9006174DAEE0007D28F0 /* TagsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184A9005174DAEE0007D28F0 /* TagsHeaderView.xib */; };
 		185001971760397A000711ED /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1850019517603979000711ED /* whiteButton.png */; };
 		185001981760397A000711ED /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 185001961760397A000711ED /* blueButton.png */; };
+		1852B9BD17D55595006A2DB8 /* iBShowPersonStaticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1852B9BB17D55595006A2DB8 /* iBShowPersonStaticViewController.m */; };
+		1852B9BE17D55595006A2DB8 /* iBShowPersonStaticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1852B9BC17D55595006A2DB8 /* iBShowPersonStaticViewController.xib */; };
+		1852B9C217D55992006A2DB8 /* iBStaticListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */; };
+		1852B9C317D55992006A2DB8 /* iBStaticListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1852B9C117D55992006A2DB8 /* iBStaticListViewController.xib */; };
 		185F71AF1702D04600336ED3 /* iBGestureRecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */; };
 		185F71B11702D06300336ED3 /* iBGestureRecognizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */; };
 		18640E4917445073006B541A /* README in Resources */ = {isa = PBXBuildFile; fileRef = 18640E4817445073006B541A /* README */; };
@@ -382,6 +386,12 @@
 		184A9005174DAEE0007D28F0 /* TagsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagsHeaderView.xib; sourceTree = "<group>"; };
 		1850019517603979000711ED /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteButton.png; path = ../whiteButton.png; sourceTree = "<group>"; };
 		185001961760397A000711ED /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueButton.png; path = ../blueButton.png; sourceTree = "<group>"; };
+		1852B9BA17D55595006A2DB8 /* iBShowPersonStaticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBShowPersonStaticViewController.h; path = "iB-Ball/iBShowPersonStaticViewController.h"; sourceTree = SOURCE_ROOT; };
+		1852B9BB17D55595006A2DB8 /* iBShowPersonStaticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBShowPersonStaticViewController.m; path = "iB-Ball/iBShowPersonStaticViewController.m"; sourceTree = SOURCE_ROOT; };
+		1852B9BC17D55595006A2DB8 /* iBShowPersonStaticViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBShowPersonStaticViewController.xib; path = "iB-Ball/iBShowPersonStaticViewController.xib"; sourceTree = SOURCE_ROOT; };
+		1852B9BF17D55992006A2DB8 /* iBStaticListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBStaticListViewController.h; sourceTree = "<group>"; };
+		1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBStaticListViewController.m; sourceTree = "<group>"; };
+		1852B9C117D55992006A2DB8 /* iBStaticListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBStaticListViewController.xib; sourceTree = "<group>"; };
 		185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBGestureRecognizeViewController.h; sourceTree = "<group>"; };
 		185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBGestureRecognizeViewController.m; sourceTree = "<group>"; };
 		185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBGestureRecognizeViewController.xib; sourceTree = "<group>"; };
@@ -1143,6 +1153,12 @@
 				181393C5174C69AF0041F384 /* My Footprint */,
 				18EAC82A17C077C00040CA2D /* HotzoneCount */,
 				BACE1C5716E113520032223B /* Obj */,
+				1852B9BA17D55595006A2DB8 /* iBShowPersonStaticViewController.h */,
+				1852B9BB17D55595006A2DB8 /* iBShowPersonStaticViewController.m */,
+				1852B9BC17D55595006A2DB8 /* iBShowPersonStaticViewController.xib */,
+				1852B9BF17D55992006A2DB8 /* iBStaticListViewController.h */,
+				1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */,
+				1852B9C117D55992006A2DB8 /* iBStaticListViewController.xib */,
 				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
 				1892F50817D405CA00C3902F /* iBStaticsViewController.h */,
 				1892F50917D405CA00C3902F /* iBStaticsViewController.m */,
@@ -1454,6 +1470,8 @@
 				1831D25517C869110044EC08 /* TabBarNipple@2x.png in Resources */,
 				18B2708817D1C4A000B4A052 /* iBBCountViewController.xib in Resources */,
 				1892F50C17D405CA00C3902F /* iBStaticsViewController.xib in Resources */,
+				1852B9BE17D55595006A2DB8 /* iBShowPersonStaticViewController.xib in Resources */,
+				1852B9C317D55992006A2DB8 /* iBStaticListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1613,6 +1631,8 @@
 				1831D25117C85D0E0044EC08 /* iBTabMainViewController.m in Sources */,
 				18B2708717D1C4A000B4A052 /* iBBCountViewController.m in Sources */,
 				1892F50B17D405CA00C3902F /* iBStaticsViewController.m in Sources */,
+				1852B9BD17D55595006A2DB8 /* iBShowPersonStaticViewController.m in Sources */,
+				1852B9C217D55992006A2DB8 /* iBStaticListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
