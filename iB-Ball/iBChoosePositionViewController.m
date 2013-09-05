@@ -29,6 +29,8 @@
     // Do any additional setup after loading the view from its nib.
     self.positionTable.delegate = self;
     self.positionTable.dataSource = self;
+    
+    self.position = [NSMutableArray new];
 }
 
 - (void)didReceiveMemoryWarning
@@ -131,6 +133,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+//    NSLog(@"%d", indexPath.row);
+
 
     switch (indexPath.row) {
         case 0:
@@ -164,7 +169,7 @@
         case 3:
             if ([self.position containsObject:@"SG"]) {
                 cell.accessoryType = UITableViewCellAccessoryNone;
-                [self.position removeObject:@"SF"];
+                [self.position removeObject:@"SG"];
             } else {
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
                 [self.position addObject:@"SG"];
@@ -183,6 +188,7 @@
         default:
             break;
     }
+    
     [self.positionTable reloadData];
 }
 @end
