@@ -149,7 +149,7 @@
 		static NSString *InsertionCellIdentifier = @"InsertionCell";
 		
 		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:InsertionCellIdentifier];
-		if (cell == nil) {		
+		if (cell == nil) {	
 			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:InsertionCellIdentifier] autorelease];
 			cell.textLabel.text = @"Add Tag";
 			cell.accessoryType = UITableViewCellAccessoryNone;

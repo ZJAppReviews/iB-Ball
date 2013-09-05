@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface iBChoosePositionViewController : UIViewController
+@interface iBChoosePositionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *positionTable;
+
+@property (strong, nonatomic) NSMutableArray *position;
 
 @end
