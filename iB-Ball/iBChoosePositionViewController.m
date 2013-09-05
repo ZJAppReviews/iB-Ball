@@ -1,19 +1,18 @@
 //
-//  iBShowPersonStaticViewController.m
+//  iBChoosePositionViewController.m
 //  iB-Ball
 //
-//  Created by Snowmanzzz on 13-9-3.
+//  Created by Snowmanzzz on 13-9-5.
 //  Copyright (c) 2013年 Snowmanzzz. All rights reserved.
 //
 
-#import "iBShowPersonStaticViewController.h"
 #import "iBChoosePositionViewController.h"
 
-@interface iBShowPersonStaticViewController ()
+@interface iBChoosePositionViewController ()
 
 @end
 
-@implementation iBShowPersonStaticViewController
+@implementation iBChoosePositionViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,11 +33,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)choosePosition:(id)sender {
-    iBChoosePositionViewController *ibcp = [[iBChoosePositionViewController alloc] initWithNibName:@"iBChoosePositionViewController" bundle:nil];
-    [self.navigationController pushViewController:ibcp animated:YES];
 }
 
 @end

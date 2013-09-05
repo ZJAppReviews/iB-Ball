@@ -1650,18 +1650,49 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" image="whiteButton.png" highlightedImage="windycloud.png" highlighted="YES" id="UKo-3N-Abp">
-                                <rect key="frame" x="20" y="20" width="50" height="50"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="2.png" id="UKo-3N-Abp">
+                                <rect key="frame" x="20" y="6" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <containerView contentMode="scaleToFill" id="KPk-CM-7eD">
-                                <rect key="frame" x="20" y="78" width="280" height="256"/>
+                                <rect key="frame" x="20" y="78" width="280" height="318"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="hkf-W2-Y1r" kind="embed" id="KtO-9s-Jsn"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ike-xD-k3i">
+                                <rect key="frame" x="139" y="49" width="97" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="FGq-NN-8fQ" appends="YES" id="mh6-GZ-7OB"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Position:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1r8-qI-Cod">
+                                <rect key="frame" x="78" y="49" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PYz-Sm-fWX">
+                                <rect key="frame" x="78" y="22" width="42" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="MEI-fd-zYc">
+                                <rect key="frame" x="139" y="17" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1671,6 +1702,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iuS-9h-JXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="FGq-NN-8fQ">
+                    <connections>
+                        <action selector="choosePosition:" destination="FCb-af-6od" id="9uM-P5-zLm"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1410" y="366"/>
         </scene>
@@ -1679,7 +1715,7 @@
             <objects>
                 <tableViewController id="hkf-W2-Y1r" customClass="iBStaticListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="YMB-44-8Db">
-                        <rect key="frame" x="0.0" y="0.0" width="280" height="256"/>
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="318"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -1856,13 +1892,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="2.png" width="114" height="114"/>
         <image name="hotzone.png" width="476" height="389"/>
         <image name="ic_bookmark.png" width="32" height="32"/>
         <image name="ic_calc.png" width="32" height="32"/>
         <image name="ic_ok.png" width="32" height="32"/>
         <image name="ic_users.png" width="32" height="32"/>
-        <image name="whiteButton.png" width="29" height="46"/>
-        <image name="windycloud.png" width="175" height="175"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

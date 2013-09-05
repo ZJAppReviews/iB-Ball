@@ -162,6 +162,8 @@
 		1892F50B17D405CA00C3902F /* iBStaticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1892F50917D405CA00C3902F /* iBStaticsViewController.m */; };
 		1892F50C17D405CA00C3902F /* iBStaticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */; };
 		189E4F71170E6B530046DE61 /* iBCountingSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */; };
+		18A460DC17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A460DA17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m */; };
+		18A460DD17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A460DB17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib */; };
 		18AFFD271735EDAB00FFE514 /* TwoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFFD261735EDAB00FFE514 /* TwoPoint.m */; };
 		18BE11971755ECA900C8ABB4 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18BE11961755ECA900C8ABB4 /* alarm.mp3 */; };
 		18BE11991755F33100C8ABB4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BE11981755F33100C8ABB4 /* AVFoundation.framework */; };
@@ -463,6 +465,9 @@
 		1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBStaticsViewController.xib; path = "iB-Ball/iBStaticsViewController.xib"; sourceTree = "<group>"; };
 		189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountingSelectViewController.h; path = "iB-Ball/iBCountingSelectViewController.h"; sourceTree = "<group>"; };
 		189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountingSelectViewController.m; path = "iB-Ball/iBCountingSelectViewController.m"; sourceTree = "<group>"; };
+		18A460D917D7FFDA00A4BCC0 /* iBChoosePositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBChoosePositionViewController.h; path = "iB-Ball/iBChoosePositionViewController.h"; sourceTree = "<group>"; };
+		18A460DA17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBChoosePositionViewController.m; path = "iB-Ball/iBChoosePositionViewController.m"; sourceTree = "<group>"; };
+		18A460DB17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBChoosePositionViewController.xib; path = "iB-Ball/iBChoosePositionViewController.xib"; sourceTree = "<group>"; };
 		18AFFD251735EDAB00FFE514 /* TwoPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoPoint.h; sourceTree = "<group>"; };
 		18AFFD261735EDAB00FFE514 /* TwoPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoPoint.m; sourceTree = "<group>"; };
 		18BE11961755ECA900C8ABB4 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
@@ -1050,6 +1055,22 @@
 			name = Achieve;
 			sourceTree = "<group>";
 		};
+		18A460D817D7FF8900A4BCC0 /* Static */ = {
+			isa = PBXGroup;
+			children = (
+				1852B9BA17D55595006A2DB8 /* iBShowPersonStaticViewController.h */,
+				1852B9BB17D55595006A2DB8 /* iBShowPersonStaticViewController.m */,
+				1852B9BC17D55595006A2DB8 /* iBShowPersonStaticViewController.xib */,
+				1852B9BF17D55992006A2DB8 /* iBStaticListViewController.h */,
+				1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */,
+				1852B9C117D55992006A2DB8 /* iBStaticListViewController.xib */,
+				18A460D917D7FFDA00A4BCC0 /* iBChoosePositionViewController.h */,
+				18A460DA17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m */,
+				18A460DB17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib */,
+			);
+			name = Static;
+			sourceTree = "<group>";
+		};
 		18AE0C15174725AE00AE766B /* Crappy */ = {
 			isa = PBXGroup;
 			children = (
@@ -1148,12 +1169,7 @@
 				181393C5174C69AF0041F384 /* My Footprint */,
 				18EAC82A17C077C00040CA2D /* HotzoneCount */,
 				BACE1C5716E113520032223B /* Obj */,
-				1852B9BA17D55595006A2DB8 /* iBShowPersonStaticViewController.h */,
-				1852B9BB17D55595006A2DB8 /* iBShowPersonStaticViewController.m */,
-				1852B9BC17D55595006A2DB8 /* iBShowPersonStaticViewController.xib */,
-				1852B9BF17D55992006A2DB8 /* iBStaticListViewController.h */,
-				1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */,
-				1852B9C117D55992006A2DB8 /* iBStaticListViewController.xib */,
+				18A460D817D7FF8900A4BCC0 /* Static */,
 				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
 				1892F50817D405CA00C3902F /* iBStaticsViewController.h */,
 				1892F50917D405CA00C3902F /* iBStaticsViewController.m */,
@@ -1463,6 +1479,7 @@
 				1892F50C17D405CA00C3902F /* iBStaticsViewController.xib in Resources */,
 				1852B9BE17D55595006A2DB8 /* iBShowPersonStaticViewController.xib in Resources */,
 				1852B9C317D55992006A2DB8 /* iBStaticListViewController.xib in Resources */,
+				18A460DD17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1623,6 +1640,7 @@
 				1892F50B17D405CA00C3902F /* iBStaticsViewController.m in Sources */,
 				1852B9BD17D55595006A2DB8 /* iBShowPersonStaticViewController.m in Sources */,
 				1852B9C217D55992006A2DB8 /* iBStaticListViewController.m in Sources */,
+				18A460DC17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
