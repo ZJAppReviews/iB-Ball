@@ -50,11 +50,18 @@
     }
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    self.hidesBottomBarWhenPushed = YES;
+    
+//    CGRect frame = self.tabBarController.view.superview.frame;
+//    //    if (isHidden)
+//    //    {
+//    //        CGFloat offset = self.tabBarController.tabBar.frame.size.height;
+//    //        frame.size.height += offset;
+//    //    }
+//    self.tabBarController.view.frame = frame;
+
+
 
     if ([segue.identifier isEqualToString:@"2ptCounting"]) {
         iBCountViewController *a = (iBCountViewController *)[(UINavigationController *)segue.destinationViewController topViewController];
@@ -71,6 +78,16 @@
 
         a.whatTypeOfCountingAreWeIn = CountForNormal;
     }
+
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    self.hidesBottomBarWhenPushed = NO;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    self.hidesBottomBarWhenPushed = YES;
+    
 }
 
 @end

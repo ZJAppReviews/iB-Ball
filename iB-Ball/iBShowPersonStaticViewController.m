@@ -49,6 +49,13 @@
         [str appendString:@","];
     }
     self.positionLabel.text = str;
+    
+    self.nameTextField.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"name"];
 }
 
+- (IBAction)nameFieldChanged:(id)sender {
+    NSString *name = self.nameTextField.text;
+    [[NSUserDefaults standardUserDefaults] setObject:name forKey:@"name"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
 @end

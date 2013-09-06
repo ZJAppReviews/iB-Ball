@@ -94,7 +94,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
-                                            <segue destination="fk6-RW-mgP" kind="modal" identifier="HotzoneCounting" id="jov-do-0NK"/>
+                                            <segue destination="fhQ-j8-qvX" kind="push" id="Gsk-9l-fKm"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="PKF-vZ-6Fv" style="IBUITableViewCellStyleDefault" id="kLB-GF-7Rw">
@@ -343,7 +343,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8U-JU-Xws" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1911" y="-173"/>
+            <point key="canvasLocation" x="2201" y="-763"/>
         </scene>
         <!--IB Hotzone Show Statics View Controller-->
         <scene sceneID="mbA-Gt-rq1">
@@ -1019,27 +1019,6 @@
             <point key="canvasLocation" x="1288" y="-790"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="ZVQ-b4-UmA">
-            <objects>
-                <navigationController id="fk6-RW-mgP" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="rG0-Qb-0oM"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="Hq6-XY-9ld">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="fhQ-j8-qvX" kind="relationship" relationship="rootViewController" id="dmj-eh-fcP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lap-FW-LPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2244" y="-987"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="orA-fj-0Ox">
             <objects>
                 <navigationController id="DGY-F4-yCA" sceneMemberID="viewController">
@@ -1692,6 +1671,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameFieldChanged:" destination="FCb-af-6od" eventType="editingDidEnd" id="KwK-KS-zRj"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1874,6 +1856,7 @@
             <objects>
                 <navigationController toolbarHidden="NO" id="geG-kv-0JQ" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="4kX-4g-TYJ"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KU6-Vo-fda">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1901,125 +1884,6 @@
         <image name="ic_ok.png" width="32" height="32"/>
         <image name="ic_users.png" width="32" height="32"/>
     </resources>
-    <classes>
-        <class className="CustomTabBar" superclassName="UITabBar">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomTabBar.h"/>
-        </class>
-        <class className="EventTableViewCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EventTableViewCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="creationDateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="locationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nameField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="tagsButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="tagsField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="PRPShadowedTableView" superclassName="UITableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PRPShadowedTableView.h"/>
-        </class>
-        <class className="iBAccountViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBAccountViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="getUserinfo:"/>
-                <relationship kind="action" name="renrenLog:"/>
-                <relationship kind="action" name="weiboLog:"/>
-            </relationships>
-        </class>
-        <class className="iBChanllengeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBChanllengeViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="startTiming:"/>
-            </relationships>
-        </class>
-        <class className="iBCountViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBCountViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="loadData:"/>
-                <relationship kind="action" name="miss:"/>
-                <relationship kind="action" name="saveData:"/>
-                <relationship kind="action" name="score:"/>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="action" name="showCarrerScore:"/>
-                <relationship kind="outlet" name="shootingRatio" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="iBCountingSelectViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBCountingSelectViewController.h"/>
-        </class>
-        <class className="iBFootPrintViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBFootPrintViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="editTags:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="eventTableViewCell" candidateClass="EventTableViewCell"/>
-            </relationships>
-        </class>
-        <class className="iBHotzoneSelectViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBHotzoneSelectViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showStatics:"/>
-            </relationships>
-        </class>
-        <class className="iBHotzoneShowStaticsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBHotzoneShowStaticsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showStatics:"/>
-            </relationships>
-        </class>
-        <class className="iBObjCountViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjCountViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="iBObjViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBObjViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="setPoint:"/>
-                <relationship kind="outlet" name="backgroundTapButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="l1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="l3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="rockButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="iBShowPersonStaticViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBShowPersonStaticViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="choosePosition:"/>
-                <relationship kind="outlet" name="containerView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="nameTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="positionLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="iBSkiInputViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBSkiInputViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="skillCategoryInput" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="skillDescription" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="skillText" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="iBSkiTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBSkiTableViewController.h"/>
-        </class>
-        <class className="iBStaticListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBStaticListViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="threePointCellView" candidateClass="UITableViewCell"/>
-                <relationship kind="outlet" name="twoPointCellView" candidateClass="UITableViewCell"/>
-            </relationships>
-        </class>
-        <class className="iBTabMainViewController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iBTabMainViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tabBarBar" candidateClass="CustomTabBar"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

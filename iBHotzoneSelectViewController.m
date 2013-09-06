@@ -35,7 +35,8 @@
         if ([uiv isKindOfClass:[UIButton class]]) {
             [(UIButton *)uiv addTarget:self action:@selector(showHotzoneVC:) forControlEvents:UIControlEventTouchUpInside];
         }
-    }    
+    }
+    
 //	NSString *path;
 //	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 //	path = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"zzzhotzone/"];
@@ -85,6 +86,10 @@
     UINavigationBar *thisBar = self.navigationController.navigationBar;
     [thisBar setTintColor:[UIColor redColor]];
     showStatics = 1;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
 }
 
 @end
