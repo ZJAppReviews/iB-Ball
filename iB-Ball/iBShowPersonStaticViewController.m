@@ -41,4 +41,14 @@
     [self.navigationController pushViewController:ibcp animated:YES];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    NSArray *array = [[NSUserDefaults standardUserDefaults] objectForKey:@"position"];
+    NSMutableString *str = [NSMutableString new];
+    for (NSString *string in array) {
+        [str appendString:string];
+        [str appendString:@","];
+    }
+    self.positionLabel.text = str;
+}
+
 @end

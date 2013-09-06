@@ -30,7 +30,7 @@
     self.positionTable.delegate = self;
     self.positionTable.dataSource = self;
     
-    self.position = [NSMutableArray new];
+    self.position = [[NSUserDefaults standardUserDefaults] objectForKey:@"position"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -190,5 +190,11 @@
     }
     
     [self.positionTable reloadData];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [[NSUserDefaults standardUserDefaults] setObject:self.position forKey:@"position"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 @end

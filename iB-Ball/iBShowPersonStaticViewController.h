@@ -12,4 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 
+@property (weak, nonatomic) IBOutlet UILabel *positionLabel;
+
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+
 @end
