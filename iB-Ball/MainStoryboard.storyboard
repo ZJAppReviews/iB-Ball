@@ -134,7 +134,7 @@
         <!--IB Hotzone Select View Controller - Select the zone you want to shoot-->
         <scene sceneID="X8A-qe-EpN">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" title="Select the zone you want to shoot" wantsFullScreenLayout="YES" id="fhQ-j8-qvX" customClass="iBHotzoneSelectViewController" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" title="Select the zone you want to shoot" wantsFullScreenLayout="YES" hidesBottomBarWhenPushed="YES" id="fhQ-j8-qvX" customClass="iBHotzoneSelectViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HiQ-fR-M8K">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1399,7 +1399,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mpn-4d-PgO">
+                                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mpn-4d-PgO">
                                             <rect key="frame" x="208" y="22" width="43" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>

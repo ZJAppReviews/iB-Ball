@@ -81,13 +81,4 @@
 
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
-    self.hidesBottomBarWhenPushed = NO;
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    self.hidesBottomBarWhenPushed = YES;
-    
-}
-
 @end

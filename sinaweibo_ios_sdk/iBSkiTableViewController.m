@@ -186,7 +186,7 @@
         NSLog(@"ss");
     }
     self.selected = indexPath;
-    UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Please choose" delegate:self cancelButtonTitle:@"OK" destructiveButtonTitle:nil otherButtonTitles:@"Statics", @"Description", @"Count", @"Edit", nil];
+    UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Please choose" delegate:self cancelButtonTitle:@"OK" destructiveButtonTitle:nil otherButtonTitles:@"Statics", @"Description", @"Count", @"Edit", @"Share", nil];
     [as showFromTabBar:self.tabBarController.tabBar];
 }
 
@@ -249,6 +249,44 @@
         UIAlertView *av = [[UIAlertView alloc] initWithTitle:currentSkill.skillName message:currentSkill.skillDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [av show];
     }
+    
+    if (buttonIndex == 4) {
+        // share the crap
+        // 1 get skill
+        iBSkill *skill;
+        switch (self.selected.section) {
+            case 0:
+                skill = self.skillModel.attackSkills[self.selected.row];
+                break;
+            case 1:
+                skill = self.skillModel.defendingSkills[self.selected.row];
+                break;
+            case 2:
+                skill = self.skillModel.otherSkills[self.selected.row];
+                break;
+            default:
+                break;
+        }
+        // 2 share the Crap
+        NSMutableString *shareString = [NSMutableString new];
+        [shareString appendString:@"习得新技能["];
+        [shareString appendString:skill.skillName];
+        [shareString appendString:@"] 技能说明："];
+        [shareString appendString:skill.skillDescription == nil ? @"" : skill.skillDescription];
+        [shareString appendString:@"--From iB-Ball"];
+
+        
+        
+//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert"
+//                                                            message:[NSString stringWithFormat:@"Will post status with text \"%@\"", postStatusText]
+//                                                           delegate:self cancelButtonTitle:@"Cancel"
+//                                                  otherButtonTitles:@"OK", nil];
+        Renren *renren = [Renren sharedRenren];
+        NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:10];
+        [params setObject:@"status.set" forKey:@"method"];
+        [params setObject:[shareString copy] forKey:@"status"];
+        [renren requestWithParams:params andDelegate:self];
+    }
 }
 
 - (iBSkill *)getSelectedSkill {
@@ -287,6 +325,20 @@
         return @"其他";
     }
     return nil;
+}
+
+/**
+ * 接口请求成功，第三方开发者实现这个方法
+ */
+- (void)renren:(Renren *)renren requestDidReturnResponse:(ROResponse*)response {
+    //TODO
+}
+
+/**
+ * 接口请求失败，第三方开发者实现这个方法
+ */
+- (void)renren:(Renren *)renren requestFailWithError:(ROError*)error {
+    //TODO
 }
 
 @end
