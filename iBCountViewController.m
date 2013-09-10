@@ -354,10 +354,6 @@ int choice = 0;
 
 #pragma mark
 
-- (IBAction)cancel:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
 - (IBAction)share:(id)sender {
     UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Share" delegate:self cancelButtonTitle:@"OK" destructiveButtonTitle:nil otherButtonTitles:@"Sina Weibo", @"Renren", nil];
     [as showFromBarButtonItem:sender animated:YES];
