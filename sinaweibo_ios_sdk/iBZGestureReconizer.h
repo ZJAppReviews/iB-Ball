@@ -18,5 +18,7 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event;
 
+@property BOOL strokeInflectionOne;
+@property BOOL strokeInflectionTwo;
 
 @end
