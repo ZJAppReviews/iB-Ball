@@ -11,6 +11,8 @@
 @implementation iBZGestureReconizer
 // Implemented in your custom subclass
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    self.startPoint = [[touches anyObject] locationInView:self.view];
+
     [super touchesBegan:touches withEvent:event];
     if ([touches count] != 1) {
         self.state = UIGestureRecognizerStateFailed;
@@ -19,12 +21,15 @@
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    if (self.state == UIGestureRecognizerStateBegan) {
+        self.startPoint = [[touches anyObject] locationInView:self.view];
+    }
     [super touchesMoved:touches withEvent:event];
     if (self.state == UIGestureRecognizerStateFailed) return;
     CGPoint nowPoint = [touches.anyObject locationInView:self.view];
     CGPoint prevPoint = [touches.anyObject previousLocationInView:self.view];
     
-    if (nowPoint.x > prevPoint.x) {
+    if (nowPoint.x - prevPoint.x > 100) {
         self.strokeInflectionOne = YES;
     } else if (nowPoint.x < prevPoint.x && self.strokeInflectionOne) {
         self.strokeInflectionTwo = YES;
@@ -35,8 +40,12 @@
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    if (self.state == UIGestureRecognizerStateBegan) {
+        self.startPoint = [[touches anyObject] locationInView:self.view];
+    }
+
     [super touchesEnded:touches withEvent:event];
-    if ((self.state == UIGestureRecognizerStatePossible) && self.strokeInflectionOne) {
+    if ((self.state == UIGestureRecognizerStatePossible) && self.strokeInflectionTwo) {
         self.state = UIGestureRecognizerStateRecognized;
     }
 }
@@ -50,7 +59,7 @@
 - (void)reset {
     [super reset];
     self.strokeInflectionOne = NO;
-    self.strokeInflectionTwo = YES;
+    self.strokeInflectionTwo = NO;
 }
 
 @end

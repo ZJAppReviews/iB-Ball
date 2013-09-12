@@ -14,19 +14,14 @@
 
 @end
 
-@interface ZGestureRecognizer : UIGestureRecognizer
-- (void)reset;
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event;
-
-@end
-@interface iBCountViewControllerForHotZoneGestureMode : UIViewController <UIGestureRecognizerDelegate>
+@interface iBCountViewControllerForHotZoneGestureMode : UIViewController <UIGestureRecognizerDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic) NSInteger numberWeScore;
 @property (nonatomic) NSInteger numberWeTry;
 
 @property (nonatomic, weak) id<iBCountViewControllerForHotZoneGestureMode> delegate;
+
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeLeft;
+
 @end
 

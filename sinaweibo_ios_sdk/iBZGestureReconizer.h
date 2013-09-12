@@ -21,4 +21,8 @@
 @property BOOL strokeInflectionOne;
 @property BOOL strokeInflectionTwo;
 
+@property (nonatomic) CGPoint startPoint;
+
+
+
 @end
