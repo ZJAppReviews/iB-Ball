@@ -12,6 +12,11 @@
 
 @interface iBZGestureReconizer : UIGestureRecognizer
 
+typedef enum {
+    ZGesture = 1,
+    ZGestureReverse = 0,
+} GestureType;
+
 - (void)reset;
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
@@ -25,6 +30,6 @@
 @property (nonatomic) CGPoint secondPoint;
 @property (nonatomic) CGPoint thirdPoint;
 
-
+@property (nonatomic) GestureType gestType;
 
 @end

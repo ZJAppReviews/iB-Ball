@@ -22,6 +22,7 @@
 @property (nonatomic, weak) id<iBCountViewControllerForHotZoneGestureMode> delegate;
 
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeLeft;
+@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeRight;
 
 @end
 
