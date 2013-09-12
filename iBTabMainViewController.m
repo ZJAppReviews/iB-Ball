@@ -30,6 +30,7 @@
 - (void)viewDidLoad {
     self.delegate = self;
     
+    self.navigationController.delegate = self;
     [self addTabBarArrow];
 }
 
@@ -72,4 +73,15 @@
 - (void)viewDidUnload {
     [super viewDidUnload];
 }
+
+// Called when the navigation controller shows a new top view controller via a push, pop or setting of the view controller stack.
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    NSLog(@"ss");
+
+}
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    NSLog(@"ssa");
+
+}
+
 @end

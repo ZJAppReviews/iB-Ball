@@ -10,6 +10,7 @@
 #import "iBCountViewController.h"
 #import "iBHotzoneShowStaticsViewController.h"
 #import "iBCountViewControllerForHotZone.h"
+#import "iBTabMainViewController.h"
 
 @interface iBHotzoneSelectViewController () {
     BOOL showStatics;
@@ -36,6 +37,7 @@
             [(UIButton *)uiv addTarget:self action:@selector(showHotzoneVC:) forControlEvents:UIControlEventTouchUpInside];
         }
     }
+    ((iBTabMainViewController *)self.tabBarController).tabBarArrow.hidden = YES;
     
 //	NSString *path;
 //	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);

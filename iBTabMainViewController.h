@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class CustomTabBar;
 
-@interface iBTabMainViewController : UITabBarController <UITabBarControllerDelegate>
+@interface iBTabMainViewController : UITabBarController <UITabBarControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet CustomTabBar *tabBarBar;
 @property (nonatomic, retain) UIImageView* tabBarArrow;
