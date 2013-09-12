@@ -11,9 +11,10 @@
 @implementation iBZGestureReconizer
 // Implemented in your custom subclass
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [super touchesBegan:touches withEvent:event];
+
     self.startPoint = [[touches anyObject] locationInView:self.view];
 
-    [super touchesBegan:touches withEvent:event];
     if ([touches count] != 1) {
         self.state = UIGestureRecognizerStateFailed;
         return;
@@ -21,31 +22,30 @@
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-    if (self.state == UIGestureRecognizerStateBegan) {
-        self.startPoint = [[touches anyObject] locationInView:self.view];
-    }
-    [super touchesMoved:touches withEvent:event];
-    if (self.state == UIGestureRecognizerStateFailed) return;
-    CGPoint nowPoint = [touches.anyObject locationInView:self.view];
-    CGPoint prevPoint = [touches.anyObject previousLocationInView:self.view];
     
-    if (nowPoint.x - prevPoint.x > 100) {
+    [super touchesMoved:touches withEvent:event];
+    
+    if (self.state == UIGestureRecognizerStateFailed) return;
+    
+    CGPoint nowPoint = [touches.anyObject locationInView:self.view];
+//    CGPoint prevPoint = [touches.anyObject previousLocationInView:self.view];
+    
+    if (nowPoint.x - self.startPoint.x > 100) {
+        self.secondPoint = nowPoint;
         self.strokeInflectionOne = YES;
-    } else if (nowPoint.x < prevPoint.x && self.strokeInflectionOne) {
+    }
+    
+    if (self.secondPoint.x - [[touches anyObject] locationInView:self.view].x > 100 && self.strokeInflectionOne) {
         self.strokeInflectionTwo = YES;
-    } else {
-        
     }
 
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    if (self.state == UIGestureRecognizerStateBegan) {
-        self.startPoint = [[touches anyObject] locationInView:self.view];
-    }
+
 
     [super touchesEnded:touches withEvent:event];
-    if ((self.state == UIGestureRecognizerStatePossible) && self.strokeInflectionTwo) {
+    if (-self.thirdPoint.x + [[touches anyObject] locationInView:self.view].x > 100 && self.strokeInflectionOne && self.strokeInflectionTwo) {
         self.state = UIGestureRecognizerStateRecognized;
     }
 }
