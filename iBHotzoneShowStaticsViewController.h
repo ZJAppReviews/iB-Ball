@@ -10,7 +10,8 @@
 #import "iBCountModelForTwoAndThree.h"
 
 @interface iBHotzoneShowStaticsViewController : UIViewController
-@property (nonatomic, weak) NSMutableDictionary *dataCenter;
+
+
 - (IBAction)showStatics:(id)sender;
 
 @end

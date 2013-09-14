@@ -57,8 +57,6 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showHotzoneStatics"]) {
-        iBHotzoneShowStaticsViewController *a = (iBHotzoneShowStaticsViewController *)[segue destinationViewController];
-        a.dataCenter = [iBCountModelForTwoAndThree hotzoneDict];
         return;
     }
     if (showStatics) {
@@ -69,10 +67,6 @@
     if ([(UIView *)sender tag] == 99) {
         return;
     }
-//    iBCountViewController *dest = (iBCountViewController *)segue.destinationViewController;
-//    dest.whatTypeOfCountingAreWeIn = CountForHotZone;
-//    dest.hotzoneTag = [(UIView *)sender tag];
-//    NSLog(@"%d", dest.hotzoneTag);
 }
 
 - (void)showHotzoneVC:(id)sender {

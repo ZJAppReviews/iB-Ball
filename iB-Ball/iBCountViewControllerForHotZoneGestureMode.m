@@ -31,14 +31,24 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     iBZGestureReconizer *gest = [[iBZGestureReconizer alloc] initWithTarget:self action:@selector(zGesture)];
+    gest.gestType = ZGesture;
     iBZGestureReconizer *reverseGest = [[iBZGestureReconizer alloc] initWithTarget:self action:@selector(reverseZGesture)];
     reverseGest.gestType = ZGestureReverse;
     [self.view addGestureRecognizer:gest];
-//    self.swipeLeft.delegate = self;
+    [self.view addGestureRecognizer:reverseGest];
+
     [self.swipeLeft requireGestureRecognizerToFail:gest];
     [self.swipeRight requireGestureRecognizerToFail:gest];
+    [self.swipeLeft requireGestureRecognizerToFail:reverseGest];
+    [self.swipeRight requireGestureRecognizerToFail:reverseGest];
 }
 
+- (void)reverseZGesture {
+    self.numberWeTry += 5;
+    self.numberWeScore += 5;
+    NSLog(@"%@", self);
+    [self.delegate gestureInfoChange:self.numberWeScore and:self.numberWeTry];
+}
 - (void)zGesture {
     self.numberWeTry += 5;
     NSLog(@"%@", self);

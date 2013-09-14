@@ -41,7 +41,7 @@
 - (IBAction)showStatics:(id)sender {
     int tagValue = ((UIView *)sender).tag;
     NSString *tagKey = [NSString stringWithFormat:@"%d", tagValue];
-    NSArray *a = [self.dataCenter valueForKey:tagKey];
+    NSArray *a = [[NSUserDefaults standardUserDefaults] objectForKey:tagKey];
     if (a == nil) {
         return;
     }

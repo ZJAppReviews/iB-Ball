@@ -21,7 +21,13 @@
             return;
         }
     } else {
+        self.startPoint = [[touches anyObject] locationInView:self.view];
         
+        if ([touches count] != 1) {
+            self.state = UIGestureRecognizerStateFailed;
+            return;
+        }
+
     }
 }
 
@@ -41,10 +47,24 @@
         }
         
         if (self.secondPoint.x - [[touches anyObject] locationInView:self.view].x > 100 && self.strokeInflectionOne) {
+            self.thirdPoint = nowPoint;
             self.strokeInflectionTwo = YES;
         }
     } else {
+        if (self.state == UIGestureRecognizerStateFailed) return;
         
+        CGPoint nowPoint = [touches.anyObject locationInView:self.view];
+        //    CGPoint prevPoint = [touches.anyObject previousLocationInView:self.view];
+        
+        if (nowPoint.x - self.startPoint.x < -100) {
+            self.secondPoint = nowPoint;
+            self.strokeInflectionOne = YES;
+        }
+        
+        if (self.secondPoint.x - [[touches anyObject] locationInView:self.view].x < -100 && self.strokeInflectionOne) {
+            self.thirdPoint = nowPoint;
+            self.strokeInflectionTwo = YES;
+        }
     }
     
 }
@@ -52,12 +72,20 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesEnded:touches withEvent:event];
     
-
+    if (self.gestType) {
         if (-self.thirdPoint.x + [[touches anyObject] locationInView:self.view].x > 100 && self.strokeInflectionOne && self.strokeInflectionTwo) {
             self.state = UIGestureRecognizerStateRecognized;
         } else {
             self.state = UIGestureRecognizerStateFailed;
         }
+    } else {
+        if (-self.thirdPoint.x + [[touches anyObject] locationInView:self.view].x < -100 && self.strokeInflectionOne && self.strokeInflectionTwo) {
+            self.state = UIGestureRecognizerStateRecognized;
+        } else {
+            self.state = UIGestureRecognizerStateFailed;
+        }
+
+    }
 
 }
 
