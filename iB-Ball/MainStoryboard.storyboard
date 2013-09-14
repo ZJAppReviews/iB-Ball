@@ -52,7 +52,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
-                                            <segue destination="dbr-p8-b86" kind="push" id="aaQ-Sd-E3K"/>
+                                            <segue destination="dbr-p8-b86" kind="push" identifier="2ptCounting" id="aaQ-Sd-E3K"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="bgr-G4-VAv" style="IBUITableViewCellStyleDefault" id="96D-j5-sPw">
@@ -73,7 +73,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
-                                            <segue destination="dbr-p8-b86" kind="push" id="ANT-yz-uJV"/>
+                                            <segue destination="dbr-p8-b86" kind="push" identifier="3ptCounting" id="ANT-yz-uJV"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="wLs-zQ-hFy" style="IBUITableViewCellStyleDefault" id="Ne5-Rx-r9c">
@@ -1869,6 +1869,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="aaQ-Sd-E3K"/>
+        <segue reference="ANT-yz-uJV"/>
     </inferredMetricsTieBreakers>
 </document>

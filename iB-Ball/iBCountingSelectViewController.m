@@ -53,28 +53,17 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-//    CGRect frame = self.tabBarController.view.superview.frame;
-//    //    if (isHidden)
-//    //    {
-//    //        CGFloat offset = self.tabBarController.tabBar.frame.size.height;
-//    //        frame.size.height += offset;
-//    //    }
-//    self.tabBarController.view.frame = frame;
-
-
-
     if ([segue.identifier isEqualToString:@"2ptCounting"]) {
-        iBCountViewController *a = (iBCountViewController *)[(UINavigationController *)segue.destinationViewController topViewController];
+        iBCountViewController *a = (iBCountViewController *)segue.destinationViewController;
 
         a.whatTypeOfCountingAreWeIn = CountForTwo;
     }
     if ([segue.identifier isEqualToString:@"3ptCounting"]) {
-        iBCountViewController *a = (iBCountViewController *)[(UINavigationController *)segue.destinationViewController topViewController];
-
+        iBCountViewController *a = (iBCountViewController *)segue.destinationViewController;
         a.whatTypeOfCountingAreWeIn = CountForThree;
     }
     if ([segue.identifier isEqualToString:@"NormalCounting"]) {
-        iBCountViewController *a = (iBCountViewController *)[(UINavigationController *)segue.destinationViewController topViewController];
+        iBCountViewController *a = (iBCountViewController *)segue.destinationViewController;
 
         a.whatTypeOfCountingAreWeIn = CountForNormal;
     }

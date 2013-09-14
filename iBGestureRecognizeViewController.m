@@ -47,34 +47,7 @@
 
 - (IBAction)swipeLeft:(id)sender {
     
-    
-    //    NSLog(@"yeah left");
-//    if (self.whatKindOfGestureReconizingAreWeIn == GestureForObjective) {
-//        
-//        if (self.dataModelForObj.twoPoint_real <= 0) {
-//            return;
-//        }
-//        self.dataModelForObj.twoPoint_real--;
-//        NSString *toastMessage = [NSString stringWithFormat:@"twoPoint: %d", self.dataModelForObj.twoPoint_real];
-//        [self.view makeToast:toastMessage];
-//    }
-//    if (self.whatKindOfGestureReconizingAreWeIn == GestureForTwoCount) {
-//        self.dataModelForTwo.shootingTimes++;
-//        self.dataModelForTwo.goalTimes++;
-//    }
     switch (self.whatKindOfGestureReconizingAreWeIn) {
-        case GestureForObjective:
-            
-        {
-            if (self.dataModelForObj.twoPoint_real <= 0) {
-                return;
-            }
-            self.dataModelForObj.twoPoint_real--;
-            NSString *toastMessage = [NSString stringWithFormat:@"twoPoint: %d", self.dataModelForObj.twoPoint_real];
-            [self.view makeToast:toastMessage];
-            break;
-
-        }
             
         case GestureForTwoCount:
         {
@@ -99,25 +72,10 @@
             [self.view makeToast:toastMessage];
             break;
         }
-        case GestureForMatchCount: {
-            //TODO
-            break;
-        }
     }
 }
 
 - (IBAction)swipeRight:(id)sender {
-    if (self.whatKindOfGestureReconizingAreWeIn == GestureForObjective) {
-        
-        //    NSLog(@"yeah right");
-        if (self.dataModelForObj.twoPoint_real < 0) {
-            return;
-        }
-        self.dataModelForObj.twoPoint_real++;
-        NSString *toastMessage = [NSString stringWithFormat:@"twoPoint: %d", self.dataModelForObj.twoPoint_real];
-        [self.view makeToast:toastMessage];
-    }
-    
     if (self.whatKindOfGestureReconizingAreWeIn == GestureForTwoCount) {
         self.dataModelForTwo.totalShootingTimes++;
         self.dataModelForTwo.shootingTimes++;
@@ -137,13 +95,6 @@
     
 }
 
-//- (IBAction)swipeDown:(id)sender {
-//    self.dataModel.threePoint_real++;
-//    NSString *toastMessage = [NSString stringWithFormat:@"threePoint: %d", self.dataModel.threePoint_real];
-//    NSLog(toastMessage);
-//    [self.view makeToast:toastMessage];
-//
-//}
 - (IBAction)swipeDown:(id)sender {
     //    switch (self.whatKindOfGestureReconizingAreWeIn) {
     //        case GestureForObjective:

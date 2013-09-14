@@ -217,5 +217,9 @@
     [ud synchronize];
 }
 
+- (IBAction)shareHotzone:(id)sender {
+    
+}
+
 
 @end

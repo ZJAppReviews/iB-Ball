@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1280</int>
+		<int key="IBDocument.SystemTarget">1552</int>
 		<string key="IBDocument.SystemVersion">12E55</string>
-		<string key="IBDocument.InterfaceBuilderVersion">4457.6</string>
+		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
 		<string key="IBDocument.AppKitVersion">1187.39</string>
 		<string key="IBDocument.HIToolboxVersion">626.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">3682.6</string>
+			<string key="NS.object.0">2083</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
@@ -68,8 +68,8 @@
 							<int key="type">2</int>
 							<double key="pointSize">15</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="791478865">
-							<string key="NSName">HelveticaNeue-Bold</string>
+						<object class="NSFont" key="IBUIFont" id="157997202">
+							<string key="NSName">Helvetica-Bold</string>
 							<double key="NSSize">15</double>
 							<int key="NSfFlags">16</int>
 						</object>
@@ -95,7 +95,7 @@
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="446588090"/>
 						<reference key="IBUIFontDescription" ref="1026575505"/>
-						<reference key="IBUIFont" ref="791478865"/>
+						<reference key="IBUIFont" ref="157997202"/>
 					</object>
 					<object class="IBUILabel" id="169209447">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -122,8 +122,8 @@
 							<int key="type">1</int>
 							<double key="pointSize">17</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="423271312">
-							<string key="NSName">HelveticaNeue</string>
+						<object class="NSFont" key="IBUIFont" id="509770661">
+							<string key="NSName">Helvetica</string>
 							<double key="NSSize">17</double>
 							<int key="NSfFlags">16</int>
 						</object>
@@ -147,7 +147,7 @@
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
 						<reference key="IBUIFontDescription" ref="337957203"/>
-						<reference key="IBUIFont" ref="423271312"/>
+						<reference key="IBUIFont" ref="509770661"/>
 						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 					</object>
 					<object class="IBUIToolbar" id="77221263">
@@ -171,6 +171,12 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<reference key="IBUIToolbar" ref="77221263"/>
 								<int key="IBUISystemItemIdentifier">5</int>
+							</object>
+							<object class="IBUIBarButtonItem" id="446282453">
+								<string key="IBUITitle">Share</string>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<int key="IBUIStyle">1</int>
+								<reference key="IBUIToolbar" ref="77221263"/>
 							</object>
 							<object class="IBUIBarButtonItem" id="793116746">
 								<string key="IBUITitle">Gesture</string>
@@ -274,6 +280,14 @@
 					</object>
 					<string key="id">76</string>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">shareHotzone:</string>
+						<reference key="source" ref="446282453"/>
+						<reference key="destination" ref="372490531"/>
+					</object>
+					<string key="id">FpV-F3-GC3</string>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -331,6 +345,7 @@
 							<reference ref="366929527"/>
 							<reference ref="793116746"/>
 							<reference ref="314172346"/>
+							<reference ref="446282453"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
 					</object>
@@ -355,6 +370,11 @@
 						<reference key="object" ref="314172346"/>
 						<reference key="parent" ref="77221263"/>
 					</object>
+					<object class="IBObjectRecord">
+						<string key="id">p9i-4i-kwV</string>
+						<reference key="object" ref="446282453"/>
+						<reference key="parent" ref="77221263"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -371,6 +391,7 @@
 				<string key="51.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="74.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="75.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="p9i-4i-kwV.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
@@ -386,6 +407,7 @@
 						<string key="gotoGestureMode:">id</string>
 						<string key="miss:">id</string>
 						<string key="score:">id</string>
+						<string key="shareHotzone:">id</string>
 						<string key="toolBarSave:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
@@ -401,6 +423,10 @@
 							<string key="name">score:</string>
 							<string key="candidateClassName">id</string>
 						</object>
+						<object class="IBActionInfo" key="shareHotzone:">
+							<string key="name">shareHotzone:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 						<object class="IBActionInfo" key="toolBarSave:">
 							<string key="name">toolBarSave:</string>
 							<string key="candidateClassName">id</string>
@@ -408,7 +434,7 @@
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="trainingResult">UILabel</string>
-						<string key="trainingResultHistory">UIView</string>
+						<string key="trainingResultHistory">UILabel</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="trainingResult">
@@ -417,7 +443,7 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="trainingResultHistory">
 							<string key="name">trainingResultHistory</string>
-							<string key="candidateClassName">UIView</string>
+							<string key="candidateClassName">UILabel</string>
 						</object>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -431,7 +457,7 @@
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.iPhoneOS</string>
-			<real value="1280" key="NS.object.0"/>
+			<real value="1552" key="NS.object.0"/>
 		</object>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDevelopmentDependencies">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.InterfaceBuilder3</string>
@@ -439,6 +465,6 @@
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<string key="IBCocoaTouchPluginVersion">3682.6</string>
+		<string key="IBCocoaTouchPluginVersion">2083</string>
 	</data>
 </archive>

@@ -941,16 +941,6 @@
 			name = Vendor;
 			sourceTree = "<group>";
 		};
-		185F71A91702CDA300336ED3 /* Gesture */ = {
-			isa = PBXGroup;
-			children = (
-				185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */,
-				185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */,
-				185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */,
-			);
-			name = Gesture;
-			sourceTree = "<group>";
-		};
 		18712484173B3B4600815D6D /* Playcourt */ = {
 			isa = PBXGroup;
 			children = (
@@ -1081,10 +1071,15 @@
 		18C0123F17E40BF900FE7172 /* 2&3Count */ = {
 			isa = PBXGroup;
 			children = (
+				185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */,
+				185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */,
+				185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */,
 				BA4AE59116D12BAB005456EF /* iBCountModelForTwoAndThree.h */,
 				BA4AE59216D12BAB005456EF /* iBCountModelForTwoAndThree.m */,
 				BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */,
 				BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */,
+				189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */,
+				189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */,
 			);
 			name = "2&3Count";
 			sourceTree = "<group>";
@@ -1171,7 +1166,6 @@
 			children = (
 				1824C26E16FEEC5000895222 /* TODO */,
 				18E38CAA170081DC003782F2 /* Account */,
-				185F71A91702CDA300336ED3 /* Gesture */,
 				18712484173B3B4600815D6D /* Playcourt */,
 				187C1F6B16F7C69E00263479 /* Achieve */,
 				18F927DC1753698E00804EED /* Challenge */,
@@ -1186,8 +1180,6 @@
 				1892F50817D405CA00C3902F /* iBStaticsViewController.h */,
 				1892F50917D405CA00C3902F /* iBStaticsViewController.m */,
 				1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */,
-				189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */,
-				189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */,
 				1831D24F17C85D0E0044EC08 /* iBTabMainViewController.h */,
 				1831D25017C85D0E0044EC08 /* iBTabMainViewController.m */,
 				BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */,
