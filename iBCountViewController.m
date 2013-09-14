@@ -102,27 +102,19 @@
         return;
     }
     if (sender.tag == 1) {
-        [self coreDataAddOne];
+        [self countModel].shootingTimes++;
+        [self countModel].goalTimes++;
+        [self countModel].totalGoalTimes++;
+        [self countModel].totalShootingTimes++;
+
+//        [self coreDataAddOne];
     }
     
     else if (sender.tag == 0) {
-        if (self.whatTypeOfCountingAreWeIn == CountForHotZone) {
-            //TODO why add this crap??
-            [self coreDataAddOne];
-            
-
-        }
         [self countModel].shootingTimes++;
         [self countModel].totalShootingTimes++;
         [self coreDataMissOne];
     }
-    
-    // go fuck yourself, i'm gonna use some fancy way to do this...
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        [self countModel].shootingTimes--;
-        [self countModel].totalShootingTimes--;
-    });
     
     NSString *ratio = [NSString stringWithFormat:@"%.1f", [[self countModel] getRatioForThisTime]];
     [self.shootingRatio setText:ratio];

@@ -52,15 +52,13 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesEnded:touches withEvent:event];
     
-    if (self.gestType) {
+
         if (-self.thirdPoint.x + [[touches anyObject] locationInView:self.view].x > 100 && self.strokeInflectionOne && self.strokeInflectionTwo) {
             self.state = UIGestureRecognizerStateRecognized;
         } else {
             self.state = UIGestureRecognizerStateFailed;
         }
-    } else {
-        
-    }
+
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
