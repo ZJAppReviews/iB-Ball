@@ -7,7 +7,7 @@
 //
 
 #import "iBCountViewController.h"
-#import "iBDataCenterForHotzone.h"
+#import "iBCountModelForTwoAndThree.h"
 #import "iBShareViewController.h"
 #import "iBAppDelegate.h"
 #import "iBGestureRecognizeViewController.h"
@@ -25,9 +25,9 @@
 #define RENREN_TAG 1
 #define WEIBO_TAG 2
 
-- (iBDataCenterForHotzone *)countModel {
+- (iBCountModelForTwoAndThree *)countModel {
     if (_countModel == nil) {
-        _countModel = [[iBDataCenterForHotzone alloc] init];
+        _countModel = [[iBCountModelForTwoAndThree alloc] init];
     }
     return _countModel;
 }
@@ -113,7 +113,7 @@
     else if (sender.tag == 0) {
         [self countModel].shootingTimes++;
         [self countModel].totalShootingTimes++;
-        [self coreDataMissOne];
+//        [self coreDataMissOne];
     }
     
     NSString *ratio = [NSString stringWithFormat:@"%.1f", [[self countModel] getRatioForThisTime]];
@@ -559,22 +559,6 @@ NSString *postStatusText;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    if (self.whatTypeOfCountingAreWeIn != CountForHotZone) {
-       
-    }
-    NSLog(@"Wow");
-    
-	NSString *path;
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-	path = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"zzzhotzone/"];
-    // save the hotzone data
-    if ([[iBDataCenterForHotzone hotzoneDict] writeToFile:path atomically:NO]) {
-        NSLog(@"success");
-    }
-    else {
-        NSLog(@"fail");
-    }
-    return;
 }
 
 #pragma mark - RenrenDelegate -

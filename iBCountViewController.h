@@ -10,9 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "SinaWeibo.h"
 #import <CoreData/CoreData.h>
-
-//#import "CountModel.h"
-@class iBDataCenterForHotzone;
+#import "iBCountModelForTwoAndThree.h"
 @class iBDataCenterForHotzoneDoc;
 
 
@@ -25,7 +23,7 @@ typedef enum CountType {
 
 @interface iBCountViewController : UIViewController <UIActionSheetDelegate, UIAlertViewDelegate, SinaWeiboRequestDelegate, RenrenDelegate>
 
-@property (nonatomic, strong) iBDataCenterForHotzone *countModel;
+@property (nonatomic, strong) iBCountModelForTwoAndThree *countModel;
 - (IBAction)score:(id)sender;
 - (IBAction)miss:(id)sender;
 

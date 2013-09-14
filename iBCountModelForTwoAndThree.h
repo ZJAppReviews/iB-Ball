@@ -8,10 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-
-
-// notice: even i gave it a name of "forHotZone", it's totally shit... still don't work
-@interface iBDataCenterForHotzone : NSObject {
+@interface iBCountModelForTwoAndThree : NSObject {
     NSString *_dataPath;
 }
 
@@ -33,6 +30,7 @@
 - (void)saveData;
 - (void)loadData;
 
-+ (void)setHotzoneDict:(NSDictionary *)a;
+
+
 @end
 

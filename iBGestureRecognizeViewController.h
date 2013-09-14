@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 //#import "iBObj_DataModel.h"
-@class iBDataCenterForHotzone;
+#import "iBCountModelForTwoAndThree.h"
 
 typedef enum {
     GestureForObjective = 1,
@@ -34,9 +34,9 @@ typedef enum {
 - (IBAction)swipeUp:(id)sender;
 
 @property (nonatomic, weak) iBObj_DataModel *dataModelForObj;
-@property (nonatomic, weak) iBDataCenterForHotzone *dataModelForTwo;
+@property (nonatomic, weak) iBCountModelForTwoAndThree *dataModelForTwo;
 // i dont know weather it's good to separate, whatever
-@property (nonatomic, weak) iBDataCenterForHotzone *dataModelForThree;
+@property (nonatomic, weak) iBCountModelForTwoAndThree *dataModelForThree;
 
 @property (nonatomic, assign) GestureType whatKindOfGestureReconizingAreWeIn;
 

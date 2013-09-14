@@ -58,7 +58,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showHotzoneStatics"]) {
         iBHotzoneShowStaticsViewController *a = (iBHotzoneShowStaticsViewController *)[segue destinationViewController];
-        a.dataCenter = [iBDataCenterForHotzone hotzoneDict];
+        a.dataCenter = [iBCountModelForTwoAndThree hotzoneDict];
         return;
     }
     if (showStatics) {

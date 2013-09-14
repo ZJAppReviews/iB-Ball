@@ -208,9 +208,8 @@
 		BA36DEF116C4BF37007FFDD1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA36DEF016C4BF37007FFDD1 /* Default-568h@2x.png */; };
 		BA36DEF716C4BF37007FFDD1 /* iBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA36DEF616C4BF37007FFDD1 /* iBViewController.m */; };
 		BA3A7C4016CD39EE00E84B58 /* hotzone.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3A7C3F16CD39EE00E84B58 /* hotzone.png */; };
-		BA3A7C4616CD477100E84B58 /* CountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A7C4516CD477100E84B58 /* CountModel.m */; };
 		BA3A7C5016CD918100E84B58 /* iBCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */; };
-		BA4AE59316D12BAB005456EF /* iBDataCenterForHotzone.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4AE59216D12BAB005456EF /* iBDataCenterForHotzone.m */; };
+		BA4AE59316D12BAB005456EF /* iBCountModelForTwoAndThree.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4AE59216D12BAB005456EF /* iBCountModelForTwoAndThree.m */; };
 		BA9BF1CB16D5951100DFDD54 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9BF1C116D5951100DFDD54 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BA9BF1CC16D5951100DFDD54 /* SinaWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BA9BF1C316D5951100DFDD54 /* SinaWeibo.bundle */; };
 		BA9BF1CD16D5951100DFDD54 /* SinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9BF1C516D5951100DFDD54 /* SinaWeibo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -529,12 +528,10 @@
 		BA36DEF516C4BF37007FFDD1 /* iBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iBViewController.h; sourceTree = "<group>"; };
 		BA36DEF616C4BF37007FFDD1 /* iBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBViewController.m; sourceTree = "<group>"; };
 		BA3A7C3F16CD39EE00E84B58 /* hotzone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotzone.png; sourceTree = "<group>"; };
-		BA3A7C4416CD477100E84B58 /* CountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountModel.h; sourceTree = "<group>"; };
-		BA3A7C4516CD477100E84B58 /* CountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountModel.m; sourceTree = "<group>"; };
 		BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBCountViewController.h; sourceTree = "<group>"; };
 		BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountViewController.m; sourceTree = "<group>"; };
-		BA4AE59116D12BAB005456EF /* iBDataCenterForHotzone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBDataCenterForHotzone.h; sourceTree = "<group>"; };
-		BA4AE59216D12BAB005456EF /* iBDataCenterForHotzone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBDataCenterForHotzone.m; sourceTree = "<group>"; };
+		BA4AE59116D12BAB005456EF /* iBCountModelForTwoAndThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBCountModelForTwoAndThree.h; sourceTree = "<group>"; };
+		BA4AE59216D12BAB005456EF /* iBCountModelForTwoAndThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountModelForTwoAndThree.m; sourceTree = "<group>"; };
 		BA9BF1C016D5951100DFDD54 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		BA9BF1C116D5951100DFDD54 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		BA9BF1C316D5951100DFDD54 /* SinaWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SinaWeibo.bundle; sourceTree = "<group>"; };
@@ -1081,6 +1078,17 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		18C0123F17E40BF900FE7172 /* 2&3Count */ = {
+			isa = PBXGroup;
+			children = (
+				BA4AE59116D12BAB005456EF /* iBCountModelForTwoAndThree.h */,
+				BA4AE59216D12BAB005456EF /* iBCountModelForTwoAndThree.m */,
+				BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */,
+				BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */,
+			);
+			name = "2&3Count";
+			sourceTree = "<group>";
+		};
 		18E38CAA170081DC003782F2 /* Account */ = {
 			isa = PBXGroup;
 			children = (
@@ -1171,8 +1179,10 @@
 				181393C5174C69AF0041F384 /* My Footprint */,
 				18EAC82A17C077C00040CA2D /* HotzoneCount */,
 				BACE1C5716E113520032223B /* Obj */,
+				18C0123F17E40BF900FE7172 /* 2&3Count */,
 				18A460D817D7FF8900A4BCC0 /* Static */,
 				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
+				18442A9117BF6A0600368EF5 /* iBCountViewController.xib */,
 				1892F50817D405CA00C3902F /* iBStaticsViewController.h */,
 				1892F50917D405CA00C3902F /* iBStaticsViewController.m */,
 				1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */,
@@ -1182,13 +1192,6 @@
 				1831D25017C85D0E0044EC08 /* iBTabMainViewController.m */,
 				BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */,
 				BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */,
-				BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */,
-				BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */,
-				18442A9117BF6A0600368EF5 /* iBCountViewController.xib */,
-				BA4AE59116D12BAB005456EF /* iBDataCenterForHotzone.h */,
-				BA4AE59216D12BAB005456EF /* iBDataCenterForHotzone.m */,
-				BA3A7C4416CD477100E84B58 /* CountModel.h */,
-				BA3A7C4516CD477100E84B58 /* CountModel.m */,
 				BA36DEE016C4BF37007FFDD1 /* iB-Ball */,
 				BA36DEE116C4BF37007FFDD1 /* Supporting Files */,
 				18E9EEC117D2A88800C7F8EB /* iBBallTest */,
@@ -1534,9 +1537,8 @@
 				BA36DEE716C4BF37007FFDD1 /* main.m in Sources */,
 				BA36DEEB16C4BF37007FFDD1 /* iBAppDelegate.m in Sources */,
 				BA36DEF716C4BF37007FFDD1 /* iBViewController.m in Sources */,
-				BA3A7C4616CD477100E84B58 /* CountModel.m in Sources */,
 				BA3A7C5016CD918100E84B58 /* iBCountViewController.m in Sources */,
-				BA4AE59316D12BAB005456EF /* iBDataCenterForHotzone.m in Sources */,
+				BA4AE59316D12BAB005456EF /* iBCountModelForTwoAndThree.m in Sources */,
 				BA9BF1CB16D5951100DFDD54 /* JSONKit.m in Sources */,
 				BA9BF1CD16D5951100DFDD54 /* SinaWeibo.m in Sources */,
 				BA9BF1CE16D5951100DFDD54 /* SinaWeiboAuthorizeView.m in Sources */,

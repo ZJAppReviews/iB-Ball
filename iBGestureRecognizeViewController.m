@@ -9,7 +9,7 @@
 #import "iBGestureRecognizeViewController.h"
 #import "iBObj_DataModel.h"
 #import "Toast+UIView.h"
-#import "iBDataCenterForHotzone.h"
+#import "iBCountModelForTwoAndThree.h"
 
 @implementation iBGestureRecognizeViewController
 

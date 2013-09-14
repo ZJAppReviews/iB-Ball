@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "iBDataCenterForHotzone.h"
+#import "iBCountModelForTwoAndThree.h"
 
 @interface iBHotzoneShowStaticsViewController : UIViewController
 @property (nonatomic, weak) NSMutableDictionary *dataCenter;

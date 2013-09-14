@@ -690,7 +690,11 @@
                                 <rect key="frame" x="0.0" y="504" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Save" id="tMu-EQ-gqs"/>
+                                    <barButtonItem title="Save" id="tMu-EQ-gqs">
+                                        <connections>
+                                            <action selector="saveData:" destination="dbr-p8-b86" id="gxX-yR-7A4"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ratio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="N3t-NT-Nl7">
