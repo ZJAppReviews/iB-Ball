@@ -215,6 +215,55 @@
     NSArray *ppp = [NSArray arrayWithObjects:ii, jj, nil];
     [ud setObject:ppp forKey:tagString];
     [ud synchronize];
+    
+    
+    // 2.get the People model right, add stuff to it
+    NSEntityDescription *entity2 = [NSEntityDescription entityForName:@"Player"
+                                               inManagedObjectContext:self.managedObjectContext];
+    NSFetchRequest *fetchRequest2 = [[NSFetchRequest alloc] init];
+    
+    [fetchRequest2 setEntity:entity2];
+    
+    NSError *error2;
+    NSArray *fetchedObjects2 = [self.managedObjectContext executeFetchRequest:fetchRequest2 error:&error2];
+    if (fetchedObjects2 == nil) {
+        // Handle the error.
+        NSLog(@"wori");
+    }
+    Player *player;
+    NSLog(@"%d", fetchedObjects2.count);
+    
+    if (fetchedObjects2.count == 0) {
+        player = (Player *)[NSEntityDescription insertNewObjectForEntityForName:@"Player" inManagedObjectContext:_managedObjectContext];
+        
+        NSError *err;
+        [self.managedObjectContext save:&err];
+        
+    } else if (fetchedObjects2.count > 1) {
+        NSLog(@"fetched player more than 1");
+    } else {
+        player = fetchedObjects2[0];
+    }
+    
+    
+    
+    if ([self isTwoPointOrThree]) {
+        int i = [player.twoPointScore integerValue];
+        int j = [player.twoPointTry integerValue];
+        i += self.numberWeScore;
+        j += self.numberWeTry;
+        player.twoPointScore = [NSNumber numberWithInt:i];
+        player.twoPointTry = [NSNumber numberWithInt:j];
+        [self.managedObjectContext save:&error2];
+    } else {
+        int i = [player.threePointScore integerValue];
+        int j = [player.threePointTry integerValue];
+        i += self.numberWeScore;
+        j += self.numberWeTry;
+        player.threePointScore = [NSNumber numberWithInt:i];
+        player.threePointTry = [NSNumber numberWithInt:j];
+        [self.managedObjectContext save:&error2];
+    }
 }
 
 - (IBAction)shareHotzone:(id)sender {
