@@ -46,11 +46,14 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="317192144"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<object class="NSColor" key="IBUIBackgroundColor">
+							<int key="NSColorSpace">2</int>
+							<bytes key="NSRGB">MC45NDExNzY1MzM3IDAuNTA5ODAzOTUwOCAwLjE4MDM5MjE2MQA</bytes>
+						</object>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Score!</string>
 						<object class="NSColor" key="IBUIHighlightedTitleColor" id="798984809">
 							<int key="NSColorSpace">3</int>
@@ -82,11 +85,14 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="169209447"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<object class="NSColor" key="IBUIBackgroundColor">
+							<int key="NSColorSpace">2</int>
+							<bytes key="NSRGB">MC41OTIxNTY4ODcxIDAuNzYwNzg0Mzg3NiAwLjI1MDk4MDQwNwA</bytes>
+						</object>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Miss!</string>
 						<reference key="IBUIHighlightedTitleColor" ref="798984809"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
@@ -245,6 +251,22 @@
 						<reference key="destination" ref="404355008"/>
 					</object>
 					<string key="id">77</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">scoreBtn</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="306110332"/>
+					</object>
+					<string key="id">DdD-Th-YUL</string>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">missBtn</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="317192144"/>
+					</object>
+					<string key="id">pef-tC-5wj</string>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -433,10 +455,20 @@
 						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="missBtn">UIButton</string>
+						<string key="scoreBtn">UIButton</string>
 						<string key="trainingResult">UILabel</string>
 						<string key="trainingResultHistory">UILabel</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="missBtn">
+							<string key="name">missBtn</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="scoreBtn">
+							<string key="name">scoreBtn</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="trainingResult">
 							<string key="name">trainingResult</string>
 							<string key="candidateClassName">UILabel</string>

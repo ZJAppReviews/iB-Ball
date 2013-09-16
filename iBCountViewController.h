@@ -14,13 +14,6 @@
 @class iBDataCenterForHotzoneDoc;
 
 
-typedef enum CountType {
-    CountForNormal = 1,
-    CountForTwo,
-    CountForThree,
-    CountForHotZone
-} CountType;
-
 @interface iBCountViewController : UIViewController <UIActionSheetDelegate, UIAlertViewDelegate, SinaWeiboRequestDelegate, RenrenDelegate>
 
 @property (nonatomic, strong) iBCountModelForTwoAndThree *countModel;

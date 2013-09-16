@@ -10,6 +10,7 @@
 #import "iBAppDelegate.h"
 #import "Player.h"
 #import "iBCountViewControllerForHotZoneGestureMode.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface iBCountViewControllerForHotZone ()
 
@@ -24,6 +25,10 @@
         // Custom initialization
     }
     return self;
+}
+
+- (void)awakeFromNib {
+    
 }
 
 - (void)viewDidLoad
@@ -45,6 +50,8 @@
     NSInteger n2 = [a[1] integerValue];
 ((UILabel *)    self.trainingResultHistory).text =
     [NSString stringWithFormat:@"%d/ %d %f%%", n1, n2, (CGFloat)n1 / n2];
+
+
 
 }
 

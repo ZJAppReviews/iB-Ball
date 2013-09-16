@@ -1075,6 +1075,7 @@
 				BA4AE59216D12BAB005456EF /* iBCountModelForTwoAndThree.m */,
 				BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */,
 				BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */,
+				18442A9117BF6A0600368EF5 /* iBCountViewController.xib */,
 				189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */,
 				189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */,
 			);
@@ -1173,7 +1174,6 @@
 				18C0123F17E40BF900FE7172 /* 2&3Count */,
 				18A460D817D7FF8900A4BCC0 /* Static */,
 				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
-				18442A9117BF6A0600368EF5 /* iBCountViewController.xib */,
 				1892F50817D405CA00C3902F /* iBStaticsViewController.h */,
 				1892F50917D405CA00C3902F /* iBStaticsViewController.m */,
 				1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */,

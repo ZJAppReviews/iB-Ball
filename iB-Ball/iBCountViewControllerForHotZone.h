@@ -27,6 +27,9 @@
 
 @property (strong, nonatomic) NSDictionary *hotzoneDict;
 
+@property (weak, nonatomic) IBOutlet UIButton *scoreBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *missBtn;
 
 
 @end

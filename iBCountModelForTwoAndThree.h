@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+
+typedef enum CountType {
+    CountForNormal = 1,
+    CountForTwo,
+    CountForThree,
+    CountForHotZone
+} CountType;
+
 @interface iBCountModelForTwoAndThree : NSObject {
     NSString *_dataPath;
 }
@@ -17,6 +25,9 @@
 
 @property (nonatomic, assign) NSInteger totalShootingTimes;
 @property (nonatomic, assign) NSInteger totalGoalTimes;
+
+@property (nonatomic) CountType whatTypeOfCountingAreWeIn;
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 
 //@property (nonatomic, strong) NSMutableDictionary *hotzoneDict;
 + (NSMutableDictionary *)hotzoneDict;
