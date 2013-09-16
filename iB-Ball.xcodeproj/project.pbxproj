@@ -195,6 +195,7 @@
 		18F7272416F91BC300237CC7 /* iBSharedAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272316F91BC300237CC7 /* iBSharedAchievement.m */; };
 		18F7272716F9332C00237CC7 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272616F9332C00237CC7 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18F927DF175369D000804EED /* iBChanllengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F927DE175369D000804EED /* iBChanllengeViewController.m */; };
+		18FBC99017E7CB8E00924B4E /* UIBezierPath+ShadowPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBC98F17E7CB8E00924B4E /* UIBezierPath+ShadowPath.m */; };
 		BA01858716D6753F00B98B6A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */; };
 		BA36DEDB16C4BF37007FFDD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */; };
 		BA36DEDD16C4BF37007FFDD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDC16C4BF37007FFDD1 /* Foundation.framework */; };
@@ -509,6 +510,8 @@
 		18F7272616F9332C00237CC7 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
 		18F927DD175369D000804EED /* iBChanllengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBChanllengeViewController.h; sourceTree = "<group>"; };
 		18F927DE175369D000804EED /* iBChanllengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBChanllengeViewController.m; sourceTree = "<group>"; };
+		18FBC98E17E7CB8E00924B4E /* UIBezierPath+ShadowPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+ShadowPath.h"; sourceTree = "<group>"; };
+		18FBC98F17E7CB8E00924B4E /* UIBezierPath+ShadowPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+ShadowPath.m"; sourceTree = "<group>"; };
 		BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = "iB-Ball/MainStoryboard.storyboard"; sourceTree = "<group>"; };
 		BA36DED616C4BF37007FFDD1 /* iB-Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iB-Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1173,6 +1176,8 @@
 				BACE1C5716E113520032223B /* Obj */,
 				18C0123F17E40BF900FE7172 /* 2&3Count */,
 				18A460D817D7FF8900A4BCC0 /* Static */,
+				18FBC98E17E7CB8E00924B4E /* UIBezierPath+ShadowPath.h */,
+				18FBC98F17E7CB8E00924B4E /* UIBezierPath+ShadowPath.m */,
 				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
 				1892F50817D405CA00C3902F /* iBStaticsViewController.h */,
 				1892F50917D405CA00C3902F /* iBStaticsViewController.m */,
@@ -1633,6 +1638,7 @@
 				1852B9C217D55992006A2DB8 /* iBStaticListViewController.m in Sources */,
 				18A460DC17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m in Sources */,
 				185D324317DB1F6C002C3373 /* iBZGestureReconizer.m in Sources */,
+				18FBC99017E7CB8E00924B4E /* UIBezierPath+ShadowPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

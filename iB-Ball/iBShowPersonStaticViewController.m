@@ -8,6 +8,7 @@
 
 #import "iBShowPersonStaticViewController.h"
 #import "iBChoosePositionViewController.h"
+#import "UIBezierPath+ShadowPath.h"
 
 @interface iBShowPersonStaticViewController ()
 
@@ -28,6 +29,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.userAvatar.layer.borderColor = [UIColor colorWithWhite:1.0 alpha:1.0].CGColor;
+    self.userAvatar.layer.borderWidth = 5.0;
+    self.userAvatar.layer.shadowOffset = CGSizeMake(0, 3);
+    self.userAvatar.layer.shadowOpacity = 0.7;
+    self.userAvatar.layer.shouldRasterize = YES;
+    
+    UIBezierPath *path = [UIBezierPath bezierPathWithCurvedShadowForRect:self.userAvatar.bounds];
+    self.userAvatar.layer.shadowPath = path.CGPath;
+
 }
 
 - (void)didReceiveMemoryWarning
