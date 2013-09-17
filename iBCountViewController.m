@@ -51,6 +51,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    iBAppDelegate *ibad = (iBAppDelegate *)[[UIApplication sharedApplication] delegate];
+    self.managedObjectContext = ibad.managedObjectContext;
+
 //    [self updateRatio:nil];
 
 	// Do any additional setup after loading the view.
