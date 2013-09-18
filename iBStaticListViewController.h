@@ -14,5 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet UITableViewCell *twoPointCellView;
 @property (weak, nonatomic) IBOutlet UITableViewCell *threePointCellView;
+@property (weak, nonatomic) IBOutlet UITableViewCell *twoPointDayCell;
 
 @end
