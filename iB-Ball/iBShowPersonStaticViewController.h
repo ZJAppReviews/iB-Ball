@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface iBShowPersonStaticViewController : UIViewController
+@interface iBShowPersonStaticViewController : UIViewController <UIActionSheetDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 
@@ -17,4 +17,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 
 @property (weak, nonatomic) IBOutlet UIImageView *userAvatar;
+@property (weak, nonatomic) IBOutlet UILabel *bioText;
+
+@property (strong, nonatomic) UIImage *shareImage;
+
 @end

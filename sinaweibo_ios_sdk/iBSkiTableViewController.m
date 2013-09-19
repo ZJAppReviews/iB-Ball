@@ -229,11 +229,8 @@
     }
     if (buttonIndex == 2) {
         // segue to count
-//        iBSkiCountViewController *a = [[iBSkiCountViewController alloc] init];
-//        UIStoryboardSegue *i = [[UIStoryboardSegue alloc] initWithIdentifier:@"skiCount" source:self destination:a];
-//        [i perform];
         iBSkiCountViewController *a = [[iBSkiCountViewController alloc] initWithNibName:@"iBSkiCountView" bundle:nil];
-        a.whichSkill = [self.skillModel.skillArray objectAtIndex:self.selected];
+        a.whichSkill = [self getSelectedSkill];
         [self.navigationController pushViewController:a animated:YES];
     }
     if (buttonIndex == 1) {

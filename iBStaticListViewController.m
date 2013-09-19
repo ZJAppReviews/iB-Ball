@@ -50,8 +50,8 @@
         // Handle the error.
     }
     Player *player = fetchedObjects[0];
-    float ratio = [player.twoPointScore integerValue] / (CGFloat)[player.twoPointTry integerValue];
-    float ratio2 = [player.threePointScore integerValue] / (CGFloat)[player.threePointTry integerValue];
+    float ratio = [player.twoPointScore integerValue] / (CGFloat)[player.twoPointTry integerValue] * 100;
+    float ratio2 = [player.threePointScore integerValue] / (CGFloat)[player.threePointTry integerValue] * 100;
     self.twoPointCellView.detailTextLabel.text = [NSString stringWithFormat:@"%@/%@ %.2f%%", player.twoPointScore, player.twoPointTry, ratio];
     self.threePointCellView.detailTextLabel.text = [NSString stringWithFormat:@"%@/%@ %.2f%%", player.threePointScore, player.threePointTry, ratio2];
 }
@@ -75,7 +75,7 @@
     NSLog(@"%@", fetchedObjects);
     
     NSString *date = ((TwoPoint *)fetchedObjects[0]).twoPointDay;
-    NSString *label = [date stringByAppendingString:[NSString stringWithFormat:@"%@ ", ((TwoPoint *)fetchedObjects[0]).twoPointGoal]];
+    NSString *label = [date stringByAppendingString:[NSString stringWithFormat:@"  %@ ", ((TwoPoint *)fetchedObjects[0]).twoPointGoal]];
     
     self.twoPointDayCell.detailTextLabel.text = [NSString stringWithFormat:@" %@", label];
 }
@@ -98,7 +98,7 @@
     NSLog(@"%@", fetchedObjects);
     
     NSString *date = ((TwoPoint *)fetchedObjects[0]).twoPointDay;
-    NSString *label = [date stringByAppendingString:[NSString stringWithFormat:@" %@ ", ((TwoPoint *)fetchedObjects[0]).twoPointGoal]];
+    NSString *label = [date stringByAppendingString:[NSString stringWithFormat:@"  %@ ", ((TwoPoint *)fetchedObjects[0]).twoPointGoal]];
     
     self.twoPointDayCell.detailTextLabel.text = [NSString stringWithFormat:@" %@", label];
 }
