@@ -49,6 +49,10 @@
     if (fetchedObjects == nil) {
         // Handle the error.
     }
+    if (fetchedObjects.count == 0) {
+        NSLog(@"no player found");
+        return;
+    }
     Player *player = fetchedObjects[0];
     float ratio = [player.twoPointScore integerValue] / (CGFloat)[player.twoPointTry integerValue] * 100;
     float ratio2 = [player.threePointScore integerValue] / (CGFloat)[player.threePointTry integerValue] * 100;
@@ -71,6 +75,11 @@
         // Handle the error.
     }
     
+    if (fetchedObjects.count == 0) {
+        NSLog(@"no 2-pt found");
+        return;
+    }
+
     NSLog(@"from two point data");
     NSLog(@"%@", fetchedObjects);
     

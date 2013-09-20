@@ -31,7 +31,7 @@
     self.delegate = self;
     
     self.navigationController.delegate = self;
-    [self addTabBarArrow];
+//    [self addTabBarArrow];
 }
 
 - (void)addTabBarArrow {
