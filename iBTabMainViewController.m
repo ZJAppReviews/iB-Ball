@@ -32,6 +32,7 @@
     
     self.navigationController.delegate = self;
 //    [self addTabBarArrow];
+    
 }
 
 - (void)addTabBarArrow {
@@ -81,7 +82,6 @@
 }
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
     NSLog(@"ssa");
-
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @class CustomTabBar;
 
 @interface iBTabMainViewController : UITabBarController <UITabBarControllerDelegate, UINavigationControllerDelegate>

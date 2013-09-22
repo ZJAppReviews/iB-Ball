@@ -242,7 +242,7 @@
                                 <items/>
                             </toolbar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="oiR-Kr-u6K">
-                                <rect key="frame" x="1" y="524" width="320" height="44"/>
+                                <rect key="frame" x="-1" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem tag="99" title="Go Back" id="XkI-Mk-yhO">
@@ -260,7 +260,7 @@
                                 </items>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <accessibility key="accessibilityConfiguration" hint="Select the zone you want to shoot">
                             <bool key="isElement" value="NO"/>
                         </accessibility>
@@ -812,6 +812,7 @@
                         <segue destination="qfg-Pk-dEd" kind="relationship" relationship="viewControllers" id="3OR-F8-hYw"/>
                         <segue destination="7W4-eK-hxw" kind="relationship" relationship="viewControllers" id="oWG-Nc-Re6"/>
                         <segue destination="FCb-af-6od" kind="relationship" relationship="viewControllers" id="GBk-jx-XnH"/>
+                        <segue destination="Seg-em-3UM" kind="relationship" relationship="viewControllers" id="vtE-Mg-Ogu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e3H-qS-kDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1455,6 +1456,21 @@
             </objects>
             <point key="canvasLocation" x="1410" y="366"/>
         </scene>
+        <!--IB Team Mates View Controller - Team mates-->
+        <scene sceneID="ZGK-KN-3dS">
+            <objects>
+                <viewController id="Seg-em-3UM" customClass="iBTeamMatesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aa2-ta-Bhg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Team mates" image="ic_users.png" id="1cC-Bf-rDq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69D-3H-ciG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1849" y="-146"/>
+        </scene>
         <!--IB Static List View Controller-->
         <scene sceneID="7dj-YI-OtY">
             <objects>
@@ -1675,7 +1691,6 @@
     </scenes>
     <resources>
         <image name="2.png" width="114" height="114"/>
-        <image name="hotzone.png" width="476" height="389"/>
         <image name="hotzone.png" width="476" height="389"/>
         <image name="ic_bookmark.png" width="32" height="32"/>
         <image name="ic_calc.png" width="32" height="32"/>

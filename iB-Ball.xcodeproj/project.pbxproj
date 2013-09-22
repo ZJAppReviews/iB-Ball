@@ -166,6 +166,8 @@
 		18AFFD271735EDAB00FFE514 /* TwoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFFD261735EDAB00FFE514 /* TwoPoint.m */; };
 		18BE11971755ECA900C8ABB4 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18BE11961755ECA900C8ABB4 /* alarm.mp3 */; };
 		18BE11991755F33100C8ABB4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BE11981755F33100C8ABB4 /* AVFoundation.framework */; };
+		18C217FA17EE7E3B000E6FC9 /* iBTeamMatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C217F817EE7E3B000E6FC9 /* iBTeamMatesViewController.m */; };
+		18C217FB17EE7E3B000E6FC9 /* iBTeamMatesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C217F917EE7E3B000E6FC9 /* iBTeamMatesViewController.xib */; };
 		18D40DBB170134DF004A22CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBA170134DF004A22CD /* Parse.framework */; };
 		18D40DBD17013513004A22CD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBC17013513004A22CD /* AudioToolbox.framework */; };
 		18D40DBF1701352A004A22CD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBE1701352A004A22CD /* CFNetwork.framework */; };
@@ -232,10 +234,10 @@
 		181393CA174C69EE0041F384 /* EditableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditableTableViewCell.m; sourceTree = "<group>"; };
 		181393CD174C6A080041F384 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		181393CF174C6A130041F384 /* EditableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditableTableViewCell.xib; sourceTree = "<group>"; };
-		1824C26E16FEEC5000895222 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		1824C26E16FEEC5000895222 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TODO; path = ../TODO; sourceTree = "<group>"; };
 		1824C27216FF061100895222 /* iBSkiCountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBSkiCountView.xib; sourceTree = SOURCE_ROOT; };
-		1831D24F17C85D0E0044EC08 /* iBTabMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBTabMainViewController.h; sourceTree = "<group>"; };
-		1831D25017C85D0E0044EC08 /* iBTabMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBTabMainViewController.m; sourceTree = "<group>"; };
+		1831D24F17C85D0E0044EC08 /* iBTabMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBTabMainViewController.h; path = ../iBTabMainViewController.h; sourceTree = "<group>"; };
+		1831D25017C85D0E0044EC08 /* iBTabMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBTabMainViewController.m; path = ../iBTabMainViewController.m; sourceTree = "<group>"; };
 		1831D25217C869110044EC08 /* TabBarNipple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBarNipple.png; sourceTree = "<group>"; };
 		1831D25317C869110044EC08 /* TabBarNipple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBarNipple@2x.png"; sourceTree = "<group>"; };
 		1838CE00172E19B00078B3AD /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -363,37 +365,37 @@
 		1838CECF172E1A4F0078B3AD /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		183B836A16F4D42B0030BC70 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = ../2.png; sourceTree = "<group>"; };
 		183B836B16F4D42C0030BC70 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../1.png; sourceTree = "<group>"; };
-		183B836F16F5555D0030BC70 /* iBSkiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiTableViewController.h; sourceTree = "<group>"; };
-		183B837016F5555D0030BC70 /* iBSkiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiTableViewController.m; sourceTree = "<group>"; };
-		183B837216F556950030BC70 /* iBSkillDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkillDataModel.h; sourceTree = "<group>"; };
-		183B837316F556950030BC70 /* iBSkillDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkillDataModel.m; sourceTree = "<group>"; };
-		183B837516F557770030BC70 /* iBSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkill.h; sourceTree = "<group>"; };
-		183B837616F557770030BC70 /* iBSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkill.m; sourceTree = "<group>"; };
+		183B836F16F5555D0030BC70 /* iBSkiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBSkiTableViewController.h; path = ../sinaweibo_ios_sdk/iBSkiTableViewController.h; sourceTree = "<group>"; };
+		183B837016F5555D0030BC70 /* iBSkiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBSkiTableViewController.m; path = ../sinaweibo_ios_sdk/iBSkiTableViewController.m; sourceTree = "<group>"; };
+		183B837216F556950030BC70 /* iBSkillDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBSkillDataModel.h; path = ../sinaweibo_ios_sdk/iBSkillDataModel.h; sourceTree = "<group>"; };
+		183B837316F556950030BC70 /* iBSkillDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBSkillDataModel.m; path = ../sinaweibo_ios_sdk/iBSkillDataModel.m; sourceTree = "<group>"; };
+		183B837516F557770030BC70 /* iBSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBSkill.h; path = ../sinaweibo_ios_sdk/iBSkill.h; sourceTree = "<group>"; };
+		183B837616F557770030BC70 /* iBSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBSkill.m; path = ../sinaweibo_ios_sdk/iBSkill.m; sourceTree = "<group>"; };
 		183C7940174B0A5600992262 /* TaggedLocations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaggedLocations.xcdatamodel; sourceTree = "<group>"; };
 		183C7942174B0A7000992262 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		183C7943174B0A7000992262 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		183C7948174B0B0100992262 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
 		183C7949174B0B0100992262 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
-		18442A9117BF6A0600368EF5 /* iBCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBCountViewController.xib; sourceTree = "<group>"; };
-		18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountViewControllerForHotZone.h; path = "../iB-Ball/iBCountViewControllerForHotZone.h"; sourceTree = "<group>"; };
-		18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountViewControllerForHotZone.m; path = "../iB-Ball/iBCountViewControllerForHotZone.m"; sourceTree = "<group>"; };
-		18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBCountViewControllerForHotZone.xib; path = "../iB-Ball/iBCountViewControllerForHotZone.xib"; sourceTree = "<group>"; };
-		184A8FFF174DAE3D007D28F0 /* iBFootPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBFootPrintViewController.h; sourceTree = "<group>"; };
-		184A9000174DAE3D007D28F0 /* iBFootPrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBFootPrintViewController.m; sourceTree = "<group>"; };
-		184A9002174DAE45007D28F0 /* iBFootPrintTagSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBFootPrintTagSelectionController.h; sourceTree = "<group>"; };
-		184A9003174DAE45007D28F0 /* iBFootPrintTagSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBFootPrintTagSelectionController.m; sourceTree = "<group>"; };
+		18442A9117BF6A0600368EF5 /* iBCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBCountViewController.xib; path = ../iBCountViewController.xib; sourceTree = "<group>"; };
+		18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBCountViewControllerForHotZone.h; sourceTree = "<group>"; };
+		18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountViewControllerForHotZone.m; sourceTree = "<group>"; };
+		18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBCountViewControllerForHotZone.xib; sourceTree = "<group>"; };
+		184A8FFF174DAE3D007D28F0 /* iBFootPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBFootPrintViewController.h; path = ../sinaweibo_ios_sdk/iBFootPrintViewController.h; sourceTree = "<group>"; };
+		184A9000174DAE3D007D28F0 /* iBFootPrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBFootPrintViewController.m; path = ../sinaweibo_ios_sdk/iBFootPrintViewController.m; sourceTree = "<group>"; };
+		184A9002174DAE45007D28F0 /* iBFootPrintTagSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBFootPrintTagSelectionController.h; path = ../sinaweibo_ios_sdk/iBFootPrintTagSelectionController.h; sourceTree = "<group>"; };
+		184A9003174DAE45007D28F0 /* iBFootPrintTagSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBFootPrintTagSelectionController.m; path = ../sinaweibo_ios_sdk/iBFootPrintTagSelectionController.m; sourceTree = "<group>"; };
 		184A9005174DAEE0007D28F0 /* TagsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagsHeaderView.xib; sourceTree = "<group>"; };
 		1850019517603979000711ED /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteButton.png; path = ../whiteButton.png; sourceTree = "<group>"; };
 		185001961760397A000711ED /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueButton.png; path = ../blueButton.png; sourceTree = "<group>"; };
 		1852B9BA17D55595006A2DB8 /* iBShowPersonStaticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBShowPersonStaticViewController.h; path = "iB-Ball/iBShowPersonStaticViewController.h"; sourceTree = SOURCE_ROOT; };
 		1852B9BB17D55595006A2DB8 /* iBShowPersonStaticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBShowPersonStaticViewController.m; path = "iB-Ball/iBShowPersonStaticViewController.m"; sourceTree = SOURCE_ROOT; };
-		1852B9BF17D55992006A2DB8 /* iBStaticListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBStaticListViewController.h; sourceTree = "<group>"; };
-		1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBStaticListViewController.m; sourceTree = "<group>"; };
-		185D324117DB1F6C002C3373 /* iBZGestureReconizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBZGestureReconizer.h; sourceTree = "<group>"; };
-		185D324217DB1F6C002C3373 /* iBZGestureReconizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBZGestureReconizer.m; sourceTree = "<group>"; };
-		185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBGestureRecognizeViewController.h; sourceTree = "<group>"; };
-		185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBGestureRecognizeViewController.m; sourceTree = "<group>"; };
-		185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBGestureRecognizeViewController.xib; sourceTree = "<group>"; };
+		1852B9BF17D55992006A2DB8 /* iBStaticListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBStaticListViewController.h; path = ../iBStaticListViewController.h; sourceTree = "<group>"; };
+		1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBStaticListViewController.m; path = ../iBStaticListViewController.m; sourceTree = "<group>"; };
+		185D324117DB1F6C002C3373 /* iBZGestureReconizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBZGestureReconizer.h; path = ../sinaweibo_ios_sdk/iBZGestureReconizer.h; sourceTree = "<group>"; };
+		185D324217DB1F6C002C3373 /* iBZGestureReconizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBZGestureReconizer.m; path = ../sinaweibo_ios_sdk/iBZGestureReconizer.m; sourceTree = "<group>"; };
+		185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBGestureRecognizeViewController.h; path = ../iBGestureRecognizeViewController.h; sourceTree = "<group>"; };
+		185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBGestureRecognizeViewController.m; path = ../iBGestureRecognizeViewController.m; sourceTree = "<group>"; };
+		185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBGestureRecognizeViewController.xib; path = ../iBGestureRecognizeViewController.xib; sourceTree = "<group>"; };
 		18640E4817445073006B541A /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		18640E4E1744C572006B541A /* ic_calc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_calc.png; path = ../ic_calc.png; sourceTree = "<group>"; };
 		18640E501744C5D2006B541A /* ic_ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_ok.png; path = ../ic_ok.png; sourceTree = "<group>"; };
@@ -453,24 +455,27 @@
 		1878A0091703CB150065D21F /* WTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTableViewController.m; sourceTree = "<group>"; };
 		1878A00A1703CB150065D21F /* WeatherAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherAnimationViewController.h; sourceTree = "<group>"; };
 		1878A00B1703CB150065D21F /* WeatherAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherAnimationViewController.m; sourceTree = "<group>"; };
-		187C1F6816F701AB00263479 /* iBSkiInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiInputViewController.h; sourceTree = "<group>"; };
-		187C1F6916F701AB00263479 /* iBSkiInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiInputViewController.m; sourceTree = "<group>"; };
-		187C1F6C16F7CDEB00263479 /* iBSkiCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiCountViewController.h; sourceTree = "<group>"; };
-		187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiCountViewController.m; sourceTree = "<group>"; };
+		187C1F6816F701AB00263479 /* iBSkiInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBSkiInputViewController.h; path = ../sinaweibo_ios_sdk/iBSkiInputViewController.h; sourceTree = "<group>"; };
+		187C1F6916F701AB00263479 /* iBSkiInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBSkiInputViewController.m; path = ../sinaweibo_ios_sdk/iBSkiInputViewController.m; sourceTree = "<group>"; };
+		187C1F6C16F7CDEB00263479 /* iBSkiCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBSkiCountViewController.h; path = ../sinaweibo_ios_sdk/iBSkiCountViewController.h; sourceTree = "<group>"; };
+		187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBSkiCountViewController.m; path = ../sinaweibo_ios_sdk/iBSkiCountViewController.m; sourceTree = "<group>"; };
 		1880DF1B17335866004E7DA0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1880DF291733B885004E7DA0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		1892F50817D405CA00C3902F /* iBStaticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBStaticsViewController.h; path = "iB-Ball/iBStaticsViewController.h"; sourceTree = "<group>"; };
-		1892F50917D405CA00C3902F /* iBStaticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBStaticsViewController.m; path = "iB-Ball/iBStaticsViewController.m"; sourceTree = "<group>"; };
-		1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBStaticsViewController.xib; path = "iB-Ball/iBStaticsViewController.xib"; sourceTree = "<group>"; };
-		189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountingSelectViewController.h; path = "iB-Ball/iBCountingSelectViewController.h"; sourceTree = "<group>"; };
-		189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountingSelectViewController.m; path = "iB-Ball/iBCountingSelectViewController.m"; sourceTree = "<group>"; };
-		18A460D917D7FFDA00A4BCC0 /* iBChoosePositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBChoosePositionViewController.h; path = "iB-Ball/iBChoosePositionViewController.h"; sourceTree = "<group>"; };
-		18A460DA17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBChoosePositionViewController.m; path = "iB-Ball/iBChoosePositionViewController.m"; sourceTree = "<group>"; };
-		18A460DB17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBChoosePositionViewController.xib; path = "iB-Ball/iBChoosePositionViewController.xib"; sourceTree = "<group>"; };
+		1892F50817D405CA00C3902F /* iBStaticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBStaticsViewController.h; sourceTree = "<group>"; };
+		1892F50917D405CA00C3902F /* iBStaticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBStaticsViewController.m; sourceTree = "<group>"; };
+		1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBStaticsViewController.xib; sourceTree = "<group>"; };
+		189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBCountingSelectViewController.h; sourceTree = "<group>"; };
+		189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountingSelectViewController.m; sourceTree = "<group>"; };
+		18A460D917D7FFDA00A4BCC0 /* iBChoosePositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBChoosePositionViewController.h; sourceTree = "<group>"; };
+		18A460DA17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBChoosePositionViewController.m; sourceTree = "<group>"; };
+		18A460DB17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBChoosePositionViewController.xib; sourceTree = "<group>"; };
 		18AFFD251735EDAB00FFE514 /* TwoPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoPoint.h; sourceTree = "<group>"; };
 		18AFFD261735EDAB00FFE514 /* TwoPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoPoint.m; sourceTree = "<group>"; };
 		18BE11961755ECA900C8ABB4 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 		18BE11981755F33100C8ABB4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		18C217F717EE7E3B000E6FC9 /* iBTeamMatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBTeamMatesViewController.h; sourceTree = "<group>"; };
+		18C217F817EE7E3B000E6FC9 /* iBTeamMatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBTeamMatesViewController.m; sourceTree = "<group>"; };
+		18C217F917EE7E3B000E6FC9 /* iBTeamMatesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBTeamMatesViewController.xib; sourceTree = "<group>"; };
 		18D40DBA170134DF004A22CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		18D40DBC17013513004A22CD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		18D40DBE1701352A004A22CD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -510,9 +515,9 @@
 		18F7272616F9332C00237CC7 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
 		18F927DD175369D000804EED /* iBChanllengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBChanllengeViewController.h; sourceTree = "<group>"; };
 		18F927DE175369D000804EED /* iBChanllengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBChanllengeViewController.m; sourceTree = "<group>"; };
-		18FBC98E17E7CB8E00924B4E /* UIBezierPath+ShadowPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+ShadowPath.h"; sourceTree = "<group>"; };
-		18FBC98F17E7CB8E00924B4E /* UIBezierPath+ShadowPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+ShadowPath.m"; sourceTree = "<group>"; };
-		BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = "iB-Ball/MainStoryboard.storyboard"; sourceTree = "<group>"; };
+		18FBC98E17E7CB8E00924B4E /* UIBezierPath+ShadowPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIBezierPath+ShadowPath.h"; path = "../UIBezierPath+ShadowPath.h"; sourceTree = "<group>"; };
+		18FBC98F17E7CB8E00924B4E /* UIBezierPath+ShadowPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+ShadowPath.m"; path = "../UIBezierPath+ShadowPath.m"; sourceTree = "<group>"; };
+		BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BA36DED616C4BF37007FFDD1 /* iB-Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iB-Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BA36DEDC16C4BF37007FFDD1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -529,10 +534,10 @@
 		BA36DEF516C4BF37007FFDD1 /* iBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iBViewController.h; sourceTree = "<group>"; };
 		BA36DEF616C4BF37007FFDD1 /* iBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBViewController.m; sourceTree = "<group>"; };
 		BA3A7C3F16CD39EE00E84B58 /* hotzone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotzone.png; sourceTree = "<group>"; };
-		BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBCountViewController.h; sourceTree = "<group>"; };
-		BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountViewController.m; sourceTree = "<group>"; };
-		BA4AE59116D12BAB005456EF /* iBCountModelForTwoAndThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBCountModelForTwoAndThree.h; sourceTree = "<group>"; };
-		BA4AE59216D12BAB005456EF /* iBCountModelForTwoAndThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountModelForTwoAndThree.m; sourceTree = "<group>"; };
+		BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountViewController.h; path = ../iBCountViewController.h; sourceTree = "<group>"; };
+		BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountViewController.m; path = ../iBCountViewController.m; sourceTree = "<group>"; };
+		BA4AE59116D12BAB005456EF /* iBCountModelForTwoAndThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountModelForTwoAndThree.h; path = ../iBCountModelForTwoAndThree.h; sourceTree = "<group>"; };
+		BA4AE59216D12BAB005456EF /* iBCountModelForTwoAndThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountModelForTwoAndThree.m; path = ../iBCountModelForTwoAndThree.m; sourceTree = "<group>"; };
 		BA9BF1C016D5951100DFDD54 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		BA9BF1C116D5951100DFDD54 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		BA9BF1C316D5951100DFDD54 /* SinaWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SinaWeibo.bundle; sourceTree = "<group>"; };
@@ -543,10 +548,10 @@
 		BA9BF1C816D5951100DFDD54 /* SinaWeiboConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiboConstants.h; sourceTree = "<group>"; };
 		BA9BF1C916D5951100DFDD54 /* SinaWeiboRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiboRequest.h; sourceTree = "<group>"; };
 		BA9BF1CA16D5951100DFDD54 /* SinaWeiboRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeiboRequest.m; sourceTree = "<group>"; };
-		BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBShareViewController.h; path = sinaweibo_ios_sdk/iBShareViewController.h; sourceTree = "<group>"; };
-		BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBShareViewController.m; path = sinaweibo_ios_sdk/iBShareViewController.m; sourceTree = "<group>"; };
-		BACE1C5916E117410032223B /* iBObjCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBObjCountViewController.h; sourceTree = "<group>"; };
-		BACE1C5A16E117410032223B /* iBObjCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBObjCountViewController.m; sourceTree = "<group>"; };
+		BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBShareViewController.h; path = ../sinaweibo_ios_sdk/iBShareViewController.h; sourceTree = "<group>"; };
+		BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBShareViewController.m; path = ../sinaweibo_ios_sdk/iBShareViewController.m; sourceTree = "<group>"; };
+		BACE1C5916E117410032223B /* iBObjCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObjCountViewController.h; path = ../sinaweibo_ios_sdk/iBObjCountViewController.h; sourceTree = "<group>"; };
+		BACE1C5A16E117410032223B /* iBObjCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBObjCountViewController.m; path = ../sinaweibo_ios_sdk/iBObjCountViewController.m; sourceTree = "<group>"; };
 		BAFA0EC616E01F73000CF109 /* iBObjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObjViewController.h; path = ../iBObjViewController.h; sourceTree = "<group>"; };
 		BAFA0EC716E01F73000CF109 /* iBObjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBObjViewController.m; path = ../iBObjViewController.m; sourceTree = "<group>"; };
 		BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObj_DataModel.h; path = ../iBObj_DataModel.h; sourceTree = "<group>"; };
@@ -615,14 +620,9 @@
 		181393C5174C69AF0041F384 /* My Footprint */ = {
 			isa = PBXGroup;
 			children = (
-				184A8FFF174DAE3D007D28F0 /* iBFootPrintViewController.h */,
-				184A9000174DAE3D007D28F0 /* iBFootPrintViewController.m */,
-				184A9002174DAE45007D28F0 /* iBFootPrintTagSelectionController.h */,
-				184A9003174DAE45007D28F0 /* iBFootPrintTagSelectionController.m */,
-				181393C6174C69D60041F384 /* Table View cell */,
 			);
 			name = "My Footprint";
-			path = sinaweibo_ios_sdk;
+			path = ../sinaweibo_ios_sdk;
 			sourceTree = "<group>";
 		};
 		181393C6174C69D60041F384 /* Table View cell */ = {
@@ -637,6 +637,7 @@
 				181393CF174C6A130041F384 /* EditableTableViewCell.xib */,
 			);
 			name = "Table View cell";
+			path = ../sinaweibo_ios_sdk;
 			sourceTree = "<group>";
 		};
 		1838CDFE172E19960078B3AD /* renren_ios_sdk */ = {
@@ -900,20 +901,9 @@
 		183B836E16F5552E0030BC70 /* Ski */ = {
 			isa = PBXGroup;
 			children = (
-				183B836F16F5555D0030BC70 /* iBSkiTableViewController.h */,
-				183B837016F5555D0030BC70 /* iBSkiTableViewController.m */,
-				183B837216F556950030BC70 /* iBSkillDataModel.h */,
-				183B837316F556950030BC70 /* iBSkillDataModel.m */,
-				183B837516F557770030BC70 /* iBSkill.h */,
-				183B837616F557770030BC70 /* iBSkill.m */,
-				187C1F6816F701AB00263479 /* iBSkiInputViewController.h */,
-				187C1F6916F701AB00263479 /* iBSkiInputViewController.m */,
-				187C1F6C16F7CDEB00263479 /* iBSkiCountViewController.h */,
-				187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */,
-				1824C27216FF061100895222 /* iBSkiCountView.xib */,
 			);
 			name = Ski;
-			path = sinaweibo_ios_sdk;
+			path = ../sinaweibo_ios_sdk;
 			sourceTree = "<group>";
 		};
 		183C793F174B0A2900992262 /* CDModel */ = {
@@ -949,6 +939,7 @@
 				18712486173B3B6800815D6D /* iBPlayCourtViewController.m */,
 			);
 			name = Playcourt;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		18789FA61703C4FC0065D21F /* open_source */ = {
@@ -1042,20 +1033,15 @@
 				18F7272316F91BC300237CC7 /* iBSharedAchievement.m */,
 			);
 			name = Achieve;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		18A460D817D7FF8900A4BCC0 /* Static */ = {
 			isa = PBXGroup;
 			children = (
-				1852B9BA17D55595006A2DB8 /* iBShowPersonStaticViewController.h */,
-				1852B9BB17D55595006A2DB8 /* iBShowPersonStaticViewController.m */,
-				1852B9BF17D55992006A2DB8 /* iBStaticListViewController.h */,
-				1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */,
-				18A460D917D7FFDA00A4BCC0 /* iBChoosePositionViewController.h */,
-				18A460DA17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m */,
-				18A460DB17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib */,
 			);
 			name = Static;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		18AE0C15174725AE00AE766B /* Crappy */ = {
@@ -1071,18 +1057,9 @@
 		18C0123F17E40BF900FE7172 /* 2&3Count */ = {
 			isa = PBXGroup;
 			children = (
-				185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */,
-				185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */,
-				185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */,
-				BA4AE59116D12BAB005456EF /* iBCountModelForTwoAndThree.h */,
-				BA4AE59216D12BAB005456EF /* iBCountModelForTwoAndThree.m */,
-				BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */,
-				BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */,
-				18442A9117BF6A0600368EF5 /* iBCountViewController.xib */,
-				189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */,
-				189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */,
 			);
 			name = "2&3Count";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		18E38CAA170081DC003782F2 /* Account */ = {
@@ -1092,6 +1069,7 @@
 				18E38CAC17008215003782F2 /* iBAccountViewController.m */,
 			);
 			name = Account;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		18E4C0EF1754B34700F4A199 /* SNS */ = {
@@ -1126,21 +1104,9 @@
 		18EAC82A17C077C00040CA2D /* HotzoneCount */ = {
 			isa = PBXGroup;
 			children = (
-				18DDAF9717422CCC000AB3EF /* iBHotzoneSelectViewController.h */,
-				18DDAF9817422CCC000AB3EF /* iBHotzoneSelectViewController.m */,
-				18EBC3121745CDE600DA2495 /* iBHotzoneShowStaticsViewController.h */,
-				18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */,
-				18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */,
-				18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */,
-				18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */,
-				18EAC82B17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.h */,
-				18EAC82C17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m */,
-				18EAC82D17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib */,
-				185D324117DB1F6C002C3373 /* iBZGestureReconizer.h */,
-				185D324217DB1F6C002C3373 /* iBZGestureReconizer.m */,
 			);
 			name = HotzoneCount;
-			path = sinaweibo_ios_sdk;
+			path = ../sinaweibo_ios_sdk;
 			sourceTree = "<group>";
 		};
 		18F7272816F9333500237CC7 /* Toast */ = {
@@ -1159,33 +1125,12 @@
 				18F927DE175369D000804EED /* iBChanllengeViewController.m */,
 			);
 			name = Challenge;
-			path = sinaweibo_ios_sdk;
+			path = ../sinaweibo_ios_sdk;
 			sourceTree = "<group>";
 		};
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
-				1824C26E16FEEC5000895222 /* TODO */,
-				18E38CAA170081DC003782F2 /* Account */,
-				18712484173B3B4600815D6D /* Playcourt */,
-				187C1F6B16F7C69E00263479 /* Achieve */,
-				18F927DC1753698E00804EED /* Challenge */,
-				183B836E16F5552E0030BC70 /* Ski */,
-				181393C5174C69AF0041F384 /* My Footprint */,
-				18EAC82A17C077C00040CA2D /* HotzoneCount */,
-				BACE1C5716E113520032223B /* Obj */,
-				18C0123F17E40BF900FE7172 /* 2&3Count */,
-				18A460D817D7FF8900A4BCC0 /* Static */,
-				18FBC98E17E7CB8E00924B4E /* UIBezierPath+ShadowPath.h */,
-				18FBC98F17E7CB8E00924B4E /* UIBezierPath+ShadowPath.m */,
-				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
-				1892F50817D405CA00C3902F /* iBStaticsViewController.h */,
-				1892F50917D405CA00C3902F /* iBStaticsViewController.m */,
-				1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */,
-				1831D24F17C85D0E0044EC08 /* iBTabMainViewController.h */,
-				1831D25017C85D0E0044EC08 /* iBTabMainViewController.m */,
-				BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */,
-				BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */,
 				BA36DEE016C4BF37007FFDD1 /* iB-Ball */,
 				BA36DEE116C4BF37007FFDD1 /* Supporting Files */,
 				18E9EEC117D2A88800C7F8EB /* iBBallTest */,
@@ -1232,6 +1177,81 @@
 		BA36DEE016C4BF37007FFDD1 /* iB-Ball */ = {
 			isa = PBXGroup;
 			children = (
+				1824C26E16FEEC5000895222 /* TODO */,
+				18E38CAA170081DC003782F2 /* Account */,
+				18712484173B3B4600815D6D /* Playcourt */,
+				187C1F6B16F7C69E00263479 /* Achieve */,
+				18F927DC1753698E00804EED /* Challenge */,
+				183B836E16F5552E0030BC70 /* Ski */,
+				183B836F16F5555D0030BC70 /* iBSkiTableViewController.h */,
+				183B837016F5555D0030BC70 /* iBSkiTableViewController.m */,
+				183B837216F556950030BC70 /* iBSkillDataModel.h */,
+				183B837316F556950030BC70 /* iBSkillDataModel.m */,
+				183B837516F557770030BC70 /* iBSkill.h */,
+				183B837616F557770030BC70 /* iBSkill.m */,
+				187C1F6816F701AB00263479 /* iBSkiInputViewController.h */,
+				187C1F6916F701AB00263479 /* iBSkiInputViewController.m */,
+				187C1F6C16F7CDEB00263479 /* iBSkiCountViewController.h */,
+				187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */,
+				1824C27216FF061100895222 /* iBSkiCountView.xib */,
+				181393C5174C69AF0041F384 /* My Footprint */,
+				184A8FFF174DAE3D007D28F0 /* iBFootPrintViewController.h */,
+				184A9000174DAE3D007D28F0 /* iBFootPrintViewController.m */,
+				184A9002174DAE45007D28F0 /* iBFootPrintTagSelectionController.h */,
+				184A9003174DAE45007D28F0 /* iBFootPrintTagSelectionController.m */,
+				181393C6174C69D60041F384 /* Table View cell */,
+				18EAC82A17C077C00040CA2D /* HotzoneCount */,
+				18DDAF9717422CCC000AB3EF /* iBHotzoneSelectViewController.h */,
+				18DDAF9817422CCC000AB3EF /* iBHotzoneSelectViewController.m */,
+				18EBC3121745CDE600DA2495 /* iBHotzoneShowStaticsViewController.h */,
+				18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */,
+				18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */,
+				18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */,
+				18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */,
+				18EAC82B17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.h */,
+				18EAC82C17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m */,
+				18EAC82D17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib */,
+				185D324117DB1F6C002C3373 /* iBZGestureReconizer.h */,
+				185D324217DB1F6C002C3373 /* iBZGestureReconizer.m */,
+				BACE1C5716E113520032223B /* Obj */,
+				BAFA0EC616E01F73000CF109 /* iBObjViewController.h */,
+				BAFA0EC716E01F73000CF109 /* iBObjViewController.m */,
+				BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */,
+				BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */,
+				BACE1C5916E117410032223B /* iBObjCountViewController.h */,
+				BACE1C5A16E117410032223B /* iBObjCountViewController.m */,
+				18C0123F17E40BF900FE7172 /* 2&3Count */,
+				185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */,
+				185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */,
+				185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */,
+				BA4AE59116D12BAB005456EF /* iBCountModelForTwoAndThree.h */,
+				BA4AE59216D12BAB005456EF /* iBCountModelForTwoAndThree.m */,
+				BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */,
+				BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */,
+				18442A9117BF6A0600368EF5 /* iBCountViewController.xib */,
+				189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */,
+				189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */,
+				18A460D817D7FF8900A4BCC0 /* Static */,
+				1852B9BA17D55595006A2DB8 /* iBShowPersonStaticViewController.h */,
+				1852B9BB17D55595006A2DB8 /* iBShowPersonStaticViewController.m */,
+				1852B9BF17D55992006A2DB8 /* iBStaticListViewController.h */,
+				1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */,
+				18A460D917D7FFDA00A4BCC0 /* iBChoosePositionViewController.h */,
+				18A460DA17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m */,
+				18A460DB17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib */,
+				18FBC98E17E7CB8E00924B4E /* UIBezierPath+ShadowPath.h */,
+				18FBC98F17E7CB8E00924B4E /* UIBezierPath+ShadowPath.m */,
+				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
+				18C217F717EE7E3B000E6FC9 /* iBTeamMatesViewController.h */,
+				18C217F817EE7E3B000E6FC9 /* iBTeamMatesViewController.m */,
+				18C217F917EE7E3B000E6FC9 /* iBTeamMatesViewController.xib */,
+				1892F50817D405CA00C3902F /* iBStaticsViewController.h */,
+				1892F50917D405CA00C3902F /* iBStaticsViewController.m */,
+				1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */,
+				1831D24F17C85D0E0044EC08 /* iBTabMainViewController.h */,
+				1831D25017C85D0E0044EC08 /* iBTabMainViewController.m */,
+				BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */,
+				BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */,
 				BA36DEE916C4BF37007FFDD1 /* iBAppDelegate.h */,
 				BA36DEEA16C4BF37007FFDD1 /* iBAppDelegate.m */,
 				BA36DEF516C4BF37007FFDD1 /* iBViewController.h */,
@@ -1311,15 +1331,9 @@
 		BACE1C5716E113520032223B /* Obj */ = {
 			isa = PBXGroup;
 			children = (
-				BAFA0EC616E01F73000CF109 /* iBObjViewController.h */,
-				BAFA0EC716E01F73000CF109 /* iBObjViewController.m */,
-				BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */,
-				BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */,
-				BACE1C5916E117410032223B /* iBObjCountViewController.h */,
-				BACE1C5A16E117410032223B /* iBObjCountViewController.m */,
 			);
 			name = Obj;
-			path = sinaweibo_ios_sdk;
+			path = ../sinaweibo_ios_sdk;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1435,6 +1449,7 @@
 				18789FF21703C7C30065D21F /* thunderbolt.png in Resources */,
 				18789FF31703C7C30065D21F /* thunderbolt@2x.png in Resources */,
 				18789FF41703C7C30065D21F /* windycloud.png in Resources */,
+				18C217FB17EE7E3B000E6FC9 /* iBTeamMatesViewController.xib in Resources */,
 				18789FF51703C7C30065D21F /* windycloud@2x.png in Resources */,
 				1838CE9A172E19B00078B3AD /* bottom-bar.png in Resources */,
 				1838CE9B172E19B00078B3AD /* bottom-bar@2x.png in Resources */,
@@ -1539,6 +1554,7 @@
 				BA9BF1D216D59BB300DFDD54 /* iBShareViewController.m in Sources */,
 				BAFA0EC816E01F74000CF109 /* iBObjViewController.m in Sources */,
 				BAFA0ED216E04606000CF109 /* iBObj_DataModel.m in Sources */,
+				18C217FA17EE7E3B000E6FC9 /* iBTeamMatesViewController.m in Sources */,
 				BACE1C5B16E117410032223B /* iBObjCountViewController.m in Sources */,
 				183B837116F5555D0030BC70 /* iBSkiTableViewController.m in Sources */,
 				183B837416F556950030BC70 /* iBSkillDataModel.m in Sources */,
