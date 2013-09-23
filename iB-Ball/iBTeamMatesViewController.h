@@ -10,4 +10,7 @@
 
 @interface iBTeamMatesViewController : UIViewController
 
+- (IBAction)AddTeammates:(id)sender;
+
+
 @end
