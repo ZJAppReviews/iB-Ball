@@ -161,6 +161,7 @@
 		1892F50B17D405CA00C3902F /* iBStaticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1892F50917D405CA00C3902F /* iBStaticsViewController.m */; };
 		1892F50C17D405CA00C3902F /* iBStaticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */; };
 		189E4F71170E6B530046DE61 /* iBCountingSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */; };
+		18A33B9817F11A74008052AB /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A33B9717F11A74008052AB /* GameKit.framework */; };
 		18A460DC17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A460DA17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m */; };
 		18A460DD17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A460DB17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib */; };
 		18AFFD271735EDAB00FFE514 /* TwoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFFD261735EDAB00FFE514 /* TwoPoint.m */; };
@@ -466,6 +467,7 @@
 		1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBStaticsViewController.xib; sourceTree = "<group>"; };
 		189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBCountingSelectViewController.h; sourceTree = "<group>"; };
 		189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountingSelectViewController.m; sourceTree = "<group>"; };
+		18A33B9717F11A74008052AB /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		18A460D917D7FFDA00A4BCC0 /* iBChoosePositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBChoosePositionViewController.h; sourceTree = "<group>"; };
 		18A460DA17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBChoosePositionViewController.m; sourceTree = "<group>"; };
 		18A460DB17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBChoosePositionViewController.xib; sourceTree = "<group>"; };
@@ -573,6 +575,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A33B9817F11A74008052AB /* GameKit.framework in Frameworks */,
 				18BE11991755F33100C8ABB4 /* AVFoundation.framework in Frameworks */,
 				18E4C0F11754B96C00F4A199 /* EventKit.framework in Frameworks */,
 				18712489173B3C8E00815D6D /* MapKit.framework in Frameworks */,
@@ -1151,6 +1154,7 @@
 		BA36DED916C4BF37007FFDD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18A33B9717F11A74008052AB /* GameKit.framework */,
 				18BE11981755F33100C8ABB4 /* AVFoundation.framework */,
 				18E4C0F01754B96C00F4A199 /* EventKit.framework */,
 				18712488173B3C8E00815D6D /* MapKit.framework */,
