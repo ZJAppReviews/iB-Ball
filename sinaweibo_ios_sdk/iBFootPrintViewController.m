@@ -83,14 +83,15 @@
 	
 	
 	// Configure the add and edit buttons.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+//    self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
     UIBarButtonItem *aButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addEvent)];
 	self.addButton = aButton;
 	[aButton release];
 	
 	addButton.enabled = NO;
-    self.navigationItem.rightBarButtonItem = addButton;
+    NSArray *arrayOfButtons = [NSArray arrayWithObjects:aButton, addButton, self.editButtonItem, nil];
+    self.navigationItem.rightBarButtonItems = arrayOfButtons;
     
 	// Start the location manager.
 	[[self locationManager] startUpdatingLocation];

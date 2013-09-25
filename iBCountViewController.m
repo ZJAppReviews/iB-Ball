@@ -399,8 +399,8 @@ NSString *postStatusText;
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (buttonIndex == WEIBO_TAG) {
-        
+//    if (buttonIndex == WEIBO_TAG) {
+    
         // post status
         NSLog(@"%@", postStatusText);
         SinaWeibo *sinaweibo = [self sinaweibo];
@@ -409,16 +409,16 @@ NSString *postStatusText;
                        httpMethod:@"POST"
                          delegate:self];
         //TODO roughly set a nil
-    }
-    if (buttonIndex == RENREN_TAG) {
-        Renren *renren = [Renren sharedRenren];
-        NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:10];
-        [params setObject:@"status.set" forKey:@"method"];
-        [params setObject:postStatusText forKey:@"status"];
-        [renren requestWithParams:params andDelegate:self];
-        
-
-    }
+//    }
+//    if (buttonIndex == RENREN_TAG) {
+//        Renren *renren = [Renren sharedRenren];
+//        NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:10];
+//        [params setObject:@"status.set" forKey:@"method"];
+//        [params setObject:postStatusText forKey:@"status"];
+//        [renren requestWithParams:params andDelegate:self];
+//        
+//
+//    }
 }
 
 
