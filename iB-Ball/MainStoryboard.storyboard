@@ -823,7 +823,7 @@
         <scene sceneID="Grb-Ni-K5r">
             <objects>
                 <navigationController id="FB1-t1-v8Z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Counting" image="ic_calc.png" id="6qI-sZ-7LO"/>
+                    <tabBarItem key="tabBarItem" title="Counting" image="edit.png" id="6qI-sZ-7LO"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="gsJ-zv-SgI">
@@ -872,7 +872,7 @@
         <scene sceneID="BQX-NG-F5u">
             <objects>
                 <navigationController id="TuF-eo-jVe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Objective" image="ic_ok.png" id="SMM-Mi-3QB"/>
+                    <tabBarItem key="tabBarItem" title="Objective" image="today.png" id="SMM-Mi-3QB"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -1229,7 +1229,7 @@
         <scene sceneID="dly-Cz-UAP">
             <objects>
                 <navigationController id="fLQ-98-5X6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Skill" image="ic_bookmark.png" id="L36-Vn-a7K"/>
+                    <tabBarItem key="tabBarItem" title="Skill" image="expand.png" id="L36-Vn-a7K"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="A1Y-hH-P9t">
@@ -1661,7 +1661,7 @@
         <scene sceneID="pIb-vQ-2gT">
             <objects>
                 <navigationController id="tvb-nP-YWN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Account" image="ic_users.png" id="SrW-09-gQ9"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="settings.png" id="SrW-09-gQ9"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="Bql-HU-AYs">
@@ -1752,11 +1752,13 @@
     </scenes>
     <resources>
         <image name="2.png" width="114" height="114"/>
+        <image name="edit.png" width="25" height="25"/>
+        <image name="expand.png" width="25" height="25"/>
         <image name="hotzone.png" width="476" height="389"/>
-        <image name="ic_bookmark.png" width="32" height="32"/>
-        <image name="ic_calc.png" width="32" height="32"/>
-        <image name="ic_ok.png" width="32" height="32"/>
+        <image name="hotzone.png" width="476" height="389"/>
         <image name="ic_users.png" width="32" height="32"/>
+        <image name="settings.png" width="25" height="25"/>
+        <image name="today.png" width="25" height="25"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

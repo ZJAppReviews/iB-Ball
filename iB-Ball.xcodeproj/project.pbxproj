@@ -195,6 +195,11 @@
 		18EAC82E17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC82C17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m */; };
 		18EAC82F17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EAC82D17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib */; };
 		18EBC3141745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */; };
+		18F1F25717FFB6A30069C91E /* edit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1F25617FFB6A30069C91E /* edit@2x.png */; };
+		18F1F25917FFB7100069C91E /* today@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1F25817FFB7100069C91E /* today@2x.png */; };
+		18F1F25B17FFB84B0069C91E /* expand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1F25A17FFB84B0069C91E /* expand@2x.png */; };
+		18F1F25D17FFB8D10069C91E /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1F25C17FFB8D10069C91E /* settings@2x.png */; };
+		18F1F25F17FFB9310069C91E /* cool@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1F25E17FFB9310069C91E /* cool@2x.png */; };
 		18F7272416F91BC300237CC7 /* iBSharedAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272316F91BC300237CC7 /* iBSharedAchievement.m */; };
 		18F7272716F9332C00237CC7 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272616F9332C00237CC7 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18F927DF175369D000804EED /* iBChanllengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F927DE175369D000804EED /* iBChanllengeViewController.m */; };
@@ -511,6 +516,11 @@
 		18EAC82D17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBCountViewControllerForHotZoneGestureMode.xib; path = "iB-Ball/iBCountViewControllerForHotZoneGestureMode.xib"; sourceTree = SOURCE_ROOT; };
 		18EBC3121745CDE600DA2495 /* iBHotzoneShowStaticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBHotzoneShowStaticsViewController.h; path = ../iBHotzoneShowStaticsViewController.h; sourceTree = "<group>"; };
 		18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBHotzoneShowStaticsViewController.m; path = ../iBHotzoneShowStaticsViewController.m; sourceTree = "<group>"; };
+		18F1F25617FFB6A30069C91E /* edit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit@2x.png"; sourceTree = "<group>"; };
+		18F1F25817FFB7100069C91E /* today@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "today@2x.png"; sourceTree = "<group>"; };
+		18F1F25A17FFB84B0069C91E /* expand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "expand@2x.png"; sourceTree = "<group>"; };
+		18F1F25C17FFB8D10069C91E /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		18F1F25E17FFB9310069C91E /* cool@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cool@2x.png"; sourceTree = "<group>"; };
 		18F7272216F91BC300237CC7 /* iBSharedAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSharedAchievement.h; sourceTree = "<group>"; };
 		18F7272316F91BC300237CC7 /* iBSharedAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSharedAchievement.m; sourceTree = "<group>"; };
 		18F7272516F9332C00237CC7 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
@@ -1187,6 +1197,11 @@
 				187C1F6B16F7C69E00263479 /* Achieve */,
 				18F927DC1753698E00804EED /* Challenge */,
 				183B836E16F5552E0030BC70 /* Ski */,
+				18F1F25617FFB6A30069C91E /* edit@2x.png */,
+				18F1F25817FFB7100069C91E /* today@2x.png */,
+				18F1F25A17FFB84B0069C91E /* expand@2x.png */,
+				18F1F25C17FFB8D10069C91E /* settings@2x.png */,
+				18F1F25E17FFB9310069C91E /* cool@2x.png */,
 				183B836F16F5555D0030BC70 /* iBSkiTableViewController.h */,
 				183B837016F5555D0030BC70 /* iBSkiTableViewController.m */,
 				183B837216F556950030BC70 /* iBSkillDataModel.h */,
@@ -1439,6 +1454,8 @@
 				185F71B11702D06300336ED3 /* iBGestureRecognizeViewController.xib in Resources */,
 				18789FA51703C4E60065D21F /* Licence in Resources */,
 				18789FE11703C7C30065D21F /* placeholder.png in Resources */,
+				18F1F25917FFB7100069C91E /* today@2x.png in Resources */,
+				18F1F25B17FFB84B0069C91E /* expand@2x.png in Resources */,
 				18789FE21703C7C30065D21F /* angrycloud.png in Resources */,
 				18789FE31703C7C30065D21F /* angrycloud@2x.png in Resources */,
 				18789FE41703C7C30065D21F /* clear.png in Resources */,
@@ -1451,6 +1468,7 @@
 				18789FEB1703C7C30065D21F /* lightsky@2x.png in Resources */,
 				18789FEC1703C7C30065D21F /* rain.png in Resources */,
 				18789FED1703C7C30065D21F /* rain@2x.png in Resources */,
+				18F1F25717FFB6A30069C91E /* edit@2x.png in Resources */,
 				18789FEE1703C7C30065D21F /* snow.png in Resources */,
 				18789FEF1703C7C30065D21F /* snow@2x.png in Resources */,
 				18789FF01703C7C30065D21F /* sun.png in Resources */,
@@ -1467,6 +1485,7 @@
 				1838CE9E172E19B00078B3AD /* close_selected.png in Resources */,
 				1838CE9F172E19B00078B3AD /* close_selected@2x.png in Resources */,
 				1838CEA0172E19B00078B3AD /* head-frame.png in Resources */,
+				18F1F25D17FFB8D10069C91E /* settings@2x.png in Resources */,
 				1838CEA1172E19B00078B3AD /* head-frame@2x.png in Resources */,
 				1838CEA2172E19B00078B3AD /* input-frame.png in Resources */,
 				1838CEA3172E19B00078B3AD /* input-frame@2x.png in Resources */,
@@ -1481,6 +1500,7 @@
 				1838CEAC172E19B00078B3AD /* small-button-normal.png in Resources */,
 				1838CEAD172E19B00078B3AD /* small-button-normal@2x.png in Resources */,
 				1838CEC7172E19B00078B3AD /* ROCheckOrderCell.xib in Resources */,
+				18F1F25F17FFB9310069C91E /* cool@2x.png in Resources */,
 				180475AB174089E7001DA45A /* tabbar-background.png in Resources */,
 				180475AD17408A00001DA45A /* tabbar-background-pressed.png in Resources */,
 				18640E4917445073006B541A /* README in Resources */,
