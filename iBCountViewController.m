@@ -16,7 +16,9 @@
 #import "Player.h"
 
 
-@interface iBCountViewController ()
+@interface iBCountViewController () {
+    BOOL saved;
+}
 
 @end
 
@@ -44,13 +46,14 @@
     return self;
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [self updateRatio:nil];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(onBackClicked)];
+                                     
+    self.navigationItem.leftBarButtonItem = backButton;
+
     
     iBAppDelegate *ibad = (iBAppDelegate *)[[UIApplication sharedApplication] delegate];
     self.managedObjectContext = ibad.managedObjectContext;
@@ -103,133 +106,128 @@
 }
 
 - (void)updateRatio:(UIView *)sender {
-    if (sender == nil) {
-        return;
-    }
     if (sender.tag == 1) {
         [self countModel].shootingTimes++;
         [self countModel].goalTimes++;
         [self countModel].totalGoalTimes++;
         [self countModel].totalShootingTimes++;
 
-//        [self coreDataAddOne];
     }
     
     else if (sender.tag == 0) {
         [self countModel].shootingTimes++;
         [self countModel].totalShootingTimes++;
-//        [self coreDataMissOne];
     }
-    
-    NSString *ratio = [NSString stringWithFormat:@"%.1f", [[self countModel] getRatioForThisTime]];
+    NSString *ratio = [NSString stringWithFormat:@"%.1f%%", [[self countModel] getRatioForThisTime]];
     [self.shootingRatio setText:ratio];
-    
 }
 
-- (void)coreDataAddOne {
+- (void)updateRatio {
+    NSString *ratio = [NSString stringWithFormat:@"%.1f%%", [[self countModel] getRatioForThisTime]];
+    [self.shootingRatio setText:ratio];
 }
 
-- (void)coreDataMissOne {
-    
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
-    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
-    NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
-    [dateFormatter setLocale:usLocale];
-    
-    NSDate *today = [NSDate date];
-    
-    
-    // deal the situation where the TwoPoint Already Exist
-    NSManagedObjectContext *context = self.managedObjectContext;
-    
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"TwoPoint"
-                                              inManagedObjectContext:context];
-    [fetchRequest setEntity:entity];
-    
-    NSError *error;
-    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
-    if (fetchedObjects == nil) {
-        // Handle the error.
-        NSLog(@"wori");
-    }
-    
-    if (fetchedObjects.count > 0) {
-        
-        // get the day
-        NSString *dayWeAreIn = [dateFormatter stringFromDate:today];
-        // fileter the day & crap***
-        for (TwoPoint *tp in fetchedObjects) {
-            if ([tp.twoPointDay isEqualToString:dayWeAreIn]) {
-                int theOriginal = [tp.twoPointGoal intValue];
-                int theOriginal2 = [tp.twoPointTotal intValue];
-                NSNumber *a1 = [NSNumber numberWithInt:theOriginal];
-                NSNumber *a2 = [NSNumber numberWithInt:++theOriginal2];
-                
-                tp.twoPointGoal = a1;
-                tp.twoPointTotal = a2;
-                
-                NSError *err;
-                [self.managedObjectContext save:&err];
-            }
-        }
-    } else {
-        TwoPoint *a = (TwoPoint *)[NSEntityDescription insertNewObjectForEntityForName:@"TwoPoint" inManagedObjectContext:_managedObjectContext];
-        
-        a.twoPointDay = [dateFormatter stringFromDate:today];
-        int theOriginal = [a.twoPointGoal intValue];
-        int theOriginal2 = [a.twoPointTotal intValue];
-        NSNumber *a1 = [NSNumber numberWithInt:theOriginal];
-        NSNumber *a2 = [NSNumber numberWithInt:++theOriginal2];
-        
-        a.twoPointGoal = a1;
-        a.twoPointTotal = a2;
-        
-        NSError *err;
-        [self.managedObjectContext save:&err];
-    }
-    
-    
-    // 2.get the People model right, add stuff to it
-    NSEntityDescription *entity2 = [NSEntityDescription entityForName:@"Player"
-                                               inManagedObjectContext:context];
-    NSFetchRequest *fetchRequest2 = [[NSFetchRequest alloc] init];
-    
-    [fetchRequest2 setEntity:entity2];
-    
-    NSError *error2;
-    NSArray *fetchedObjects2 = [context executeFetchRequest:fetchRequest2 error:&error2];
-    if (fetchedObjects2 == nil) {
-        // Handle the error.
-        NSLog(@"wori");
-    }
-    Player *player;
-    NSLog(@"%d", fetchedObjects2.count);
-    
-    if (fetchedObjects2.count == 0) {
-        player = (Player *)[NSEntityDescription insertNewObjectForEntityForName:@"Player" inManagedObjectContext:_managedObjectContext];
-        
-        NSError *err;
-        [self.managedObjectContext save:&err];
-        
-    } else if (fetchedObjects2.count > 1) {
-        NSLog(@"fetched player more than 1");
-    } else {
-        player = fetchedObjects2[0];
-    }
-    
-    
-    
-    if (self.whatTypeOfCountingAreWeIn == CountForTwo) {
-        int i = [player.twoPointScore integerValue];
-        int j = [player.twoPointTry integerValue];
-        j++;
-        player.twoPointScore = [NSNumber numberWithInt:i];
-        player.twoPointTry = [NSNumber numberWithInt:j];
-        [self.managedObjectContext save:&error2];
-    }
-}
+//- (void)coreDataMissOne {
+//    
+//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+//    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+//    NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+//    [dateFormatter setLocale:usLocale];
+//    
+//    NSDate *today = [NSDate date];
+//    
+//    
+//    // deal the situation where the TwoPoint Already Exist
+//    NSManagedObjectContext *context = self.managedObjectContext;
+//    
+//    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+//    NSEntityDescription *entity = [NSEntityDescription entityForName:@"TwoPoint"
+//                                              inManagedObjectContext:context];
+//    [fetchRequest setEntity:entity];
+//    
+//    NSError *error;
+//    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+//    if (fetchedObjects == nil) {
+//        // Handle the error.
+//        NSLog(@"wori");
+//    }
+//    
+//    if (fetchedObjects.count > 0) {
+//        
+//        // get the day
+//        NSString *dayWeAreIn = [dateFormatter stringFromDate:today];
+//        // fileter the day & crap***
+//        for (TwoPoint *tp in fetchedObjects) {
+//            if ([tp.twoPointDay isEqualToString:dayWeAreIn]) {
+//                int theOriginal = [tp.twoPointGoal intValue];
+//                int theOriginal2 = [tp.twoPointTotal intValue];
+//                NSNumber *a1 = [NSNumber numberWithInt:theOriginal];
+//                NSNumber *a2 = [NSNumber numberWithInt:++theOriginal2];
+//                
+//                tp.twoPointGoal = a1;
+//                tp.twoPointTotal = a2;
+//                
+//                NSError *err;
+//                [self.managedObjectContext save:&err];
+//            }
+//        }
+//    } else {
+//        TwoPoint *a = (TwoPoint *)[NSEntityDescription insertNewObjectForEntityForName:@"TwoPoint" inManagedObjectContext:_managedObjectContext];
+//        
+//        a.twoPointDay = [dateFormatter stringFromDate:today];
+//        int theOriginal = [a.twoPointGoal intValue];
+//        int theOriginal2 = [a.twoPointTotal intValue];
+//        NSNumber *a1 = [NSNumber numberWithInt:theOriginal];
+//        NSNumber *a2 = [NSNumber numberWithInt:++theOriginal2];
+//        
+//        a.twoPointGoal = a1;
+//        a.twoPointTotal = a2;
+//        
+//        NSError *err;
+//        [self.managedObjectContext save:&err];
+//    }
+//    
+//    
+//    // 2.get the People model right, add stuff to it
+//    NSEntityDescription *entity2 = [NSEntityDescription entityForName:@"Player"
+//                                               inManagedObjectContext:context];
+//    NSFetchRequest *fetchRequest2 = [[NSFetchRequest alloc] init];
+//    
+//    [fetchRequest2 setEntity:entity2];
+//    
+//    NSError *error2;
+//    NSArray *fetchedObjects2 = [context executeFetchRequest:fetchRequest2 error:&error2];
+//    if (fetchedObjects2 == nil) {
+//        // Handle the error.
+//        NSLog(@"wori");
+//    }
+//    Player *player;
+//    NSLog(@"%d", fetchedObjects2.count);
+//    
+//    if (fetchedObjects2.count == 0) {
+//        player = (Player *)[NSEntityDescription insertNewObjectForEntityForName:@"Player" inManagedObjectContext:_managedObjectContext];
+//        
+//        NSError *err;
+//        [self.managedObjectContext save:&err];
+//        
+//    } else if (fetchedObjects2.count > 1) {
+//        NSLog(@"fetched player more than 1");
+//    } else {
+//        player = fetchedObjects2[0];
+//    }
+//    
+//    
+//    
+//    if (self.whatTypeOfCountingAreWeIn == CountForTwo) {
+//        int i = [player.twoPointScore integerValue];
+//        int j = [player.twoPointTry integerValue];
+//        j++;
+//        player.twoPointScore = [NSNumber numberWithInt:i];
+//        player.twoPointTry = [NSNumber numberWithInt:j];
+//        [self.managedObjectContext save:&error2];
+//    }
+//}
 
 - (IBAction)showCarrerScore:(id)sender {
     UIAlertView *av = [[UIAlertView alloc]initWithTitle:@"Carrer" message:[NSString stringWithFormat:@"Total goal: %d, total shoot: %d, your current ratio is : %.2f%% your overall ratio is : %.2f%%", self.countModel.totalGoalTimes, self.countModel.totalShootingTimes, self.countModel.getRatioForThisTime, self.countModel.getRatioForOverall] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -456,21 +454,29 @@ NSString *postStatusText;
         default:
             break;
     }
-
-    [self presentModalViewController:a animated:YES];
+    [self presentViewController:a animated:YES completion:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self updateRatio:nil];
+    [self updateRatio];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
 }
 
+- (void)onBackClicked {
+    if (!saved) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
 #pragma mark - RenrenDelegate -
 
 /**
- * 接口请求成功，第三方开发者实现这个方法
+ * 接口请求成功，第三方开发者实现这个方法l
  */
 - (void)renren:(Renren *)renren requestDidReturnResponse:(ROResponse*)response {
     //TODO
