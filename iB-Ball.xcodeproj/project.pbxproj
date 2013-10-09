@@ -101,6 +101,7 @@
 		18442A9217BF6A0600368EF5 /* iBCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18442A9117BF6A0600368EF5 /* iBCountViewController.xib */; };
 		18442A9617BF6BC800368EF5 /* iBCountViewControllerForHotZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */; };
 		18442A9717BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */; };
+		184653DD1804D63900D01B7D /* GameKitHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 184653DC1804D63900D01B7D /* GameKitHelper.m */; };
 		184A9001174DAE3D007D28F0 /* iBFootPrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A9000174DAE3D007D28F0 /* iBFootPrintViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		184A9004174DAE45007D28F0 /* iBFootPrintTagSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184A9003174DAE45007D28F0 /* iBFootPrintTagSelectionController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		184A9006174DAEE0007D28F0 /* TagsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184A9005174DAEE0007D28F0 /* TagsHeaderView.xib */; };
@@ -386,6 +387,8 @@
 		18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBCountViewControllerForHotZone.h; sourceTree = "<group>"; };
 		18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountViewControllerForHotZone.m; sourceTree = "<group>"; };
 		18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBCountViewControllerForHotZone.xib; sourceTree = "<group>"; };
+		184653DB1804D63900D01B7D /* GameKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitHelper.h; sourceTree = "<group>"; };
+		184653DC1804D63900D01B7D /* GameKitHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitHelper.m; sourceTree = "<group>"; };
 		184A8FFF174DAE3D007D28F0 /* iBFootPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBFootPrintViewController.h; path = ../sinaweibo_ios_sdk/iBFootPrintViewController.h; sourceTree = "<group>"; };
 		184A9000174DAE3D007D28F0 /* iBFootPrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBFootPrintViewController.m; path = ../sinaweibo_ios_sdk/iBFootPrintViewController.m; sourceTree = "<group>"; };
 		184A9002174DAE45007D28F0 /* iBFootPrintTagSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBFootPrintTagSelectionController.h; path = ../sinaweibo_ios_sdk/iBFootPrintTagSelectionController.h; sourceTree = "<group>"; };
@@ -937,6 +940,15 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		184653DA1804D62100D01B7D /* GameKitFiles */ = {
+			isa = PBXGroup;
+			children = (
+				184653DB1804D63900D01B7D /* GameKitHelper.h */,
+				184653DC1804D63900D01B7D /* GameKitHelper.m */,
+			);
+			name = GameKitFiles;
+			sourceTree = "<group>";
+		};
 		185CC92717BF625300061270 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
@@ -1277,6 +1289,7 @@
 				BA36DEF616C4BF37007FFDD1 /* iBViewController.m */,
 				18E1C333171A4CB300F5DC5D /* iBGlobalRecorder.h */,
 				18E1C334171A4CB300F5DC5D /* iBGlobalRecorder.m */,
+				184653DA1804D62100D01B7D /* GameKitFiles */,
 			);
 			path = "iB-Ball";
 			sourceTree = "<group>";
@@ -1589,6 +1602,7 @@
 				183B837416F556950030BC70 /* iBSkillDataModel.m in Sources */,
 				183B837716F557770030BC70 /* iBSkill.m in Sources */,
 				187C1F6A16F701AB00263479 /* iBSkiInputViewController.m in Sources */,
+				184653DD1804D63900D01B7D /* GameKitHelper.m in Sources */,
 				187C1F6E16F7CDEC00263479 /* iBSkiCountViewController.m in Sources */,
 				18F7272416F91BC300237CC7 /* iBSharedAchievement.m in Sources */,
 				18F7272716F9332C00237CC7 /* Toast+UIView.m in Sources */,
