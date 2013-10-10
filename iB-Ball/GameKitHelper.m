@@ -40,7 +40,7 @@
         } else {
             _gameCenterFeaturesEnabled = NO;
         } };
-    
+
 }
 
 #pragma mark Property setters
@@ -50,7 +50,7 @@
         NSLog(@"GameKitHelper ERROR: %@", [[_lastError userInfo] description]);
     }
 }
-￼
+
 #pragma mark UIViewController stuff
 -(UIViewController*) getRootViewController {
     return [UIApplication sharedApplication].keyWindow.rootViewController;
@@ -60,4 +60,27 @@
     UIViewController* rootVC = [self getRootViewController];
     [rootVC presentViewController:vc animated:YES completion:nil];
 }
+
+#pragma mark Game Center UI method
+-(void) showGameCenterViewController {
+    //1
+    GKGameCenterViewController *gameCenterViewController = [[GKGameCenterViewController alloc] init];
+    //2
+    gameCenterViewController.gameCenterDelegate = self;
+    //3
+    gameCenterViewController.viewState = GKGameCenterViewControllerStateDefault;
+    //4
+    [self presentViewController:gameCenterViewController];
+}
+
+#pragma mark GKGameCenterControllerDelegate method
+- (void)gameCenterViewControllerDidFinish: (GKGameCenterViewController *)gameCenterViewController {
+    [self dismissModalViewController];
+}
+
+-(void) dismissModalViewController {
+    UIViewController* rootVC = [self getRootViewController];
+    [rootVC dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

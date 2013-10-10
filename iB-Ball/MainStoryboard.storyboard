@@ -612,6 +612,16 @@
                                     <action selector="weiboLog:" destination="Heu-5n-m5n" eventType="touchUpInside" id="gLX-l9-Avr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xLm-mj-KXN">
+                                <rect key="frame" x="112" y="227" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Game Center">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showGameCenter:" destination="Heu-5n-m5n" eventType="touchUpInside" id="VvB-M7-Qjf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
@@ -628,6 +638,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="showGameCenter" destination="xLm-mj-KXN" id="pt9-Yg-P93"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDG-V1-2Ue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

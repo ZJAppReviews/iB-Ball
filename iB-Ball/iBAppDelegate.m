@@ -21,7 +21,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
+    
+    [[GameKitHelper sharedGameKitHelper] authenticateLocalPlayer];
+    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(
                                                          NSDocumentDirectory, NSUserDomainMask, YES);
     [[UINavigationBar appearance] setTintColor:[UIColor orangeColor]];

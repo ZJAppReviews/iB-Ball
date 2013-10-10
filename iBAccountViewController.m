@@ -35,6 +35,10 @@
     [sinaweibo requestWithURL:@"users/show.json" params:[NSMutableDictionary dictionaryWithObject:sinaweibo.userID forKey:@"uid"] httpMethod:@"GET" delegate:self];
 }
 
+- (IBAction)showGameCenter:(id)sender {
+    [[GameKitHelper sharedGameKitHelper] showGameCenterViewController];
+}
+
 - (SinaWeibo *)sinaweibo {
     iBAppDelegate *delegate = (iBAppDelegate *)[UIApplication sharedApplication].delegate;
     return delegate.sinaweibo;

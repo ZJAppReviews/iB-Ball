@@ -22,4 +22,5 @@ NSArray *statuses;
 
 - (IBAction)getUserinfo:(id)sender;
 
+- (IBAction)showGameCenter:(id)sender;
 @end
