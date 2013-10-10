@@ -8,21 +8,56 @@
 
 // Include the GameKit framework
 
-#import <GameKit/GameKit.h>
-// Protocol to notify external
-// objects when Game Center events occur or
-// when Game Center async tasks are completed
-@protocol GameKitHelperProtocol<NSObject>
--(void) onAchievementsLoaded:(NSDictionary*)achievements;
+#import "GameKitHelper.h"
+//#import "GameConstants.h"
+@interface GameKitHelper () <GKGameCenterControllerDelegate> {
+    BOOL _gameCenterFeaturesEnabled;
+}
 @end
+@implementation GameKitHelper
+#pragma mark Singleton stuff
++(id)sharedGameKitHelper {
+    static GameKitHelper *sharedGameKitHelper;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedGameKitHelper =
+        [[GameKitHelper alloc] init];
+    });
+    return sharedGameKitHelper;
+}
 
-@interface GameKitHelper : NSObject @property (nonatomic, assign)
-id<GameKitHelperProtocol> delegate;
-// This property holds the last known error
-// that occured while using the Game Center API's
-@property (nonatomic, readonly) NSError* lastError;
-// This property holds Game Center achievements
-@property (nonatomic, readonly) NSMutableDictionary* achievements;
-+ (id) sharedGameKitHelper;
-// Player authentication, info
--(void) authenticateLocalPlayer; @end
+#pragma mark Player Authentication
+-(void) authenticateLocalPlayer {
+    GKLocalPlayer* localPlayer = [GKLocalPlayer localPlayer];
+    localPlayer.authenticateHandler = ^(UIViewController *viewController,
+                                        NSError *error) {
+        [self setLastError:error];
+//        if ([CCDirector sharedDirector].isPaused) [[CCDirector sharedDirector] resume];
+        if (localPlayer.authenticated) { _gameCenterFeaturesEnabled = YES;
+        } else if(viewController) {
+//            [[CCDirector sharedDirector] pause];
+            [self presentViewController:viewController];
+        } else {
+            _gameCenterFeaturesEnabled = NO;
+        } };
+    
+}
+
+#pragma mark Property setters
+-(void) setLastError:(NSError*)error {
+    _lastError = [error copy];
+    if (_lastError) {
+        NSLog(@"GameKitHelper ERROR: %@", [[_lastError userInfo] description]);
+    }
+}
+￼
+#pragma mark UIViewController stuff
+-(UIViewController*) getRootViewController {
+    return [UIApplication sharedApplication].keyWindow.rootViewController;
+}
+
+-(void)presentViewController:(UIViewController*)vc {
+    UIViewController* rootVC = [self getRootViewController];
+    [rootVC presentViewController:vc animated:YES completion:nil];
+}
+@end
