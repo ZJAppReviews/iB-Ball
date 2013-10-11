@@ -638,9 +638,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="showGameCenter" destination="xLm-mj-KXN" id="pt9-Yg-P93"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDG-V1-2Ue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
