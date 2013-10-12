@@ -12,6 +12,7 @@
 // when Game Center async tasks are completed
 @protocol GameKitHelperProtocol<NSObject>
 -(void) onAchievementsLoaded:(NSDictionary*)achievements;
+-(void) onScoresSubmitted:(bool)success;
 @end
 
 @interface GameKitHelper : NSObject
@@ -28,4 +29,7 @@
 
 // Game Center UI
 -(void)showGameCenterViewController;
+
+// Scores
+-(void)submitScore:(int64_t)score category:(NSString*)category;
 @end
