@@ -603,9 +603,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vb9-Sc-VKD">
                                 <rect key="frame" x="18" y="124" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Sina Weibo">
+                                <state key="normal" title="Sina">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -623,7 +621,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="SNS" id="MDF-cx-7pH">
                         <barButtonItem key="backBarButtonItem" title="qwer" id="sJy-ue-Gjk"/>
@@ -1755,6 +1753,7 @@
         <image name="2.png" width="114" height="114"/>
         <image name="edit.png" width="25" height="25"/>
         <image name="expand.png" width="25" height="25"/>
+        <image name="hotzone.png" width="476" height="389"/>
         <image name="hotzone.png" width="476" height="389"/>
         <image name="ic_users.png" width="32" height="32"/>
         <image name="settings.png" width="25" height="25"/>
