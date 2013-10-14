@@ -60,6 +60,11 @@
     self.threePointCellView.detailTextLabel.text = [NSString stringWithFormat:@"%@/%@ %.2f%%", player.threePointScore, player.threePointTry, ratio2];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self getPlayerData];
+    [self getTwoPointData];
+}
+
 - (void)getTwoPointData {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"TwoPoint"

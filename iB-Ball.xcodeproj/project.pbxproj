@@ -398,8 +398,8 @@
 		185001961760397A000711ED /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueButton.png; path = ../blueButton.png; sourceTree = "<group>"; };
 		1852B9BA17D55595006A2DB8 /* iBShowPersonStaticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBShowPersonStaticViewController.h; path = "iB-Ball/iBShowPersonStaticViewController.h"; sourceTree = SOURCE_ROOT; };
 		1852B9BB17D55595006A2DB8 /* iBShowPersonStaticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBShowPersonStaticViewController.m; path = "iB-Ball/iBShowPersonStaticViewController.m"; sourceTree = SOURCE_ROOT; };
-		1852B9BF17D55992006A2DB8 /* iBStaticListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBStaticListViewController.h; path = ../iBStaticListViewController.h; sourceTree = "<group>"; };
-		1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBStaticListViewController.m; path = ../iBStaticListViewController.m; sourceTree = "<group>"; };
+		1852B9BF17D55992006A2DB8 /* iBStaticListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBStaticListViewController.h; sourceTree = "<group>"; };
+		1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBStaticListViewController.m; sourceTree = "<group>"; };
 		185D324117DB1F6C002C3373 /* iBZGestureReconizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBZGestureReconizer.h; path = ../sinaweibo_ios_sdk/iBZGestureReconizer.h; sourceTree = "<group>"; };
 		185D324217DB1F6C002C3373 /* iBZGestureReconizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBZGestureReconizer.m; path = ../sinaweibo_ios_sdk/iBZGestureReconizer.m; sourceTree = "<group>"; };
 		185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBGestureRecognizeViewController.h; path = ../iBGestureRecognizeViewController.h; sourceTree = "<group>"; };
@@ -1064,6 +1064,10 @@
 		18A460D817D7FF8900A4BCC0 /* Static */ = {
 			isa = PBXGroup;
 			children = (
+				1852B9BA17D55595006A2DB8 /* iBShowPersonStaticViewController.h */,
+				1852B9BB17D55595006A2DB8 /* iBShowPersonStaticViewController.m */,
+				1852B9BF17D55992006A2DB8 /* iBStaticListViewController.h */,
+				1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */,
 			);
 			name = Static;
 			path = ..;
@@ -1263,10 +1267,6 @@
 				189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */,
 				189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */,
 				18A460D817D7FF8900A4BCC0 /* Static */,
-				1852B9BA17D55595006A2DB8 /* iBShowPersonStaticViewController.h */,
-				1852B9BB17D55595006A2DB8 /* iBShowPersonStaticViewController.m */,
-				1852B9BF17D55992006A2DB8 /* iBStaticListViewController.h */,
-				1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */,
 				18A460D917D7FFDA00A4BCC0 /* iBChoosePositionViewController.h */,
 				18A460DA17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m */,
 				18A460DB17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib */,
