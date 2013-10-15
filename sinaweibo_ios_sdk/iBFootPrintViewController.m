@@ -83,15 +83,14 @@
 	
 	
 	// Configure the add and edit buttons.
-//    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
     UIBarButtonItem *aButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addEvent)];
 	self.addButton = aButton;
 	[aButton release];
 	
 	addButton.enabled = NO;
-    NSArray *arrayOfButtons = [NSArray arrayWithObjects:aButton, addButton, self.editButtonItem, nil];
-    self.navigationItem.rightBarButtonItems = arrayOfButtons;
+    self.navigationItem.rightBarButtonItem = addButton;
     
 	// Start the location manager.
 	[[self locationManager] startUpdatingLocation];
@@ -290,6 +289,17 @@
 	
 	// If it's not possible to get a location, then return.
 	CLLocation *location = [locationManager location];
+    CLGeocoder *clg = [[CLGeocoder alloc] init];
+    [clg reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
+        for (CLPlacemark * placemark in placemarks) {
+            
+            NSString *test = [placemark locality];
+            NSLog(@"%@", test);
+//            self.myCity.text = [NSString stringWithFormat:@"%@",placemark];
+            NSLog(@"%@", [NSString stringWithFormat:@"%@",placemark]);
+        }
+    }];
+//    NSLog(@"OOps, %@");
 	if (!location) {
 		return;
 	}
