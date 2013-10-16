@@ -776,7 +776,7 @@
         <scene sceneID="XTD-VI-aDZ">
             <objects>
                 <navigationController title="Challenage" definesPresentationContext="YES" id="qfg-Pk-dEd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Challenage" id="edU-NG-G2j"/>
+                    <tabBarItem key="tabBarItem" title="Challenage" image="collapse.png" id="edU-NG-G2j"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="U6E-Fl-LRI">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -858,7 +858,7 @@
                             <outlet property="delegate" destination="7W4-eK-hxw" id="zxh-Tl-ax5"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Footprint" id="V3x-dT-OQo"/>
+                    <tabBarItem key="tabBarItem" title="Footprint" image="geography.png" id="V3x-dT-OQo"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHu-NX-7e1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1429,7 +1429,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Statics" id="vCv-78-V04"/>
+                    <tabBarItem key="tabBarItem" title="Statics" image="area_chart.png" id="vCv-78-V04"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="bioText" destination="I0Y-H0-SGd" id="ekk-Sh-n1C"/>
@@ -1512,7 +1512,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Team mates" image="ic_users.png" id="1cC-Bf-rDq"/>
+                    <tabBarItem key="tabBarItem" title="Team mates" image="cool.png" id="1cC-Bf-rDq"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="connect" destination="a94-zL-QOr" id="88Y-UJ-ACN"/>
@@ -1522,7 +1522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69D-3H-ciG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1849" y="-146"/>
+            <point key="canvasLocation" x="1967" y="-138"/>
         </scene>
         <!--IB Static List View Controller-->
         <scene sceneID="7dj-YI-OtY">
@@ -1744,10 +1744,14 @@
     </scenes>
     <resources>
         <image name="2.png" width="114" height="114"/>
+        <image name="area_chart.png" width="25" height="25"/>
+        <image name="collapse.png" width="25" height="25"/>
+        <image name="cool.png" width="25" height="25"/>
         <image name="edit.png" width="25" height="25"/>
         <image name="expand.png" width="25" height="25"/>
+        <image name="geography.png" width="25" height="25"/>
         <image name="hotzone.png" width="476" height="389"/>
-        <image name="ic_users.png" width="32" height="32"/>
+        <image name="hotzone.png" width="476" height="389"/>
         <image name="settings.png" width="25" height="25"/>
         <image name="today.png" width="25" height="25"/>
     </resources>

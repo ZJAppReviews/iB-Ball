@@ -170,6 +170,9 @@
 		18BE11991755F33100C8ABB4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BE11981755F33100C8ABB4 /* AVFoundation.framework */; };
 		18C217FA17EE7E3B000E6FC9 /* iBTeamMatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C217F817EE7E3B000E6FC9 /* iBTeamMatesViewController.m */; };
 		18C217FB17EE7E3B000E6FC9 /* iBTeamMatesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C217F917EE7E3B000E6FC9 /* iBTeamMatesViewController.xib */; };
+		18D3BA61180E004E000632F0 /* area_chart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D3BA60180E004E000632F0 /* area_chart@2x.png */; };
+		18D3BA63180E009F000632F0 /* geography@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D3BA62180E009F000632F0 /* geography@2x.png */; };
+		18D3BA65180E015F000632F0 /* collapse@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D3BA64180E015F000632F0 /* collapse@2x.png */; };
 		18D40DBB170134DF004A22CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBA170134DF004A22CD /* Parse.framework */; };
 		18D40DBD17013513004A22CD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBC17013513004A22CD /* AudioToolbox.framework */; };
 		18D40DBF1701352A004A22CD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBE1701352A004A22CD /* CFNetwork.framework */; };
@@ -486,6 +489,9 @@
 		18C217F717EE7E3B000E6FC9 /* iBTeamMatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBTeamMatesViewController.h; sourceTree = "<group>"; };
 		18C217F817EE7E3B000E6FC9 /* iBTeamMatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBTeamMatesViewController.m; sourceTree = "<group>"; };
 		18C217F917EE7E3B000E6FC9 /* iBTeamMatesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBTeamMatesViewController.xib; sourceTree = "<group>"; };
+		18D3BA60180E004E000632F0 /* area_chart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "area_chart@2x.png"; sourceTree = "<group>"; };
+		18D3BA62180E009F000632F0 /* geography@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geography@2x.png"; sourceTree = "<group>"; };
+		18D3BA64180E015F000632F0 /* collapse@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "collapse@2x.png"; sourceTree = "<group>"; };
 		18D40DBA170134DF004A22CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		18D40DBC17013513004A22CD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		18D40DBE1701352A004A22CD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -1215,8 +1221,11 @@
 				183B836E16F5552E0030BC70 /* Ski */,
 				18F1F25617FFB6A30069C91E /* edit@2x.png */,
 				18F1F25817FFB7100069C91E /* today@2x.png */,
+				18D3BA64180E015F000632F0 /* collapse@2x.png */,
 				18F1F25A17FFB84B0069C91E /* expand@2x.png */,
 				18F1F25C17FFB8D10069C91E /* settings@2x.png */,
+				18D3BA62180E009F000632F0 /* geography@2x.png */,
+				18D3BA60180E004E000632F0 /* area_chart@2x.png */,
 				18F1F25E17FFB9310069C91E /* cool@2x.png */,
 				183B836F16F5555D0030BC70 /* iBSkiTableViewController.h */,
 				183B837016F5555D0030BC70 /* iBSkiTableViewController.m */,
@@ -1459,6 +1468,7 @@
 				BA36DEF116C4BF37007FFDD1 /* Default-568h@2x.png in Resources */,
 				BA3A7C4016CD39EE00E84B58 /* hotzone.png in Resources */,
 				BA9BF1CC16D5951100DFDD54 /* SinaWeibo.bundle in Resources */,
+				18D3BA63180E009F000632F0 /* geography@2x.png in Resources */,
 				BA01858716D6753F00B98B6A /* MainStoryboard.storyboard in Resources */,
 				183B836C16F4D42C0030BC70 /* 2.png in Resources */,
 				183B836D16F4D42C0030BC70 /* 1.png in Resources */,
@@ -1471,6 +1481,7 @@
 				18F1F25B17FFB84B0069C91E /* expand@2x.png in Resources */,
 				18789FE21703C7C30065D21F /* angrycloud.png in Resources */,
 				18789FE31703C7C30065D21F /* angrycloud@2x.png in Resources */,
+				18D3BA65180E015F000632F0 /* collapse@2x.png in Resources */,
 				18789FE41703C7C30065D21F /* clear.png in Resources */,
 				18789FE51703C7C30065D21F /* clear@2x.png in Resources */,
 				18789FE61703C7C30065D21F /* cloud.png in Resources */,
@@ -1485,6 +1496,7 @@
 				18789FEE1703C7C30065D21F /* snow.png in Resources */,
 				18789FEF1703C7C30065D21F /* snow@2x.png in Resources */,
 				18789FF01703C7C30065D21F /* sun.png in Resources */,
+				18D3BA61180E004E000632F0 /* area_chart@2x.png in Resources */,
 				18789FF11703C7C30065D21F /* sun@2x.png in Resources */,
 				18789FF21703C7C30065D21F /* thunderbolt.png in Resources */,
 				18789FF31703C7C30065D21F /* thunderbolt@2x.png in Resources */,
