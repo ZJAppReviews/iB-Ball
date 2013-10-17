@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface iBHotzoneStaticsDetailController : UIViewController
+@interface iBHotzoneStaticsDetailController : UIViewController <RenrenDelegate>
 
 @property (nonatomic) NSInteger hotzoneTag;
 
 @property (weak, nonatomic) IBOutlet UIView *buttonsView;
+
+@property (strong, nonatomic) UIImage *shareImage;
 
 @end

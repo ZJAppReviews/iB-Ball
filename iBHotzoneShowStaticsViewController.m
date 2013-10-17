@@ -61,7 +61,6 @@
     hsdc.hotzoneTag = ((UIView *)sender).tag;
     [self.navigationController pushViewController:hsdc animated:YES];
     
-    
 }
 
 @end

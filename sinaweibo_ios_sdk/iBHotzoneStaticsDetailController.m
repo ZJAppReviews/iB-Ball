@@ -43,6 +43,37 @@
 }
 
 - (IBAction)share:(id)sender {
+    UIGraphicsBeginImageContextWithOptions(self.buttonsView.frame.size, NO, 0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [self.buttonsView.layer renderInContext:context];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+    self.shareImage = image;
+    
+    
+    int tagValue = ((UIView *)sender).tag;
+    NSString *tagKey = [NSString stringWithFormat:@"%d", self.hotzoneTag];
+    NSArray *a = [[NSUserDefaults standardUserDefaults] objectForKey:tagKey];
+    if (a == nil) {
+        return;
+    }
+    NSNumber *n1 = [a objectAtIndex:0];
+    NSNumber *n2 = [a objectAtIndex:1];
+
+    NSString *desc = @"In this area, you shoot ";
+    desc = [desc stringByAppendingFormat:@"%d/%d", [n2 integerValue], [n1 integerValue]];
+    float ratio = (float)n1.integerValue / n2.integerValue * 100;
+    desc = [desc stringByAppendingFormat:@" ratio is : %.2f %%", ratio];
+
+    ROPublishPhotoRequestParam *aa = [[ROPublishPhotoRequestParam alloc] init];
+    aa.caption = desc;
+    aa.imageFile = self.shareImage;
+    
+    [[Renren sharedRenren] publishPhoto:aa andDelegate:self];
+    
+}
+
+- (void)renren:(Renren *)renren requestDidReturnResponse:(ROResponse*)response {
     
 }
 
