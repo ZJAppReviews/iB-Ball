@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Player" representedClassName="Player" syncable="YES">
         <attribute name="threePointScore" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="threePointTry" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="twoPointScore" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="twoPointTry" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="ThreePoint" representedClassName="ThreePoint" syncable="YES">
+        <attribute name="threePointDay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="threePointGoal" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="threePointTotal" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <entity name="TwoPoint" representedClassName="TwoPoint" syncable="YES">
         <attribute name="twoPointDay" optional="YES" attributeType="String" syncable="YES"/>
@@ -15,5 +20,6 @@
     <elements>
         <element name="Player" positionX="-308" positionY="5" width="128" height="105"/>
         <element name="TwoPoint" positionX="-128" positionY="-9" width="128" height="88"/>
+        <element name="ThreePoint" positionX="16" positionY="-9" width="128" height="88"/>
     </elements>
 </model>

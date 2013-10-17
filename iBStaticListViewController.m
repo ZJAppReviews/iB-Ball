@@ -10,6 +10,7 @@
 #import "iBAppDelegate.h"
 #import "Player.h"
 #import "TwoPoint.h"
+#import "ThreePoint.h"
 
 @interface iBStaticListViewController ()
 
@@ -32,13 +33,12 @@
     // Do any additional setup after loading the view from its nib.
     iBAppDelegate *delegate = (iBAppDelegate *)[UIApplication sharedApplication].delegate;
     self.managedObjectContext = delegate.managedObjectContext;
-    [self getPlayerData];
-    [self getTwoPointData];
+    [self getPlayerPointCount];
     
     NSLog(@"ss");
 }
 
-- (void)getPlayerData {
+- (void)getPlayerPointCount {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Player"
                                               inManagedObjectContext:self.managedObjectContext];
@@ -61,8 +61,9 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self getPlayerData];
+    [self getPlayerPointCount];
     [self getTwoPointData];
+    [self getThreePointData];
 }
 
 - (void)getTwoPointData {
@@ -100,7 +101,7 @@
                                               inManagedObjectContext:self.managedObjectContext];
     [fetchRequest setEntity:entity];
     fetchRequest.fetchLimit = 1;
-    fetchRequest.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"ThreePointGoal" ascending:NO]];
+    fetchRequest.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"threePointGoal" ascending:NO]];
     
     
     NSError *error;
@@ -111,10 +112,14 @@
     
     NSLog(@"%@", fetchedObjects);
     
-    NSString *date = ((TwoPoint *)fetchedObjects[0]).twoPointDay;
-    NSString *label = [date stringByAppendingString:[NSString stringWithFormat:@"  %@ ", ((TwoPoint *)fetchedObjects[0]).twoPointGoal]];
+    if (fetchedObjects.count == 0) {
+        NSLog(@"no 3-pt found");
+        return;
+    }
+    NSString *date = ((ThreePoint *)fetchedObjects[0]).threePointDay;
+    NSString *label = [date stringByAppendingString:[NSString stringWithFormat:@"  %@ ", ((ThreePoint *)fetchedObjects[0]).threePointGoal]];
     
-    self.twoPointDayCell.detailTextLabel.text = [NSString stringWithFormat:@" %@", label];
+    self.threePointCellView.detailTextLabel.text = [NSString stringWithFormat:@" %@", label];
 }
 
 - (void)didReceiveMemoryWarning

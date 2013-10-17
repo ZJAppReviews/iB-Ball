@@ -277,7 +277,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="4xU-dn-qgG">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="hotzone.png" id="WrF-pP-Shv">
@@ -1750,7 +1750,6 @@
         <image name="edit.png" width="25" height="25"/>
         <image name="expand.png" width="25" height="25"/>
         <image name="geography.png" width="25" height="25"/>
-        <image name="hotzone.png" width="476" height="389"/>
         <image name="hotzone.png" width="476" height="389"/>
         <image name="settings.png" width="25" height="25"/>
         <image name="today.png" width="25" height="25"/>

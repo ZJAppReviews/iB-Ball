@@ -7,6 +7,7 @@
 //
 
 #import "iBHotzoneShowStaticsViewController.h"
+#import "iBHotzoneStaticsDetailController.h"
 
 @interface iBHotzoneShowStaticsViewController ()
 
@@ -39,22 +40,28 @@
     [super viewDidUnload];
 }
 - (IBAction)showStatics:(id)sender {
-    int tagValue = ((UIView *)sender).tag;
-    NSString *tagKey = [NSString stringWithFormat:@"%d", tagValue];
-    NSArray *a = [[NSUserDefaults standardUserDefaults] objectForKey:tagKey];
-    if (a == nil) {
-        return;
-    }
-    NSNumber *n1 = [a objectAtIndex:0];
-    NSNumber *n2 = [a objectAtIndex:1];
+//    int tagValue = ((UIView *)sender).tag;
+//    NSString *tagKey = [NSString stringWithFormat:@"%d", tagValue];
+//    NSArray *a = [[NSUserDefaults standardUserDefaults] objectForKey:tagKey];
+//    if (a == nil) {
+//        return;
+//    }
+//    NSNumber *n1 = [a objectAtIndex:0];
+//    NSNumber *n2 = [a objectAtIndex:1];
+//    
+//    NSString *desc = @"You shoot ";
+//    desc = [desc stringByAppendingFormat:@"%d, and you score %d", [n2 integerValue], [n1 integerValue]];
+//    float ratio = (float)n1.integerValue / n2.integerValue * 100;
+//    desc = [desc stringByAppendingFormat:@"your ratio is : %.2f %%", ratio];
+//    
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ratio" message:desc delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//    [alert show];
     
-    NSString *desc = @"You shoot ";
-    desc = [desc stringByAppendingFormat:@"%d, and you score %d", [n2 integerValue], [n1 integerValue]];
-    float ratio = (float)n1.integerValue / n2.integerValue * 100;
-    desc = [desc stringByAppendingFormat:@"your ratio is : %.2f %%", ratio];
+    iBHotzoneStaticsDetailController *hsdc = [[iBHotzoneStaticsDetailController alloc] initWithNibName:@"iBHotzoneStaticsDetailController" bundle:nil];
+    hsdc.hotzoneTag = ((UIView *)sender).tag;
+    [self.navigationController pushViewController:hsdc animated:YES];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ratio" message:desc delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
+    
 }
 
 @end

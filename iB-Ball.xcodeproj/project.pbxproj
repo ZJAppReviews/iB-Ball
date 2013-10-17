@@ -173,6 +173,7 @@
 		18D3BA61180E004E000632F0 /* area_chart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D3BA60180E004E000632F0 /* area_chart@2x.png */; };
 		18D3BA63180E009F000632F0 /* geography@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D3BA62180E009F000632F0 /* geography@2x.png */; };
 		18D3BA65180E015F000632F0 /* collapse@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D3BA64180E015F000632F0 /* collapse@2x.png */; };
+		18D3BA68180E2D0F000632F0 /* ThreePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3BA67180E2D0F000632F0 /* ThreePoint.m */; };
 		18D40DBB170134DF004A22CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBA170134DF004A22CD /* Parse.framework */; };
 		18D40DBD17013513004A22CD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBC17013513004A22CD /* AudioToolbox.framework */; };
 		18D40DBF1701352A004A22CD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBE1701352A004A22CD /* CFNetwork.framework */; };
@@ -204,6 +205,8 @@
 		18F1F25B17FFB84B0069C91E /* expand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1F25A17FFB84B0069C91E /* expand@2x.png */; };
 		18F1F25D17FFB8D10069C91E /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1F25C17FFB8D10069C91E /* settings@2x.png */; };
 		18F1F25F17FFB9310069C91E /* cool@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F1F25E17FFB9310069C91E /* cool@2x.png */; };
+		18F6615F180EE36900F048D8 /* iBHotzoneStaticsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F6615D180EE36900F048D8 /* iBHotzoneStaticsDetailController.m */; };
+		18F66160180EE36900F048D8 /* iBHotzoneStaticsDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F6615E180EE36900F048D8 /* iBHotzoneStaticsDetailController.xib */; };
 		18F7272416F91BC300237CC7 /* iBSharedAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272316F91BC300237CC7 /* iBSharedAchievement.m */; };
 		18F7272716F9332C00237CC7 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272616F9332C00237CC7 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18F927DF175369D000804EED /* iBChanllengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F927DE175369D000804EED /* iBChanllengeViewController.m */; };
@@ -387,9 +390,9 @@
 		183C7948174B0B0100992262 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
 		183C7949174B0B0100992262 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		18442A9117BF6A0600368EF5 /* iBCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBCountViewController.xib; path = ../iBCountViewController.xib; sourceTree = "<group>"; };
-		18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBCountViewControllerForHotZone.h; sourceTree = "<group>"; };
-		18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountViewControllerForHotZone.m; sourceTree = "<group>"; };
-		18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBCountViewControllerForHotZone.xib; sourceTree = "<group>"; };
+		18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountViewControllerForHotZone.h; path = "../iB-Ball/iBCountViewControllerForHotZone.h"; sourceTree = "<group>"; };
+		18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountViewControllerForHotZone.m; path = "../iB-Ball/iBCountViewControllerForHotZone.m"; sourceTree = "<group>"; };
+		18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBCountViewControllerForHotZone.xib; path = "../iB-Ball/iBCountViewControllerForHotZone.xib"; sourceTree = "<group>"; };
 		184653DB1804D63900D01B7D /* GameKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitHelper.h; sourceTree = "<group>"; };
 		184653DC1804D63900D01B7D /* GameKitHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitHelper.m; sourceTree = "<group>"; };
 		184A8FFF174DAE3D007D28F0 /* iBFootPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBFootPrintViewController.h; path = ../sinaweibo_ios_sdk/iBFootPrintViewController.h; sourceTree = "<group>"; };
@@ -492,6 +495,8 @@
 		18D3BA60180E004E000632F0 /* area_chart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "area_chart@2x.png"; sourceTree = "<group>"; };
 		18D3BA62180E009F000632F0 /* geography@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geography@2x.png"; sourceTree = "<group>"; };
 		18D3BA64180E015F000632F0 /* collapse@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "collapse@2x.png"; sourceTree = "<group>"; };
+		18D3BA66180E2D0F000632F0 /* ThreePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreePoint.h; sourceTree = "<group>"; };
+		18D3BA67180E2D0F000632F0 /* ThreePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreePoint.m; sourceTree = "<group>"; };
 		18D40DBA170134DF004A22CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		18D40DBC17013513004A22CD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		18D40DBE1701352A004A22CD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -530,6 +535,9 @@
 		18F1F25A17FFB84B0069C91E /* expand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "expand@2x.png"; sourceTree = "<group>"; };
 		18F1F25C17FFB8D10069C91E /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
 		18F1F25E17FFB9310069C91E /* cool@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cool@2x.png"; sourceTree = "<group>"; };
+		18F6615C180EE36900F048D8 /* iBHotzoneStaticsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBHotzoneStaticsDetailController.h; sourceTree = "<group>"; };
+		18F6615D180EE36900F048D8 /* iBHotzoneStaticsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBHotzoneStaticsDetailController.m; sourceTree = "<group>"; };
+		18F6615E180EE36900F048D8 /* iBHotzoneStaticsDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBHotzoneStaticsDetailController.xib; sourceTree = "<group>"; };
 		18F7272216F91BC300237CC7 /* iBSharedAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSharedAchievement.h; sourceTree = "<group>"; };
 		18F7272316F91BC300237CC7 /* iBSharedAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSharedAchievement.m; sourceTree = "<group>"; };
 		18F7272516F9332C00237CC7 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
@@ -934,6 +942,8 @@
 				18AFFD251735EDAB00FFE514 /* TwoPoint.h */,
 				18AFFD261735EDAB00FFE514 /* TwoPoint.m */,
 				1880DF1A17335866004E7DA0 /* Model.xcdatamodeld */,
+				18D3BA66180E2D0F000632F0 /* ThreePoint.h */,
+				18D3BA67180E2D0F000632F0 /* ThreePoint.m */,
 				18EAC82717C077830040CA2D /* Player.h */,
 				18EAC82817C077830040CA2D /* Player.m */,
 				183C7948174B0B0100992262 /* Tag.h */,
@@ -1139,6 +1149,19 @@
 		18EAC82A17C077C00040CA2D /* HotzoneCount */ = {
 			isa = PBXGroup;
 			children = (
+				18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */,
+				18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */,
+				18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */,
+				18EAC82B17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.h */,
+				18EAC82C17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m */,
+				18EAC82D17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib */,
+				18DDAF9717422CCC000AB3EF /* iBHotzoneSelectViewController.h */,
+				18DDAF9817422CCC000AB3EF /* iBHotzoneSelectViewController.m */,
+				18EBC3121745CDE600DA2495 /* iBHotzoneShowStaticsViewController.h */,
+				18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */,
+				18F6615C180EE36900F048D8 /* iBHotzoneStaticsDetailController.h */,
+				18F6615D180EE36900F048D8 /* iBHotzoneStaticsDetailController.m */,
+				18F6615E180EE36900F048D8 /* iBHotzoneStaticsDetailController.xib */,
 			);
 			name = HotzoneCount;
 			path = ../sinaweibo_ios_sdk;
@@ -1245,16 +1268,6 @@
 				184A9003174DAE45007D28F0 /* iBFootPrintTagSelectionController.m */,
 				181393C6174C69D60041F384 /* Table View cell */,
 				18EAC82A17C077C00040CA2D /* HotzoneCount */,
-				18DDAF9717422CCC000AB3EF /* iBHotzoneSelectViewController.h */,
-				18DDAF9817422CCC000AB3EF /* iBHotzoneSelectViewController.m */,
-				18EBC3121745CDE600DA2495 /* iBHotzoneShowStaticsViewController.h */,
-				18EBC3131745CDE600DA2495 /* iBHotzoneShowStaticsViewController.m */,
-				18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */,
-				18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */,
-				18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */,
-				18EAC82B17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.h */,
-				18EAC82C17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.m */,
-				18EAC82D17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib */,
 				185D324117DB1F6C002C3373 /* iBZGestureReconizer.h */,
 				185D324217DB1F6C002C3373 /* iBZGestureReconizer.m */,
 				BACE1C5716E113520032223B /* Obj */,
@@ -1521,6 +1534,7 @@
 				1838CEA8172E19B00078B3AD /* renren-logo-top-bar.png in Resources */,
 				1838CEA9172E19B00078B3AD /* renren-logo-top-bar@2x.png in Resources */,
 				1838CEAA172E19B00078B3AD /* RepairButton.png in Resources */,
+				18F66160180EE36900F048D8 /* iBHotzoneStaticsDetailController.xib in Resources */,
 				1838CEAB172E19B00078B3AD /* RepairButton@2x.png in Resources */,
 				1838CEAC172E19B00078B3AD /* small-button-normal.png in Resources */,
 				1838CEAD172E19B00078B3AD /* small-button-normal@2x.png in Resources */,
@@ -1633,6 +1647,7 @@
 				1878A0061703CB0C0065D21F /* NSDictionary+weather_package.m in Sources */,
 				1878A0071703CB0C0065D21F /* NSDictionary+weather.m in Sources */,
 				1878A00C1703CB150065D21F /* WTTableViewController.m in Sources */,
+				18F6615F180EE36900F048D8 /* iBHotzoneStaticsDetailController.m in Sources */,
 				1878A00D1703CB150065D21F /* WeatherAnimationViewController.m in Sources */,
 				189E4F71170E6B530046DE61 /* iBCountingSelectViewController.m in Sources */,
 				18E1C335171A4CB300F5DC5D /* iBGlobalRecorder.m in Sources */,
@@ -1687,6 +1702,7 @@
 				1838CECE172E19B00078B3AD /* ROPublishPhotoInternal.m in Sources */,
 				1880DF1C17335866004E7DA0 /* Model.xcdatamodeld in Sources */,
 				18AFFD271735EDAB00FFE514 /* TwoPoint.m in Sources */,
+				18D3BA68180E2D0F000632F0 /* ThreePoint.m in Sources */,
 				18712487173B3B6800815D6D /* iBPlayCourtViewController.m in Sources */,
 				180475A917408973001DA45A /* CustomTabBar.m in Sources */,
 				18DDAF5D1741D768000AB3EF /* PRPShadowedTableView.m in Sources */,
@@ -1828,7 +1844,7 @@
 		BA36DEFB16C4BF37007FFDD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: SHA  XINZHE (5WJSDG79X7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1847,7 +1863,7 @@
 		BA36DEFC16C4BF37007FFDD1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: SHA  XINZHE (5WJSDG79X7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
