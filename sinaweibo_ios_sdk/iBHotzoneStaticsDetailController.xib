@@ -157,6 +157,11 @@
                                 <action selector="share:" destination="-1" id="5bP-UU-Q1I"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem systemItem="action" id="5FN-8g-0c5">
+                            <connections>
+                                <action selector="action:" destination="-1" id="6Df-9s-69e"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
             </subviews>

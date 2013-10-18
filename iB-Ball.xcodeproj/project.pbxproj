@@ -166,6 +166,8 @@
 		18A460DC17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A460DA17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m */; };
 		18A460DD17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A460DB17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib */; };
 		18AFFD271735EDAB00FFE514 /* TwoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFFD261735EDAB00FFE514 /* TwoPoint.m */; };
+		18B9C7DC18102BCA00E737C4 /* RenRenShareActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9C7DB18102BCA00E737C4 /* RenRenShareActivity.m */; };
+		18B9C7DE18102CA100E737C4 /* Renren_logo_100x100.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B9C7DD18102CA100E737C4 /* Renren_logo_100x100.png */; };
 		18BE11971755ECA900C8ABB4 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18BE11961755ECA900C8ABB4 /* alarm.mp3 */; };
 		18BE11991755F33100C8ABB4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BE11981755F33100C8ABB4 /* AVFoundation.framework */; };
 		18C217FA17EE7E3B000E6FC9 /* iBTeamMatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C217F817EE7E3B000E6FC9 /* iBTeamMatesViewController.m */; };
@@ -487,6 +489,9 @@
 		18A460DB17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBChoosePositionViewController.xib; sourceTree = "<group>"; };
 		18AFFD251735EDAB00FFE514 /* TwoPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoPoint.h; sourceTree = "<group>"; };
 		18AFFD261735EDAB00FFE514 /* TwoPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoPoint.m; sourceTree = "<group>"; };
+		18B9C7DA18102BCA00E737C4 /* RenRenShareActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenRenShareActivity.h; path = "../iB-Ball/RenRenShareActivity.h"; sourceTree = "<group>"; };
+		18B9C7DB18102BCA00E737C4 /* RenRenShareActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RenRenShareActivity.m; path = "../iB-Ball/RenRenShareActivity.m"; sourceTree = "<group>"; };
+		18B9C7DD18102CA100E737C4 /* Renren_logo_100x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Renren_logo_100x100.png; sourceTree = "<group>"; };
 		18BE11961755ECA900C8ABB4 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 		18BE11981755F33100C8ABB4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		18C217F717EE7E3B000E6FC9 /* iBTeamMatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBTeamMatesViewController.h; sourceTree = "<group>"; };
@@ -1149,6 +1154,9 @@
 		18EAC82A17C077C00040CA2D /* HotzoneCount */ = {
 			isa = PBXGroup;
 			children = (
+				18B9C7DA18102BCA00E737C4 /* RenRenShareActivity.h */,
+				18B9C7DD18102CA100E737C4 /* Renren_logo_100x100.png */,
+				18B9C7DB18102BCA00E737C4 /* RenRenShareActivity.m */,
 				18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */,
 				18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */,
 				18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */,
@@ -1510,6 +1518,7 @@
 				18789FEF1703C7C30065D21F /* snow@2x.png in Resources */,
 				18789FF01703C7C30065D21F /* sun.png in Resources */,
 				18D3BA61180E004E000632F0 /* area_chart@2x.png in Resources */,
+				18B9C7DE18102CA100E737C4 /* Renren_logo_100x100.png in Resources */,
 				18789FF11703C7C30065D21F /* sun@2x.png in Resources */,
 				18789FF21703C7C30065D21F /* thunderbolt.png in Resources */,
 				18789FF31703C7C30065D21F /* thunderbolt@2x.png in Resources */,
@@ -1712,6 +1721,7 @@
 				183C7944174B0A7000992262 /* Event.m in Sources */,
 				183C794A174B0B0100992262 /* Tag.m in Sources */,
 				181393CB174C69EE0041F384 /* EventTableViewCell.m in Sources */,
+				18B9C7DC18102BCA00E737C4 /* RenRenShareActivity.m in Sources */,
 				181393CC174C69EE0041F384 /* EditableTableViewCell.m in Sources */,
 				184A9001174DAE3D007D28F0 /* iBFootPrintViewController.m in Sources */,
 				184A9004174DAE45007D28F0 /* iBFootPrintTagSelectionController.m in Sources */,

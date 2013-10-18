@@ -77,5 +77,9 @@
     
 }
 
+- (IBAction)action:(id)sender {
+    UIActivityViewController *uivc = [[UIActivityViewController alloc] initWithNibName:@"UIActivityViewController" bundle:nil];
+    [self displayLayer:<#(CALayer *)#>]
+}
 
 @end
