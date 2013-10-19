@@ -566,11 +566,11 @@
             <objects>
                 <viewController id="Heu-5n-m5n" customClass="iBAccountViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CbR-9V-tlt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="s2e-iD-u8d">
-                                <rect key="frame" x="22" y="73" width="280" height="44"/>
+                                <rect key="frame" x="32" y="72" width="497" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Renren">
@@ -578,23 +578,10 @@
                                 </state>
                                 <connections>
                                     <action selector="renrenLog:" destination="Heu-5n-m5n" eventType="touchUpInside" id="jYi-zO-5E9"/>
-                                    <action selector="weiboLog:" destination="Heu-5n-m5n" eventType="touchUpInside" id="dpN-vd-gaf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qhb-cs-79J">
-                                <rect key="frame" x="18" y="175" width="280" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Renren">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="renrenLog:" destination="Heu-5n-m5n" eventType="touchUpInside" id="eZv-dC-Juw"/>
-                                    <action selector="weiboLog:" destination="Heu-5n-m5n" eventType="touchUpInside" id="mnK-VI-Vwe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vb9-Sc-VKD">
-                                <rect key="frame" x="18" y="124" width="280" height="44"/>
+                                <rect key="frame" x="32" y="117" width="497" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sina">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -604,8 +591,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xLm-mj-KXN">
-                                <rect key="frame" x="112" y="227" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="176" width="528" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Game Center">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -615,6 +602,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" title="SNS" id="MDF-cx-7pH">
                         <barButtonItem key="backBarButtonItem" title="qwer" id="sJy-ue-Gjk"/>
@@ -629,6 +617,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDG-V1-2Ue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1750,6 +1739,7 @@
         <image name="edit.png" width="25" height="25"/>
         <image name="expand.png" width="25" height="25"/>
         <image name="geography.png" width="25" height="25"/>
+        <image name="hotzone.png" width="476" height="389"/>
         <image name="hotzone.png" width="476" height="389"/>
         <image name="settings.png" width="25" height="25"/>
         <image name="today.png" width="25" height="25"/>
