@@ -1417,6 +1417,10 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="iN7-ly-dTS" appends="YES" id="kLn-kV-nwW"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Statics" image="area_chart.png" id="vCv-78-V04"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -1432,6 +1436,11 @@
                 <tapGestureRecognizer id="FGq-NN-8fQ">
                     <connections>
                         <action selector="choosePosition:" destination="FCb-af-6od" id="9uM-P5-zLm"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="iN7-ly-dTS">
+                    <connections>
+                        <action selector="tapView:" destination="FCb-af-6od" id="UwH-g9-aCL"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -1739,7 +1748,6 @@
         <image name="edit.png" width="25" height="25"/>
         <image name="expand.png" width="25" height="25"/>
         <image name="geography.png" width="25" height="25"/>
-        <image name="hotzone.png" width="476" height="389"/>
         <image name="hotzone.png" width="476" height="389"/>
         <image name="settings.png" width="25" height="25"/>
         <image name="today.png" width="25" height="25"/>

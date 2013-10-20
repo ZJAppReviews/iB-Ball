@@ -131,4 +131,9 @@
     [[NSUserDefaults standardUserDefaults] setObject:name forKey:@"name"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
+
+- (IBAction)tapView:(id)sender {
+    [self.nameTextField resignFirstResponder];
+}
+
 @end

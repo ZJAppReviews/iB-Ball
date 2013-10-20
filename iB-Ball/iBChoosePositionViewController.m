@@ -31,6 +31,9 @@
     self.positionTable.dataSource = self;
     
     self.position = [[NSUserDefaults standardUserDefaults] objectForKey:@"position"];
+    if (self.position == nil) {
+        self.position = [NSMutableArray new];
+    }
 }
 
 - (void)didReceiveMemoryWarning
