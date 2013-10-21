@@ -184,7 +184,6 @@
 		18D40DC5170135AF004A22CD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DC4170135AF004A22CD /* MobileCoreServices.framework */; };
 		18D40DC7170135B5004A22CD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DC6170135B5004A22CD /* QuartzCore.framework */; };
 		18D40DC9170135BC004A22CD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DC8170135BC004A22CD /* Security.framework */; };
-		18D40DCB170135C1004A22CD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DCA170135C1004A22CD /* StoreKit.framework */; };
 		18D40DCD170135C7004A22CD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DCC170135C7004A22CD /* SystemConfiguration.framework */; };
 		18DDAF5D1741D768000AB3EF /* PRPShadowedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DDAF5C1741D768000AB3EF /* PRPShadowedTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18DDAF9917422CCC000AB3EF /* iBHotzoneSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DDAF9817422CCC000AB3EF /* iBHotzoneSelectViewController.m */; };
@@ -510,7 +509,6 @@
 		18D40DC4170135AF004A22CD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		18D40DC6170135B5004A22CD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		18D40DC8170135BC004A22CD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		18D40DCA170135C1004A22CD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		18D40DCC170135C7004A22CD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		18DDAF5B1741D768000AB3EF /* PRPShadowedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPShadowedTableView.h; sourceTree = "<group>"; };
 		18DDAF5C1741D768000AB3EF /* PRPShadowedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPShadowedTableView.m; sourceTree = "<group>"; };
@@ -615,7 +613,6 @@
 				1838CED0172E1A4F0078B3AD /* libsqlite3.0.dylib in Frameworks */,
 				18D40DC117013599004A22CD /* CoreLocation.framework in Frameworks */,
 				18D40DCD170135C7004A22CD /* SystemConfiguration.framework in Frameworks */,
-				18D40DCB170135C1004A22CD /* StoreKit.framework in Frameworks */,
 				18D40DC9170135BC004A22CD /* Security.framework in Frameworks */,
 				18D40DC7170135B5004A22CD /* QuartzCore.framework in Frameworks */,
 				18D40DC5170135AF004A22CD /* MobileCoreServices.framework in Frameworks */,
@@ -1227,7 +1224,6 @@
 				1880DF291733B885004E7DA0 /* CoreData.framework */,
 				1838CECF172E1A4F0078B3AD /* libsqlite3.0.dylib */,
 				18D40DCC170135C7004A22CD /* SystemConfiguration.framework */,
-				18D40DCA170135C1004A22CD /* StoreKit.framework */,
 				18D40DC8170135BC004A22CD /* Security.framework */,
 				18D40DC6170135B5004A22CD /* QuartzCore.framework */,
 				18D40DC4170135AF004A22CD /* MobileCoreServices.framework */,
@@ -1449,6 +1445,11 @@
 				TargetAttributes = {
 					BA36DED516C4BF37007FFDD1 = {
 						DevelopmentTeam = YU645886QH;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};

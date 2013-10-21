@@ -78,8 +78,9 @@
 }
 
 - (IBAction)action:(id)sender {
-    UIActivityViewController *uivc = [[UIActivityViewController alloc] initWithNibName:@"UIActivityViewController" bundle:nil];
-    [self presentViewController:uivc animated:YES completion:nil];
+    
+//    UIActivityViewController *uivc = [[UIActivityViewController alloc] initWithActivityItems:[NSArray arrayWithObjects:<#(id), ...#>, nil] applicationActivities:<#(NSArray *)#>
+//    [self presentViewController:uivc animated:YES completion:nil];
 }
 
 @end
