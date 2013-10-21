@@ -66,16 +66,28 @@
     self.numberWeTry++;
     NSLog(@"%@", self);
     [self.delegate gestureInfoChange:self.numberWeScore and:self.numberWeTry];
+    [self updateLabel];
+
 }
 
 - (IBAction)swipeRight:(id)sender {
     self.numberWeTry++;
     NSLog(@"%@", self);
     [self.delegate gestureInfoChange:self.numberWeScore and:self.numberWeTry];
+    [self updateLabel];
+
 }
 
 - (NSString *)description {
     return [NSString stringWithFormat:@" self.numberWeScore, self.numberWeTry: %d/%d", self.numberWeScore, self.numberWeTry];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self updateLabel];
+}
+
+- (void)updateLabel {
+    self.staticLabel.text = [NSString stringWithFormat:@"%d/%d", self.numberWeScore, self.numberWeTry];
+
+}
 @end

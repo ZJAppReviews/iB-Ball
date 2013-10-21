@@ -24,5 +24,8 @@
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeLeft;
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeRight;
 
+@property (weak, nonatomic) IBOutlet UILabel *staticLabel;
+
+
 @end
 
