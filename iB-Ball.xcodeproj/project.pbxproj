@@ -397,10 +397,10 @@
 		18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBCountViewControllerForHotZone.xib; path = "../iB-Ball/iBCountViewControllerForHotZone.xib"; sourceTree = "<group>"; };
 		184653DB1804D63900D01B7D /* GameKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitHelper.h; sourceTree = "<group>"; };
 		184653DC1804D63900D01B7D /* GameKitHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitHelper.m; sourceTree = "<group>"; };
-		184A8FFF174DAE3D007D28F0 /* iBFootPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBFootPrintViewController.h; path = ../sinaweibo_ios_sdk/iBFootPrintViewController.h; sourceTree = "<group>"; };
-		184A9000174DAE3D007D28F0 /* iBFootPrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBFootPrintViewController.m; path = ../sinaweibo_ios_sdk/iBFootPrintViewController.m; sourceTree = "<group>"; };
-		184A9002174DAE45007D28F0 /* iBFootPrintTagSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBFootPrintTagSelectionController.h; path = ../sinaweibo_ios_sdk/iBFootPrintTagSelectionController.h; sourceTree = "<group>"; };
-		184A9003174DAE45007D28F0 /* iBFootPrintTagSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBFootPrintTagSelectionController.m; path = ../sinaweibo_ios_sdk/iBFootPrintTagSelectionController.m; sourceTree = "<group>"; };
+		184A8FFF174DAE3D007D28F0 /* iBFootPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBFootPrintViewController.h; sourceTree = "<group>"; };
+		184A9000174DAE3D007D28F0 /* iBFootPrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBFootPrintViewController.m; sourceTree = "<group>"; };
+		184A9002174DAE45007D28F0 /* iBFootPrintTagSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBFootPrintTagSelectionController.h; sourceTree = "<group>"; };
+		184A9003174DAE45007D28F0 /* iBFootPrintTagSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBFootPrintTagSelectionController.m; sourceTree = "<group>"; };
 		184A9005174DAEE0007D28F0 /* TagsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagsHeaderView.xib; sourceTree = "<group>"; };
 		1850019517603979000711ED /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteButton.png; path = ../whiteButton.png; sourceTree = "<group>"; };
 		185001961760397A000711ED /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueButton.png; path = ../blueButton.png; sourceTree = "<group>"; };
@@ -654,6 +654,10 @@
 		181393C5174C69AF0041F384 /* My Footprint */ = {
 			isa = PBXGroup;
 			children = (
+				184A8FFF174DAE3D007D28F0 /* iBFootPrintViewController.h */,
+				184A9000174DAE3D007D28F0 /* iBFootPrintViewController.m */,
+				184A9002174DAE45007D28F0 /* iBFootPrintTagSelectionController.h */,
+				184A9003174DAE45007D28F0 /* iBFootPrintTagSelectionController.m */,
 			);
 			name = "My Footprint";
 			path = ../sinaweibo_ios_sdk;
@@ -1264,10 +1268,6 @@
 				18F927DC1753698E00804EED /* Challenge */,
 				183B836E16F5552E0030BC70 /* Ski */,
 				181393C5174C69AF0041F384 /* My Footprint */,
-				184A8FFF174DAE3D007D28F0 /* iBFootPrintViewController.h */,
-				184A9000174DAE3D007D28F0 /* iBFootPrintViewController.m */,
-				184A9002174DAE45007D28F0 /* iBFootPrintTagSelectionController.h */,
-				184A9003174DAE45007D28F0 /* iBFootPrintTagSelectionController.m */,
 				181393C6174C69D60041F384 /* Table View cell */,
 				18EAC82A17C077C00040CA2D /* HotzoneCount */,
 				185D324117DB1F6C002C3373 /* iBZGestureReconizer.h */,

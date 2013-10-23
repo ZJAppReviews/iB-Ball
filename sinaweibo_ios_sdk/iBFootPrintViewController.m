@@ -344,6 +344,28 @@
 	 */
 }
 
+- (NSString *)cllocationToString:(CLLocation *)location {
+
+	if (!location) {
+		return @"nil place";
+	}
+
+    CLGeocoder *clg = [[CLGeocoder alloc] init];
+    __block NSString *test;
+
+    [clg reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
+        for (CLPlacemark * placemark in placemarks) {
+            
+            test = [placemark locality];
+            NSLog(@"%@", test);
+            //            self.myCity.text = [NSString stringWithFormat:@"%@",placemark];
+            NSLog(@"%@", [NSString stringWithFormat:@"%@",placemark]);
+        }
+
+    }];
+	return test;
+
+}
 
 #pragma mark -
 #pragma mark Location manager
