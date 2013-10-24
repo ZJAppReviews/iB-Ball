@@ -171,7 +171,6 @@
 		18BE11971755ECA900C8ABB4 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18BE11961755ECA900C8ABB4 /* alarm.mp3 */; };
 		18BE11991755F33100C8ABB4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BE11981755F33100C8ABB4 /* AVFoundation.framework */; };
 		18C217FA17EE7E3B000E6FC9 /* iBTeamMatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C217F817EE7E3B000E6FC9 /* iBTeamMatesViewController.m */; };
-		18C217FB17EE7E3B000E6FC9 /* iBTeamMatesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C217F917EE7E3B000E6FC9 /* iBTeamMatesViewController.xib */; };
 		18C3B2A31815F496008B10FB /* Quest in Resources */ = {isa = PBXBuildFile; fileRef = 18C3B2A21815F496008B10FB /* Quest */; };
 		18D3BA61180E004E000632F0 /* area_chart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D3BA60180E004E000632F0 /* area_chart@2x.png */; };
 		18D3BA63180E009F000632F0 /* geography@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D3BA62180E009F000632F0 /* geography@2x.png */; };
@@ -496,7 +495,6 @@
 		18BE11981755F33100C8ABB4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		18C217F717EE7E3B000E6FC9 /* iBTeamMatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBTeamMatesViewController.h; sourceTree = "<group>"; };
 		18C217F817EE7E3B000E6FC9 /* iBTeamMatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBTeamMatesViewController.m; sourceTree = "<group>"; };
-		18C217F917EE7E3B000E6FC9 /* iBTeamMatesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBTeamMatesViewController.xib; sourceTree = "<group>"; };
 		18C3B2A21815F496008B10FB /* Quest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quest; sourceTree = "<group>"; };
 		18D3BA60180E004E000632F0 /* area_chart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "area_chart@2x.png"; sourceTree = "<group>"; };
 		18D3BA62180E009F000632F0 /* geography@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geography@2x.png"; sourceTree = "<group>"; };
@@ -1296,7 +1294,6 @@
 				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
 				18C217F717EE7E3B000E6FC9 /* iBTeamMatesViewController.h */,
 				18C217F817EE7E3B000E6FC9 /* iBTeamMatesViewController.m */,
-				18C217F917EE7E3B000E6FC9 /* iBTeamMatesViewController.xib */,
 				1892F50817D405CA00C3902F /* iBStaticsViewController.h */,
 				1892F50917D405CA00C3902F /* iBStaticsViewController.m */,
 				1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */,
@@ -1527,7 +1524,6 @@
 				18789FF21703C7C30065D21F /* thunderbolt.png in Resources */,
 				18789FF31703C7C30065D21F /* thunderbolt@2x.png in Resources */,
 				18789FF41703C7C30065D21F /* windycloud.png in Resources */,
-				18C217FB17EE7E3B000E6FC9 /* iBTeamMatesViewController.xib in Resources */,
 				18789FF51703C7C30065D21F /* windycloud@2x.png in Resources */,
 				1838CE9A172E19B00078B3AD /* bottom-bar.png in Resources */,
 				1838CE9B172E19B00078B3AD /* bottom-bar@2x.png in Resources */,
