@@ -7,6 +7,7 @@
 //
 
 #import "iBHotzoneStaticsDetailController.h"
+#import "RenRenShareActivity.h"
 
 @interface iBHotzoneStaticsDetailController ()
 
@@ -78,9 +79,11 @@
 }
 
 - (IBAction)action:(id)sender {
-    
-//    UIActivityViewController *uivc = [[UIActivityViewController alloc] initWithActivityItems:[NSArray arrayWithObjects:<#(id), ...#>, nil] applicationActivities:<#(NSArray *)#>
-//    [self presentViewController:uivc animated:YES completion:nil];
+    RenRenShareActivity *a = [[RenRenShareActivity alloc] init];
+    UIActivity *b = [[UIActivity alloc] init];
+    [self addchil]
+    UIActivityViewController *uivc = [[UIActivityViewController alloc] initWithActivityItems:[NSArray arrayWithObjects:a, UIActivityTypeAddToReadingList nil] applicationActivities:nil];
+    [self presentViewController:uivc animated:YES completion:nil];
 }
 
 @end

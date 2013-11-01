@@ -33,17 +33,17 @@
     }
     for (id activityItem in activityItems) {
 		if ([activityItem isKindOfClass:[UIImage class]]) {
+            return TRUE;
 		}
     }
     return FALSE;
-}
-
-- (void)prepareWithActivityItems:(NSArray *)activityItems {
-    
 }
 
 + (UIActivityCategory)activityCategory {
     return UIActivityCategoryShare;
 }
 
+- (UIViewController *)activityViewController {
+    return [UIViewController new];
+}
 @end

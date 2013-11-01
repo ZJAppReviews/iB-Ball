@@ -289,20 +289,23 @@
 	
 	// If it's not possible to get a location, then return.
 	CLLocation *location = [locationManager location];
-    CLGeocoder *clg = [[CLGeocoder alloc] init];
-    [clg reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
-        for (CLPlacemark * placemark in placemarks) {
-            
-            NSString *test = [placemark locality];
-            NSLog(@"%@", test);
-//            self.myCity.text = [NSString stringWithFormat:@"%@",placemark];
-            NSLog(@"%@", [NSString stringWithFormat:@"%@",placemark]);
-        }
-    }];
-//    NSLog(@"OOps, %@");
+    
 	if (!location) {
 		return;
 	}
+    
+    CLGeocoder *clg = [[CLGeocoder alloc] init];
+//    [clg reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
+//        for (CLPlacemark * placemark in placemarks) {
+//            
+//            NSString *test = [placemark locality];
+//            NSLog(@"%@", test);
+//            //            self.myCity.text = [NSString stringWithFormat:@"%@",placemark];
+//            NSLog(@"%@", [NSString stringWithFormat:@"%@",placemark]);
+//        }
+//    }];
+    [self cllocationToString:location];
+
 	
 	/*
 	 Create a new instance of the Event entity.
@@ -355,7 +358,6 @@
 
     [clg reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
         for (CLPlacemark * placemark in placemarks) {
-            
             test = [placemark locality];
             NSLog(@"%@", test);
             //            self.myCity.text = [NSString stringWithFormat:@"%@",placemark];
