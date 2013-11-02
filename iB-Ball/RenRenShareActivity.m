@@ -8,6 +8,8 @@
 
 #import "RenRenShareActivity.h"
 #import "Renren.h"
+#import "RenRenPostViewController.h"
+#import <Social/Social.h>
 
 @implementation RenRenShareActivity
 
@@ -20,7 +22,7 @@
 }
 
 - (UIImage *)activityImage {
-    return [UIImage imageNamed:@"Renren_logo_100x100"];
+    return [UIImage imageNamed:@"ruby.png"];
 }
 
 
@@ -44,6 +46,8 @@
 }
 
 - (UIViewController *)activityViewController {
-    return [UIViewController new];
+    return [[RenRenPostViewController alloc] initWithNibName:@"RenRenPostViewController" bundle:nil];
+    
+    
 }
 @end

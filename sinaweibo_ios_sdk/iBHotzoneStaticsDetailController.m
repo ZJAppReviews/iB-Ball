@@ -80,9 +80,8 @@
 
 - (IBAction)action:(id)sender {
     RenRenShareActivity *a = [[RenRenShareActivity alloc] init];
-    UIActivity *b = [[UIActivity alloc] init];
-    [self addchil]
-    UIActivityViewController *uivc = [[UIActivityViewController alloc] initWithActivityItems:[NSArray arrayWithObjects:a, UIActivityTypeAddToReadingList nil] applicationActivities:nil];
+    
+    UIActivityViewController *uivc = [[UIActivityViewController alloc] initWithActivityItems:[NSArray arrayWithObjects:@"asdf", nil] applicationActivities:[NSArray arrayWithObjects:a, nil]];
     [self presentViewController:uivc animated:YES completion:nil];
 }
 
