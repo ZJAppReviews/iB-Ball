@@ -43,7 +43,6 @@
     [params setObject:@"status.set" forKey:@"method"];
     [params setObject:self.postBody.text forKey:@"status"];
     [renren requestWithParams:params andDelegate:self];
-
 }
 
 - (IBAction)dismiss:(id)sender {
