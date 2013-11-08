@@ -100,7 +100,6 @@
 		183C794A174B0B0100992262 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C7949174B0B0100992262 /* Tag.m */; };
 		183D8C5A1824A5E800C3BC0D /* RenRenPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D8C581824A5E800C3BC0D /* RenRenPostViewController.m */; };
 		183D8C5B1824A5E800C3BC0D /* RenRenPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183D8C591824A5E800C3BC0D /* RenRenPostViewController.xib */; };
-		183D8C5D1824ABD900C3BC0D /* ruby.png in Resources */ = {isa = PBXBuildFile; fileRef = 183D8C5C1824ABD900C3BC0D /* ruby.png */; };
 		183D8C5F182545AF00C3BC0D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183D8C5E182545AF00C3BC0D /* Social.framework */; };
 		18442A9217BF6A0600368EF5 /* iBCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18442A9117BF6A0600368EF5 /* iBCountViewController.xib */; };
 		18442A9617BF6BC800368EF5 /* iBCountViewControllerForHotZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */; };
@@ -171,7 +170,6 @@
 		18A460DD17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A460DB17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib */; };
 		18AFFD271735EDAB00FFE514 /* TwoPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFFD261735EDAB00FFE514 /* TwoPoint.m */; };
 		18B9C7DC18102BCA00E737C4 /* RenRenShareActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9C7DB18102BCA00E737C4 /* RenRenShareActivity.m */; };
-		18B9C7DE18102CA100E737C4 /* Renren_logo_100x100.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B9C7DD18102CA100E737C4 /* Renren_logo_100x100.png */; };
 		18BE11971755ECA900C8ABB4 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18BE11961755ECA900C8ABB4 /* alarm.mp3 */; };
 		18BE11991755F33100C8ABB4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BE11981755F33100C8ABB4 /* AVFoundation.framework */; };
 		18C217FA17EE7E3B000E6FC9 /* iBTeamMatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C217F817EE7E3B000E6FC9 /* iBTeamMatesViewController.m */; };
@@ -397,7 +395,6 @@
 		183D8C571824A5E800C3BC0D /* RenRenPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenRenPostViewController.h; sourceTree = "<group>"; };
 		183D8C581824A5E800C3BC0D /* RenRenPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenRenPostViewController.m; sourceTree = "<group>"; };
 		183D8C591824A5E800C3BC0D /* RenRenPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RenRenPostViewController.xib; sourceTree = "<group>"; };
-		183D8C5C1824ABD900C3BC0D /* ruby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ruby.png; sourceTree = "<group>"; };
 		183D8C5E182545AF00C3BC0D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		18442A9117BF6A0600368EF5 /* iBCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBCountViewController.xib; path = ../iBCountViewController.xib; sourceTree = "<group>"; };
 		18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountViewControllerForHotZone.h; path = "../iB-Ball/iBCountViewControllerForHotZone.h"; sourceTree = "<group>"; };
@@ -499,7 +496,6 @@
 		18AFFD261735EDAB00FFE514 /* TwoPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoPoint.m; sourceTree = "<group>"; };
 		18B9C7DA18102BCA00E737C4 /* RenRenShareActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenRenShareActivity.h; path = "../iB-Ball/RenRenShareActivity.h"; sourceTree = "<group>"; };
 		18B9C7DB18102BCA00E737C4 /* RenRenShareActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RenRenShareActivity.m; path = "../iB-Ball/RenRenShareActivity.m"; sourceTree = "<group>"; };
-		18B9C7DD18102CA100E737C4 /* Renren_logo_100x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Renren_logo_100x100.png; sourceTree = "<group>"; };
 		18BE11961755ECA900C8ABB4 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 		18BE11981755F33100C8ABB4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		18C217F717EE7E3B000E6FC9 /* iBTeamMatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBTeamMatesViewController.h; sourceTree = "<group>"; };
@@ -1179,8 +1175,6 @@
 		18EAC82A17C077C00040CA2D /* HotzoneCount */ = {
 			isa = PBXGroup;
 			children = (
-				183D8C5C1824ABD900C3BC0D /* ruby.png */,
-				18B9C7DD18102CA100E737C4 /* Renren_logo_100x100.png */,
 				18B9C7DA18102BCA00E737C4 /* RenRenShareActivity.h */,
 				18B9C7DB18102BCA00E737C4 /* RenRenShareActivity.m */,
 				183D8C571824A5E800C3BC0D /* RenRenPostViewController.h */,
@@ -1534,7 +1528,6 @@
 				18789FEF1703C7C30065D21F /* snow@2x.png in Resources */,
 				18789FF01703C7C30065D21F /* sun.png in Resources */,
 				18D3BA61180E004E000632F0 /* area_chart@2x.png in Resources */,
-				18B9C7DE18102CA100E737C4 /* Renren_logo_100x100.png in Resources */,
 				18789FF11703C7C30065D21F /* sun@2x.png in Resources */,
 				18789FF21703C7C30065D21F /* thunderbolt.png in Resources */,
 				18789FF31703C7C30065D21F /* thunderbolt@2x.png in Resources */,
@@ -1568,7 +1561,6 @@
 				180475AB174089E7001DA45A /* tabbar-background.png in Resources */,
 				180475AD17408A00001DA45A /* tabbar-background-pressed.png in Resources */,
 				18640E4917445073006B541A /* README in Resources */,
-				183D8C5D1824ABD900C3BC0D /* ruby.png in Resources */,
 				18640E4F1744C572006B541A /* ic_calc.png in Resources */,
 				18640E511744C5D2006B541A /* ic_ok.png in Resources */,
 				18640E531744C658006B541A /* ic_users.png in Resources */,
