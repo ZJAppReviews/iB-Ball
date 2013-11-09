@@ -11,7 +11,7 @@
 #import "UIBezierPath+ShadowPath.h"
 #import "Renren.h"
 
-@interface iBShowPersonStaticViewController ()
+@interface iBShowPersonStaticViewController () <UIAlertViewDelegate>
 
 @end
 
@@ -134,6 +134,20 @@
 
 - (IBAction)tapView:(id)sender {
     [self.nameTextField resignFirstResponder];
+}
+
+- (IBAction)editBio:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Edit Bio" message:@"Show me Y-O-U!" delegate:self cancelButtonTitle:@"OK!" otherButtonTitles:nil];
+    [alert textFieldAtIndex:UIAlertViewStylePlainTextInput].text = self.bioText.text;
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    NSString *str = [alertView textFieldAtIndex:UIAlertViewStylePlainTextInput].text;
+    [[NSUserDefaults standardUserDefaults] setObject:str forKey:@"bio"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+
 }
 
 @end

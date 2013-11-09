@@ -1403,7 +1403,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" id="MEI-fd-zYc">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="center" minimumFontSize="17" id="MEI-fd-zYc">
                                 <rect key="frame" x="203" y="158" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1416,12 +1416,16 @@
                                 <rect key="frame" x="20" y="88" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="哥打的不是篮球，是寂寞" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I0Y-H0-SGd">
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" text="哥打的不是篮球，是寂寞" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I0Y-H0-SGd">
                                 <rect key="frame" x="20" y="196" width="280" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7A8-aL-5bv" appends="YES" id="2n9-HB-fPP"/>
+                                </connections>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1449,6 +1453,11 @@
                 <tapGestureRecognizer id="iN7-ly-dTS">
                     <connections>
                         <action selector="tapView:" destination="FCb-af-6od" id="UwH-g9-aCL"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="7A8-aL-5bv" userLabel="bio Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="editBio:" destination="FCb-af-6od" id="wbW-ft-zFk"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
