@@ -9,9 +9,10 @@
 #import "iBShowPersonStaticViewController.h"
 #import "iBChoosePositionViewController.h"
 #import "UIBezierPath+ShadowPath.h"
+#import "iBChartsViewController.h"
 #import "Renren.h"
 
-@interface iBShowPersonStaticViewController () <UIAlertViewDelegate>
+@interface iBShowPersonStaticViewController () <UIAlertViewDelegate, UITableViewDelegate>
 
 @end
 
@@ -147,6 +148,17 @@
     NSString *str = [alertView textFieldAtIndex:UIAlertViewStylePlainTextInput].text;
     [[NSUserDefaults standardUserDefaults] setObject:str forKey:@"bio"];
     [[NSUserDefaults standardUserDefaults] synchronize];
+
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    iBChartsViewController *cv = [[iBChartsViewController alloc] initWithNibName:@"iBChartsViewController" bundle:nil];
+    [self.navigationController pushViewController:cv animated:YES];
+}
+
+- (IBAction)aa:(id)sender {
+    iBChartsViewController *cv = [[iBChartsViewController alloc] initWithNibName:@"iBChartsViewController" bundle:nil];
+    [self.navigationController pushViewController:cv animated:YES];
 
 }
 

@@ -164,6 +164,8 @@
 		1880DF2A1733B885004E7DA0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880DF291733B885004E7DA0 /* CoreData.framework */; };
 		1892F50B17D405CA00C3902F /* iBStaticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1892F50917D405CA00C3902F /* iBStaticsViewController.m */; };
 		1892F50C17D405CA00C3902F /* iBStaticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */; };
+		1899784C182F6EAC00380DD6 /* iBChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1899784A182F6EAC00380DD6 /* iBChartsViewController.m */; };
+		1899784D182F6EAC00380DD6 /* iBChartsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1899784B182F6EAC00380DD6 /* iBChartsViewController.xib */; };
 		189E4F71170E6B530046DE61 /* iBCountingSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */; };
 		18A33B9817F11A74008052AB /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A33B9717F11A74008052AB /* GameKit.framework */; };
 		18A460DC17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A460DA17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m */; };
@@ -483,9 +485,12 @@
 		187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiCountViewController.m; sourceTree = "<group>"; };
 		1880DF1B17335866004E7DA0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1880DF291733B885004E7DA0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		1892F50817D405CA00C3902F /* iBStaticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBStaticsViewController.h; sourceTree = "<group>"; };
-		1892F50917D405CA00C3902F /* iBStaticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBStaticsViewController.m; sourceTree = "<group>"; };
-		1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBStaticsViewController.xib; sourceTree = "<group>"; };
+		1892F50817D405CA00C3902F /* iBStaticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBStaticsViewController.h; path = "iB-Ball/iBStaticsViewController.h"; sourceTree = "<group>"; };
+		1892F50917D405CA00C3902F /* iBStaticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBStaticsViewController.m; path = "iB-Ball/iBStaticsViewController.m"; sourceTree = "<group>"; };
+		1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBStaticsViewController.xib; path = "iB-Ball/iBStaticsViewController.xib"; sourceTree = "<group>"; };
+		18997849182F6EAC00380DD6 /* iBChartsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBChartsViewController.h; sourceTree = "<group>"; };
+		1899784A182F6EAC00380DD6 /* iBChartsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBChartsViewController.m; sourceTree = "<group>"; };
+		1899784B182F6EAC00380DD6 /* iBChartsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iBChartsViewController.xib; sourceTree = "<group>"; };
 		189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBCountingSelectViewController.h; sourceTree = "<group>"; };
 		189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBCountingSelectViewController.m; sourceTree = "<group>"; };
 		18A33B9717F11A74008052AB /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
@@ -1103,6 +1108,9 @@
 		18A460D817D7FF8900A4BCC0 /* Static */ = {
 			isa = PBXGroup;
 			children = (
+				1892F50817D405CA00C3902F /* iBStaticsViewController.h */,
+				1892F50917D405CA00C3902F /* iBStaticsViewController.m */,
+				1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */,
 				18A460D917D7FFDA00A4BCC0 /* iBChoosePositionViewController.h */,
 				18A460DA17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m */,
 				18A460DB17D7FFDA00A4BCC0 /* iBChoosePositionViewController.xib */,
@@ -1110,6 +1118,9 @@
 				1852B9BB17D55595006A2DB8 /* iBShowPersonStaticViewController.m */,
 				1852B9BF17D55992006A2DB8 /* iBStaticListViewController.h */,
 				1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */,
+				18997849182F6EAC00380DD6 /* iBChartsViewController.h */,
+				1899784A182F6EAC00380DD6 /* iBChartsViewController.m */,
+				1899784B182F6EAC00380DD6 /* iBChartsViewController.xib */,
 			);
 			name = Static;
 			path = ..;
@@ -1303,9 +1314,6 @@
 				BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */,
 				18C217F717EE7E3B000E6FC9 /* iBTeamMatesViewController.h */,
 				18C217F817EE7E3B000E6FC9 /* iBTeamMatesViewController.m */,
-				1892F50817D405CA00C3902F /* iBStaticsViewController.h */,
-				1892F50917D405CA00C3902F /* iBStaticsViewController.m */,
-				1892F50A17D405CA00C3902F /* iBStaticsViewController.xib */,
 				1831D24F17C85D0E0044EC08 /* iBTabMainViewController.h */,
 				1831D25017C85D0E0044EC08 /* iBTabMainViewController.m */,
 				BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */,
@@ -1509,6 +1517,7 @@
 				18789FA51703C4E60065D21F /* Licence in Resources */,
 				18789FE11703C7C30065D21F /* placeholder.png in Resources */,
 				18F1F25917FFB7100069C91E /* today@2x.png in Resources */,
+				1899784D182F6EAC00380DD6 /* iBChartsViewController.xib in Resources */,
 				18F1F25B17FFB84B0069C91E /* expand@2x.png in Resources */,
 				18789FE21703C7C30065D21F /* angrycloud.png in Resources */,
 				18789FE31703C7C30065D21F /* angrycloud@2x.png in Resources */,
@@ -1709,6 +1718,7 @@
 				1838CEC0172E19B00078B3AD /* ROPublishPhotoResponseItem.m in Sources */,
 				1838CEC1172E19B00078B3AD /* ROResponseItem.m in Sources */,
 				1838CEC2172E19B00078B3AD /* ROUserResponseItem.m in Sources */,
+				1899784C182F6EAC00380DD6 /* iBChartsViewController.m in Sources */,
 				1838CEC3172E19B00078B3AD /* RORequest.m in Sources */,
 				1838CEC4172E19B00078B3AD /* ROResponse.m in Sources */,
 				1838CEC5172E19B00078B3AD /* ROUtility.m in Sources */,
