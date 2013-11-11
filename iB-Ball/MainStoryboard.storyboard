@@ -1823,7 +1823,6 @@
         <image name="expand.png" width="25" height="25"/>
         <image name="geography.png" width="25" height="25"/>
         <image name="hotzone.png" width="476" height="389"/>
-        <image name="hotzone.png" width="476" height="389"/>
         <image name="settings.png" width="25" height="25"/>
         <image name="today.png" width="25" height="25"/>
     </resources>

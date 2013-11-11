@@ -44,7 +44,17 @@
     NSArray *fetchedObjects = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
     if (fetchedObjects == nil) {
         // Handle the error
-        NSLog(fetchedObjects);
+    }
+    
+    NSArray *dateArray = [fetchedObjects valueForKey:@"twoPointDay"];
+    NSArray *twoPointGoal = [fetchedObjects valueForKey:@"twoPointGoal"];
+    NSArray *twoPointTotal = [fetchedObjects valueForKey:@"twoPointTotal"];
+    NSMutableArray *ratioArray = [NSMutableArray new];
+    for (int i = 0; i < twoPointGoal.count; i++) {
+        NSInteger a = [twoPointGoal[i] integerValue];
+        NSInteger b = [twoPointTotal[i] integerValue];
+        CGFloat c = (CGFloat)a / b;
+        [ratioArray addObject:[NSNumber numberWithFloat:c]];
     }
 
 }

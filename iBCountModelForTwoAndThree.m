@@ -96,8 +96,10 @@
             // get the day
             NSString *dayWeAreIn = [dateFormatter stringFromDate:today];
             // fileter the day & crap***
+            BOOL exist = NO;
             for (TwoPoint *tp in fetchedObjects) {
                 if ([tp.twoPointDay isEqualToString:dayWeAreIn]) {
+                    exist = YES;
                     int theOriginal = [tp.twoPointGoal intValue];
                     int theOriginal2 = [tp.twoPointTotal intValue];
                     theOriginal += self.goalTimes;
@@ -112,20 +114,25 @@
                     [self.managedObjectContext save:&err];
                 }
             }
+            if (!exist) {
+                TwoPoint *a = (TwoPoint *)[NSEntityDescription insertNewObjectForEntityForName:@"TwoPoint" inManagedObjectContext:_managedObjectContext];
+                
+                a.twoPointDay = [dateFormatter stringFromDate:today];
+                int theOriginal = [a.twoPointGoal intValue];
+                int theOriginal2 = [a.twoPointTotal intValue];
+                NSNumber *a1 = [NSNumber numberWithInt:++theOriginal];
+                NSNumber *a2 = [NSNumber numberWithInt:++theOriginal2];
+                
+                a.twoPointGoal = a1;
+                a.twoPointTotal = a2;
+                
+                NSError *err;
+                [self.managedObjectContext save:&err];
+
+            }
         } else {
-            TwoPoint *a = (TwoPoint *)[NSEntityDescription insertNewObjectForEntityForName:@"TwoPoint" inManagedObjectContext:_managedObjectContext];
-            
-            a.twoPointDay = [dateFormatter stringFromDate:today];
-            int theOriginal = [a.twoPointGoal intValue];
-            int theOriginal2 = [a.twoPointTotal intValue];
-            NSNumber *a1 = [NSNumber numberWithInt:++theOriginal];
-            NSNumber *a2 = [NSNumber numberWithInt:++theOriginal2];
-            
-            a.twoPointGoal = a1;
-            a.twoPointTotal = a2;
-            
-            NSError *err;
-            [self.managedObjectContext save:&err];
+            //TODO no twopoint
+            // TODO
         }
         
         

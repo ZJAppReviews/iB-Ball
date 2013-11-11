@@ -101,7 +101,6 @@
 		183D8C5A1824A5E800C3BC0D /* RenRenPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D8C581824A5E800C3BC0D /* RenRenPostViewController.m */; };
 		183D8C5B1824A5E800C3BC0D /* RenRenPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183D8C591824A5E800C3BC0D /* RenRenPostViewController.xib */; };
 		183D8C5F182545AF00C3BC0D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183D8C5E182545AF00C3BC0D /* Social.framework */; };
-		18442A9217BF6A0600368EF5 /* iBCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18442A9117BF6A0600368EF5 /* iBCountViewController.xib */; };
 		18442A9617BF6BC800368EF5 /* iBCountViewControllerForHotZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */; };
 		18442A9717BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */; };
 		184653DD1804D63900D01B7D /* GameKitHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 184653DC1804D63900D01B7D /* GameKitHelper.m */; };
@@ -398,7 +397,6 @@
 		183D8C581824A5E800C3BC0D /* RenRenPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenRenPostViewController.m; sourceTree = "<group>"; };
 		183D8C591824A5E800C3BC0D /* RenRenPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RenRenPostViewController.xib; sourceTree = "<group>"; };
 		183D8C5E182545AF00C3BC0D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		18442A9117BF6A0600368EF5 /* iBCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBCountViewController.xib; path = ../iBCountViewController.xib; sourceTree = "<group>"; };
 		18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountViewControllerForHotZone.h; path = "../iB-Ball/iBCountViewControllerForHotZone.h"; sourceTree = "<group>"; };
 		18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountViewControllerForHotZone.m; path = "../iB-Ball/iBCountViewControllerForHotZone.m"; sourceTree = "<group>"; };
 		18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBCountViewControllerForHotZone.xib; path = "../iB-Ball/iBCountViewControllerForHotZone.xib"; sourceTree = "<group>"; };
@@ -1305,7 +1303,6 @@
 				BA4AE59216D12BAB005456EF /* iBCountModelForTwoAndThree.m */,
 				BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */,
 				BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */,
-				18442A9117BF6A0600368EF5 /* iBCountViewController.xib */,
 				189E4F6F170E6B530046DE61 /* iBCountingSelectViewController.h */,
 				189E4F70170E6B530046DE61 /* iBCountingSelectViewController.m */,
 				18A460D817D7FF8900A4BCC0 /* Static */,
@@ -1581,7 +1578,6 @@
 				185001971760397A000711ED /* whiteButton.png in Resources */,
 				18C3B2A31815F496008B10FB /* Quest in Resources */,
 				185001981760397A000711ED /* blueButton.png in Resources */,
-				18442A9217BF6A0600368EF5 /* iBCountViewController.xib in Resources */,
 				18442A9717BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib in Resources */,
 				18EAC82F17C0BEAA0040CA2D /* iBCountViewControllerForHotZoneGestureMode.xib in Resources */,
 				1831D25417C869110044EC08 /* TabBarNipple.png in Resources */,
