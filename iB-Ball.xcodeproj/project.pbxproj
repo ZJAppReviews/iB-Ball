@@ -19,6 +19,12 @@
 		1831D25117C85D0E0044EC08 /* iBTabMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1831D25017C85D0E0044EC08 /* iBTabMainViewController.m */; };
 		1831D25417C869110044EC08 /* TabBarNipple.png in Resources */ = {isa = PBXBuildFile; fileRef = 1831D25217C869110044EC08 /* TabBarNipple.png */; };
 		1831D25517C869110044EC08 /* TabBarNipple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1831D25317C869110044EC08 /* TabBarNipple@2x.png */; };
+		18372FB51830DA0600885C68 /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18372FAA1830DA0600885C68 /* PNChartLabel.m */; };
+		18372FB61830DA0600885C68 /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18372FAC1830DA0600885C68 /* PNColor.m */; };
+		18372FB71830DA0600885C68 /* PNChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18372FAE1830DA0600885C68 /* PNChart.m */; };
+		18372FB81830DA0600885C68 /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18372FB01830DA0600885C68 /* PNLineChart.m */; };
+		18372FB91830DA0600885C68 /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18372FB21830DA0600885C68 /* PNBarChart.m */; };
+		18372FBA1830DA0600885C68 /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18372FB41830DA0600885C68 /* PNBar.m */; };
 		1838CE89172E19B00078B3AD /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1838CE01172E19B00078B3AD /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1838CE8A172E19B00078B3AD /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1838CE03172E19B00078B3AD /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1838CE8B172E19B00078B3AD /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1838CE05172E19B00078B3AD /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -257,6 +263,18 @@
 		1831D25017C85D0E0044EC08 /* iBTabMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBTabMainViewController.m; path = ../iBTabMainViewController.m; sourceTree = "<group>"; };
 		1831D25217C869110044EC08 /* TabBarNipple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBarNipple.png; sourceTree = "<group>"; };
 		1831D25317C869110044EC08 /* TabBarNipple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBarNipple@2x.png"; sourceTree = "<group>"; };
+		18372FA91830DA0600885C68 /* PNChartLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChartLabel.h; sourceTree = "<group>"; };
+		18372FAA1830DA0600885C68 /* PNChartLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNChartLabel.m; sourceTree = "<group>"; };
+		18372FAB1830DA0600885C68 /* PNColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNColor.h; sourceTree = "<group>"; };
+		18372FAC1830DA0600885C68 /* PNColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNColor.m; sourceTree = "<group>"; };
+		18372FAD1830DA0600885C68 /* PNChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChart.h; sourceTree = "<group>"; };
+		18372FAE1830DA0600885C68 /* PNChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNChart.m; sourceTree = "<group>"; };
+		18372FAF1830DA0600885C68 /* PNLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChart.h; sourceTree = "<group>"; };
+		18372FB01830DA0600885C68 /* PNLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChart.m; sourceTree = "<group>"; };
+		18372FB11830DA0600885C68 /* PNBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBarChart.h; sourceTree = "<group>"; };
+		18372FB21830DA0600885C68 /* PNBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBarChart.m; sourceTree = "<group>"; };
+		18372FB31830DA0600885C68 /* PNBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBar.h; sourceTree = "<group>"; };
+		18372FB41830DA0600885C68 /* PNBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBar.m; sourceTree = "<group>"; };
 		1838CE00172E19B00078B3AD /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		1838CE01172E19B00078B3AD /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		1838CE02172E19B00078B3AD /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -685,6 +703,25 @@
 			path = ../sinaweibo_ios_sdk;
 			sourceTree = "<group>";
 		};
+		18372FA81830D9FA00885C68 /* PNChart */ = {
+			isa = PBXGroup;
+			children = (
+				18372FA91830DA0600885C68 /* PNChartLabel.h */,
+				18372FAA1830DA0600885C68 /* PNChartLabel.m */,
+				18372FAB1830DA0600885C68 /* PNColor.h */,
+				18372FAC1830DA0600885C68 /* PNColor.m */,
+				18372FAD1830DA0600885C68 /* PNChart.h */,
+				18372FAE1830DA0600885C68 /* PNChart.m */,
+				18372FAF1830DA0600885C68 /* PNLineChart.h */,
+				18372FB01830DA0600885C68 /* PNLineChart.m */,
+				18372FB11830DA0600885C68 /* PNBarChart.h */,
+				18372FB21830DA0600885C68 /* PNBarChart.m */,
+				18372FB31830DA0600885C68 /* PNBar.h */,
+				18372FB41830DA0600885C68 /* PNBar.m */,
+			);
+			name = PNChart;
+			sourceTree = "<group>";
+		};
 		1838CDFE172E19960078B3AD /* renren_ios_sdk */ = {
 			isa = PBXGroup;
 			children = (
@@ -1012,6 +1049,7 @@
 		18789FA61703C4FC0065D21F /* open_source */ = {
 			isa = PBXGroup;
 			children = (
+				18372FA81830D9FA00885C68 /* PNChart */,
 				185CC92717BF625300061270 /* Vendor */,
 				18789FC41703C7960065D21F /* 1 */,
 				18789FA71703C52F0065D21F /* AFNetworking */,
@@ -1659,6 +1697,7 @@
 				18E38CAD17008215003782F2 /* iBAccountViewController.m in Sources */,
 				185F71AF1702D04600336ED3 /* iBGestureRecognizeViewController.m in Sources */,
 				18789FBB1703C53E0065D21F /* AFHTTPClient.m in Sources */,
+				18372FBA1830DA0600885C68 /* PNBar.m in Sources */,
 				18789FBC1703C53E0065D21F /* AFHTTPRequestOperation.m in Sources */,
 				18789FBD1703C53E0065D21F /* AFImageRequestOperation.m in Sources */,
 				18789FBE1703C53F0065D21F /* AFJSONRequestOperation.m in Sources */,
@@ -1678,6 +1717,7 @@
 				18E1C335171A4CB300F5DC5D /* iBGlobalRecorder.m in Sources */,
 				1838CE89172E19B00078B3AD /* FMDatabase.m in Sources */,
 				1838CE8A172E19B00078B3AD /* FMDatabaseAdditions.m in Sources */,
+				18372FB61830DA0600885C68 /* PNColor.m in Sources */,
 				1838CE8B172E19B00078B3AD /* FMResultSet.m in Sources */,
 				1838CE8C172E19B00078B3AD /* NSObject+SBJSON.m in Sources */,
 				1838CE8D172E19B00078B3AD /* NSString+SBJSON.m in Sources */,
@@ -1699,11 +1739,13 @@
 				1838CEB1172E19B00078B3AD /* ROWebNavigationViewController.m in Sources */,
 				1838CEB2172E19B00078B3AD /* ROPayDB.m in Sources */,
 				1838CEB3172E19B00078B3AD /* ROPayOrderDao.m in Sources */,
+				18372FB71830DA0600885C68 /* PNChart.m in Sources */,
 				1838CEB4172E19B00078B3AD /* ROPayOrderInfo.m in Sources */,
 				1838CEB5172E19B00078B3AD /* ROAlbumsInfoRequestParam.m in Sources */,
 				1838CEB6172E19B00078B3AD /* ROCreateAlbumRequestParam.m in Sources */,
 				1838CEB7172E19B00078B3AD /* ROGetFriendsInfoRequestParam.m in Sources */,
 				1838CEB8172E19B00078B3AD /* ROGetFriendsRequestParam.m in Sources */,
+				18372FB91830DA0600885C68 /* PNBarChart.m in Sources */,
 				1838CEB9172E19B00078B3AD /* ROPasswordFlowRequestParam.m in Sources */,
 				1838CEBA172E19B00078B3AD /* ROPublishPhotoRequestParam.m in Sources */,
 				1838CEBB172E19B00078B3AD /* RORequestParam.m in Sources */,
@@ -1739,6 +1781,7 @@
 				183C794A174B0B0100992262 /* Tag.m in Sources */,
 				181393CB174C69EE0041F384 /* EventTableViewCell.m in Sources */,
 				18B9C7DC18102BCA00E737C4 /* RenRenShareActivity.m in Sources */,
+				18372FB51830DA0600885C68 /* PNChartLabel.m in Sources */,
 				181393CC174C69EE0041F384 /* EditableTableViewCell.m in Sources */,
 				184A9001174DAE3D007D28F0 /* iBFootPrintViewController.m in Sources */,
 				184A9004174DAE45007D28F0 /* iBFootPrintTagSelectionController.m in Sources */,
@@ -1753,6 +1796,7 @@
 				18A460DC17D7FFDA00A4BCC0 /* iBChoosePositionViewController.m in Sources */,
 				185D324317DB1F6C002C3373 /* iBZGestureReconizer.m in Sources */,
 				18FBC99017E7CB8E00924B4E /* UIBezierPath+ShadowPath.m in Sources */,
+				18372FB81830DA0600885C68 /* PNLineChart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
