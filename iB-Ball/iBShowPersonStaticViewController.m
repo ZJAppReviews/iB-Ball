@@ -14,6 +14,8 @@
 
 @interface iBShowPersonStaticViewController () <UIAlertViewDelegate, UITableViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *chartsTableView;
+
 @end
 
 @implementation iBShowPersonStaticViewController
@@ -146,6 +148,7 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     NSString *str = [alertView textFieldAtIndex:0].text;
+    self.bioText.text = str;
     [[NSUserDefaults standardUserDefaults] setObject:str forKey:@"bio"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 
@@ -160,6 +163,22 @@
     iBChartsViewController *cv = [[iBChartsViewController alloc] initWithNibName:@"iBChartsViewController" bundle:nil];
     [self.navigationController pushViewController:cv animated:YES];
 
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"a1"];
+    cell.contentView.tintColor = [UIColor redColor];
+    cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    cell.textLabel.text = @"2pt - Chart";
+    return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"Chart";
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
 }
 
 @end

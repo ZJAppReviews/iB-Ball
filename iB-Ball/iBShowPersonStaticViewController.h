@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface iBShowPersonStaticViewController : UIViewController <UIActionSheetDelegate>
+@interface iBShowPersonStaticViewController : UIViewController <UIActionSheetDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 

@@ -10,6 +10,7 @@
 #import "iBAppDelegate.h"
 #import "PNColor.h"
 #import "PNChart.h"
+#import "TwoPoint.h"
 
 @interface iBChartsViewController ()
 
@@ -47,6 +48,17 @@
     if (fetchedObjects == nil) {
         // Handle the error
     }
+    fetchedObjects = [fetchedObjects sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+        [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+        NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+        [dateFormatter setLocale:usLocale];
+
+        NSDate *date1 = [dateFormatter dateFromString:((TwoPoint *)obj1).twoPointDay];
+        NSDate *date2 = [dateFormatter dateFromString:((TwoPoint *)obj2).twoPointDay];
+        return [date1 compare:date2];
+    }];
     
     NSArray *dateArray = [fetchedObjects valueForKey:@"twoPointDay"];
     NSArray *twoPointGoal = [fetchedObjects valueForKey:@"twoPointGoal"];
@@ -56,7 +68,8 @@
         NSInteger a = [twoPointGoal[i] integerValue];
         NSInteger b = [twoPointTotal[i] integerValue];
         CGFloat bc = (CGFloat)a / b;
-        NSString *c = [NSString stringWithFormat:@"%f", bc];
+        bc *= 100;
+        NSString *c = [NSString stringWithFormat:@"%d", (NSInteger)bc];
         [ratioArray addObject:c];
     }
 //    //Add LineChart
@@ -78,14 +91,21 @@
 	barChartLabel.font = [UIFont fontWithName:@"Avenir-Medium" size:23.0];
 	barChartLabel.textAlignment = NSTextAlignmentCenter;
 	
-	PNChart * barChart = [[PNChart alloc] initWithFrame:CGRectMake(0, 100, SCREEN_WIDTH, 200.0)];
-	barChart.backgroundColor = [UIColor clearColor];
-	barChart.type = PNLineType;
-	[barChart setXLabels:dateArray];
-	[barChart setYValues:ratioArray];
-	[barChart strokeChart];
+//	PNChart * barChart = [[PNChart alloc] initWithFrame:CGRectMake(0, 100, SCREEN_WIDTH, 200.0)];
+//	barChart.backgroundColor = [UIColor clearColor];
+//	barChart.type = PNLineType;
+//	[barChart setXLabels:dateArray];
+//	[barChart setYValues:ratioArray];
+//	[barChart strokeChart];
 	[self.view addSubview:barChartLabel];
-	[self.view addSubview:barChart];
+//	[self.view addSubview:barChart];
+    PNChart * lineChart = [[PNChart alloc] initWithFrame:CGRectMake(0, 125.0, SCREEN_WIDTH, 200.0)];
+	lineChart.backgroundColor = [UIColor clearColor];
+	[lineChart setXLabels:dateArray];
+	[lineChart setYValues:ratioArray];
+	[lineChart strokeChart];
+	[self.view addSubview:lineChart];
+
 
 
 }
