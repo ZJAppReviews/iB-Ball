@@ -856,6 +856,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Footprint" image="geography.png" id="V3x-dT-OQo"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHu-NX-7e1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

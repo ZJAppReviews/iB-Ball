@@ -116,5 +116,9 @@
     [self presentModalViewController:a animated:YES];
 }
 
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
 
 @end
