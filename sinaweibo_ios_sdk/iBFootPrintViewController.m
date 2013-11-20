@@ -82,15 +82,13 @@
 	self.tableView.rowHeight = 77;
 	
 	
-	// Configure the add and edit buttons.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
     UIBarButtonItem *aButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addEvent)];
 	self.addButton = aButton;
 	[aButton release];
 	
 	addButton.enabled = NO;
-    self.navigationItem.rightBarButtonItem = addButton;
+    self.navigationItem.rightBarButtonItems = @[addButton, self.editButtonItem];
     
 	// Start the location manager.
 	[[self locationManager] startUpdatingLocation];
