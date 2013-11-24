@@ -7,7 +7,6 @@
 //
 
 #import "iBTabMainViewController.h"
-#import "CustomTabBar.h"
 
 @interface iBTabMainViewController ()
 
@@ -32,36 +31,6 @@
     
     self.navigationController.delegate = self;
 //    [self addTabBarArrow];
-    
-}
-
-- (void)addTabBarArrow {
-    UIImage *tabBarArrowImage = [UIImage imageNamed:@"TabBarNipple.png"];
-    self.tabBarArrow = [[UIImageView alloc] initWithImage:tabBarArrowImage];
-    CGFloat verticalLocation = [UIScreen mainScreen].bounds.size.height - tabBarArrowImage.size.height - self.tabBarBar.frame.size.height + 2;
-    tabBarArrow.frame = CGRectMake([self horizontalLocationFor:0], verticalLocation, tabBarArrowImage.size.width, tabBarArrowImage.size.height);
-    [self.view addSubview:self.tabBarArrow];
-}
-
-- (CGFloat) horizontalLocationFor:(NSUInteger)tabIndex
-{
-    // A single tab item's width is the entire width of the tab bar divided by number of items
-    CGFloat tabItemWidth = self.tabBarBar.frame.size.width / self.tabBarBar.items.count;
-    // A half width is tabItemWidth divided by 2 minus half the width of the arrow
-    CGFloat halfTabItemWidth = (tabItemWidth / 2.0) - (tabBarArrow.frame.size.width / 2.0);
-    
-    // The horizontal location is the index times the width plus a half width
-    return (tabIndex * tabItemWidth) + halfTabItemWidth;
-}
-
-- (void)tabBarController:(UITabBarController *)theTabBarController didSelectViewController:(UIViewController *)viewController
-{
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:0.2];
-    CGRect frame = tabBarArrow.frame;
-    frame.origin.x = [self horizontalLocationFor:self.selectedIndex];
-    tabBarArrow.frame = frame;
-    [UIView commitAnimations];
     
 }
 
