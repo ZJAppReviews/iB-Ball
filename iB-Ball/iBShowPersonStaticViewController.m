@@ -92,6 +92,7 @@
 {
     [super viewDidLoad];
     
+    self.chartsTableView.delegate = self;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(action)];
 
     // Do any additional setup after loading the view from its nib.

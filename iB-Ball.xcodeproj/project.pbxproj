@@ -119,6 +119,7 @@
 		185D324317DB1F6C002C3373 /* iBZGestureReconizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 185D324217DB1F6C002C3373 /* iBZGestureReconizer.m */; };
 		185F71AF1702D04600336ED3 /* iBGestureRecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */; };
 		185F71B11702D06300336ED3 /* iBGestureRecognizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */; };
+		1861AAB61844E8E80042009F /* License.md in Resources */ = {isa = PBXBuildFile; fileRef = 1861AAB51844E8E80042009F /* License.md */; };
 		18640E4917445073006B541A /* README in Resources */ = {isa = PBXBuildFile; fileRef = 18640E4817445073006B541A /* README */; };
 		18640E4F1744C572006B541A /* ic_calc.png in Resources */ = {isa = PBXBuildFile; fileRef = 18640E4E1744C572006B541A /* ic_calc.png */; };
 		18640E511744C5D2006B541A /* ic_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 18640E501744C5D2006B541A /* ic_ok.png */; };
@@ -432,6 +433,7 @@
 		185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBGestureRecognizeViewController.h; path = ../iBGestureRecognizeViewController.h; sourceTree = "<group>"; };
 		185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBGestureRecognizeViewController.m; path = ../iBGestureRecognizeViewController.m; sourceTree = "<group>"; };
 		185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBGestureRecognizeViewController.xib; path = ../iBGestureRecognizeViewController.xib; sourceTree = "<group>"; };
+		1861AAB51844E8E80042009F /* License.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.md; sourceTree = "<group>"; };
 		18640E4817445073006B541A /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		18640E4E1744C572006B541A /* ic_calc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_calc.png; path = ../ic_calc.png; sourceTree = "<group>"; };
 		18640E501744C5D2006B541A /* ic_ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_ok.png; path = ../ic_ok.png; sourceTree = "<group>"; };
@@ -1250,6 +1252,7 @@
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
+				1861AAB51844E8E80042009F /* License.md */,
 				BA36DEE016C4BF37007FFDD1 /* iB-Ball */,
 				BA36DEE116C4BF37007FFDD1 /* Supporting Files */,
 				18E9EEC117D2A88800C7F8EB /* iBBallTest */,
@@ -1531,6 +1534,7 @@
 				BA9BF1CC16D5951100DFDD54 /* SinaWeibo.bundle in Resources */,
 				18D3BA63180E009F000632F0 /* geography@2x.png in Resources */,
 				BA01858716D6753F00B98B6A /* MainStoryboard.storyboard in Resources */,
+				1861AAB61844E8E80042009F /* License.md in Resources */,
 				183B836C16F4D42C0030BC70 /* 2.png in Resources */,
 				183B836D16F4D42C0030BC70 /* 1.png in Resources */,
 				1824C26F16FEEC5000895222 /* TODO in Resources */,
