@@ -1034,9 +1034,7 @@
                             <outlet property="delegate" destination="Btz-zU-fgw" id="pRr-Ux-leI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Objective" id="hQY-EC-tRc">
-                        <barButtonItem key="backBarButtonItem" title="asdf" id="Aaa-HP-V7a"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Objective" id="hQY-EC-tRc"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -1815,6 +1813,7 @@
         <image name="edit.png" width="25" height="25"/>
         <image name="expand.png" width="25" height="25"/>
         <image name="geography.png" width="25" height="25"/>
+        <image name="hotzone.png" width="476" height="389"/>
         <image name="hotzone.png" width="476" height="389"/>
         <image name="settings.png" width="25" height="25"/>
         <image name="today.png" width="25" height="25"/>

@@ -81,7 +81,7 @@
 - (IBAction)action:(id)sender {
     RenRenShareActivity *a = [[RenRenShareActivity alloc] init];
     
-    UIActivityViewController *uivc = [[UIActivityViewController alloc] initWithActivityItems:[NSArray arrayWithObjects:@"asdf", nil] applicationActivities:[NSArray arrayWithObjects:a, nil]];
+    UIActivityViewController *uivc = [[UIActivityViewController alloc] initWithActivityItems:[NSArray arrayWithObjects:@"asdfasdf", nil] applicationActivities:[NSArray arrayWithObjects:a, nil]];
     [self presentViewController:uivc animated:YES completion:nil];
 }
 

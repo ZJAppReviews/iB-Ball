@@ -165,6 +165,7 @@
 		1878A00D1703CB150065D21F /* WeatherAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878A00B1703CB150065D21F /* WeatherAnimationViewController.m */; };
 		187C1F6A16F701AB00263479 /* iBSkiInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6916F701AB00263479 /* iBSkiInputViewController.m */; };
 		187C1F6E16F7CDEC00263479 /* iBSkiCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */; };
+		18802460184F19B100E70764 /* back-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1880245F184F19B100E70764 /* back-32@2x.png */; };
 		1880DF1C17335866004E7DA0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1880DF1A17335866004E7DA0 /* Model.xcdatamodeld */; };
 		1880DF2A1733B885004E7DA0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880DF291733B885004E7DA0 /* CoreData.framework */; };
 		1892F50B17D405CA00C3902F /* iBStaticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1892F50917D405CA00C3902F /* iBStaticsViewController.m */; };
@@ -497,6 +498,7 @@
 		187C1F6916F701AB00263479 /* iBSkiInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiInputViewController.m; sourceTree = "<group>"; };
 		187C1F6C16F7CDEB00263479 /* iBSkiCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiCountViewController.h; sourceTree = "<group>"; };
 		187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiCountViewController.m; sourceTree = "<group>"; };
+		1880245F184F19B100E70764 /* back-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-32@2x.png"; sourceTree = "<group>"; };
 		1880DF1B17335866004E7DA0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1880DF291733B885004E7DA0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		188D21E01841005000CEFC6D /* iB-Ball.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "iB-Ball.entitlements"; sourceTree = "<group>"; };
@@ -1320,6 +1322,7 @@
 				BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */,
 				BACE1C5916E117410032223B /* iBObjCountViewController.h */,
 				BACE1C5A16E117410032223B /* iBObjCountViewController.m */,
+				1880245F184F19B100E70764 /* back-32@2x.png */,
 				18C0123F17E40BF900FE7172 /* 2&3Count */,
 				185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */,
 				185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */,
@@ -1489,7 +1492,7 @@
 								enabled = 0;
 							};
 							com.apple.iCloud = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -1567,6 +1570,7 @@
 				18789FF21703C7C30065D21F /* thunderbolt.png in Resources */,
 				18789FF31703C7C30065D21F /* thunderbolt@2x.png in Resources */,
 				18789FF41703C7C30065D21F /* windycloud.png in Resources */,
+				18802460184F19B100E70764 /* back-32@2x.png in Resources */,
 				18789FF51703C7C30065D21F /* windycloud@2x.png in Resources */,
 				1838CE9A172E19B00078B3AD /* bottom-bar.png in Resources */,
 				1838CE9B172E19B00078B3AD /* bottom-bar@2x.png in Resources */,
@@ -1904,7 +1908,6 @@
 		BA36DEFB16C4BF37007FFDD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "iB-Ball/iB-Ball.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1924,7 +1927,6 @@
 		BA36DEFC16C4BF37007FFDD1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "iB-Ball/iB-Ball.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (

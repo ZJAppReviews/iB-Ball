@@ -50,8 +50,10 @@
 {
     [super viewDidLoad];
     
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(onBackClicked)];
-                                     
+//    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(onBackClicked)];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back-32.png"] style:UIBarButtonItemStylePlain target:self action:@selector(onBackClicked)];
+    
+    
     self.navigationItem.leftBarButtonItem = backButton;
 
     
