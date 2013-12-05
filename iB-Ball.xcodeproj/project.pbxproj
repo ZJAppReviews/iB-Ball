@@ -106,6 +106,7 @@
 		183D8C5A1824A5E800C3BC0D /* RenRenPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D8C581824A5E800C3BC0D /* RenRenPostViewController.m */; };
 		183D8C5B1824A5E800C3BC0D /* RenRenPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183D8C591824A5E800C3BC0D /* RenRenPostViewController.xib */; };
 		183D8C5F182545AF00C3BC0D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183D8C5E182545AF00C3BC0D /* Social.framework */; };
+		1842525C18502D4D00CA44ED /* back-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1842525B18502D4D00CA44ED /* back-50@2x.png */; };
 		18442A9617BF6BC800368EF5 /* iBCountViewControllerForHotZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */; };
 		18442A9717BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */; };
 		184653DD1804D63900D01B7D /* GameKitHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 184653DC1804D63900D01B7D /* GameKitHelper.m */; };
@@ -165,7 +166,6 @@
 		1878A00D1703CB150065D21F /* WeatherAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878A00B1703CB150065D21F /* WeatherAnimationViewController.m */; };
 		187C1F6A16F701AB00263479 /* iBSkiInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6916F701AB00263479 /* iBSkiInputViewController.m */; };
 		187C1F6E16F7CDEC00263479 /* iBSkiCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */; };
-		18802460184F19B100E70764 /* back-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1880245F184F19B100E70764 /* back-32@2x.png */; };
 		1880DF1C17335866004E7DA0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1880DF1A17335866004E7DA0 /* Model.xcdatamodeld */; };
 		1880DF2A1733B885004E7DA0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880DF291733B885004E7DA0 /* CoreData.framework */; };
 		1892F50B17D405CA00C3902F /* iBStaticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1892F50917D405CA00C3902F /* iBStaticsViewController.m */; };
@@ -413,6 +413,7 @@
 		183D8C581824A5E800C3BC0D /* RenRenPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenRenPostViewController.m; sourceTree = "<group>"; };
 		183D8C591824A5E800C3BC0D /* RenRenPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RenRenPostViewController.xib; sourceTree = "<group>"; };
 		183D8C5E182545AF00C3BC0D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		1842525B18502D4D00CA44ED /* back-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-50@2x.png"; sourceTree = "<group>"; };
 		18442A9317BF6BC800368EF5 /* iBCountViewControllerForHotZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountViewControllerForHotZone.h; path = "../iB-Ball/iBCountViewControllerForHotZone.h"; sourceTree = "<group>"; };
 		18442A9417BF6BC800368EF5 /* iBCountViewControllerForHotZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountViewControllerForHotZone.m; path = "../iB-Ball/iBCountViewControllerForHotZone.m"; sourceTree = "<group>"; };
 		18442A9517BF6BC800368EF5 /* iBCountViewControllerForHotZone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBCountViewControllerForHotZone.xib; path = "../iB-Ball/iBCountViewControllerForHotZone.xib"; sourceTree = "<group>"; };
@@ -498,7 +499,6 @@
 		187C1F6916F701AB00263479 /* iBSkiInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiInputViewController.m; sourceTree = "<group>"; };
 		187C1F6C16F7CDEB00263479 /* iBSkiCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBSkiCountViewController.h; sourceTree = "<group>"; };
 		187C1F6D16F7CDEB00263479 /* iBSkiCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSkiCountViewController.m; sourceTree = "<group>"; };
-		1880245F184F19B100E70764 /* back-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-32@2x.png"; sourceTree = "<group>"; };
 		1880DF1B17335866004E7DA0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1880DF291733B885004E7DA0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		188D21E01841005000CEFC6D /* iB-Ball.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "iB-Ball.entitlements"; sourceTree = "<group>"; };
@@ -707,6 +707,7 @@
 				18372FB41830DA0600885C68 /* PNBar.m */,
 			);
 			name = PNChart;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		1838CDFE172E19960078B3AD /* renren_ios_sdk */ = {
@@ -1006,6 +1007,14 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		1842525A18502D3F00CA44ED /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1842525B18502D4D00CA44ED /* back-50@2x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		184653DA1804D62100D01B7D /* GameKitFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -1036,7 +1045,6 @@
 		18789FA61703C4FC0065D21F /* open_source */ = {
 			isa = PBXGroup;
 			children = (
-				18372FA81830D9FA00885C68 /* PNChart */,
 				185CC92717BF625300061270 /* Vendor */,
 				18789FC41703C7960065D21F /* 1 */,
 				18789FA71703C52F0065D21F /* AFNetworking */,
@@ -1302,6 +1310,10 @@
 		BA36DEE016C4BF37007FFDD1 /* iB-Ball */ = {
 			isa = PBXGroup;
 			children = (
+				1842525A18502D3F00CA44ED /* Assets */,
+				18789FA61703C4FC0065D21F /* open_source */,
+				18372FA81830D9FA00885C68 /* PNChart */,
+				183C793F174B0A2900992262 /* CDModel */,
 				188D21E01841005000CEFC6D /* iB-Ball.entitlements */,
 				1824C26E16FEEC5000895222 /* TODO */,
 				18C3B2A21815F496008B10FB /* Quest */,
@@ -1322,7 +1334,6 @@
 				BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */,
 				BACE1C5916E117410032223B /* iBObjCountViewController.h */,
 				BACE1C5A16E117410032223B /* iBObjCountViewController.m */,
-				1880245F184F19B100E70764 /* back-32@2x.png */,
 				18C0123F17E40BF900FE7172 /* 2&3Count */,
 				185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */,
 				185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */,
@@ -1365,10 +1376,8 @@
 				18D3BA62180E009F000632F0 /* geography@2x.png */,
 				18D3BA60180E004E000632F0 /* area_chart@2x.png */,
 				18F1F25E17FFB9310069C91E /* cool@2x.png */,
-				183C793F174B0A2900992262 /* CDModel */,
 				18AE0C15174725AE00AE766B /* Crappy */,
 				180475A517408901001DA45A /* UI */,
-				18789FA61703C4FC0065D21F /* open_source */,
 				1831D25217C869110044EC08 /* TabBarNipple.png */,
 				1831D25317C869110044EC08 /* TabBarNipple@2x.png */,
 				18BE11961755ECA900C8ABB4 /* alarm.mp3 */,
@@ -1570,7 +1579,6 @@
 				18789FF21703C7C30065D21F /* thunderbolt.png in Resources */,
 				18789FF31703C7C30065D21F /* thunderbolt@2x.png in Resources */,
 				18789FF41703C7C30065D21F /* windycloud.png in Resources */,
-				18802460184F19B100E70764 /* back-32@2x.png in Resources */,
 				18789FF51703C7C30065D21F /* windycloud@2x.png in Resources */,
 				1838CE9A172E19B00078B3AD /* bottom-bar.png in Resources */,
 				1838CE9B172E19B00078B3AD /* bottom-bar@2x.png in Resources */,
@@ -1603,6 +1611,7 @@
 				18640E4F1744C572006B541A /* ic_calc.png in Resources */,
 				18640E511744C5D2006B541A /* ic_ok.png in Resources */,
 				18640E531744C658006B541A /* ic_users.png in Resources */,
+				1842525C18502D4D00CA44ED /* back-50@2x.png in Resources */,
 				18640E551744C6A2006B541A /* ic_bookmark.png in Resources */,
 				181393CE174C6A080041F384 /* EventTableViewCell.xib in Resources */,
 				181393D0174C6A130041F384 /* EditableTableViewCell.xib in Resources */,
