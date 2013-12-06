@@ -47,6 +47,9 @@
 }
 
 - (void)skillInputOK {
+    if (self.skillText.text == nil) {
+        return;
+    }
     [self.delegate skillInput:self withName:self.skillText.text withDesctiption:self.skillDescription.text andTag:self.category];
 }   
 
