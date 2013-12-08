@@ -182,16 +182,21 @@
 		self.eventTableViewCell = nil;
     }
     
+    [self setupEventsLabLogToPlaceString];
+    
 	// Get the event corresponding to the current index path and configure the table view cell.
 	Event *event = (Event *)[eventsArray objectAtIndex:indexPath.row];
 	
 	cell.nameField.text = event.name;
 	
 	cell.creationDateLabel.text = [dateFormatter stringFromDate:[event creationDate]];
-	
-	NSString *string = [NSString stringWithFormat:@"%@, %@",
+    
+    NSNumber *number = [NSNumber numberWithInteger:indexPath.row];
+	NSMutableString *stringPrefix = [self.addressDict objectForKey:[number stringValue]];
+	NSString *string2 = [NSString stringWithFormat:@"%@, %@",
 						[numberFormatter stringFromNumber:[event latitude]],
 						[numberFormatter stringFromNumber:[event longitude]]];
+    NSString *string = [NSString stringWithFormat:@"%@ %@", stringPrefix, string2];
     cell.locationLabel.text = string;
     
 	NSMutableArray *eventTagNames = [NSMutableArray array];
@@ -345,27 +350,6 @@
 	 */
 }
 
-- (NSString *)cllocationToString:(CLLocation *)location {
-
-	if (!location) {
-		return @"nil place";
-	}
-
-    CLGeocoder *clg = [[CLGeocoder alloc] init];
-    __block NSString *test;
-
-    [clg reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
-        for (CLPlacemark * placemark in placemarks) {
-            test = [placemark locality];
-            NSLog(@"%@", test);
-            //            self.myCity.text = [NSString stringWithFormat:@"%@",placemark];
-            NSLog(@"%@", [NSString stringWithFormat:@"%@",placemark]);
-        }
-
-    }];
-	return test;
-
-}
 
 #pragma mark -
 #pragma mark Location manager
@@ -447,6 +431,54 @@
     [locationManager release];
     [addButton release];
     [super dealloc];
+}
+
+
+#pragma mark -
+- (NSString *)cllocationToString:(CLLocation *)location andOrderNumber:(NSInteger)number {
+    
+	if (!location) {
+		return @"nil place";
+	}
+    
+    CLGeocoder *clg = [[CLGeocoder alloc] init];
+    __block NSString *test;
+    
+    [clg reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
+        for (CLPlacemark * placemark in placemarks) {
+            test = [placemark locality];
+            NSLog(@"%@", test);
+            //            self.myCity.text = [NSString stringWithFormat:@"%@",placemark];
+            NSLog(@"%@", [NSString stringWithFormat:@"%@",placemark]);
+            [self.addressDict setObject:[NSString stringWithFormat:@"%@",placemark] forKey:[number stringValue]];
+            [self.tableView reloadData];
+        }
+        
+    }];
+	return test;
+    
+}
+
+
+- (void)setupEventsLabLogToPlaceString {
+    NSInteger count = self.eventsArray.count;
+    for (NSInteger i = 0; i < count; i++) {
+        Event *event = (Event *)[eventsArray objectAtIndex:i];
+        NSNumber *lag = event.latitude;
+        NSNumber *log = event.longitude;
+        CLLocationDegrees aa = [lag doubleValue];
+        CLLocationDegrees bb = [log doubleValue];
+        CLLocation *location = [[CLLocation alloc] initWithLatitude:aa longitude:bb];
+        [self cllocationToString:location andOrderNumber:i];
+    }
+}
+
+- (NSMutableDictionary *)addressDict {
+    if (!_addressDict) {
+        _addressDict = [NSMutableDictionary new];
+        return _addressDict;
+    }
+    return _addressDict;
 }
 
 

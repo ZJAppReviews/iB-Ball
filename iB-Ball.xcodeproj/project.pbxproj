@@ -607,8 +607,8 @@
 		BA9BF1CA16D5951100DFDD54 /* SinaWeiboRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeiboRequest.m; sourceTree = "<group>"; };
 		BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBShareViewController.h; path = ../sinaweibo_ios_sdk/iBShareViewController.h; sourceTree = "<group>"; };
 		BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBShareViewController.m; path = ../sinaweibo_ios_sdk/iBShareViewController.m; sourceTree = "<group>"; };
-		BACE1C5916E117410032223B /* iBObjCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObjCountViewController.h; path = ../sinaweibo_ios_sdk/iBObjCountViewController.h; sourceTree = "<group>"; };
-		BACE1C5A16E117410032223B /* iBObjCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBObjCountViewController.m; path = ../sinaweibo_ios_sdk/iBObjCountViewController.m; sourceTree = "<group>"; };
+		BACE1C5916E117410032223B /* iBObjCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBObjCountViewController.h; sourceTree = "<group>"; };
+		BACE1C5A16E117410032223B /* iBObjCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBObjCountViewController.m; sourceTree = "<group>"; };
 		BAFA0EC616E01F73000CF109 /* iBObjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObjViewController.h; path = ../iBObjViewController.h; sourceTree = "<group>"; };
 		BAFA0EC716E01F73000CF109 /* iBObjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBObjViewController.m; path = ../iBObjViewController.m; sourceTree = "<group>"; };
 		BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObj_DataModel.h; path = ../iBObj_DataModel.h; sourceTree = "<group>"; };
@@ -1328,12 +1328,6 @@
 				185D324117DB1F6C002C3373 /* iBZGestureReconizer.h */,
 				185D324217DB1F6C002C3373 /* iBZGestureReconizer.m */,
 				BACE1C5716E113520032223B /* Obj */,
-				BAFA0EC616E01F73000CF109 /* iBObjViewController.h */,
-				BAFA0EC716E01F73000CF109 /* iBObjViewController.m */,
-				BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */,
-				BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */,
-				BACE1C5916E117410032223B /* iBObjCountViewController.h */,
-				BACE1C5A16E117410032223B /* iBObjCountViewController.m */,
 				18C0123F17E40BF900FE7172 /* 2&3Count */,
 				185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */,
 				185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */,
@@ -1440,6 +1434,12 @@
 		BACE1C5716E113520032223B /* Obj */ = {
 			isa = PBXGroup;
 			children = (
+				BAFA0EC616E01F73000CF109 /* iBObjViewController.h */,
+				BAFA0EC716E01F73000CF109 /* iBObjViewController.m */,
+				BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */,
+				BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */,
+				BACE1C5916E117410032223B /* iBObjCountViewController.h */,
+				BACE1C5A16E117410032223B /* iBObjCountViewController.m */,
 			);
 			name = Obj;
 			path = ../sinaweibo_ios_sdk;

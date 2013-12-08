@@ -77,4 +77,7 @@
 - (IBAction)editTags:(UIButton *)button;
 - (void)updateRowTags;
 
+// row number: address
+@property (nonatomic, assign) NSMutableDictionary *addressDict;
+
 @end
