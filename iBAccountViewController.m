@@ -26,7 +26,6 @@
     Renren *renren = [Renren sharedRenren];
     [renren authorizationWithPermisson:nil andDelegate:self];
 //    NSArray *permissions = [NSArray arrayWithObjects:@"read_user_album",@"status_update",@"photo_upload",@"publish_feed",@"create_album",@"operate_like",nil];
-    [renren authorizationWithPermisson:nil andDelegate:self];
 
 }
 

@@ -393,7 +393,7 @@ NSString *postStatusText;
         
     }
     
-    NSString *appName = @" ---From iB-Ball";
+    NSString *appName = @" __From iB-Ball";
     postStatusText = [postStatusText stringByAppendingString:appName];
 
 }
@@ -410,15 +410,15 @@ NSString *postStatusText;
                          delegate:self];
         //TODO roughly set a nil
 //    }
-//    if (buttonIndex == RENREN_TAG) {
-//        Renren *renren = [Renren sharedRenren];
-//        NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:10];
-//        [params setObject:@"status.set" forKey:@"method"];
-//        [params setObject:postStatusText forKey:@"status"];
-//        [renren requestWithParams:params andDelegate:self];
-//        
-//
-//    }
+    if (buttonIndex == RENREN_TAG) {
+        Renren *renren = [Renren sharedRenren];
+        NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:10];
+        [params setObject:@"status.set" forKey:@"method"];
+        [params setObject:postStatusText forKey:@"status"];
+        [renren requestWithParams:params andDelegate:self];
+        
+
+    }
 }
 
 
@@ -481,6 +481,7 @@ NSString *postStatusText;
  * 接口请求成功，第三方开发者实现这个方法l
  */
 - (void)renren:(Renren *)renren requestDidReturnResponse:(ROResponse*)response {
+    NSLog(@"ss");
     //TODO
 }
 
@@ -488,6 +489,8 @@ NSString *postStatusText;
  * 接口请求失败，第三方开发者实现这个方法
  */
 - (void)renren:(Renren *)renren requestFailWithError:(ROError*)error {
+    NSLog(@"sss");
+
     //TODO
 }
 

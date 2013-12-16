@@ -24,6 +24,9 @@
     
     [[GameKitHelper sharedGameKitHelper] authenticateLocalPlayer];
     
+    self.window.tintColor = [UIColor purpleColor];
+    
+    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(
                                                          NSDocumentDirectory, NSUserDomainMask, YES);
     [[UINavigationBar appearance] setTintColor:[UIColor orangeColor]];

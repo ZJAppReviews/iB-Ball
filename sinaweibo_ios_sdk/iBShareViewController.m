@@ -64,7 +64,7 @@
 }
 
 - (IBAction)shareButtonPressed:(id)sender {
-    postStatusText = [[NSString alloc] initWithFormat:@"今日三分球怒中%d, 怒打%d次铁, 命中率为%.2f. ---From iB-Ball develped Nango", self.goal, self.shoot - self.goal, ((double)(self.goal) / self.shoot)];
+    postStatusText = [[NSString alloc] initWithFormat:@"今日三分球怒中%d, 怒打%d次铁, 命中率为%.2f. __From iB-Ball develped Nango", self.goal, self.shoot - self.goal, ((double)(self.goal) / self.shoot)];
     
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert"
                                                         message:[NSString stringWithFormat:@"Will post status with text \"%@\"", postStatusText]
