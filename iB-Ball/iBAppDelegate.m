@@ -22,7 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    [[GameKitHelper sharedGameKitHelper] authenticateLocalPlayer];
+//    [[GameKitHelper sharedGameKitHelper] authenticateLocalPlayer];
     
     self.window.tintColor = [UIColor purpleColor];
     

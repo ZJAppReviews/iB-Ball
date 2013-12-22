@@ -107,6 +107,25 @@
 
 }
 
+- (IBAction)scoreFive:(id)sender {
+    [self countModel].shootingTimes++;
+    [self countModel].goalTimes++;
+    [self countModel].totalGoalTimes++;
+    [self countModel].totalShootingTimes++;
+    NSString *ratio = [NSString stringWithFormat:@"%.1f%%", [[self countModel] getRatioForThisTime]];
+    [self.shootingRatio setText:ratio];
+
+}
+
+- (IBAction)missFive:(id)sender {
+    [self countModel].shootingTimes++;
+    [self countModel].totalGoalTimes++;
+    NSString *ratio = [NSString stringWithFormat:@"%.1f%%", [[self countModel] getRatioForThisTime]];
+    [self.shootingRatio setText:ratio];
+
+}
+
+
 - (void)updateRatio:(UIView *)sender {
     if (sender.tag == 1) {
         [self countModel].shootingTimes++;
@@ -269,24 +288,8 @@ int choice = 0;
 
 NSString *postStatusText;
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (actionSheet.tag == 10) {
-        if (buttonIndex == 0) {
-            choice = 1;
-            
-            if (choice) {
-                [[self countModel] loadData];
-                [self updateRatio:nil];
-                choice = 0;
-            }
-            return;
-        }
-        if ( buttonIndex == 1) {
-            NSLog(@"safw");
-            return;
-        }
-    }
-    
     if (buttonIndex == 0) {
+        // if weibo
         int shoot = self.countModel.shootingTimes;
         int goal = self.countModel.goalTimes;
         
@@ -333,6 +336,7 @@ NSString *postStatusText;
         
     }
     if (buttonIndex == 1) {
+        // if renren
         int shoot = self.countModel.shootingTimes;
         int goal = self.countModel.goalTimes;
         
@@ -399,7 +403,7 @@ NSString *postStatusText;
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-//    if (buttonIndex == WEIBO_TAG) {
+    if (alertView.tag == WEIBO_TAG) {
     
         // post status
         NSLog(@"%@", postStatusText);
@@ -408,8 +412,8 @@ NSString *postStatusText;
                            params:[NSMutableDictionary dictionaryWithObjectsAndKeys:postStatusText, @"status", nil]
                        httpMethod:@"POST"
                          delegate:self];
-        //TODO roughly set a nil
-//    }
+        return;
+    }
     if (buttonIndex == RENREN_TAG) {
         Renren *renren = [Renren sharedRenren];
         NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:10];
