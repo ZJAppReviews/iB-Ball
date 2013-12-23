@@ -108,18 +108,18 @@
 }
 
 - (IBAction)scoreFive:(id)sender {
-    [self countModel].shootingTimes++;
-    [self countModel].goalTimes++;
-    [self countModel].totalGoalTimes++;
-    [self countModel].totalShootingTimes++;
+    [self countModel].shootingTimes += 5;
+    [self countModel].goalTimes += 5;
+    [self countModel].totalGoalTimes += 5;
+    [self countModel].totalShootingTimes += 5;
     NSString *ratio = [NSString stringWithFormat:@"%.1f%%", [[self countModel] getRatioForThisTime]];
     [self.shootingRatio setText:ratio];
 
 }
 
 - (IBAction)missFive:(id)sender {
-    [self countModel].shootingTimes++;
-    [self countModel].totalGoalTimes++;
+    [self countModel].shootingTimes += 5;
+    [self countModel].totalShootingTimes += 5;
     NSString *ratio = [NSString stringWithFormat:@"%.1f%%", [[self countModel] getRatioForThisTime]];
     [self.shootingRatio setText:ratio];
 
