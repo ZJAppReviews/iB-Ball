@@ -26,6 +26,7 @@
 
 #define RENREN_TAG 1
 #define WEIBO_TAG 2
+#define SAVE_ALERT_TAG 3
 
 - (iBCountModelForTwoAndThree *)countModel {
     if (_countModel == nil) {
@@ -51,7 +52,7 @@
     [super viewDidLoad];
     
 //    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(onBackClicked)];
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back-32.png"] style:UIBarButtonItemStylePlain target:self action:@selector(onBackClicked)];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back-50.png"] style:UIBarButtonItemStylePlain target:self action:@selector(onBackClicked)];
     
     
     self.navigationItem.leftBarButtonItem = backButton;
@@ -96,18 +97,21 @@
 }
 
 - (IBAction)score:(id)sender {
+    saved = NO;
     [self updateRatio:sender];
     NSLog(@"%d", self.countModel.shootingTimes);
 
 }
 
 - (IBAction)miss:(id)sender {
+    saved = NO;
     [self updateRatio:sender];
     NSLog(@"%d", self.countModel.shootingTimes);
 
 }
 
 - (IBAction)scoreFive:(id)sender {
+    saved = NO;
     [self countModel].shootingTimes += 5;
     [self countModel].goalTimes += 5;
     [self countModel].totalGoalTimes += 5;
@@ -118,6 +122,7 @@
 }
 
 - (IBAction)missFive:(id)sender {
+    saved = NO;
     [self countModel].shootingTimes += 5;
     [self countModel].totalShootingTimes += 5;
     NSString *ratio = [NSString stringWithFormat:@"%.1f%%", [[self countModel] getRatioForThisTime]];
@@ -257,6 +262,12 @@
 
 #pragma mark - file save -
 - (IBAction)saveData:(id)sender {
+    if (saved == YES) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"重复保存" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
+    saved = YES;
     [[self countModel] saveData];
 }
 
@@ -403,6 +414,13 @@ NSString *postStatusText;
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (alertView.tag == SAVE_ALERT_TAG) {
+        if (buttonIndex == 0) {
+            [self saveData:nil];
+        }
+        saved = YES;
+        return;
+    }
     if (alertView.tag == WEIBO_TAG) {
     
         // post status
@@ -414,7 +432,7 @@ NSString *postStatusText;
                          delegate:self];
         return;
     }
-    if (buttonIndex == RENREN_TAG) {
+    if (alertView.tag == RENREN_TAG) {
         Renren *renren = [Renren sharedRenren];
         NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:10];
         [params setObject:@"status.set" forKey:@"method"];
@@ -472,7 +490,9 @@ NSString *postStatusText;
 
 - (void)onBackClicked {
     if (!saved) {
-        [self.navigationController popViewControllerAnimated:YES];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"是否保存" message:@"您的数据尚未保存" delegate:self cancelButtonTitle:@"保存" otherButtonTitles:@"丢弃", nil];
+        alert.tag = SAVE_ALERT_TAG;
+        [alert show];
     }
     else {
         [self.navigationController popViewControllerAnimated:YES];
