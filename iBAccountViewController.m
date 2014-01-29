@@ -24,7 +24,10 @@
 - (IBAction)renrenLog:(id)sender {
     // deal with renren
     Renren *renren = [Renren sharedRenren];
-    [renren authorizationWithPermisson:nil andDelegate:self];
+    NSArray *permisson= @[@"status_update",@"read_user_feed", @"publish_comment"];
+
+    [renren logout:nil];
+    [renren authorizationWithPermisson:permisson andDelegate:self];
 //    NSArray *permissions = [NSArray arrayWithObjects:@"read_user_album",@"status_update",@"photo_upload",@"publish_feed",@"create_album",@"operate_like",nil];
 
 }

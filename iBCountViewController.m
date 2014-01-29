@@ -100,7 +100,16 @@
     saved = NO;
     [self updateRatio:sender];
     NSLog(@"%d", self.countModel.shootingTimes);
+}
 
+- (IBAction)scoreCancel:(id)sender {
+    saved = NO;
+    [self countModel].shootingTimes -= 1;
+    [self countModel].goalTimes -= 1;
+    [self countModel].totalGoalTimes -= 1;
+    [self countModel].totalShootingTimes -= 1;
+    NSString *ratio = [NSString stringWithFormat:@"%.1f%%", [[self countModel] getRatioForThisTime]];
+    [self.shootingRatio setText:ratio];
 }
 
 - (IBAction)miss:(id)sender {
@@ -109,6 +118,15 @@
     NSLog(@"%d", self.countModel.shootingTimes);
 
 }
+
+- (IBAction)missCancel:(id)sender {
+    saved = NO;
+    [self countModel].shootingTimes -= 1;
+    [self countModel].totalShootingTimes -= 1;
+    NSString *ratio = [NSString stringWithFormat:@"%.1f%%", [[self countModel] getRatioForThisTime]];
+    [self.shootingRatio setText:ratio];
+}
+
 
 - (IBAction)scoreFive:(id)sender {
     saved = NO;

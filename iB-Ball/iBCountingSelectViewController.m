@@ -40,11 +40,13 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog([NSUserDefaults standardUserDefaults].dictionaryRepresentation.description);
+
     if (indexPath.row == 4) {
         iBGestureRecognizeViewController *a = [[iBGestureRecognizeViewController alloc] initWithNibName:@"iBGestureRecognizeViewController" bundle:nil];
         a.whatKindOfGestureReconizingAreWeIn = GestureForMatchCount;
         [self presentViewController:a animated:YES completion:nil];
-        
+
     }
     if (indexPath.row == 0) {
     }
