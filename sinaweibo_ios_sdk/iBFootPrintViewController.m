@@ -307,7 +307,7 @@
 //            NSLog(@"%@", [NSString stringWithFormat:@"%@",placemark]);
 //        }
 //    }];
-    [self cllocationToString:location];
+    [self cllocationToString:location andOrderNumber:-1];
 
 	
 	/*
@@ -450,7 +450,8 @@
             NSLog(@"%@", test);
             //            self.myCity.text = [NSString stringWithFormat:@"%@",placemark];
             NSLog(@"%@", [NSString stringWithFormat:@"%@",placemark]);
-            [self.addressDict setObject:[NSString stringWithFormat:@"%@",placemark] forKey:[number stringValue]];
+            NSNumber *nsNum = [NSNumber numberWithInteger:number];
+            [self.addressDict setObject:[NSString stringWithFormat:@"%@",placemark] forKey:[nsNum stringValue]];
             [self.tableView reloadData];
         }
         

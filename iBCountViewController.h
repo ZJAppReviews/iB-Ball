@@ -14,7 +14,7 @@
 @class iBDataCenterForHotzoneDoc;
 
 
-@interface iBCountViewController : UIViewController <UIActionSheetDelegate, UIAlertViewDelegate, SinaWeiboRequestDelegate, RenrenDelegate>
+@interface iBCountViewController : UIViewController
 
 @property (nonatomic, strong) iBCountModelForTwoAndThree *countModel;
 - (IBAction)score:(id)sender;
