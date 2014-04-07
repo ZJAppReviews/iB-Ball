@@ -186,7 +186,6 @@
 		18D3BA63180E009F000632F0 /* geography@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D3BA62180E009F000632F0 /* geography@2x.png */; };
 		18D3BA65180E015F000632F0 /* collapse@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D3BA64180E015F000632F0 /* collapse@2x.png */; };
 		18D3BA68180E2D0F000632F0 /* ThreePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3BA67180E2D0F000632F0 /* ThreePoint.m */; };
-		18D40DBB170134DF004A22CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBA170134DF004A22CD /* Parse.framework */; };
 		18D40DBD17013513004A22CD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBC17013513004A22CD /* AudioToolbox.framework */; };
 		18D40DBF1701352A004A22CD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DBE1701352A004A22CD /* CFNetwork.framework */; };
 		18D40DC117013599004A22CD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D40DC017013599004A22CD /* CoreLocation.framework */; };
@@ -235,7 +234,7 @@
 		BA3A7C4016CD39EE00E84B58 /* hotzone.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3A7C3F16CD39EE00E84B58 /* hotzone.png */; };
 		BA3A7C5016CD918100E84B58 /* iBCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */; };
 		BA4AE59316D12BAB005456EF /* iBCountModelForTwoAndThree.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4AE59216D12BAB005456EF /* iBCountModelForTwoAndThree.m */; };
-		BA9BF1CB16D5951100DFDD54 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9BF1C116D5951100DFDD54 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BA9BF1CB16D5951100DFDD54 /* JSONKit in Sources */ = {isa = PBXBuildFile; fileRef = BA9BF1C116D5951100DFDD54 /* JSONKit */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BA9BF1CC16D5951100DFDD54 /* SinaWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BA9BF1C316D5951100DFDD54 /* SinaWeibo.bundle */; };
 		BA9BF1CD16D5951100DFDD54 /* SinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9BF1C516D5951100DFDD54 /* SinaWeibo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BA9BF1CE16D5951100DFDD54 /* SinaWeiboAuthorizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9BF1C716D5951100DFDD54 /* SinaWeiboAuthorizeView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -528,7 +527,6 @@
 		18D3BA64180E015F000632F0 /* collapse@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "collapse@2x.png"; sourceTree = "<group>"; };
 		18D3BA66180E2D0F000632F0 /* ThreePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreePoint.h; sourceTree = "<group>"; };
 		18D3BA67180E2D0F000632F0 /* ThreePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreePoint.m; sourceTree = "<group>"; };
-		18D40DBA170134DF004A22CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		18D40DBC17013513004A22CD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		18D40DBE1701352A004A22CD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		18D40DC017013599004A22CD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -596,7 +594,7 @@
 		BA4AE59116D12BAB005456EF /* iBCountModelForTwoAndThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountModelForTwoAndThree.h; path = ../iBCountModelForTwoAndThree.h; sourceTree = "<group>"; };
 		BA4AE59216D12BAB005456EF /* iBCountModelForTwoAndThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountModelForTwoAndThree.m; path = ../iBCountModelForTwoAndThree.m; sourceTree = "<group>"; };
 		BA9BF1C016D5951100DFDD54 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		BA9BF1C116D5951100DFDD54 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		BA9BF1C116D5951100DFDD54 /* JSONKit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JSONKit; sourceTree = "<group>"; };
 		BA9BF1C316D5951100DFDD54 /* SinaWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SinaWeibo.bundle; sourceTree = "<group>"; };
 		BA9BF1C416D5951100DFDD54 /* SinaWeibo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeibo.h; sourceTree = "<group>"; };
 		BA9BF1C516D5951100DFDD54 /* SinaWeibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeibo.m; sourceTree = "<group>"; };
@@ -648,7 +646,6 @@
 				18D40DBD17013513004A22CD /* AudioToolbox.framework in Frameworks */,
 				BA36DEDB16C4BF37007FFDD1 /* UIKit.framework in Frameworks */,
 				BA36DEDD16C4BF37007FFDD1 /* Foundation.framework in Frameworks */,
-				18D40DBB170134DF004A22CD /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1045,6 +1042,7 @@
 		18789FA61703C4FC0065D21F /* open_source */ = {
 			isa = PBXGroup;
 			children = (
+				18FA1F1618F2F26E001FA0FC /* New Group */,
 				185CC92717BF625300061270 /* Vendor */,
 				18789FC41703C7960065D21F /* 1 */,
 				18789FA71703C52F0065D21F /* AFNetworking */,
@@ -1259,6 +1257,13 @@
 			path = ../sinaweibo_ios_sdk;
 			sourceTree = "<group>";
 		};
+		18FA1F1618F2F26E001FA0FC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		BA36DECB16C4BF37007FFDD1 = {
 			isa = PBXGroup;
 			children = (
@@ -1298,7 +1303,6 @@
 				18D40DC017013599004A22CD /* CoreLocation.framework */,
 				18D40DBE1701352A004A22CD /* CFNetwork.framework */,
 				18D40DBC17013513004A22CD /* AudioToolbox.framework */,
-				18D40DBA170134DF004A22CD /* Parse.framework */,
 				BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */,
 				BA36DEDC16C4BF37007FFDD1 /* Foundation.framework */,
 				BA36DEDE16C4BF37007FFDD1 /* CoreGraphics.framework */,
@@ -1411,7 +1415,7 @@
 			isa = PBXGroup;
 			children = (
 				BA9BF1C016D5951100DFDD54 /* JSONKit.h */,
-				BA9BF1C116D5951100DFDD54 /* JSONKit.m */,
+				BA9BF1C116D5951100DFDD54 /* JSONKit */,
 			);
 			path = JSONKit;
 			sourceTree = "<group>";
@@ -1681,7 +1685,7 @@
 				BA36DEF716C4BF37007FFDD1 /* iBViewController.m in Sources */,
 				BA3A7C5016CD918100E84B58 /* iBCountViewController.m in Sources */,
 				BA4AE59316D12BAB005456EF /* iBCountModelForTwoAndThree.m in Sources */,
-				BA9BF1CB16D5951100DFDD54 /* JSONKit.m in Sources */,
+				BA9BF1CB16D5951100DFDD54 /* JSONKit in Sources */,
 				BA9BF1CD16D5951100DFDD54 /* SinaWeibo.m in Sources */,
 				BA9BF1CE16D5951100DFDD54 /* SinaWeiboAuthorizeView.m in Sources */,
 				BA9BF1CF16D5951100DFDD54 /* SinaWeiboRequest.m in Sources */,

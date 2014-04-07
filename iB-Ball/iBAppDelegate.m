@@ -9,7 +9,7 @@
 #import "iBAppDelegate.h"
 #import "SinaWeibo.h"
 #import "AFNetworkActivityIndicatorManager.h"
-#import <Parse/Parse.h>
+//#import <Parse/Parse.h>
 
 @implementation iBAppDelegate
 
@@ -43,8 +43,8 @@
         sinaweibo.userID = [sinaweiboInfo objectForKey:@"UserIDKey"];
     }
     
-    [Parse setApplicationId:@"FahVYM3v6LhX87eKNvz3Sed7nTiWrfVmOSNtKcX2"
-                  clientKey:@"qmKyKDkcGVttjLdapr0m0AWk4iHJ7XnxwfdequyO"];
+//    [Parse setApplicationId:@"FahVYM3v6LhX87eKNvz3Sed7nTiWrfVmOSNtKcX2"
+//                  clientKey:@"qmKyKDkcGVttjLdapr0m0AWk4iHJ7XnxwfdequyO"];
 //    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
 

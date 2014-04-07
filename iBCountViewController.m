@@ -11,7 +11,7 @@
 #import "iBShareViewController.h"
 #import "iBAppDelegate.h"
 #import "iBGestureRecognizeViewController.h"
-#import <Parse/Parse.h>
+//#import <Parse/Parse.h>
 #import "TwoPoint.h"
 #import "Player.h"
 
