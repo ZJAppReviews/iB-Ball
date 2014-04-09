@@ -8,6 +8,7 @@
 
 #import "iBChanllengeViewController.h"
 #import <EventKit/EventKit.h>
+#import "MWKProgressIndicator.h"
 
 @interface iBChanllengeViewController ()
 
@@ -29,6 +30,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [MWKProgressIndicator show];
+    [MWKProgressIndicator updateProgress:0.8];
 }
 
 

@@ -219,6 +219,7 @@
 		18F7272416F91BC300237CC7 /* iBSharedAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272316F91BC300237CC7 /* iBSharedAchievement.m */; };
 		18F7272716F9332C00237CC7 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7272616F9332C00237CC7 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18F927DF175369D000804EED /* iBChanllengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F927DE175369D000804EED /* iBChanllengeViewController.m */; };
+		18FA1F1918F2FB55001FA0FC /* MWKProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA1F1818F2FB55001FA0FC /* MWKProgressIndicator.m */; };
 		18FBC99017E7CB8E00924B4E /* UIBezierPath+ShadowPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBC98F17E7CB8E00924B4E /* UIBezierPath+ShadowPath.m */; };
 		BA01858716D6753F00B98B6A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */; };
 		BA36DEDB16C4BF37007FFDD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36DEDA16C4BF37007FFDD1 /* UIKit.framework */; };
@@ -568,8 +569,10 @@
 		18F7272316F91BC300237CC7 /* iBSharedAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBSharedAchievement.m; sourceTree = "<group>"; };
 		18F7272516F9332C00237CC7 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
 		18F7272616F9332C00237CC7 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
-		18F927DD175369D000804EED /* iBChanllengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBChanllengeViewController.h; sourceTree = "<group>"; };
-		18F927DE175369D000804EED /* iBChanllengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBChanllengeViewController.m; sourceTree = "<group>"; };
+		18F927DD175369D000804EED /* iBChanllengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBChanllengeViewController.h; path = ../sinaweibo_ios_sdk/iBChanllengeViewController.h; sourceTree = "<group>"; };
+		18F927DE175369D000804EED /* iBChanllengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBChanllengeViewController.m; path = ../sinaweibo_ios_sdk/iBChanllengeViewController.m; sourceTree = "<group>"; };
+		18FA1F1718F2FB4F001FA0FC /* MWKProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWKProgressIndicator.h; sourceTree = "<group>"; };
+		18FA1F1818F2FB55001FA0FC /* MWKProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWKProgressIndicator.m; sourceTree = "<group>"; };
 		18FBC98E17E7CB8E00924B4E /* UIBezierPath+ShadowPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIBezierPath+ShadowPath.h"; path = "../UIBezierPath+ShadowPath.h"; sourceTree = "<group>"; };
 		18FBC98F17E7CB8E00924B4E /* UIBezierPath+ShadowPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+ShadowPath.m"; path = "../UIBezierPath+ShadowPath.m"; sourceTree = "<group>"; };
 		BA01858616D6753F00B98B6A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -605,8 +608,8 @@
 		BA9BF1CA16D5951100DFDD54 /* SinaWeiboRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeiboRequest.m; sourceTree = "<group>"; };
 		BA9BF1D016D59BB300DFDD54 /* iBShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBShareViewController.h; path = ../sinaweibo_ios_sdk/iBShareViewController.h; sourceTree = "<group>"; };
 		BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBShareViewController.m; path = ../sinaweibo_ios_sdk/iBShareViewController.m; sourceTree = "<group>"; };
-		BACE1C5916E117410032223B /* iBObjCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBObjCountViewController.h; sourceTree = "<group>"; };
-		BACE1C5A16E117410032223B /* iBObjCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBObjCountViewController.m; sourceTree = "<group>"; };
+		BACE1C5916E117410032223B /* iBObjCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObjCountViewController.h; path = ../sinaweibo_ios_sdk/iBObjCountViewController.h; sourceTree = "<group>"; };
+		BACE1C5A16E117410032223B /* iBObjCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBObjCountViewController.m; path = ../sinaweibo_ios_sdk/iBObjCountViewController.m; sourceTree = "<group>"; };
 		BAFA0EC616E01F73000CF109 /* iBObjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObjViewController.h; path = ../iBObjViewController.h; sourceTree = "<group>"; };
 		BAFA0EC716E01F73000CF109 /* iBObjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBObjViewController.m; path = ../iBObjViewController.m; sourceTree = "<group>"; };
 		BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObj_DataModel.h; path = ../iBObj_DataModel.h; sourceTree = "<group>"; };
@@ -652,6 +655,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1803661918F58C02002E1A60 /* Objective */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA0EC616E01F73000CF109 /* iBObjViewController.h */,
+				BAFA0EC716E01F73000CF109 /* iBObjViewController.m */,
+				BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */,
+				BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */,
+				BACE1C5916E117410032223B /* iBObjCountViewController.h */,
+				BACE1C5A16E117410032223B /* iBObjCountViewController.m */,
+			);
+			name = Objective;
+			sourceTree = "<group>";
+		};
+		1803661A18F58DDF002E1A60 /* Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				18F927DD175369D000804EED /* iBChanllengeViewController.h */,
+				18F927DE175369D000804EED /* iBChanllengeViewController.m */,
+			);
+			name = Challenge;
+			sourceTree = "<group>";
+		};
 		180475A517408901001DA45A /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -704,7 +729,6 @@
 				18372FB41830DA0600885C68 /* PNBar.m */,
 			);
 			name = PNChart;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		1838CDFE172E19960078B3AD /* renren_ios_sdk */ = {
@@ -1021,14 +1045,6 @@
 			name = GameKitFiles;
 			sourceTree = "<group>";
 		};
-		185CC92717BF625300061270 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				18E4C0EF1754B34700F4A199 /* SNS */,
-			);
-			name = Vendor;
-			sourceTree = "<group>";
-		};
 		18712484173B3B4600815D6D /* Playcourt */ = {
 			isa = PBXGroup;
 			children = (
@@ -1039,16 +1055,17 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		18789FA61703C4FC0065D21F /* open_source */ = {
+		18789FA61703C4FC0065D21F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				18FA1F1618F2F26E001FA0FC /* New Group */,
-				185CC92717BF625300061270 /* Vendor */,
-				18789FC41703C7960065D21F /* 1 */,
+				18372FA81830D9FA00885C68 /* PNChart */,
+				18E4C0EF1754B34700F4A199 /* SNS */,
+				18FA1F1618F2F26E001FA0FC /* MWKProgressIndicator */,
+				18789FC41703C7960065D21F /* WeatherPart */,
 				18789FA71703C52F0065D21F /* AFNetworking */,
 				18F7272816F9333500237CC7 /* Toast */,
 			);
-			name = open_source;
+			name = Vendor;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1078,7 +1095,7 @@
 			name = AFNetworking;
 			sourceTree = "<group>";
 		};
-		18789FC41703C7960065D21F /* 1 */ = {
+		18789FC41703C7960065D21F /* WeatherPart */ = {
 			isa = PBXGroup;
 			children = (
 				18789FFF1703CAFF0065D21F /* WeatherHTTPClient.h */,
@@ -1093,7 +1110,7 @@
 				1878A00B1703CB150065D21F /* WeatherAnimationViewController.m */,
 				18789FCB1703C7B50065D21F /* Images */,
 			);
-			name = 1;
+			name = WeatherPart;
 			sourceTree = "<group>";
 		};
 		18789FCB1703C7B50065D21F /* Images */ = {
@@ -1247,21 +1264,13 @@
 			name = Toast;
 			sourceTree = "<group>";
 		};
-		18F927DC1753698E00804EED /* Challenge */ = {
+		18FA1F1618F2F26E001FA0FC /* MWKProgressIndicator */ = {
 			isa = PBXGroup;
 			children = (
-				18F927DD175369D000804EED /* iBChanllengeViewController.h */,
-				18F927DE175369D000804EED /* iBChanllengeViewController.m */,
+				18FA1F1718F2FB4F001FA0FC /* MWKProgressIndicator.h */,
+				18FA1F1818F2FB55001FA0FC /* MWKProgressIndicator.m */,
 			);
-			name = Challenge;
-			path = ../sinaweibo_ios_sdk;
-			sourceTree = "<group>";
-		};
-		18FA1F1618F2F26E001FA0FC /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
+			name = MWKProgressIndicator;
 			sourceTree = "<group>";
 		};
 		BA36DECB16C4BF37007FFDD1 = {
@@ -1314,9 +1323,9 @@
 		BA36DEE016C4BF37007FFDD1 /* iB-Ball */ = {
 			isa = PBXGroup;
 			children = (
-				1842525A18502D3F00CA44ED /* Assets */,
-				18789FA61703C4FC0065D21F /* open_source */,
-				18372FA81830D9FA00885C68 /* PNChart */,
+				1803661A18F58DDF002E1A60 /* Challenge */,
+				1803661918F58C02002E1A60 /* Objective */,
+				18789FA61703C4FC0065D21F /* Vendor */,
 				183C793F174B0A2900992262 /* CDModel */,
 				188D21E01841005000CEFC6D /* iB-Ball.entitlements */,
 				1824C26E16FEEC5000895222 /* TODO */,
@@ -1324,14 +1333,13 @@
 				18E38CAA170081DC003782F2 /* Account */,
 				18712484173B3B4600815D6D /* Playcourt */,
 				187C1F6B16F7C69E00263479 /* Achieve */,
-				18F927DC1753698E00804EED /* Challenge */,
 				183B836E16F5552E0030BC70 /* Ski */,
 				181393C5174C69AF0041F384 /* My Footprint */,
 				181393C6174C69D60041F384 /* Table View cell */,
 				18EAC82A17C077C00040CA2D /* HotzoneCount */,
+				1842525A18502D3F00CA44ED /* Assets */,
 				185D324117DB1F6C002C3373 /* iBZGestureReconizer.h */,
 				185D324217DB1F6C002C3373 /* iBZGestureReconizer.m */,
-				BACE1C5716E113520032223B /* Obj */,
 				18C0123F17E40BF900FE7172 /* 2&3Count */,
 				185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */,
 				185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */,
@@ -1433,20 +1441,6 @@
 				BA9BF1CA16D5951100DFDD54 /* SinaWeiboRequest.m */,
 			);
 			path = SinaWeibo;
-			sourceTree = "<group>";
-		};
-		BACE1C5716E113520032223B /* Obj */ = {
-			isa = PBXGroup;
-			children = (
-				BAFA0EC616E01F73000CF109 /* iBObjViewController.h */,
-				BAFA0EC716E01F73000CF109 /* iBObjViewController.m */,
-				BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */,
-				BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */,
-				BACE1C5916E117410032223B /* iBObjCountViewController.h */,
-				BACE1C5A16E117410032223B /* iBObjCountViewController.m */,
-			);
-			name = Obj;
-			path = ../sinaweibo_ios_sdk;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1770,6 +1764,7 @@
 				1838CEC5172E19B00078B3AD /* ROUtility.m in Sources */,
 				1838CEC6172E19B00078B3AD /* ROCheckOrderCell.m in Sources */,
 				1838CEC8172E19B00078B3AD /* RODialogModel.m in Sources */,
+				18FA1F1918F2FB55001FA0FC /* MWKProgressIndicator.m in Sources */,
 				1838CEC9172E19B00078B3AD /* RODialogView.m in Sources */,
 				1838CECA172E19B00078B3AD /* ROCloseButton.m in Sources */,
 				1838CECB172E19B00078B3AD /* ROGlobalStyle.m in Sources */,
