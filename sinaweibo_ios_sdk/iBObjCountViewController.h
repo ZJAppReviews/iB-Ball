@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class iBObj_DataModel;
+@class iBObjDataModel;
 
 @interface iBObjCountViewController : UIViewController
 
-@property (nonatomic, strong) iBObj_DataModel *dataModel;
+@property (nonatomic, strong) iBObjDataModel *dataModel;
 
 @property (strong, nonatomic) IBOutlet UILabel *l1;
 @property (strong, nonatomic) IBOutlet UILabel *l2;

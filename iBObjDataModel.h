@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface iBObj_DataModel : NSObject
+@interface iBObjDataModel : NSObject
 
 @property (assign) int twoPoint_Obj;
 @property (assign) int threePoint_Obj;

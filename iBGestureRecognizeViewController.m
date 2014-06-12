@@ -7,7 +7,7 @@
 //
 
 #import "iBGestureRecognizeViewController.h"
-#import "iBObj_DataModel.h"
+#import "iBObjDataModel.h"
 #import "Toast+UIView.h"
 #import "iBCountModelForTwoAndThree.h"
 

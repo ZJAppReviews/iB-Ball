@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Snowmanzzz. All rights reserved.
 //
 
-#import "iBObj_DataModel.h"
+#import "iBObjDataModel.h"
 
-@implementation iBObj_DataModel
+@implementation iBObjDataModel
 
 - (id)initWithObj:(int)two three:(int)three ft:(int)ft {
     if (self = [super init]) {

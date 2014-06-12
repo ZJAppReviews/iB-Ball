@@ -243,7 +243,7 @@
 		BA9BF1D216D59BB300DFDD54 /* iBShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */; };
 		BACE1C5B16E117410032223B /* iBObjCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BACE1C5A16E117410032223B /* iBObjCountViewController.m */; };
 		BAFA0EC816E01F74000CF109 /* iBObjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA0EC716E01F73000CF109 /* iBObjViewController.m */; };
-		BAFA0ED216E04606000CF109 /* iBObj_DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */; };
+		BAFA0ED216E04606000CF109 /* iBObjDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA0ED116E04606000CF109 /* iBObjDataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -612,8 +612,8 @@
 		BACE1C5A16E117410032223B /* iBObjCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBObjCountViewController.m; path = ../sinaweibo_ios_sdk/iBObjCountViewController.m; sourceTree = "<group>"; };
 		BAFA0EC616E01F73000CF109 /* iBObjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObjViewController.h; path = ../iBObjViewController.h; sourceTree = "<group>"; };
 		BAFA0EC716E01F73000CF109 /* iBObjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBObjViewController.m; path = ../iBObjViewController.m; sourceTree = "<group>"; };
-		BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObj_DataModel.h; path = ../iBObj_DataModel.h; sourceTree = "<group>"; };
-		BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBObj_DataModel.m; path = ../iBObj_DataModel.m; sourceTree = "<group>"; };
+		BAFA0ED016E04606000CF109 /* iBObjDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBObjDataModel.h; path = ../iBObjDataModel.h; sourceTree = "<group>"; };
+		BAFA0ED116E04606000CF109 /* iBObjDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBObjDataModel.m; path = ../iBObjDataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -660,8 +660,8 @@
 			children = (
 				BAFA0EC616E01F73000CF109 /* iBObjViewController.h */,
 				BAFA0EC716E01F73000CF109 /* iBObjViewController.m */,
-				BAFA0ED016E04606000CF109 /* iBObj_DataModel.h */,
-				BAFA0ED116E04606000CF109 /* iBObj_DataModel.m */,
+				BAFA0ED016E04606000CF109 /* iBObjDataModel.h */,
+				BAFA0ED116E04606000CF109 /* iBObjDataModel.m */,
 				BACE1C5916E117410032223B /* iBObjCountViewController.h */,
 				BACE1C5A16E117410032223B /* iBObjCountViewController.m */,
 			);
@@ -1462,7 +1462,7 @@
 			name = iBBallTest;
 			productName = iBBallTest;
 			productReference = 18E9EEBC17D2A88800C7F8EB /* iBBallTest.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		BA36DED516C4BF37007FFDD1 /* iB-Ball */ = {
 			isa = PBXNativeTarget;
@@ -1685,7 +1685,7 @@
 				BA9BF1CF16D5951100DFDD54 /* SinaWeiboRequest.m in Sources */,
 				BA9BF1D216D59BB300DFDD54 /* iBShareViewController.m in Sources */,
 				BAFA0EC816E01F74000CF109 /* iBObjViewController.m in Sources */,
-				BAFA0ED216E04606000CF109 /* iBObj_DataModel.m in Sources */,
+				BAFA0ED216E04606000CF109 /* iBObjDataModel.m in Sources */,
 				18C217FA17EE7E3B000E6FC9 /* iBTeamMatesViewController.m in Sources */,
 				BACE1C5B16E117410032223B /* iBObjCountViewController.m in Sources */,
 				183B837116F5555D0030BC70 /* iBSkiTableViewController.m in Sources */,

@@ -17,7 +17,7 @@ typedef enum {
     GestureForMatchCount
 } GestureType;
 
-@class iBObj_DataModel;
+@class iBObjDataModel;
 
 @interface iBGestureRecognizeViewController : UIViewController <UIGestureRecognizerDelegate>
 
@@ -33,7 +33,7 @@ typedef enum {
 
 - (IBAction)swipeUp:(id)sender;
 
-@property (nonatomic, weak) iBObj_DataModel *dataModelForObj;
+@property (nonatomic, weak) iBObjDataModel *dataModelForObj;
 @property (nonatomic, weak) iBCountModelForTwoAndThree *dataModelForTwo;
 // i dont know weather it's good to separate, whatever
 @property (nonatomic, weak) iBCountModelForTwoAndThree *dataModelForThree;

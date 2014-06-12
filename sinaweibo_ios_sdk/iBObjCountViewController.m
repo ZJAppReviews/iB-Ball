@@ -7,7 +7,7 @@
 //
 
 #import "iBObjCountViewController.h"
-#import "iBObj_DataModel.h"
+#import "iBObjDataModel.h"
 #import "iBSharedAchievement.h"
 #import "iBGestureRecognizeViewController.h"
 

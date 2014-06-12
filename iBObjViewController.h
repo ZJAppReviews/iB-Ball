@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class iBObj_DataModel;
+@class iBObjDataModel;
 
 @interface iBObjViewController : UITableViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
@@ -15,7 +15,7 @@
 
 @property (nonatomic, strong) UIPickerView *myPicker;
 
-@property (nonatomic, strong) iBObj_DataModel *objModel;
+@property (nonatomic, strong) iBObjDataModel *objModel;
 
 @property (strong, nonatomic) IBOutlet UILabel *l1;
 @property (strong, nonatomic) IBOutlet UILabel *l2;

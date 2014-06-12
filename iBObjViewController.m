@@ -7,7 +7,7 @@
 //
 
 #import "iBObjViewController.h"
-#import "iBObj_DataModel.h"
+#import "iBObjDataModel.h"
 #import "iBObjCountViewController.h"
 
 @interface iBObjViewController ()
@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     
-    _objModel = [[iBObj_DataModel alloc] init];
+    _objModel = [[iBObjDataModel alloc] init];
     _myPicker = [[UIPickerView alloc] initWithFrame:CGRectZero];
     _myPicker.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
     CGSize pickerSize = [_myPicker sizeThatFits:CGSizeZero];
