@@ -231,7 +231,6 @@
 		BA36DEED16C4BF37007FFDD1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BA36DEEC16C4BF37007FFDD1 /* Default.png */; };
 		BA36DEEF16C4BF37007FFDD1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA36DEEE16C4BF37007FFDD1 /* Default@2x.png */; };
 		BA36DEF116C4BF37007FFDD1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA36DEF016C4BF37007FFDD1 /* Default-568h@2x.png */; };
-		BA36DEF716C4BF37007FFDD1 /* iBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA36DEF616C4BF37007FFDD1 /* iBViewController.m */; };
 		BA3A7C4016CD39EE00E84B58 /* hotzone.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3A7C3F16CD39EE00E84B58 /* hotzone.png */; };
 		BA3A7C5016CD918100E84B58 /* iBCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */; };
 		BA4AE59316D12BAB005456EF /* iBCountModelForTwoAndThree.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4AE59216D12BAB005456EF /* iBCountModelForTwoAndThree.m */; };
@@ -430,8 +429,8 @@
 		1852B9BB17D55595006A2DB8 /* iBShowPersonStaticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBShowPersonStaticViewController.m; path = "iB-Ball/iBShowPersonStaticViewController.m"; sourceTree = SOURCE_ROOT; };
 		1852B9BF17D55992006A2DB8 /* iBStaticListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBStaticListViewController.h; sourceTree = "<group>"; };
 		1852B9C017D55992006A2DB8 /* iBStaticListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBStaticListViewController.m; sourceTree = "<group>"; };
-		185D324117DB1F6C002C3373 /* iBZGestureReconizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBZGestureReconizer.h; path = ../sinaweibo_ios_sdk/iBZGestureReconizer.h; sourceTree = "<group>"; };
-		185D324217DB1F6C002C3373 /* iBZGestureReconizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBZGestureReconizer.m; path = ../sinaweibo_ios_sdk/iBZGestureReconizer.m; sourceTree = "<group>"; };
+		185D324117DB1F6C002C3373 /* iBZGestureReconizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iBZGestureReconizer.h; sourceTree = "<group>"; };
+		185D324217DB1F6C002C3373 /* iBZGestureReconizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iBZGestureReconizer.m; sourceTree = "<group>"; };
 		185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBGestureRecognizeViewController.h; path = ../iBGestureRecognizeViewController.h; sourceTree = "<group>"; };
 		185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBGestureRecognizeViewController.m; path = ../iBGestureRecognizeViewController.m; sourceTree = "<group>"; };
 		185F71B01702D06300336ED3 /* iBGestureRecognizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iBGestureRecognizeViewController.xib; path = ../iBGestureRecognizeViewController.xib; sourceTree = "<group>"; };
@@ -589,8 +588,6 @@
 		BA36DEEC16C4BF37007FFDD1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		BA36DEEE16C4BF37007FFDD1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BA36DEF016C4BF37007FFDD1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		BA36DEF516C4BF37007FFDD1 /* iBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iBViewController.h; sourceTree = "<group>"; };
-		BA36DEF616C4BF37007FFDD1 /* iBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBViewController.m; sourceTree = "<group>"; };
 		BA3A7C3F16CD39EE00E84B58 /* hotzone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotzone.png; sourceTree = "<group>"; };
 		BA3A7C4E16CD918100E84B58 /* iBCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iBCountViewController.h; path = ../iBCountViewController.h; sourceTree = "<group>"; };
 		BA3A7C4F16CD918100E84B58 /* iBCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iBCountViewController.m; path = ../iBCountViewController.m; sourceTree = "<group>"; };
@@ -1232,6 +1229,8 @@
 		18EAC82A17C077C00040CA2D /* HotzoneCount */ = {
 			isa = PBXGroup;
 			children = (
+				185D324117DB1F6C002C3373 /* iBZGestureReconizer.h */,
+				185D324217DB1F6C002C3373 /* iBZGestureReconizer.m */,
 				18B9C7DA18102BCA00E737C4 /* RenRenShareActivity.h */,
 				18B9C7DB18102BCA00E737C4 /* RenRenShareActivity.m */,
 				183D8C571824A5E800C3BC0D /* RenRenPostViewController.h */,
@@ -1323,22 +1322,20 @@
 		BA36DEE016C4BF37007FFDD1 /* iB-Ball */ = {
 			isa = PBXGroup;
 			children = (
-				185D65981951E3F3008C3B72 /* CustomView */,
 				1803661A18F58DDF002E1A60 /* Challenge */,
 				1803661918F58C02002E1A60 /* Objective */,
 				183C793F174B0A2900992262 /* CDModel */,
 				188D21E01841005000CEFC6D /* iB-Ball.entitlements */,
 				1824C26E16FEEC5000895222 /* TODO */,
 				18C3B2A21815F496008B10FB /* Quest */,
-				18E38CAA170081DC003782F2 /* Account */,
+				185D65981951E3F3008C3B72 /* CustomView */,
 				18712484173B3B4600815D6D /* Playcourt */,
+				18E38CAA170081DC003782F2 /* Account */,
 				187C1F6B16F7C69E00263479 /* Achieve */,
 				183B836E16F5552E0030BC70 /* Ski */,
 				181393C5174C69AF0041F384 /* My Footprint */,
 				18EAC82A17C077C00040CA2D /* HotzoneCount */,
 				18789FA61703C4FC0065D21F /* Vendor */,
-				185D324117DB1F6C002C3373 /* iBZGestureReconizer.h */,
-				185D324217DB1F6C002C3373 /* iBZGestureReconizer.m */,
 				18C0123F17E40BF900FE7172 /* 2&3Count */,
 				185F71AD1702D04600336ED3 /* iBGestureRecognizeViewController.h */,
 				185F71AE1702D04600336ED3 /* iBGestureRecognizeViewController.m */,
@@ -1361,8 +1358,6 @@
 				BA9BF1D116D59BB300DFDD54 /* iBShareViewController.m */,
 				BA36DEE916C4BF37007FFDD1 /* iBAppDelegate.h */,
 				BA36DEEA16C4BF37007FFDD1 /* iBAppDelegate.m */,
-				BA36DEF516C4BF37007FFDD1 /* iBViewController.h */,
-				BA36DEF616C4BF37007FFDD1 /* iBViewController.m */,
 				18E1C333171A4CB300F5DC5D /* iBGlobalRecorder.h */,
 				18E1C334171A4CB300F5DC5D /* iBGlobalRecorder.m */,
 				184653DA1804D62100D01B7D /* GameKitFiles */,
@@ -1676,7 +1671,6 @@
 			files = (
 				BA36DEE716C4BF37007FFDD1 /* main.m in Sources */,
 				BA36DEEB16C4BF37007FFDD1 /* iBAppDelegate.m in Sources */,
-				BA36DEF716C4BF37007FFDD1 /* iBViewController.m in Sources */,
 				BA3A7C5016CD918100E84B58 /* iBCountViewController.m in Sources */,
 				BA4AE59316D12BAB005456EF /* iBCountModelForTwoAndThree.m in Sources */,
 				BA9BF1CB16D5951100DFDD54 /* JSONKit in Sources */,
