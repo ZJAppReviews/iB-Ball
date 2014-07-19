@@ -96,22 +96,10 @@
 }
 
 - (IBAction)swipeDown:(id)sender {
-    //    switch (self.whatKindOfGestureReconizingAreWeIn) {
-    //        case GestureForObjective:
-    ////
-    //            self.dataModelForObj.threePoint_real++;
-    //            NSString *toastMessage = [NSString stringWithFormat:@"threePoint: %d", self.dataModelForObj.threePoint_real];
-    //            //    NSLog(toastMessage);
-    //            [self.view makeToast:toastMessage];
-    //            NSLog(@"s");
-    //            break;
-    //            case GestureForTwoCount:
-    //            break;
-    //    }
+    
     if (self.whatKindOfGestureReconizingAreWeIn == GestureForObjective) {
         self.dataModelForObj.threePoint_real++;
         NSString *toastMessage = [NSString stringWithFormat:@"threePoint: %d", self.dataModelForObj.threePoint_real];
-        //    NSLog(toastMessage);
         [self.view makeToast:toastMessage];
         
     }
