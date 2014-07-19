@@ -1,4 +1,5 @@
 最优先：
+
 封装个renren uiactivity
 -quick gesture
 
@@ -39,3 +40,6 @@ My statistic
 	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
 BUG:
 ice ground ->select count  -> 卡match count is still under construction...
+
+Quest:
+use KVO to update the static result
